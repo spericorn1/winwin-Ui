@@ -1,0 +1,22 @@
+@import 'partials';
+
+body{
+    font-family: $primary-font !important;
+}
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+input{
+    box-shadow: none;
+    outline: none;
+}
+.hover-opc{
+    transition: .3s;
+    &:hover{
+        opacity: .8;
+    }
+}

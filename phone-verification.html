@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+   <title>Win Win X</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+   <div class="login-layout">
+      <div class="login-container d-flex">
+         <div class="left-block email-verification-left">
+            <div class="back-btn-block">
+                <a href="#" class="back-btn">
+                    <img src="img/arrow-left.svg" alt=""> Back
+                </a>
+                <div class="score-block">
+                    <div class="info">
+                        <img src="img/Trustscore.png" alt="">
+                    </div>
+                    <div class="data">
+                        Your Score is <span>100</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-form-outer">
+               <div class="welcome-block">
+                  <div class="welcome-icon align-items-center justify-content-center">
+                     <img src="img/smartphone.svg" alt="">
+                  </div>
+               </div>
+               <div class="title-block mb-4">
+                  <h2>Verify Your Phone</h2>
+                  <p>Verify your phone to keep your account safe</p>
+               </div>
+               
+                <div class="login-form-block">
+                    <div class="input-cover">
+                        <div class="input-col mb-4">
+                            <label class="login-label" for="">Enter Your Phone Number</label>
+                            <input type="email" class="login-inp form-control" placeholder="" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+
+                    <div class="btn-block">
+                        <button class="confirm-btn">Send Code</button>
+                    </div>
+                </div>
+               
+            </div>
+         </div>
+         <div class="right-block">
+            <img class="bnr-img" src="img/signup-banner.png" alt="">
+         </div>
+      </div>
+   </div>
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <script>
+      $('.login-slider').slick({
+         autoplay: true,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         dots: true,
+         arrows: false,
+         speed: 500,
+         fade: true,
+         cssEase: 'linear'
+      });
+   </script>
+
+
+</body>
+
+</html>

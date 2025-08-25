@@ -1,0 +1,188 @@
+@import "partials";
+.header-wrap {
+    border-bottom: 1px solid #dfe1e3;
+    padding: 20px 0;
+    @media ($sm-1679) {
+        padding: 15px 0;
+    }
+    @media ($sm-479) {
+        padding: 10px 0;
+    }
+    .head-inner-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media ($sm-479) {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-wrap {
+            @media ($sm-991) {
+                width: 100%;
+                padding-bottom: 15px;
+                @media ($sm-479) {
+                    padding-bottom: 0;
+                    width: auto;
+                }
+            }
+        }
+        .logo {
+            width: 85px;
+            @media ($sm-1679) {
+                width: 80px;
+            }
+            @media ($sm-991) {
+                width: 60px;
+            }
+            @media ($sm-479) {
+                width: 50px;
+            }
+        }
+        .head-step-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            @media ($sm-767) {
+                flex-direction: column;
+                gap: 5px;
+            }
+            .txt {
+                margin: 0;
+                padding: 0;
+                font-family: $primary-font;
+                font-size: 14px;
+                color: #7b8d9f;
+                font-weight: 500;
+                line-height: 1.2;
+                @media ($sm-1679) {
+                    font-size: 12px;
+                }
+                span {
+                    color: #101b25;
+                }
+            }
+            .list {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    width: 96px;
+                    @media ($sm-1679) {
+                        width: 80px;
+                    }
+                    @media ($sm-767) {
+                        width: 50px;
+                    }
+                    .round {
+                        width: 16px;
+                        height: 16px;
+                        position: relative;
+                        padding: 2px;
+                        @media ($sm-1679) {
+                            width: 14px;
+                            height: 14px;
+                        }
+                        &:after {
+                            position: absolute;
+                            inset: 0;
+                            content: "";
+                            width: 12px;
+                            height: 12px;
+                            border: 1px solid #abadd4;
+                            border-radius: 50%;
+                            margin: auto;
+                            @media ($sm-1679) {
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                        img {
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            z-index: 1;
+                            @media ($sm-1679) {
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                    &:after {
+                        position: absolute;
+                        height: 1px;
+                        content: "";
+                        width: 80px;
+                        background: #abadd4;
+                        inset: 0 0 0 auto;
+                        margin: auto;
+                        border-radius: 10px;
+                        @media ($sm-1679) {
+                            width: 64px;
+                        }
+                        @media ($sm-767) {
+                            width: 35px;
+                        }
+                    }
+                    &:last-child {
+                        width: auto;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &.active {
+                        .round {
+                            &:after {
+                                border-color: #2e348e;
+                            }
+                        }
+                        &:after {
+                            background: #2e348e;
+                        }
+                    }
+                    &.completed {
+                        &:after {
+                            background: #1bb746;
+                        }
+                    }
+                }
+            }
+        }
+        .head-score-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media ($sm-1679) {
+                gap: 5px;
+            }
+            .img {
+                width: 45px;
+                @media ($sm-1679) {
+                    width: 40px;
+                }
+            }
+            .score-txt {
+                padding: 0 0 0 0;
+                font-family: $primary-font;
+                color: #415362;
+                font-size: 16px;
+                line-height: 1;
+                font-weight: 400;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
+                @media ($sm-479) {
+                    font-size: 12px;
+                }
+                span {
+                    font-weight: 500;
+                    color: #101b25;
+                }
+            }
+        }
+    }
+}
