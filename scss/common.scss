@@ -20,3 +20,12 @@ input{
         opacity: .8;
     }
 }
+.custom-container2{
+    max-width: 1062px;
+    @media ($sm-1441){
+        // max-width: 1300px;
+    }
+    // @media ($sm-767){
+    //     max-width: 100%;
+    // }
+}
