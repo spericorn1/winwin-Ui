@@ -231,4 +231,118 @@
 }
 .img-crop-modal .btn-block .right-block {
   margin-left: auto;
+}
+
+@media (min-width: 430px) {
+  .make-payment .modal-dialog {
+    max-width: 411px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.make-payment .modal-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.make-payment .modal-icon img {
+  width: 48px;
+}
+.make-payment h2 {
+  color: #101B25;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media (max-width: 1679px) {
+  .make-payment h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 479px) {
+  .make-payment h2 {
+    font-size: 20px;
+  }
+}
+.make-payment p {
+  color: #415362;
+}
+@media (max-width: 1679px) {
+  .make-payment p {
+    font-size: 15px;
+  }
+}
+.make-payment .date {
+  color: #101B25;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  padding-top: 12px;
+}
+.make-payment .signed-doc {
+  display: flex;
+  padding-top: 20px;
+}
+.make-payment .signed-doc .sign-wrp {
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  flex: 1;
+  margin-right: 8px;
+}
+.make-payment .signed-doc .sign-wrp img {
+  max-height: 24px;
+}
+.make-payment .signed-doc .btn {
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+}
+.make-payment .confirmation-blk {
+  background-color: #F4F5F6;
+  border-radius: 16px;
+  padding: 16px;
+}
+.make-payment .confirmation-blk .conscent-box {
+  display: flex;
+  justify-content: flex-start;
+}
+.make-payment .confirmation-blk .conscent-box .form-check-input {
+  border: solid 2px #5090CC;
+  margin: 0;
+  margin-right: 10px;
+  box-shadow: none;
+  outline: 0;
+}
+.make-payment .confirmation-blk .conscent-box .form-check-input:checked[type=checkbox] {
+  background-color: #7B8D9F;
+}
+.make-payment .confirmation-blk .txt {
+  text-align: left;
+  color: #415362;
+  padding-left: 12px;
+  font-size: 14px;
+}
+.make-payment .confirmation-blk .btn-block .modal-btn-1.modal-btn-border {
+  background-color: #fff;
+}
+.make-payment .modal-body {
+  padding: 16px;
+}
+@media (max-width: 420px) {
+  .make-payment .modal-body {
+    padding: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .make-payment .modal-body {
+    padding: 25px 15px;
+  }
 }/*# sourceMappingURL=modal.css.map */
