@@ -15,9 +15,41 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.header-wrap .head-inner-wrap.checkout-head-inner .logo-wrap {
+  width: auto;
+  padding: 0;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap {
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap {
+    margin: 0;
+    margin-left: auto;
+    justify-content: end;
+  }
+}
 .header-wrap .head-inner-wrap .checkout-step-wrap .list {
   margin: 20px 0 0 0;
   width: 410px;
+}
+@media (max-width: 991px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 340px;
+  }
+}
+@media (max-width: 767px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 260px;
+  }
+}
+@media (max-width: 479px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 100%;
+  }
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li {
+  width: 33.33333%;
 }
 .header-wrap .head-inner-wrap .checkout-step-wrap .list li:nth-child(1) .name {
   left: 0;
