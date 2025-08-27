@@ -161,7 +161,8 @@
   height: 100%;
   width: 100%;
   border-radius: 12px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .product-details .slider-sec .product-thumbs {
   margin-top: 24px;
@@ -217,7 +218,8 @@
 .product-details .slider-sec .product-thumbs .thumb-img-block img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 @media (max-width: 991px) {
@@ -382,7 +384,8 @@
 .product-details .right-sec .product-info .seller-box .user-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50px;
 }
 .product-details .right-sec .product-info .seller-box .detail-sec .name-txt {
@@ -1317,7 +1320,8 @@
 .review-section .customer-reviews .review-item .review-avatar img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50px;
 }
 .review-section .customer-reviews .review-item .review-content .review-author {
@@ -1378,7 +1382,8 @@
 .review-section .customer-reviews .review-item .review-imgs .img-sec img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 .review-section .customer-reviews .review-item .date-sec {
@@ -1408,6 +1413,4 @@
 }
 .star-ico.not-filled {
   background-color: #ccc;
-}
-
-/*# sourceMappingURL=detail-page.css.map */
+}/*# sourceMappingURL=detail-page.css.map */
