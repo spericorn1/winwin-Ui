@@ -1,9 +1,17 @@
 @import "partials";
 .header-wrap {
     .head-inner-wrap{
-.checkout-step-wrap{
+        &.checkout-head-inner{
+            .logo-wrap{width: auto; padding: 0;}
+        }
+.checkout-step-wrap{ margin: 0 auto;
+    @media ($sm-767) { margin: 0; margin-left: auto; justify-content: end;}
     .list{ margin: 20px 0 0 0; width: 410px;
-        li{
+        @media ($sm-991) {width: 340px;}
+            @media ($sm-767) {width: 260px;}
+            @media ($sm-479) {width: 100%;}
+        li{ width: 33.33333%;
+            
             &:nth-child(1){
                 .name{left: 0;}
             }
