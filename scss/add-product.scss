@@ -1,0 +1,137 @@
+@import "partials";
+.add-product-form{
+    .top-title{
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -1.2%;
+        color: #101B25;
+        @media($sm-1679){
+            font-size: 22px;
+            line-height: 30px;
+        }
+        @media($sm-1481){
+            font-size: 20px;
+            line-height: 28px;
+        }
+        @media($sm-1199){
+            font-size: 18px;
+            line-height: 26px;
+        }
+        @media($sm-991){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        @media($sm-767){
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+    }
+    .form-outer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .lft-sec{
+            width: 543px;
+            .form-label{
+     
+                font-weight: 500;
+
+                font-size: 14px;
+                color: #101B25;
+                line-height: 20px;
+                letter-spacing: 0%;
+
+            }
+            .for-wrp{
+                .form-grp{
+                    margin-bottom: 30px;
+                   
+                    .msg-grp{
+                        border: 1px dashed #CAD0D4;
+                        min-height: 148px;
+                        border-radius: 12px;
+                         display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    .img-sec{
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50px;
+                        margin: auto;
+                        padding-bottom: 12px;
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                    .txt{
+               
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -1%;
+                        text-align: center;
+                        color: #101B25;
+                        padding-top: 12px;
+
+                    }
+                  
+                    }
+                      .text-sec{
+               
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0%;
+                        color: #415362;
+                    }
+                }
+            }
+            .form-wrp{
+                  border: 1px solid #5090CC;  
+                  border-radius: 100px;
+                  padding: 2px;
+                   .form-control{
+                    height: 52px;
+                    border: 1px solid #B8C4D0;
+                    border-radius: 100px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0%;
+                    color:#101B25;
+                    border-left: none;
+                    padding-left: 20px;
+                    @media($sm-1679){
+                        font-size: 14px;
+                        line-height: 22px;
+                        height: 48px;
+                    }
+                    @media($sm-1481){
+                        font-size: 13px;
+                        line-height: 20px;
+                        height: 42px;
+                    }
+                    @media($sm-1199){
+                        height: 36px;
+                    }
+                    &:hover ,&:focus{
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                } 
+            }
+        }
+        .rt-sec{
+            flex: 1;
+            padding-left: 100px;
+        }
+    }
+}
