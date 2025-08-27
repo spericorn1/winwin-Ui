@@ -265,6 +265,8 @@
 }
 .make-payment p {
   color: #415362;
+  max-width: 90%;
+  margin: 0 auto 20px;
 }
 @media (max-width: 1679px) {
   .make-payment p {
@@ -277,6 +279,16 @@
   font-weight: 500;
   text-align: left;
   padding-top: 12px;
+}
+@media (max-width: 1199px) {
+  .make-payment .date {
+    font-size: 14px;
+  }
+}
+@media (max-width: 579px) {
+  .make-payment .date {
+    font-size: 13px;
+  }
 }
 .make-payment .signed-doc {
   display: flex;
@@ -334,15 +346,10 @@
   background-color: #fff;
 }
 .make-payment .modal-body {
-  padding: 16px;
+  padding: 20px 16px;
 }
 @media (max-width: 420px) {
   .make-payment .modal-body {
-    padding: 30px;
-  }
-}
-@media (max-width: 360px) {
-  .make-payment .modal-body {
-    padding: 25px 15px;
+    padding: 20px;
   }
 }/*# sourceMappingURL=modal.css.map */
