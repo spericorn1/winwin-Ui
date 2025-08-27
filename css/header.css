@@ -76,10 +76,16 @@
   align-items: center;
   gap: 12px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .header-wrap .head-inner-wrap .head-step-wrap {
     flex-direction: column;
     gap: 5px;
+    align-items: start;
+  }
+}
+@media (max-width: 479px) {
+  .header-wrap .head-inner-wrap .head-step-wrap {
+    width: 100%;
   }
 }
 .header-wrap .head-inner-wrap .head-step-wrap .txt {
@@ -103,29 +109,42 @@
   margin: 0;
   padding: 0;
   display: flex;
+  width: 370px;
+}
+@media (max-width: 1679px) {
+  .header-wrap .head-inner-wrap .head-step-wrap .list {
+    width: 350px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-wrap .head-inner-wrap .head-step-wrap .list {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .header-wrap .head-inner-wrap .head-step-wrap .list {
+    width: 250px;
+  }
+}
+@media (max-width: 479px) {
+  .header-wrap .head-inner-wrap .head-step-wrap .list {
+    width: 100%;
+  }
 }
 .header-wrap .head-inner-wrap .head-step-wrap .list li {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
-  width: 96px;
-}
-@media (max-width: 1679px) {
-  .header-wrap .head-inner-wrap .head-step-wrap .list li {
-    width: 80px;
-  }
-}
-@media (max-width: 767px) {
-  .header-wrap .head-inner-wrap .head-step-wrap .list li {
-    width: 50px;
-  }
+  width: 25%;
 }
 .header-wrap .head-inner-wrap .head-step-wrap .list li .round {
   width: 16px;
   height: 16px;
   position: relative;
   padding: 2px;
+  z-index: 1;
+  background: #f8f9fa;
 }
 @media (max-width: 1679px) {
   .header-wrap .head-inner-wrap .head-step-wrap .list li .round {
@@ -165,21 +184,11 @@
   position: absolute;
   height: 1px;
   content: "";
-  width: 80px;
+  width: 100%;
   background: #abadd4;
   inset: 0 0 0 auto;
   margin: auto;
   border-radius: 10px;
-}
-@media (max-width: 1679px) {
-  .header-wrap .head-inner-wrap .head-step-wrap .list li:after {
-    width: 64px;
-  }
-}
-@media (max-width: 767px) {
-  .header-wrap .head-inner-wrap .head-step-wrap .list li:after {
-    width: 35px;
-  }
 }
 .header-wrap .head-inner-wrap .head-step-wrap .list li:last-child {
   width: auto;
@@ -235,4 +244,6 @@
 .header-wrap .head-inner-wrap .head-score-wrap .score-txt span {
   font-weight: 500;
   color: #101b25;
-}/*# sourceMappingURL=header.css.map */
+}
+
+/*# sourceMappingURL=header.css.map */
