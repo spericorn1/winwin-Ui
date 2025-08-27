@@ -120,6 +120,55 @@
   }
 }
 
+@media (min-width: 420px) {
+  .checkout-success .modal-dialog {
+    max-width: 405px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.checkout-success .modal-icon {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.checkout-success h2 {
+  color: #101B25;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+@media (max-width: 1679px) {
+  .checkout-success h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .checkout-success h2 {
+    font-size: 16px;
+  }
+}
+.checkout-success p {
+  color: #415362;
+}
+@media (max-width: 1679px) {
+  .checkout-success p {
+    font-size: 15px;
+  }
+}
+.checkout-success .modal-body {
+  padding: 40px;
+}
+@media (max-width: 420px) {
+  .checkout-success .modal-body {
+    padding: 30px;
+  }
+}
+@media (max-width: 360px) {
+  .checkout-success .modal-body {
+    padding: 25px 15px;
+  }
+}
+
 @media (min-width: 550px) {
   .verify-email-modal .modal-dialog {
     max-width: 500px;
@@ -329,7 +378,6 @@
 .make-payment .confirmation-blk .conscent-box .form-check-input {
   border: solid 2px #5090CC;
   margin: 0;
-  margin-right: 10px;
   box-shadow: none;
   outline: 0;
 }
