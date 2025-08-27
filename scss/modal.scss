@@ -95,6 +95,60 @@
     }
 }
 
+.checkout-success{
+    .modal-dialog{
+        @media (min-width: 420px) {
+            max-width: 405px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .modal-icon{
+        text-align: center;
+        position: relative;
+        width: 48px;
+        margin: 0 auto 20px;
+        .accept-badge{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: -5px;
+            top: -4px;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    h2{
+        color: #101B25;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        @media ($sm-1679) {
+            font-size: 18px;
+        }
+        @media ($sm-479) {
+            font-size: 16px;
+        }
+    }
+    p{
+        color: #415362;
+        @media ($sm-1679) {
+            font-size: 15px;
+        }
+    }
+    
+    .modal-body{
+        padding: 40px;
+        @media (max-width: 420px) {
+            padding: 30px;
+        }
+        @media (max-width: 360px) {
+            padding: 25px 15px;
+        }
+    }
+}
+
 .verify-email-modal{
     .modal-dialog{
         @media (min-width: 550px) {
@@ -193,6 +247,117 @@
         }
         .right-block{
             margin-left: auto;
+        }
+    }
+}
+
+.make-payment{
+    .modal-dialog{
+        @media (min-width: 430px) {
+            max-width: 411px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .modal-icon{
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+            width: 48px;
+        }
+    }
+    h2{
+        color: #101B25;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        @media ($sm-1679) {
+            font-size: 22px;
+        }
+        @media ($sm-479) {
+            font-size: 20px;
+        }
+    }
+    p{
+        color: #415362;
+        max-width: 90%;
+        margin: 0 auto 20px;
+        @media ($sm-1679) {
+            font-size: 15px;
+        }
+    }
+    .date{
+        color: #101B25;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 12px;
+        @media ($sm-1199){
+            font-size: 14px;
+        }
+        @media ($sm-579){
+            font-size: 13px;
+        }
+    }
+    .signed-doc{
+        display: flex;
+        padding-top: 20px;
+        .sign-wrp{
+            border-radius: 8px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            flex: 1;
+            margin-right: 8px;
+            img{
+                max-height: 24px;
+            }
+        }
+        .btn{
+            background-color: #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+        }
+    }
+    .confirmation-blk{
+        background-color: #F4F5F6;
+        border-radius: 16px;
+        padding: 16px;
+        .conscent-box{
+            display: flex;
+            justify-content: flex-start;
+                .form-check-input {
+                border: solid 2px #5090CC;
+                margin: 0;
+                box-shadow: none;
+                outline: 0;
+                &:checked[type=checkbox]{
+                    background-color: #7B8D9F;
+                }
+            }
+             
+        }
+        .txt{
+            text-align: left;
+            color: #415362;
+            padding-left: 12px;
+            font-size: 14px;
+        }
+        .btn-block .modal-btn-1.modal-btn-border{
+            background-color: #fff;
+        }
+    }
+    .modal-body{
+        padding: 20px 16px;
+        @media (max-width: 420px) {
+            padding: 20px;
         }
     }
 }
