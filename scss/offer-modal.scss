@@ -1,0 +1,111 @@
+@import 'partials';
+.offer-modal{
+    .modal-dialog{
+        max-width: 575px;
+        .modal-header{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0px;
+            border: none;
+            .modal-title{
+                color: #101B25;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -1%;
+                text-align: center;
+
+            }
+        }
+        .modal-content{
+            border-radius: 20px;
+            padding: 16px;
+            .product-details{
+                padding-bottom: 0px;
+                .slider-sec{
+                    width: 100%;
+                    border: 1px solid #B9D3EB;
+                    padding: 12px;
+                    border-radius: 12px;
+                }
+            } 
+
+            .product-card{
+                border: none;
+                margin-top: 0px;
+                .product-header{
+                    .product-price{
+                        font-size: 18px;
+                        color: #415362;
+                        .price-txt{
+                            font-weight: 500;
+                            color: #101B25;
+                        }
+                    }
+                } 
+                .product-details{
+                    .details-heading{
+                        color: #101B25;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0%;
+                        border: none;
+                        padding-bottom: 16px;
+                        margin-bottom: 0px;
+                        @media($sm-1679){
+                            font-size: 14px;
+                        }
+                        @media($sm-1481){
+                            font-size: 13px;
+                        }
+                        @media($sm-1199){
+                            font-size: 12px;
+                        }
+
+                    }
+                } 
+            }
+        }
+        .modal-footer{
+            flex-wrap: wrap;
+            .btn{
+                width: 100%;
+                height: 44px;
+                border-radius: 50px;
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0%;
+                color: #101B25;
+                background: #F4F5F6;
+                border: 1px solid #F4F5F6;
+                margin: 12px 0px;
+                .ico{
+                    margin-right: 10px;
+                }
+                &.btn-send{
+                    background: #5090CC;
+                    border: 1px solid #5090CC;
+                    color: #fff;
+                     &:hover{
+                        color: #101B25;
+                        background: #F4F5F6;
+                        border: 1px solid #F4F5F6;
+                        
+                    }
+                }
+                &:hover{
+                   background: #5090CC;
+                    border: 1px solid #5090CC;
+                    color: #fff; 
+                    img{
+                            filter: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(84%) hue-rotate(253deg) brightness(118%) contrast(100%);
+                        }
+                }
+
+            }
+        }
+    }
+}
