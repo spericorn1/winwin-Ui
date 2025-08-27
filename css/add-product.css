@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.add-product-form .top-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1.2%;
+  color: #101B25;
+}
+@media (max-width: 1679px) {
+  .add-product-form .top-title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .top-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .top-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .add-product-form .top-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .add-product-form .top-title {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.add-product-form .form-outer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-product-form .form-outer .lft-sec {
+  width: 543px;
+}
+.add-product-form .form-outer .lft-sec .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #101B25;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp {
+  margin-bottom: 30px;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp {
+  border: 1px dashed #CAD0D4;
+  min-height: 148px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec {
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  margin: auto;
+  padding-bottom: 12px;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec img {
+  object-fit: cover;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .txt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -1%;
+  text-align: center;
+  color: #101B25;
+  padding-top: 12px;
+}
+.add-product-form .form-outer .lft-sec .for-wrp .form-grp .text-sec {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #415362;
+}
+.add-product-form .form-outer .lft-sec .form-wrp {
+  border: 1px solid #5090CC;
+  border-radius: 100px;
+  padding: 2px;
+}
+.add-product-form .form-outer .lft-sec .form-wrp .form-control {
+  height: 52px;
+  border: 1px solid #B8C4D0;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #101B25;
+  border-left: none;
+  padding-left: 20px;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .form-wrp .form-control {
+    font-size: 14px;
+    line-height: 22px;
+    height: 48px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .lft-sec .form-wrp .form-control {
+    font-size: 13px;
+    line-height: 20px;
+    height: 42px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .form-wrp .form-control {
+    height: 36px;
+  }
+}
+.add-product-form .form-outer .lft-sec .form-wrp .form-control:hover, .add-product-form .form-outer .lft-sec .form-wrp .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.add-product-form .form-outer .rt-sec {
+  flex: 1;
+  padding-left: 100px;
+}
+
+/*# sourceMappingURL=add-product.css.map */

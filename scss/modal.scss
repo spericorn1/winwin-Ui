@@ -105,7 +105,19 @@
     }
     .modal-icon{
         text-align: center;
-        margin-bottom: 20px;
+        position: relative;
+        width: 48px;
+        margin: 0 auto 20px;
+        .accept-badge{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            right: -5px;
+            top: -4px;
+            img{
+                max-width: 100%;
+            }
+        }
     }
     h2{
         color: #101B25;

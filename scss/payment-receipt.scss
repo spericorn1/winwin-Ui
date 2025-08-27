@@ -1,0 +1,171 @@
+@import "partials";
+
+.payment-reciept-cover{
+    margin: 0 auto;
+    max-width: 410px;
+    padding: 40px 0;
+    @media ($sm-1679) {
+        padding: 30px 0;
+    }
+    .success-title{
+        text-align: center;
+        margin-bottom: 30px;
+        @media ($sm-1679) {
+            margin-bottom: 20px;
+        }
+        .success-img{
+            margin-bottom: 20px;
+            @media ($sm-1679) {
+                margin-bottom: 15px;
+            }
+        }
+        p{
+            color: #415362;
+            font-size: 16px;
+            margin-bottom: 8px;
+            @media ($sm-1679) {
+                font-size: 15px;
+            }
+            @media ($sm-579) {
+                font-size: 14px;
+            }
+        }
+        h4{
+            font-size: 24px;
+            font-weight: 600;
+            color: #101B25;
+            margin-bottom: 0;
+            @media ($sm-1679) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .payment-reciept-block{
+        border: 1px solid #E0E4EB;
+        background-size: 100%;
+        position: relative;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 25px 15px 15px;
+        z-index: 1;
+        &::before, &:after{
+            content: '';
+            width: 35px;
+            height: 85px;
+            display: block;
+            position: absolute;
+            left: -2px;
+            top: 45px;
+            background-repeat: no-repeat;
+            background-image: url('../img/recp-left-bg.svg');
+            z-index: -1;
+        }
+        &:after{
+            background-image: url('../img/recp-right-bg.svg');
+            left: auto;
+            right: -2px;
+            background-position: center right;
+        }
+        .recp-title{
+            text-align: center;
+            margin-bottom: 35px;
+            @media ($sm-1679) {
+                margin-bottom: 25px;
+            }
+            h4{
+                font-size: 18px;
+                font-weight: 500;
+                color: #101B25;
+                margin-bottom: 4px;
+                @media ($sm-1679) {
+                    font-size: 17px;
+                }
+                @media ($sm-579) {
+                    font-size: 16px;
+                }
+            }
+            p{
+                color: #415362;
+                margin-bottom: 0;
+                padding: 0 25px;
+                @media ($sm-1679) {
+                    font-size: 15px;
+                }
+                @media ($sm-579) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .det-table-block{
+            border-radius: 12px;
+            background-color: #F8F9FA;
+            padding: 20px;
+            h5{
+                margin-bottom: 15px;
+                color: #101B25;
+                font-size: 16px;
+                font-weight: 500;
+                @media ($sm-1679) {
+                    font-size: 15px;
+                }
+            }
+            .val-table{
+                width: 100%;
+                tr{
+                    td{
+                        padding: 6px 0;
+                        font-size: 14px;
+                        @media ($sm-1679) {
+                            font-size: 13px;
+                        }
+                        &:first-child{
+                            color: #415362;
+                        }
+                        &:last-child{
+                            font-weight: 500;
+                            color: #101B25;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            .tot-wrapper{
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 16px;
+                border-top: 1px solid #ECEDEF;
+                margin-top: 10px;
+                .tot-label{
+                    color: #101B25;
+                    font-size: 18px;
+                    font-weight: 500;
+                    @media ($sm-1679) {
+                        font-size: 17px;
+                    }
+                    @media ($sm-479) {
+                        font-size: 14px;
+                    }
+                }
+                .tot-val{
+                    color: #101B25;
+                    font-size: 18px;
+                    font-weight: 500;
+                    @media ($sm-1679) {
+                        font-size: 17px;
+                    }
+                    @media ($sm-479) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .payment-method{
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #415362;
+            padding-top: 20px;
+        }
+    }
+}
