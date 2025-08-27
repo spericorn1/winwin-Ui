@@ -31,8 +31,17 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pswdChangedSuccsModal">
             password changed successfully
         </button>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pswdChangedSuccsModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#picCropModal">
             Crop Profile Picture
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#makepaymentModal">
+            make payment
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#makepaymenteditModal">
+            make payment edit
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#picCropModal">
+            Checkout
         </button>
      </div>
 
@@ -145,7 +154,7 @@
     </div>
 
     <!-- Crop profile picture modal -->
-    <div class="modal custom-modal img-crop-modal fade show" style="display: block;" id="pswdChangedSuccsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal img-crop-modal fade" id="picCropModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 
@@ -157,18 +166,95 @@
                 </div>
                 <div class="modal-body">
                     <div class="img-cover">
+                        <img src="img/crop-img.png" alt="">
+                    </div>
+                    <div class="btn-block d-flex">
+                        <div class="left-block">
+                            <button type="button" class="btn modal-btn-1 border-btn hover-opc">Retake</button>
+                        </div>
+                        <div class="right-block d-flex">
+                            <button type="button" class="btn modal-btn-1 hover-opc">Save</button>
+                            <button type="button" class="btn modal-btn-1 border-btn ms-2 hover-opc">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                    </div>
-                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
-                        <img src="img/modal-close.svg" alt="">
-                    </button>
+    <!-- ready make payment modal -->
+    <div class="modal custom-modal info-modal make-payment fade" id="makepaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
                     <div class="modal-icon">
-                        <img src="img/sucs-grn.svg" alt="">
+                        <img src="./img/payment-modal-icon.svg" alt="">
                     </div>
-                    <h2>Password changed Successfully</h2>
-                    <p>Your password has been successfully change. You can now continue.</p>
-                    <div class="btn-block">
-                        <button type="button" class="btn modal-btn-1 hover-opc">Back to log in</button>
+                    <h2>Ready to Make Your Payment?</h2>
+                    <p>Double-check everything and hit confirm when you’re good to go!</p>
+                    <div class="confirmation-blk">
+                        <div class="conscent-box">
+                            <label class="form-check-label" for="act1"> 
+                                <input class="form-check-input" type="checkbox" name="act" id="act1" value="option1">
+                            </label>
+                            <span class="txt">
+                                I confirm that the information provided is correct and that I/we will comply with all procedures outlined in this legal document.
+                            </span>
+                        </div>
+                        <div class="signed-doc">
+                            <div class="sign-wrp">
+                                <img src="./img/sign.png" alt="">
+                            </div>
+                            <button class="btn">
+                                <img src="./img/check.svg" alt="">
+                            </button>
+                            <button class="btn">
+                                 <img src="./img/cancel.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="date">Date: 24-09-2023</p>
+                         <div class="btn-block btn-block-2-col d-flex">
+                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ready make payment modal -->
+    <div class="modal custom-modal info-modal make-payment fade" id="makepaymenteditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="modal-icon">
+                        <img src="./img/payment-modal-icon.svg" alt="">
+                    </div>
+                    <h2>Ready to Make Your Payment?</h2>
+                    <p>Double-check everything and hit confirm when you’re good to go!</p>
+                    <div class="confirmation-blk">
+                        <div class="conscent-box">
+                            <label class="form-check-label" for="act1"> 
+                                <input class="form-check-input" type="checkbox" name="act" id="act1" value="option1">
+                            </label>
+                            <span class="txt">
+                                I confirm that the information provided is correct and that I/we will comply with all procedures outlined in this legal document.
+                            </span>
+                        </div>
+                        <div class="signed-doc">
+                            <div class="sign-wrp">
+                                <img src="./img/sign.png" alt="">
+                            </div>
+                            <button class="btn">
+                                <img src="./img/sign-edit.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="date">Date: 24-09-2023</p>
+                         <div class="btn-block btn-block-2-col d-flex">
+                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Confirm</button>
+                        </div>
                     </div>
                 </div>
             </div>

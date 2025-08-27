@@ -31,6 +31,11 @@
                 }
             }
         }
+        .border-btn{
+            background-color: #fff !important;
+            border: solid 1px #DFE1E3 !important;
+            color: #101B25 !important;
+        }
         &.btn-block-2-col{
             justify-content: space-between;
             @media ($sm-479) {
@@ -145,6 +150,9 @@
 .img-crop-modal{
     .modal-header{
         padding: 24px;
+        @media ($sm-1679) {
+            padding: 20px;
+        }
         .modal-close-btn{
             position: static;
             margin-left: auto;
@@ -159,11 +167,144 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        max-height: 284px;
         background-color: #6B757F;
         img{
             max-width: 100%;
-            max-width: 100%;
+            max-height: 285px;
+            @media ($sm-579) {
+                max-height: 240px;
+            }
+        }
+    }
+    .modal-body{
+        padding: 0;
+    }
+    .btn-block{
+        border-top: 1px solid #DFE1E3;
+        padding: 24px;
+        align-items: center;
+        @media ($sm-1679) {
+            padding: 20px;
+        }
+        .modal-btn-1{
+            padding: 8px 18px;
+            height: auto;
+            width: auto;
+        }
+        .right-block{
+            margin-left: auto;
+        }
+    }
+}
+
+.make-payment{
+    .modal-dialog{
+        @media (min-width: 430px) {
+            max-width: 411px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .modal-icon{
+        text-align: center;
+        margin-bottom: 20px;
+        img{
+            width: 48px;
+        }
+    }
+    h2{
+        color: #101B25;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        @media ($sm-1679) {
+            font-size: 22px;
+        }
+        @media ($sm-479) {
+            font-size: 20px;
+        }
+    }
+    p{
+        color: #415362;
+        max-width: 90%;
+        margin: 0 auto 20px;
+        @media ($sm-1679) {
+            font-size: 15px;
+        }
+    }
+    .date{
+        color: #101B25;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+        padding-top: 12px;
+        @media ($sm-1199){
+            font-size: 14px;
+        }
+        @media ($sm-579){
+            font-size: 13px;
+        }
+    }
+    .signed-doc{
+        display: flex;
+        padding-top: 20px;
+        .sign-wrp{
+            border-radius: 8px;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            flex: 1;
+            margin-right: 8px;
+            img{
+                max-height: 24px;
+            }
+        }
+        .btn{
+            background-color: #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 8px;
+        }
+    }
+    .confirmation-blk{
+        background-color: #F4F5F6;
+        border-radius: 16px;
+        padding: 16px;
+        .conscent-box{
+            display: flex;
+            justify-content: flex-start;
+                .form-check-input {
+                border: solid 2px #5090CC;
+                margin: 0;
+                margin-right: 10px;
+                box-shadow: none;
+                outline: 0;
+                &:checked[type=checkbox]{
+                    background-color: #7B8D9F;
+                }
+            }
+             
+        }
+        .txt{
+            text-align: left;
+            color: #415362;
+            padding-left: 12px;
+            font-size: 14px;
+        }
+        .btn-block .modal-btn-1.modal-btn-border{
+            background-color: #fff;
+        }
+    }
+    .modal-body{
+        padding: 20px 16px;
+        @media (max-width: 420px) {
+            padding: 20px;
         }
     }
 }
