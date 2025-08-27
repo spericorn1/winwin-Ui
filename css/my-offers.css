@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.my-offer-details .product-details {
+  padding-bottom: 20px; }
+.my-offer-details .offer-profile-wrapper {
+  border-top: solid 1px #ECEDEF;
+  border-bottom: solid 1px #ECEDEF;
+  padding: 24px 0;
+  align-items: center; }
+  .my-offer-details .offer-profile-wrapper .left-block {
+    padding-right: 10px;
+    align-items: center; }
+    .my-offer-details .offer-profile-wrapper .left-block .prof-img {
+      flex-shrink: 0;
+      margin-right: 12px; }
+      .my-offer-details .offer-profile-wrapper .left-block .prof-img .prof-avt {
+        width: 52px;
+        height: 52px;
+        object-fit: cover; }
+    .my-offer-details .offer-profile-wrapper .left-block .name-det-block .name-det .name {
+      display: inline-block;
+      color: #101B25;
+      font-size: 18px;
+      font-weight: 600;
+      margin-right: 8px; }
+    .my-offer-details .offer-profile-wrapper .left-block .name-det-block .name-det .rating {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      color: #415362;
+      font-weight: 500; }
+      .my-offer-details .offer-profile-wrapper .left-block .name-det-block .name-det .rating img {
+        width: 14px;
+        margin-top: -2px; }
+      .my-offer-details .offer-profile-wrapper .left-block .name-det-block .name-det .rating .rw {
+        font-weight: 400; }
+    .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp {
+      align-items: center; }
+      .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .score {
+        display: inline-flex;
+        color: #101B25;
+        font-size: 14px;
+        margin-right: 8px; }
+        .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .score .val {
+          font-weight: 500; }
+      .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .contact-seller {
+        display: inline-flex;
+        align-items: center;
+        color: #5090CC;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: underline; }
+        .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .contact-seller::before {
+          content: '';
+          margin-right: 8px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #101B25; }
+  .my-offer-details .offer-profile-wrapper .right-block {
+    flex-shrink: 0;
+    margin-left: auto; }
+    .my-offer-details .offer-profile-wrapper .right-block .view-prof-btn {
+      padding: 8px 18px; }
+.my-offer-details .charges-section .charges-header {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DFE1E3;
+  color: #101B25; }
+.my-offer-details .charges-section .charge-row .charge-label, .my-offer-details .charges-section .charge-row .total-label {
+  font-size: 16px;
+  color: #101B25; }
+.my-offer-details .charges-section .charge-row .charge-value, .my-offer-details .charges-section .charge-row .total-value {
+  font-weight: 500;
+  color: #101B25; }
+.my-offer-details .det-link-cover .det-link-block {
+  margin-bottom: 15px; }
+  .my-offer-details .det-link-cover .det-link-block .det-link {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    color: #101B25;
+    font-size: 16px;
+    font-weight: 500; }
+    .my-offer-details .det-link-cover .det-link-block .det-link img {
+      margin-left: auto; }
+
+/*# sourceMappingURL=my-offers.css.map */
