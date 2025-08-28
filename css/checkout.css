@@ -15,6 +15,10 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+body {
+  background: #f8f9fa;
+}
+
 .header-wrap .head-inner-wrap.checkout-head-inner .logo-wrap {
   width: auto;
   padding: 0;
@@ -1263,6 +1267,33 @@
   padding: 25px 15px;
   border: 1px solid #e0e4eb;
   border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+}
+.payment-checkout-wrap .content-wrap .receipt-wrap:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/bg-pattern.png) no-repeat top left;
+  width: 56px;
+  height: 162px;
+  content: "";
+  z-index: 1;
+  background-size: 22px;
+  margin: 32px 0 0 -2px;
+}
+.payment-checkout-wrap .content-wrap .receipt-wrap:after {
+  position: absolute;
+  right: -36px;
+  top: 0;
+  background: url(../img/bg-pattern.png) no-repeat top right;
+  width: 56px;
+  height: 162px;
+  content: "";
+  z-index: 1;
+  background-size: 22px;
+  margin: 32px 0 0 -2px;
+  transform: scaleX(-1);
 }
 @media (max-width: 1679px) {
   .payment-checkout-wrap .content-wrap .receipt-wrap {
@@ -1312,6 +1343,8 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 9;
 }
 @media (max-width: 1679px) {
   .payment-checkout-wrap .content-wrap .receipt-wrap .re-summary-wrap {
