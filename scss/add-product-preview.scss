@@ -58,12 +58,18 @@
 
     .form-outer {
         display: flex;
+        @media ($sm-579){
+            flex-direction: column;
+        }
         // align-items: center;
         // justify-content: space-between;
 
         .lft-sec {
             // width: 543px;
             flex: 1;
+            @media ($sm-579){
+                width: 100%;
+            }
 
             .preview-img-sec {
                 width: 100%;
@@ -542,7 +548,21 @@
         .rt-sec {
             width: 433px;
             margin-left: 85px;
-
+            @media ($sm-1199){
+                margin-left: 60px;
+            }
+            @media ($sm-991){
+                margin-left: 40px;
+                width: 400px;
+            }
+            @media ($sm-767){
+                margin-left: 20px;
+                width: 360px;
+            }
+            @media ($sm-579){
+                width: 100%;
+                margin-left: 0;
+            }
             .preview-card {
                 background: #f7fafd;
                 border-radius: 16px;
@@ -649,6 +669,7 @@
 
                         @media ($sm-579) {
                             height: 240px;
+                            width: 100%;
                         }
 
                         img {
