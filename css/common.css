@@ -49,18 +49,23 @@ a {
   font-size: 14px;
   font-weight: 500;
   padding: 12px 15px;
-  border-radius: 30px; }
+  border-radius: 30px;
+  transition: .3s; }
   .btn-1.modal-btn-border {
     background-color: transparent;
     border: solid 1px #DFE1E3;
     color: #101B25; }
     .btn-1.modal-btn-border:hover {
-      border-color: #101B25; }
+      border-color: rgba(16, 27, 37, 0.6) !important; }
+  .btn-1:hover {
+    opacity: .8; }
 
 .border-btn {
   background-color: #fff !important;
   border: solid 1px #DFE1E3 !important;
   color: #101B25 !important; }
+  .border-btn:hover {
+    border-color: rgba(16, 27, 37, 0.6) !important; }
 
 .overlay {
   position: fixed;

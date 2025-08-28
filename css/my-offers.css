@@ -19,6 +19,14 @@
   .custom-container-my-offer {
     max-width: 1062px; } }
 
+@media (max-width: 991px) {
+  .my-offer-details .right-sec {
+    margin-bottom: 25px; } }
+.my-offer-details .info-img {
+  margin-left: 2px; }
+  @media (max-width: 1679px) {
+    .my-offer-details .info-img {
+      width: 14px; } }
 @media (max-width: 579px) {
   .my-offer-details .web-label {
     display: none; } }
@@ -203,5 +211,46 @@
         font-size: 14px; } }
     .my-offer-details .det-link-cover .det-link-block .det-link img {
       margin-left: auto; }
+
+.vw-offer-usr-block {
+  align-items: center;
+  display: flex;
+  margin-bottom: 24px; }
+  @media (max-width: 1679px) {
+    .vw-offer-usr-block {
+      margin-bottom: 20px; } }
+  .vw-offer-usr-block .prof-img {
+    flex-shrink: 0;
+    margin-right: 15px; }
+    .vw-offer-usr-block .prof-img img {
+      width: 48px;
+      height: 48px;
+      object-fit: cover; }
+  .vw-offer-usr-block .det-block h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #101B25;
+    margin-bottom: 0; }
+    @media (max-width: 1679px) {
+      .vw-offer-usr-block .det-block h4 {
+        font-size: 16px; } }
+  .vw-offer-usr-block .det-block p {
+    font-size: 16px;
+    color: #415362;
+    margin: 0; }
+    @media (max-width: 1679px) {
+      .vw-offer-usr-block .det-block p {
+        font-size: 14px; } }
+
+.charges-section .sec-sep {
+  border-bottom: solid 1px #DFE1E3; }
+
+.product-details .offer-btn-block .btn-1 {
+  width: 100%;
+  border: none;
+  margin-bottom: 8px;
+  box-shadow: 0px 2px 4px 0px #2A455D0F; }
+  .product-details .offer-btn-block .btn-1.reject {
+    color: #EF4444 !important; }
 
 /*# sourceMappingURL=my-offers.css.map */
