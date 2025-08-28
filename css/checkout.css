@@ -1203,6 +1203,7 @@
   z-index: 1;
   background-size: 22px;
   margin: 32px 0 0 -2px;
+  pointer-events: none;
 }
 .payment-checkout-wrap .content-wrap .receipt-wrap:after {
   position: absolute;
@@ -1216,6 +1217,7 @@
   background-size: 22px;
   margin: 32px 0 0 -2px;
   transform: scaleX(-1);
+  pointer-events: none;
 }
 @media (max-width: 1679px) {
   .payment-checkout-wrap .content-wrap .receipt-wrap {
