@@ -468,6 +468,81 @@
 .add-product-form .form-outer .lft-sec .tags-input .tag .remove-tag:hover {
   color: #000;
 }
+.add-product-form .form-outer .lft-sec .split-blk {
+  display: flex;
+  gap: 20px;
+}
+.add-product-form .form-outer .lft-sec .split-blk .form-grp {
+  flex: 0 0 50%;
+}
+.add-product-form .form-outer .lft-sec .split-blk .round-wrp {
+  height: 52px;
+  border: 1px solid #dfe1e3;
+  border-radius: 100px !important;
+  display: flex;
+  align-items: center;
+}
+.add-product-form .form-outer .lft-sec .split-blk .round-wrp .form-select {
+  width: 100px;
+  border: none;
+  border-radius: 100px;
+  color: #7B8D9F;
+}
+.add-product-form .form-outer .lft-sec .split-blk .round-wrp .size-wrp {
+  margin-left: 8px;
+  border-left: 1px solid #DFE1E3;
+  padding-left: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #7B8D9F;
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .split-blk .round-wrp .size-wrp {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .add-product-form .form-outer .lft-sec .split-blk .round-wrp .size-wrp {
+    font-size: 13px;
+  }
+}
+.add-product-form .form-outer .lft-sec .item-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #101b25;
+  line-height: 28px;
+  letter-spacing: -1.5%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .item-title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .lft-sec .item-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .item-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .add-product-form .form-outer .lft-sec .item-title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 579px) {
+  .add-product-form .form-outer .lft-sec .item-title {
+    font-size: 14px;
+  }
+}
+.add-product-form .form-outer .lft-sec .item-title span {
+  color: #415362;
+}
 .add-product-form .form-outer .lft-sec .quantity {
   display: flex;
   align-items: center;

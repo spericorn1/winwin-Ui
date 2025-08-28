@@ -465,7 +465,71 @@
                     }
                 }
             }
+            .split-blk{
+                display: flex;
+                gap: 20px;
+                .form-grp{
+                    flex: 0 0 50%;
+                }
+                .round-wrp{
+                    height: 52px;
+                    border: 1px solid #dfe1e3;
+                    border-radius: 100px !important;
+                    display: flex;
+                    align-items: center;
+                    .form-select{
+                        width: 100px;
+                        border: none;
+                        border-radius: 100px;
+                        color: #7B8D9F;
+                    }
+                    .size-wrp{
+                        margin-left: 8px;
+                        border-left: 1px solid #DFE1E3;
+                        padding-left: 12px;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        color: #7B8D9F;
+                        @media ($sm-1199){
+                            font-size: 14px;
+                        }
+                        @media ($sm-767){
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .item-title {
+                        font-weight: 600;
 
+                        font-size: 24px;
+                        color: #101b25;
+                        line-height: 28px;
+                        letter-spacing: -1.5%;
+                        margin-bottom: 20px;
+
+                        @media ($sm-1679) {
+                            font-size: 22px;
+                        }
+
+                        @media ($sm-1481) {
+                            font-size: 20px;
+                        }
+
+                        @media ($sm-1199) {
+                            font-size: 18px;
+                            margin-bottom: 15px;
+                        }
+                        @media ($sm-991) {
+                            font-size: 16px;
+                        }
+                        @media ($sm-579) {
+                            font-size: 14px;
+                        }
+                        span{
+                            color: #415362;
+                        }
+                    }
             .quantity {
                 display: flex;
                 align-items: center;
