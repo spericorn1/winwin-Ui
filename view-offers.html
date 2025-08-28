@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Offers</title>
+    <title>View Offers</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -140,10 +140,10 @@
         <div class="container custom-container-my-offer">
             <div class="breadcrumb">
                 <ul class="list">
-                    <li><a href="#">Marketplace</a></li>
-                    <li><a href="#">Product Details</a></li>
-                    <li><a href="#">Send Offer</a></li>
-                    <li class="active">My Offer</li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Received Offers</a></li>
+                    <li class="active">Offer from Austin</li>
                 </ul>
             </div>
             <div class="product-details my-offer-details">
@@ -188,40 +188,7 @@
                                     design and long battery life.
                                     The 13-inch MacBook Air...<span class="see-more">See full description</span>
                                 </p>
-                            </div>
-
-                            <div class="offer-profile-wrapper d-flex">
-                                <div class="left-block d-flex">
-                                    <div class="prof-img">
-                                        <img class="prof-avt" src="img/prof-avatar.svg" alt="">
-                                    </div>
-                                    <div class="name-det-block">
-                                        <div class="name-det d-flex">
-                                            <span class="name">
-                                                Stephen Tucker
-                                            </span>
-                                            <span class="rating">
-                                                <img src="img/star-fill.svg" alt=""> 4.9 <span class="rw">(140
-                                                    <span class="web-label">Review</span>)</span>
-                                            </span>
-                                        </div>
-                                        <div class="trust-score-wrp d-flex">
-                                            <span class="score">
-                                                TrustScore - <span class="val">455/1000</span>
-                                            </span>
-                                            <a class="contact-seller">
-                                                <span class="web-label">Contact Seller</span>
-                                                <img class="btn-img-mob" src="img/contact-seller.svg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="right-block">
-                                    <a href="#" class="view-prof-btn btn-1 border-btn">
-                                       <span class="web-label">View Profile</span>
-                                       <img class="link-icon-mob" src="img/a-link.svg" alt="">
-                                    </a>
-                                </div>
+                                <p class="product-price">Base Price: <span class="price-txt"><span>$299</span> <span class="dot"></span><span>$29/m</span></span></p>
                             </div>
 
                             <div class="product-details">
@@ -267,21 +234,58 @@
                         <div class="product-info">
 
                             <!-- charges-section.html -->
+                            <div class="vw-offer-usr-block d-flex">
+                                <div class="prof-img">
+                                    <img class="prof-avt" src="img/prof-avatar.svg" alt="">
+                                </div>
+                                <div class="det-block">
+                                    <h4>Johnson  Austin</h4>
+                                    <p>Trust Score - 756</p>
+                                </div>
+                            </div>
+
                             <div class="charges-section">
-                                <div class="charges-header">Submitted Offer</div>
-                                <div class="charges-inner">
+                                <div class="charges-header">Received Offer</div>
+                                <div class="charges-inner sec-sep">
                                     <div class="charge-row">
-                                        <span class="charge-label">Tax Amount:</span>
+                                        <span class="charge-label">Base Price</span>
                                         <span class="charge-value">$8.99</span>
                                     </div>
 
                                     <div class="charge-row">
-                                        <span class="charge-label">Shipping Charge:</span>
+                                        <span class="charge-label">Down Payment today <img class="info-img" src="img/info-icon.svg" alt=""></span>
+                                        <span class="charge-value free">$18.99</span>
+                                    </div>
+
+                                    <div class="charge-row">
+                                        <span class="charge-label">Installment Amount</span>
+                                        <span class="charge-value">$0.00</span>
+                                    </div>
+                                    <div class="charge-row">
+                                        <span class="charge-label">Total Installments</span>
+                                        <span class="charge-value">$8.00</span>
+                                    </div>
+
+                                    <div class="charge-row">
+                                        <span class="charge-label">Payment Frequency</span>
+                                        <span class="charge-value">$4.00</span>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="charges-inner">
+                                    <div class="charge-row">
+                                        <span class="charge-label">Tax Amount</span>
+                                        <span class="charge-value">$8.99</span>
+                                    </div>
+
+                                    <div class="charge-row">
+                                        <span class="charge-label">Shipping Charge <img class="info-img" src="img/info-icon.svg" alt=""></span>
                                         <span class="charge-value free">Free Shipping</span>
                                     </div>
 
                                     <div class="charge-row">
-                                        <span class="charge-label">WinWinX Fee:</span>
+                                        <span class="charge-label">WinWinX Fee</span>
                                         <span class="charge-value">$0.00</span>
                                     </div>
 
@@ -297,17 +301,10 @@
                                     <span class="total-value">$140.00</span>
                                 </div>
 
-                                <div class="det-link-cover">
-                                    <div class="det-link-block">
-                                        <a href="#" class="det-link">
-                                            View Product Listing <img src="img/a-link.svg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="det-link-block">
-                                        <a href="#" class="det-link">
-                                            Add Bank Account <img src="img/a-link.svg" alt="">
-                                        </a>
-                                    </div>
+                                <div class="offer-btn-block">
+                                    <button class="btn-1">Accept Offer</button>
+                                    <button class="btn-1 border-btn">Counteroffer</button>
+                                    <button class="btn-1 border-btn reject">Reject</button>
                                 </div>
 
                             </div>
