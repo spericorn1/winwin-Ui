@@ -43,19 +43,26 @@ a{
     font-weight: 500;
     padding: 12px 15px;
     border-radius: 30px;
+    transition: .3s;
     &.modal-btn-border{
         background-color: transparent;
         border: solid 1px #DFE1E3;
         color: #101B25;
         &:hover{
-            border-color: #101B25;
+            border-color: rgba($color: #101B25, $alpha: 0.6) !important;
         }
+    }
+    &:hover{
+        opacity: .8;
     }
 }
 .border-btn{
     background-color: #fff !important;
     border: solid 1px #DFE1E3 !important;
     color: #101B25 !important;
+    &:hover{
+        border-color: rgba($color: #101B25, $alpha: 0.6) !important;
+    }
 }
 
  .overlay {

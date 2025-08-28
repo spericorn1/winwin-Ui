@@ -80,6 +80,11 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .add-product-form .form-outer {
+    flex-wrap: wrap;
+  }
+}
 .add-product-form .form-outer .lft-sec {
   width: 543px;
 }
@@ -112,8 +117,7 @@
   padding-bottom: 12px;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .txt {
   font-weight: 600;
@@ -459,11 +463,6 @@
     font-size: 13px;
   }
 }
-@media (max-width: 1481px) {
-  .add-product-form .form-outer .lft-sec .add-btn {
-    font-size: 12px;
-  }
-}
 .add-product-form .form-outer .lft-sec .add-btn .ico {
   flex-shrink: 0;
   margin-right: 2px;
@@ -471,7 +470,6 @@
 .add-product-form .form-outer .rt-sec {
   flex: 1;
   padding-left: 100px;
-<<<<<<< HEAD
 }
 .add-product-form .form-outer .rt-sec .preview-card {
   background: #F7FAFD;
@@ -582,6 +580,3 @@
 }
 
 /*# sourceMappingURL=add-product.css.map */
-=======
-}/*# sourceMappingURL=add-product.css.map */
->>>>>>> 497a74ee57406005b67a085ab0791bf3bb111415

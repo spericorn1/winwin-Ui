@@ -53,8 +53,12 @@
         display: flex;
         // align-items: center;
         justify-content: space-between;
+        @media($sm-767){
+            flex-wrap: wrap;
+        }
         .lft-sec{
             width: 543px;
+            // @media
             .form-label{
      
                 font-weight: 500;
@@ -451,7 +455,7 @@
             font-size: 13px;
         }
         @media($sm-1481){
-            font-size: 12px;
+            // font-size: 12px;
         }
         .ico{
             flex-shrink: 0;
