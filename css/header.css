@@ -246,4 +246,90 @@
   color: #101b25;
 }
 
+/* Check out header start */
+.header-wrap .head-inner-wrap.checkout-head-inner .logo-wrap {
+  width: auto;
+  padding: 0;
+}
+@media (max-width: 479px) {
+  .header-wrap .head-inner-wrap.checkout-head-inner .logo-wrap {
+    width: 100%;
+  }
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap {
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap {
+    margin: 0;
+    margin-left: auto;
+    justify-content: end;
+  }
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list {
+  margin: 20px 0 0 -80px;
+  width: 410px;
+}
+@media (max-width: 1679px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    margin-left: -80px;
+  }
+}
+@media (max-width: 991px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 340px;
+    margin-left: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 260px;
+  }
+}
+@media (max-width: 479px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li {
+  width: 33.33333%;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li:nth-child(1) .name {
+  left: 0;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li:last-child .name {
+  left: inherit;
+  right: 0;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li .name {
+  position: absolute;
+  top: -20px;
+  left: -22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #7b8d9f;
+}
+@media (max-width: 1679px) {
+  .header-wrap .head-inner-wrap .checkout-step-wrap .list li .name {
+    font-size: 12px;
+  }
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li .round {
+  background: #fff;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active:after {
+  background: #1bb746;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active .name {
+  color: #101b25;
+}
+.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active .round:after {
+  background: #1bb746;
+  border-color: #1bb746;
+}
+
+/* Check out header ends */
+
 /*# sourceMappingURL=header.css.map */
