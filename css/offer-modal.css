@@ -79,11 +79,6 @@
     font-size: 13px;
   }
 }
-@media (max-width: 1199px) {
-  .offer-modal .modal-dialog .modal-content .product-card .product-details .details-heading {
-    font-size: 12px;
-  }
-}
 .offer-modal .modal-dialog .modal-footer {
   flex-wrap: wrap;
 }
@@ -125,4 +120,6 @@
 }
 .offer-modal .modal-dialog .modal-footer .btn:hover img {
   filter: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(84%) hue-rotate(253deg) brightness(118%) contrast(100%);
-}/*# sourceMappingURL=offer-modal.css.map */
+}
+
+/*# sourceMappingURL=offer-modal.css.map */
