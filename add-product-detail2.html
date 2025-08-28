@@ -162,23 +162,79 @@
                                 </select>
                             </div>
                             </div>
+                             <div class="top-sec">
+                                <div class="top-title">Variants <span>(optional)</span></div>
+                            </div>
                             <div class="form-grp">
-                             <label class="form-label">Enter SKU code (optional)</label>
+                             <label class="form-label">Quantity</label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="10">
+                                <span class="error-msg">error  msg</span>
+                            </div>
+                             </div> 
+                             <div class="form-grp">
+                             <label class="form-label">Model (Optional)</label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="Series - new">
+                                <span class="error-msg">error  msg</span>
+                            </div>
+                             </div> 
+                             <div class="row">
+                                <!-- Color -->
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                    <label class="form-label">Color (Optional)</label>
+                                    <div class="form-wrp input-group">
+                                        <select class="form-select form-control">
+                                        <option selected>Black</option>
+                                        <option value="1">White</option>
+                                        <option value="2">Blue</option>
+                                        <option value="3">Red</option>
+                                        </select>
+                                        <span class="error-msg text-danger small">error msg</span>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Size -->
+                                <div class="col-md-6">
+                                    <div class="form-grp mb-3">
+                                    <label class="form-label">Size (Optional)</label>
+                                    <div class="form-wrp input-group">
+                                        <select class="form-select form-control size-blck" >
+                                        <option selected>Letter</option>
+                                        <option value="1">Number</option>
+                                        </select>
+                                        <input type="text" class="form-control size-chart" placeholder="XS - 4XL">
+                                        <span class="error-msg">error msg</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                            <div class="form-grp">
+                             <label class="form-label">SKU code <span>(Optional)</span></label>
                             <div class="form-wrp input-group">
                                 <input type="text" class="form-control" placeholder="PRD-12345">
                                 <span class="error-msg">error  msg</span>
                             </div>
-                        </div> 
-                         <div class="form-grp">
-                            <label class="form-label">Condition</label>
-                            <div class="form-wrp">
-                                <select class="form-control form-select">
-                                <option>New</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
+                             </div> 
+
+                            <div class="form-grp">
+                             <label class="form-label">Material<span>(Optional)</span></label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="Stainless Steel">
+                                <span class="error-msg">error  msg</span>
                             </div>
+                             </div> 
+                             <div class="form-grp">
+                             <label class="form-label">Pattern<span>(Optional)</span></label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="PRD-12345">
+                                <span class="error-msg">error  msg</span>
                             </div>
+                             </div> 
+                      
                         
 
                                  <div class="form-grp">
@@ -198,7 +254,7 @@
                                 <span class="error-msg">error  msg</span>
                             </div>
                         </div> 
-                         <button class="add-btn btn"><span class="ico"><img src="img/plus.svg" alt="plus"></span>Add Variant</button>
+                         <button class="add-btn btn"><span class="ico"><img src="img/plus.svg" alt="plus"></span>Add More Variant</button>
                             <button class="continue-btn btn"> Continue</button>
                     </form>
                 </div>
