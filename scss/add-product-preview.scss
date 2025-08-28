@@ -468,8 +468,15 @@
             .split-blk{
                 display: flex;
                 gap: 20px;
+                @media ($sm-991){
+                    flex-direction: column;
+                    gap: 0;
+                }
                 .form-grp{
                     flex: 0 0 50%;
+                     @media ($sm-991){
+                        flex: 0 0 100%;
+                     }
                 }
                 .round-wrp{
                     height: 52px;
@@ -477,6 +484,17 @@
                     border-radius: 100px !important;
                     display: flex;
                     align-items: center;
+                    @media ($sm-1679) {
+                        height: 48px;
+                    }
+
+                    @media ($sm-1481) {
+                        height: 42px;
+                    }
+
+                    @media ($sm-1199) {
+                        height: 36px;
+                    }
                     .form-select{
                         width: 100px;
                         border: none;
