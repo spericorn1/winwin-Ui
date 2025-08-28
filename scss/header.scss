@@ -198,7 +198,6 @@
     }
 }
 
-
 /* Check out header start */
 .header-wrap {
     .head-inner-wrap {
@@ -206,7 +205,9 @@
             .logo-wrap {
                 width: auto;
                 padding: 0;
-                @media ($sm-479) { width: 100%;}
+                @media ($sm-479) {
+                    width: 100%;
+                }
             }
         }
         .checkout-step-wrap {
@@ -287,11 +288,7 @@
 }
 /* Check out header ends */
 
-
-
-
 /* New header */
-
 
 .header-strip-wrap {
     background: #2e348e;
@@ -847,7 +844,8 @@
     scrollbar-color: #5090cc #fff;
     //opacity: 0;
     height: 0;
-    pointer-events: none; transition: all .5s;
+    pointer-events: none;
+    transition: all 0.5s;
     ul {
         margin: 0;
         padding: 20px 15px;
@@ -886,23 +884,51 @@
     }
 }
 
-
 .gap-30 {
     height: 30px;
     width: 100%;
     @media ($sm-1679) {
         height: 25px;
     }
-    @media ($sm-991) { 
+    @media ($sm-991) {
         height: 20px;
     }
 }
 
-.breadcrumb-wrap{ padding: 0 0 30px 0;
-    .list{ margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: wrap;
-        li{margin: 0; padding: 0; list-style: none; font-size: 14px; color: #7B8D9F; font-weight: 500;
-            a{ color: #101B25;}
-            img{ width: 4px;}
+.breadcrumb-wrap {
+    padding: 0 0 20px 0;
+    @media ($sm-1679) {
+        padding: 0 0 25px 0;
+    }
+    @media ($sm-991) {
+        padding: 0 0 20px 0;
+    }
+    .list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        @media ($sm-1679) {
+            gap: 8px;
+            row-gap: 3px;
+        }
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 14px;
+            color: #7b8d9f;
+            font-weight: 500;
+            @media ($sm-1679) {
+                font-size: 12px;
+            }
+            a {
+                color: #101b25;
+            }
+            img {
+                width: 4px;
+            }
         }
     }
 }
