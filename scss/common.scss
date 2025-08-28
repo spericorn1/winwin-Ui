@@ -29,6 +29,34 @@ input{
     //     max-width: 100%;
     // }
 }
+a{
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        opacity: .8;
+    }
+}
+.btn-1{
+    background-color: $primary-blue;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 15px;
+    border-radius: 30px;
+    &.modal-btn-border{
+        background-color: transparent;
+        border: solid 1px #DFE1E3;
+        color: #101B25;
+        &:hover{
+            border-color: #101B25;
+        }
+    }
+}
+.border-btn{
+    background-color: #fff !important;
+    border: solid 1px #DFE1E3 !important;
+    color: #101B25 !important;
+}
 
  .overlay {
   position: fixed;

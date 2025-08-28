@@ -1745,13 +1745,14 @@
   }
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp {
-  border: 1px solid #5090CC;
   border-radius: 100px;
   padding: 2px;
+  border: 1px solid #fff;
+  /* highlight wrapper on focus */
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .form-control {
   height: 52px;
-  border: 1px solid #B8C4D0;
+  border: 1px solid #DFE1E3;
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -1760,8 +1761,7 @@
   line-height: 24px;
   letter-spacing: 0%;
   color: #101B25;
-  border-left: none;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 @media (max-width: 1679px) {
   .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .form-control {
@@ -1785,6 +1785,11 @@
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .form-control:hover, .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .form-control:focus {
   box-shadow: none;
   outline: none;
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp:focus-within, .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp:hover {
+  border: 1px solid #5090CC;
+  border-color: #5090CC; /* same as your blue */
+  box-shadow: 0 0 0 2px rgba(80, 144, 204, 0.3); /* optional glow */
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .input-group-text {
   border-top-left-radius: 100px;
