@@ -68,16 +68,17 @@
             flex-wrap: wrap;
         }
         .lft-sec{
-            width: 543px;
-            @media($sm-1679){
-                width: 500px;
-            }
-            @media($sm-1481){
-                width: 480px;
-            }
-            @media($sm-1199){
-                width: 40%;
-            }
+            flex:1;
+            // width: 543px;
+            // @media($sm-1679){
+            //     width: 500px;
+            // }
+            // @media($sm-1481){
+            //     width: 480px;
+            // }
+            // @media($sm-1199){
+            //     width: 40%;
+            // }
             @media($sm-767){
                 width: 100%;
             }
@@ -500,22 +501,24 @@
     }
 }
         .rt-sec{
-            flex: 1;
-            padding-left: 100px;
+           width: 433px;
+             margin-left: 85px;
             @media($sm-1679){
-                padding-left: 80px;
+                margin-left: 60px;
             }
             @media($sm-1481){
-                padding-left: 60px;
+                margin-left: 40px;
             }
             @media($sm-1199){
-                padding-left: 40px;
+                margin-left: 30px;
+                width: 40%;
             }
             @media($sm-991){
-                padding-left: 20px;
+                margin-left: 20px;
             }
             @media($sm-767){
-                padding-left: 0px;
+                margin-left: 0px;
+                width: 100%;
             }
             .preview-card {
             background: #F7FAFD;
@@ -641,6 +644,227 @@
     }
   }
 }
+
+
+ .product-card {
+                    margin-top: 20px;
+                    border-radius: 12px;
+
+                    @media($sm-1679) {
+                        margin-top: 18px;
+                    }
+
+                    @media($sm-1481) {
+                        margin-top: 16px;
+                    }
+
+                    .product-header {
+                        // margin-bottom: 15px;
+
+                        .product-title {
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 30px;
+                            color: #101B25;
+
+                            @media($sm-1679) {
+                                font-size: 18px;
+                                line-height: 28px;
+                            }
+
+                            @media($sm-1481) {
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+
+                            @media($sm-1199) {
+                                font-size: 15px;
+                                line-height: 22px;
+                            }
+
+                            @media($sm-991) {
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+
+                            @media($sm-767) {
+                                font-size: 13px;
+                                line-height: 17px;
+                            }
+
+
+                        }
+
+                        .product-description {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #415362;
+                            margin-bottom: 0px;
+
+                            @media($sm-1679) {
+                                font-size: 14px;
+                            }
+
+                            @media($sm-1481) {
+                                font-size: 13px;
+                            }
+
+                            .see-more {
+                                color: #101B25;
+                                cursor: pointer;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .product-price {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0%;
+                            color: #415362;
+                            display: flex;
+                            margin-bottom: 0px;
+
+                            @media($sm-1679) {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+
+                            @media($sm-1481) {
+                                font-size: 13px;
+                                line-height: 21px;
+                            }
+
+                            span {
+                                margin-right: 5px;
+                                font-weight: 500;
+                                color: #101B25;
+                            }
+
+                            .price-txt {
+                                display: flex;
+                                align-items: center;
+
+                                .dot {
+                                    width: 4px;
+                                    height: 4px;
+                                    display: block;
+                                    background-color: #B8C4D0;
+                                }
+                            }
+                        }
+                    }
+
+                    .product-details {
+
+                        padding-top: 24px;
+
+                        @media($sm-1679) {
+                            padding-top: 18px;
+                        }
+
+                        @media($sm-1481) {
+                            padding-top: 16px;
+                        }
+
+                        .details-heading {
+                            color: #101B25;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 24px;
+                            letter-spacing: 0%;
+                            margin-bottom: 16px;
+
+                            @media($sm-1679) {
+                                font-size: 16px;
+                                line-height: 22px;
+                                margin-bottom: 14px;
+                            }
+
+                            @media($sm-1481) {
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-bottom: 12px;
+                            }
+                        }
+
+                        .details-row {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 12px;
+                            align-items: center;
+
+                            &:last-child {
+                                margin-bottom: 0px;
+                            }
+
+                            .details-label {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 24px;
+                                letter-spacing: 0%;
+                                color: #415362;
+                                margin: 0px;
+
+                                // @media($sm-1679){
+                                //     font-size: 16px;
+                                //     line-height: 22px;
+                                // }
+                                // @media($sm-1481){
+                                //     font-size: 14px;
+                                //     line-height: 20px;
+                                // }
+                                @media($sm-1199) {
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                }
+                            }
+
+                            .details-value {
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 24px;
+                                letter-spacing: 0%;
+                                text-align: right;
+                                color: #101B25;
+                                margin-bottom: 0px;
+
+                                @media($sm-1199) {
+                                    font-size: 13px;
+                                    line-height: 17px;
+                                }
+
+                            }
+                        }
+                        .variant-wrp{
+                            display: flex;
+                            flex-wrap: nowrap;
+                            gap: 10px;
+                            overflow-x: scroll;
+                            margin-bottom: 16px;
+                            .variant-btn{
+                                &.active,&:hover{
+                                    border: 1px solid #5090CC;
+                                    color: #5090CC;
+                                    background-color: #FFFFFF;
+                                }
+                                border: 1px solid #DFE1E3;
+                                color: #101B25;
+                                padding: 8px 20px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                background-color: #F7FAFD;
+                                border-radius: 36px;
+                                min-width: 98px;
+                                height: 36px;
+                                @media ($sm-1679){
+                                    height: 34px;
+                                }
+                            }
+                        }
+                    }
+                }
 
         }
     }
