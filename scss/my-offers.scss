@@ -1,6 +1,16 @@
 @import "partials";
 
+.custom-container-my-offer{
+    @media (min-width: 1200px) {
+        max-width: 1062px;
+    }
+}
 .my-offer-details{
+    .web-label{
+        @media ($sm-579) {
+            display: none;
+        }
+    }    
     .product-card .product-header .product-description{
         // position: relative;
         // .see-more{
@@ -8,6 +18,16 @@
         //     position: absolute;
         //     right: 0;
         // }
+    }
+    .slider-sec {
+        width: 519px;
+        @media ($sm-1679) {
+            width: 519px;
+        }
+        @media ($sm-991) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
     .product-details {
         padding-bottom: 20px;
@@ -17,16 +37,29 @@
         border-bottom: solid 1px #ECEDEF;
         padding: 24px 0;
         align-items: center;
+        @media ($sm-1679) {
+            padding: 20px 0;
+        }
+        @media ($sm-579) {
+            padding: 15px 0;
+        }
         .left-block{
             padding-right: 10px;
             align-items: center;
             .prof-img{
                 flex-shrink: 0;
                 margin-right: 12px;
+                @media (max-width: 360px) {
+                    margin-right: 6px;
+                }
                 .prof-avt{
                     width: 52px;
                     height: 52px;
                     object-fit: cover;
+                    @media ($sm-579) {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
             .name-det-block{
@@ -37,7 +70,19 @@
                         font-size: 18px;
                         font-weight: 600;
                         margin-right: 8px;
-
+                        max-width: 135px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        @media ($sm-1679) {
+                            font-size: 16px;
+                        }
+                        @media ($sm-579) {
+                            font-weight: 500;
+                        }
+                        @media (max-width: 360px) {
+                            font-size: 14px;
+                        }
                     }
                     .rating{
                         display: inline-flex;
@@ -45,6 +90,9 @@
                         font-size: 14px;
                         color: #415362;
                         font-weight: 500;
+                        @media ($sm-1679) {
+                            font-size: 12px;
+                        }
                         img{
                             width: 14px;
                             margin-top: -2px;
@@ -61,6 +109,9 @@
                         color: #101B25;
                         font-size: 14px;
                         margin-right: 8px;
+                        @media ($sm-1679) {
+                            font-size: 12px;
+                        }
                         .val{
                             font-weight: 500;
                         }
@@ -72,6 +123,18 @@
                         font-weight: 500;
                         font-size: 14px;
                         text-decoration: underline;
+                        @media ($sm-1679) {
+                            font-size: 12px;
+                        }
+                        @media ($sm-579) {
+                            text-decoration: none;
+                        }
+                        
+                        .btn-img-mob{
+                            @media (min-width: 580px) {
+                                display: none;
+                            }
+                        }
                         &::before{
                             content: '';
                             margin-right: 8px;
@@ -79,6 +142,14 @@
                             height: 4px;
                             border-radius: 50%;
                             background-color: #101B25;
+                            @media ($sm-579) {
+                                width: 4px;
+                                height: auto;
+                                border-radius: 0;
+                                content: '-';
+                                color: #000;
+                                background-color: transparent;
+                            }
                         }
                         
                     }
@@ -90,6 +161,27 @@
             margin-left: auto;
             .view-prof-btn{
                 padding: 8px 18px;
+                .link-icon-mob{
+                    @media (min-width: 580px) {
+                        display: none;
+                    }
+                }
+                @media ($sm-1679) {
+                    font-size: 13px;
+                }
+                @media ($sm-579) {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    padding: 0;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 2px 4px 0px #2A455D0F;
+                    img{
+                        height: 10px;
+                    }
+                }
             }
         }
     }
@@ -101,17 +193,36 @@
             margin-bottom: 15px;
             border-bottom: 1px solid #DFE1E3;
             color: #101B25;
+            @media ($sm-1679) {
+                font-size: 16px;
+            }
         }
         .charge-row {
             .charge-label, .total-label{
                 font-size: 16px;
                 color: #101B25;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
             }
             .charge-value, .total-value{
+                font-size: 16px;
                 font-weight: 500;
                 color: #101B25;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
             }
             
+        }
+        .total-row {
+            .total-label, .total-value{
+                font-weight: 500;
+                font-size: 18px;
+                @media ($sm-1679) {
+                    font-size: 16px !important;
+                }
+            }
         }
     }
     .det-link-cover{
@@ -124,6 +235,9 @@
                 color: #101B25;
                 font-size: 16px;
                 font-weight: 500;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
                 img{
                     margin-left: auto;
                 }

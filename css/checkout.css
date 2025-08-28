@@ -15,82 +15,8 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
-.header-wrap .head-inner-wrap.checkout-head-inner .logo-wrap {
-  width: auto;
-  padding: 0;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap {
-  margin: 0 auto;
-}
-@media (max-width: 767px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap {
-    margin: 0;
-    margin-left: auto;
-    justify-content: end;
-  }
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list {
-  margin: 20px 0 0 -80px;
-  width: 410px;
-}
-@media (max-width: 1679px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
-    margin-left: -80px;
-  }
-}
-@media (max-width: 991px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
-    width: 340px;
-    margin-left: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
-    width: 260px;
-  }
-}
-@media (max-width: 479px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap .list {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li {
-  width: 33.33333%;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li:nth-child(1) .name {
-  left: 0;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li:last-child .name {
-  left: inherit;
-  right: 0;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li .name {
-  position: absolute;
-  top: -20px;
-  left: -22px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  color: #7b8d9f;
-}
-@media (max-width: 1679px) {
-  .header-wrap .head-inner-wrap .checkout-step-wrap .list li .name {
-    font-size: 12px;
-  }
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li .round {
-  background: #fff;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active:after {
-  background: #1bb746;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active .name {
-  color: #101b25;
-}
-.header-wrap .head-inner-wrap .checkout-step-wrap .list li.active .round:after {
-  background: #1bb746;
-  border-color: #1bb746;
+.body-payment-receipt {
+  background: #f8f9fa;
 }
 
 .checkout-outer-wrap {
@@ -1263,6 +1189,35 @@
   padding: 25px 15px;
   border: 1px solid #e0e4eb;
   border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+}
+.payment-checkout-wrap .content-wrap .receipt-wrap:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/bg-pattern.png) no-repeat top left;
+  width: 56px;
+  height: 162px;
+  content: "";
+  z-index: 1;
+  background-size: 22px;
+  margin: 32px 0 0 -2px;
+  pointer-events: none;
+}
+.payment-checkout-wrap .content-wrap .receipt-wrap:after {
+  position: absolute;
+  right: -36px;
+  top: 0;
+  background: url(../img/bg-pattern.png) no-repeat top right;
+  width: 56px;
+  height: 162px;
+  content: "";
+  z-index: 1;
+  background-size: 22px;
+  margin: 32px 0 0 -2px;
+  transform: scaleX(-1);
+  pointer-events: none;
 }
 @media (max-width: 1679px) {
   .payment-checkout-wrap .content-wrap .receipt-wrap {
@@ -1312,6 +1267,8 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 9;
 }
 @media (max-width: 1679px) {
   .payment-checkout-wrap .content-wrap .receipt-wrap .re-summary-wrap {

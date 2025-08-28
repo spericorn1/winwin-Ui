@@ -1,87 +1,7 @@
 @import "partials";
-.header-wrap {
-    .head-inner-wrap {
-        &.checkout-head-inner {
-            .logo-wrap {
-                width: auto;
-                padding: 0;
-            }
-        }
-        .checkout-step-wrap {
-            margin: 0 auto;
-            @media ($sm-767) {
-                margin: 0;
-                margin-left: auto;
-                justify-content: end;
-            }
-            .list {
-                margin: 20px 0 0 -80px;
-                width: 410px;
-                @media ($sm-1679) {
-                    margin-left: -80px;
-                }
-                @media ($sm-991) {
-                    width: 340px;
-                    margin-left: 60px;
-                }
-                @media ($sm-767) {
-                    width: 260px;
-                }
-                @media ($sm-479) {
-                    width: 100%;
-                    margin-left: 0;
-                }
-                li {
-                    width: 33.33333%;
 
-                    &:nth-child(1) {
-                        .name {
-                            left: 0;
-                        }
-                    }
-                    &:last-child {
-                        .name {
-                            left: inherit;
-                            right: 0;
-                        }
-                    }
-                    &:after {
-                    }
-                    .name {
-                        position: absolute;
-                        top: -20px;
-                        left: -22px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 1;
-                        color: #7b8d9f;
-                        @media ($sm-1679) {
-                            font-size: 12px;
-                        }
-                    }
-                    .round {
-                        background: #fff;
-                        &:after {
-                        }
-                    }
-                    &.active {
-                        &:after {
-                            background: #1bb746;
-                        }
-                        .name {
-                            color: #101b25;
-                        }
-                        .round {
-                            &:after {
-                                background: #1bb746;
-                                border-color: #1bb746;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
+.body-payment-receipt {
+    background: #f8f9fa;
 }
 
 .checkout-outer-wrap {
@@ -1108,6 +1028,35 @@
             padding: 25px 15px;
             border: 1px solid #e0e4eb;
             border-radius: 20px;
+            background: #ffffff;
+            position: relative;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url(../img/bg-pattern.png) no-repeat top left;
+                width: 56px;
+                height: 162px;
+                content: "";
+                z-index: 1;
+                background-size: 22px;
+                margin: 32px 0 0 -2px;
+                pointer-events: none;
+            }
+            &:after {
+                position: absolute;
+                right: -36px;
+                top: 0;
+                background: url(../img/bg-pattern.png) no-repeat top right;
+                width: 56px;
+                height: 162px;
+                content: "";
+                z-index: 1;
+                background-size: 22px;
+                margin: 32px 0 0 -2px;
+                transform: scaleX(-1);
+                pointer-events: none;
+            }
             @media ($sm-1679) {
                 padding: 15px;
                 border-radius: 15px;
@@ -1148,6 +1097,8 @@
                 padding: 20px;
                 border-radius: 10px;
                 margin-bottom: 30px;
+                position: relative;
+                z-index: 9;
                 @media ($sm-1679) {
                     padding-bottom: 20px;
                 }
