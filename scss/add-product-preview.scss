@@ -66,7 +66,7 @@
 
     .form-outer {
         display: flex;
-        @media ($sm-579){
+        @media (max-width:680px){
             flex-direction: column;
         }
         // align-items: center;
@@ -75,7 +75,7 @@
         .lft-sec {
             // width: 543px;
             flex: 1;
-            @media ($sm-579){
+            @media (max-width:680px){
                 width: 100%;
             }
 
@@ -88,6 +88,9 @@
                 img {
                     max-width: 100%;
                     border-radius: 16px;
+                    @media (max-width:680px){
+                        width: 100%;
+                    }
                 }
             }
 
@@ -100,6 +103,9 @@
                 img {
                     max-width: 100%;
                     border-radius: 16px;
+                    @media (max-width:680px){
+                        width: 100%;
+                    }
                 }
 
                 .play-btn {
@@ -580,9 +586,9 @@
             }
             @media ($sm-767){
                 margin-left: 20px;
-                width: 360px;
+                width: 340px;
             }
-            @media ($sm-579){
+            @media (max-width:680px){
                 width: 100%;
                 margin-left: 0;
             }
