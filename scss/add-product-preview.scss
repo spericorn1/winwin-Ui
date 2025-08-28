@@ -699,22 +699,107 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
+                        position: relative;
+                        padding: 2px;
+                        border: 1px solid transparent;
                         @media ($sm-1679) {
                             height: 60px;
-
                         }
 
                         @media ($sm-1481) {
                             height: 50px;
                             width: 100%;
                         }
-
+                        &:hover,&.active{
+                             border: 1px solid #000000;
+                        }
+                        .drag-icon{
+                            width: 20px;
+                            height: 20px;
+                            padding: 0;
+                            border: 0;
+                            outline: none;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background:transparent;
+                            @media ($sm-1679){
+                                width: 18px;
+                                height: 18px;
+                            }
+                            @media ($sm-1481){
+                                width: 16px;
+                                height: 16px;
+                            }
+                            @media ($sm-1199){
+                                width: 14px;
+                                height: 14px;
+                            }
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                        .count{
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 16px;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 16px;
+                            background-color: #00000066;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .play-icon{
+                            width: 32px;
+                            height: 32px;
+                            padding: 0;
+                            border: 0;
+                            outline: none;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background: transparent;
+                            @media ($sm-1679){
+                                width: 28px;
+                                height: 28px;
+                            }
+                            @media ($sm-1481){
+                                width: 26px;
+                                height: 26px;
+                            }
+                            @media ($sm-1199){
+                                width: 24px;
+                                height: 24px;
+                            }
+                            img{
+                                max-width: 100%;
+                            }
+                        }
+                        .remove-btn{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            padding: 0;
+                            border: 0;
+                            outline: none;
+                            position: absolute;
+                            right: 4px;
+                            top: 4px;
+                            img{
+                                max-width: 100%;
+                                border-radius: 8px;
+                            }
+                        }
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            border-radius: 5px;
+                            border-radius: 8px;
 
                             @media ($sm-991) {
                                 border-radius: 8px;
@@ -918,8 +1003,14 @@
                             display: flex;
                             flex-wrap: nowrap;
                             gap: 10px;
-                            overflow-x: scroll;
+                            overflow: hidden;
                             margin-bottom: 16px;
+                            padding-bottom: 0;
+                             scrollbar-width: thin;
+                            scrollbar-color: #5090cc #fff;
+                            &:hover{
+                                overflow-x: scroll;
+                            }
                             .variant-btn{
                                 &.active,&:hover{
                                     border: 1px solid #5090CC;
@@ -933,7 +1024,7 @@
                                 font-size: 14px;
                                 background-color: #F7FAFD;
                                 border-radius: 36px;
-                                min-width: 98px;
+                                min-width: 100px;
                                 height: 36px;
                                 @media ($sm-1679){
                                     height: 34px;

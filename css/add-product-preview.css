@@ -678,6 +678,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  padding: 2px;
+  border: 1px solid transparent;
 }
 @media (max-width: 1679px) {
   .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block {
@@ -690,12 +693,109 @@
     width: 100%;
   }
 }
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block:hover, .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block.active {
+  border: 1px solid #000000;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .drag-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .drag-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .drag-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .drag-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .drag-icon img {
+  max-width: 100%;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .count {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .play-icon {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .play-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .play-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .play-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .play-icon img {
+  max-width: 100%;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .remove-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block .remove-btn img {
+  max-width: 100%;
+  border-radius: 8px;
+}
 .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 @media (max-width: 991px) {
   .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block img {
@@ -887,8 +987,14 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 10px;
-  overflow-x: scroll;
+  overflow: hidden;
   margin-bottom: 16px;
+  padding-bottom: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #5090cc #fff;
+}
+.add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp:hover {
+  overflow-x: scroll;
 }
 .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn {
   border: 1px solid #DFE1E3;
@@ -898,7 +1004,7 @@
   font-size: 14px;
   background-color: #F7FAFD;
   border-radius: 36px;
-  min-width: 98px;
+  min-width: 100px;
   height: 36px;
 }
 .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn.active, .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn:hover {
