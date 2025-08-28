@@ -96,7 +96,14 @@
                 border-radius: 100px;
                 padding: 2px;
                 border: 1px solid #fff;
-
+                position: relative;
+                .error-msg{
+                    position: absolute;
+                    color: red;
+                    bottom: -16px;
+                    font-size: 14px;
+                    padding-left: 20px;
+                }
                 .form-control {
                     height: 52px;
                     border: 1px solid #DFE1E3;  
@@ -131,6 +138,11 @@
                     box-shadow: none;
                     outline: none;
                     }
+
+                    &.form-text-area{
+                        height: 124px;
+                        border-radius: 12px;
+                    }
                 }
 
                 /* highlight wrapper on focus */
@@ -138,6 +150,25 @@
                     border: 1px solid #5090CC;
                     border-color: #5090CC; /* same as your blue */
                     box-shadow: 0 0 0 2px rgba(80, 144, 204, 0.3); /* optional glow */
+                }
+                .txt{
+                    position: absolute;
+                    bottom: 5px;
+                    right: 10px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    color: #7B8D9F;
+
+                }
+                .link-sec{
+                    text-align: right;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #4882B8;
+
                 }
                 }
 

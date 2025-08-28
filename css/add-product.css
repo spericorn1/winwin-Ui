@@ -110,7 +110,15 @@
   border-radius: 100px;
   padding: 2px;
   border: 1px solid #fff;
+  position: relative;
   /* highlight wrapper on focus */
+}
+.add-product-form .form-outer .lft-sec .form-wrp .error-msg {
+  position: absolute;
+  color: red;
+  bottom: -16px;
+  font-size: 14px;
+  padding-left: 20px;
 }
 .add-product-form .form-outer .lft-sec .form-wrp .form-control {
   height: 52px;
@@ -148,10 +156,31 @@
   box-shadow: none;
   outline: none;
 }
+.add-product-form .form-outer .lft-sec .form-wrp .form-control.form-text-area {
+  height: 124px;
+  border-radius: 12px;
+}
 .add-product-form .form-outer .lft-sec .form-wrp:focus-within, .add-product-form .form-outer .lft-sec .form-wrp:hover {
   border: 1px solid #5090CC;
   border-color: #5090CC; /* same as your blue */
   box-shadow: 0 0 0 2px rgba(80, 144, 204, 0.3); /* optional glow */
+}
+.add-product-form .form-outer .lft-sec .form-wrp .txt {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  color: #7B8D9F;
+}
+.add-product-form .form-outer .lft-sec .form-wrp .link-sec {
+  text-align: right;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4882B8;
 }
 .add-product-form .form-outer .rt-sec {
   flex: 1;
