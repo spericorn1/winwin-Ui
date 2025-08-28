@@ -117,6 +117,10 @@
     height: 40px;
   }
 }
+.footer-outer-wrap .top-wrap .left-wrap .input-wrap .txt::-moz-placeholder {
+  opacity: 1;
+  color: #7b8d9f;
+}
 .footer-outer-wrap .top-wrap .left-wrap .input-wrap .txt::placeholder {
   opacity: 1;
   color: #7b8d9f;
@@ -443,6 +447,4 @@
   .footer-outer-wrap .footer-des .para {
     font-size: 12px;
   }
-}
-
-/*# sourceMappingURL=footer.css.map */
+}/*# sourceMappingURL=footer.css.map */
