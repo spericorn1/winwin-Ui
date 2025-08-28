@@ -112,7 +112,8 @@
   padding-bottom: 12px;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .txt {
   font-weight: 600;
@@ -470,6 +471,7 @@
 .add-product-form .form-outer .rt-sec {
   flex: 1;
   padding-left: 100px;
+<<<<<<< HEAD
 }
 .add-product-form .form-outer .rt-sec .preview-card {
   background: #F7FAFD;
@@ -580,3 +582,6 @@
 }
 
 /*# sourceMappingURL=add-product.css.map */
+=======
+}/*# sourceMappingURL=add-product.css.map */
+>>>>>>> 497a74ee57406005b67a085ab0791bf3bb111415
