@@ -897,3 +897,12 @@
         height: 20px;
     }
 }
+
+.breadcrumb-wrap{ padding: 0 0 30px 0;
+    .list{ margin: 0; padding: 0; display: flex; gap: 10px; flex-wrap: wrap;
+        li{margin: 0; padding: 0; list-style: none; font-size: 14px; color: #7B8D9F; font-weight: 500;
+            a{ color: #101B25;}
+            img{ width: 4px;}
+        }
+    }
+}
