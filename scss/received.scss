@@ -1,64 +1,277 @@
 @import "partials";
-.rec-content-wrap{ padding: 0 0 50px 0;
-    .rec-container-wrap{ max-width: 850px; margin: 0 auto;
-        .rec-head-wrap{
-            ul{ padding: 0; margin: 0 0 25px 0; border-bottom: 1px solid #DFE1E3; display: flex;
-                li{padding: 10px 0; margin: 0; list-style: none;
-                    a{font-size: 14px; color: #7B8D9F; font-weight: 500; padding: 0 15px; position: relative;}
-                    &.active{
-                        a{color: #5090CC;
-                            &:after{position: absolute; width: 100%; height: 1px; background:#5090CC; content: ''; left: 0; bottom: -11px;}
+.rec-content-wrap {
+    padding: 0 0 50px 0;
+    @media ($sm-1679) {
+        padding: 0 0 40px 0;
+    }
+    @media ($sm-767) {
+        padding: 0 0 25px 0;
+    }
+    .rec-container-wrap {
+        max-width: 850px;
+        margin: 0 auto;
+        @media ($sm-991) {
+            max-width: 690px;
+        }
+        @media ($sm-767) {
+            max-width: 510px;
+        }
+        @media ($sm-579) {
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        .rec-head-wrap {
+            ul {
+                padding: 0;
+                margin: 0 0 25px 0;
+                border-bottom: 1px solid #dfe1e3;
+                display: flex;
+                overflow: auto;
+                overflow-y: hidden;
+                scrollbar-width: thin;
+                scrollbar-color: #5090cc transparent;
+                @media ($sm-1679) {
+                    margin: 0 0 20px 0;
+                }
+                li {
+                    padding: 10px 0;
+                    margin: 0;
+                    list-style: none;
+                    white-space: nowrap;
+                    @media ($sm-1199) {
+                        padding: 8px 0;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #7b8d9f;
+                        font-weight: 500;
+                        padding: 0 15px;
+                        position: relative;
+                        @media ($sm-1199) {
+                            font-size: 13px;
+                        }
+                        @media ($sm-991) {
+                            padding: 0 10px;
+                        }
+                        @media ($sm-579) {
+                            font-size: 12px;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: #5090cc;
+                            &:after {
+                                position: absolute;
+                                width: 100%;
+                                height: 1px;
+                                background: #5090cc;
+                                content: "";
+                                left: 0;
+                                bottom: -11px;
+                                @media ($sm-1199) {
+                                    bottom: -10px;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-        .rec-content-wrap{
-            .pr-list-wrap{
-                .pr-list{ border: 1px solid #ECEDEF; border-radius: 15px; padding: 15px; width: 100%; 
-                    .pr-head-wrap{display: flex; align-items: center; gap: 20px; width: 100%;}
-                    .img{width: 72px; height: 72px; background: #ECEDEF;  border-radius: 10px; flex: 0 0 72px;
-                        img{width: 100%; height: 100%; object-fit: cover; border-radius: 10px;}
+        .rec-list-content-wrap {
+            .pr-list-wrap {
+                .pr-list {
+                    border: 1px solid #ecedef;
+                    border-radius: 15px;
+                    padding: 15px;
+                    width: 100%;
+                    @media ($sm-767) {
+                        padding: 10px;
+                        border-radius: 10px;
                     }
-                    .content{ flex: 1;
-                        .title{ padding: 0 0 5px 0; margin: 0; font-size: 20px; color: #101B25; font-weight: 600; line-height: 1.2; word-break: break-all;}
-                        .list{ padding: 0; margin: 0; display: flex; gap: 5px; flex-wrap: wrap;
-                            li{padding: 0; margin: 0; list-style: none; font-size: 16px; color: #415362; font-weight: 500; position: relative; line-height: 1.2;
-                                .num{color: #101B25;}
-                                &+li{padding-left: 7px;
-                                    &:before{ width: 3px; height: 3px; border-radius: 50%; background: #415362; content: ''; position: absolute; inset:0 auto 0 0; margin: auto; }
+                    .pr-head-wrap {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        width: 100%;
+                        @media ($sm-1679) {
+                            gap: 15px;
+                        }
+                    }
+                    .img {
+                        width: 72px;
+                        height: 72px;
+                        background: #ecedef;
+                        border-radius: 10px;
+                        flex: 0 0 72px;
+                        @media ($sm-1679) {
+                            width: 60px;
+                            height: 60px;
+                            flex: 0 0 65px;
+                        }
+                        @media ($sm-1199) {
+                            width: 50px;
+                            height: 50px;
+                            flex: 0 0 50px;
+                        }
+                        @media ($sm-579) {
+                            width: 40px;
+                            height: 40px;
+                            flex: 0 0 40px;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                    .content {
+                        flex: 1;
+                        .title {
+                            padding: 0 0 5px 0;
+                            margin: 0;
+                            font-size: 20px;
+                            color: #101b25;
+                            font-weight: 600;
+                            line-height: 1.2;
+                            word-break: break-all;
+                            @media ($sm-1679) {
+                                font-size: 18px;
+                            }
+                            @media ($sm-1199) {
+                                font-size: 16px;
+                            }
+                        }
+                        .list {
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            gap: 5px;
+                            flex-wrap: wrap;
+                            row-gap: 2px;
+                            li {
+                                padding: 0;
+                                margin: 0;
+                                list-style: none;
+                                font-size: 16px;
+                                color: #415362;
+                                font-weight: 500;
+                                position: relative;
+                                line-height: 1.2;
+                                @media ($sm-1679) {
+                                    font-size: 14px;
+                                }
+                                @media ($sm-1199) {
+                                    font-size: 12px;
+                                }
+                                .num {
+                                    color: #101b25;
+                                }
+                                & + li {
+                                    padding-left: 7px;
+                                    &:before {
+                                        width: 3px;
+                                        height: 3px;
+                                        border-radius: 50%;
+                                        background: #415362;
+                                        content: "";
+                                        position: absolute;
+                                        inset: 0 auto 0 0;
+                                        margin: auto;
+                                    }
                                 }
                             }
                         }
                     }
-                    .arrow{ width: 36px; flex: 0 0 36px;}
-                    &+.pr-list{ margin-top: 15px;}
-                    &.active{}
+                    .arrow {
+                        width: 36px;
+                        flex: 0 0 36px;
+                        @media ($sm-1679) {
+                            width: 32px;
+                            flex: 0 0 32px;
+                        }
+                        @media ($sm-991) {
+                            width: 26px;
+                            flex: 0 0 26px;
+                        }
+                    }
+                    & + .pr-list {
+                        margin-top: 15px;
+                    }
+                    &.active {
+                        .arrow{ transform: rotate(90deg);}
+                    }
                 }
-                .pre-content-wrap{ padding: 20px 0 0 0;
-                    .pre-offer-wrap{ background: #F7FAFD; border-radius: 12px; padding: 24px;
-                        .subtitle{padding: 0 0 20px 0; margin: 0; font-size: 20px; color: #101B25; font-weight: 600; line-height: 1.2;}
-                        .rc-list{ margin: 0; padding: 0;
+                .pre-content-wrap {
+                    padding: 20px 0 0 0;
+                    @media ($sm-1679) {
+                        padding: 15px 0 0 0;
+                    }
+                    .pre-offer-wrap {
+                        background: #f7fafd;
+                        border-radius: 12px;
+                        padding: 24px;
+                        @media ($sm-1679) {
+                            padding: 20px;
+                        }
+                        @media ($sm-991) {
+                            padding: 15px;
+                        }
+                        @media ($sm-479) {
+                            padding: 10px 5px;
+                        }
+                        .subtitle {
+                            padding: 0 0 20px 0;
+                            margin: 0;
+                            font-size: 20px;
+                            color: #101b25;
+                            font-weight: 600;
+                            line-height: 1.2;
+                            @media ($sm-1679) {
+                                font-size: 18px;
+                                padding: 0 0 15px 0;
+                            }
+                            @media ($sm-991) {
+                                font-size: 16px;
+                            }
+                        }
+                        .rc-list {
+                            margin: 0;
+                            padding: 0;
 
-
-                            li{ margin: 0; padding: 0; list-style: none; border-bottom: 1px solid #ECEDEF; margin: 0 0 15px 0; padding: 0 0 15px 0;
-                                .form-check-label{display: flex;  margin: 0; padding: 0; gap: 15px; align-items: center;
-
+                            li {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                                border-bottom: 1px solid #ecedef;
+                                margin: 0 0 15px 0;
+                                padding: 0 0 15px 0;
+                                .form-check-label {
+                                    display: flex;
+                                    margin: 0;
+                                    padding: 0;
+                                    gap: 15px;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    @media ($sm-1679) {
+                                        gap: 10px;
+                                    }
                                     .form-check-input {
                                         width: 18px;
                                         height: 18px;
                                         outline: 0;
                                         flex: 0 0 18px;
                                         background-color: #dce9f5;
-                                        border: 1px solid #CBD1D7;
+                                        border: 1px solid #cbd1d7;
                                         box-shadow: none !important;
-                                        // @media ($sm-1679) {
-                                        //     width: 12px;
-                                        //     height: 12px;
-                                        // }
+                                        @media ($sm-1679) {
+                                            width: 15px;
+                                            height: 15px;
+                                            flex: 0 0 15px;
+                                        }
                                         &:checked {
-                                            border-color: #5090CC;
-                                            background-color: #DCE9F5;
+                                            border-color: #5090cc;
+                                            background-color: #dce9f5;
                                             background-image: url(../img/tic-blue.svg);
                                             background-size: 9px;
                                             background-position: center center;
@@ -68,47 +281,282 @@
                                         }
                                     }
 
-                                    .center-wrap{ display: flex; flex: 1; gap: 15px;}
-                                    .rc-img{ width: 52px; height: 52px; border-radius: 50%; flex: 0 0 52px;
-                                        img{ object-fit: cover; width: 100%; height: 100%; border-radius: 50%;}
+                                    .center-wrap {
+                                        display: flex;
+                                        flex: 1;
+                                        gap: 15px;
+                                        align-items: center;
+                                    }
+                                    .rc-img {
+                                        width: 52px;
+                                        height: 52px;
+                                        border-radius: 50%;
+                                        flex: 0 0 52px;
+                                        @media ($sm-1679) {
+                                            width: 45px;
+                                            height: 42px;
+                                            flex: 0 0 42px;
+                                        }
+                                        @media ($sm-991) {
+                                            width: 40px;
+                                            height: 40px;
+                                            flex: 0 0 40px;
+                                        }
+                                        img {
+                                            object-fit: cover;
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 50%;
+                                        }
                                     }
 
-                                    .txt{ flex: 1;
-                                        .txt-top{ padding: 0 0 3px 0;
-                                            ul{ padding: 0; margin: 0; display: flex; gap: 10px;
-                                                li{padding: 0; margin: 0; list-style: none; font-size: 16px; color: #101B25; font-weight: 500; position: relative; word-break: break-all; border: 0;
-                                                    .red-color{color:#EF4444;}
-                                                    &+li{padding-left: 8px; margin: 0; border: 0;
-                                                        &:before{ width: 3px; height: 3px; border-radius: 50%; background: #415362; content: ''; position: absolute; inset:0 auto 0 0; margin: auto; }
+                                    .txt {
+                                        flex: 1;
+                                        .txt-top {
+                                            padding: 0 0 3px 0;
+                                            @media ($sm-1679) {
+                                                padding: 0 0 2px 0;
+                                            }
+                                            ul {
+                                                padding: 0;
+                                                margin: 0;
+                                                display: flex;
+                                                gap: 10px;
+                                                row-gap: 3px;
+                                                flex-wrap: wrap;
+                                                li {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    list-style: none;
+                                                    font-size: 16px;
+                                                    color: #101b25;
+                                                    font-weight: 500;
+                                                    position: relative;
+                                                    word-break: break-all;
+                                                    border: 0;
+                                                    @media ($sm-1679) {
+                                                        font-size: 14px;
+                                                    }
+                                                    @media ($sm-991) {
+                                                        font-size: 12px;
+                                                    }
+                                                    .red-color {
+                                                        color: #ef4444;
+                                                    }
+                                                    & + li {
+                                                        padding-left: 8px;
+                                                        margin: 0;
+                                                        border: 0;
+                                                        &:before {
+                                                            width: 3px;
+                                                            height: 3px;
+                                                            border-radius: 50%;
+                                                            background: #415362;
+                                                            content: "";
+                                                            position: absolute;
+                                                            inset: 0 auto 0 0;
+                                                            margin: auto;
+                                                        }
+                                                    }
+                                                    &.exp {
+                                                        @media ($sm-479) {
+                                                            display: none;
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
-                                        .txt-btm{
-                                            ul{padding: 0; margin: 0; display: flex; gap: 10px;
-                                                li{padding: 0; margin: 0; list-style: none; font-size: 14px; color: #415362; font-weight: 400; position: relative; word-break: break-all; border: 0;
-                                                    .num{color: #101B25; font-size: 16px; font-weight: 500;}
-                                                    &+li{padding-left: 8px;  margin: 0; border: 0;
-                                                        &:before{ width: 3px; height: 3px; border-radius: 50%; background: #415362; content: ''; position: absolute; inset:0 auto 0 0; margin: auto; }
+                                        .txt-btm {
+                                            ul {
+                                                padding: 0;
+                                                margin: 0;
+                                                display: flex;
+                                                gap: 10px;
+                                                row-gap: 3px;
+                                                flex-wrap: wrap;
+                                                li {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    list-style: none;
+                                                    font-size: 14px;
+                                                    color: #415362;
+                                                    font-weight: 400;
+                                                    position: relative;
+                                                    word-break: break-all;
+                                                    border: 0;
+                                                    @media ($sm-1679) {
+                                                        font-size: 12px;
+                                                    }
+                                                    .num {
+                                                        color: #101b25;
+                                                        font-size: 16px;
+                                                        font-weight: 500;
+                                                        @media ($sm-1679) {
+                                                            font-size: 14px;
+                                                        }
+                                                        @media ($sm-991) {
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                    & + li {
+                                                        padding-left: 8px;
+                                                        margin: 0;
+                                                        border: 0;
+                                                        &:before {
+                                                            width: 3px;
+                                                            height: 3px;
+                                                            border-radius: 50%;
+                                                            background: #415362;
+                                                            content: "";
+                                                            position: absolute;
+                                                            inset: 0 auto 0 0;
+                                                            margin: auto;
+                                                        }
+                                                        &.exp {
+                                                            @media ($sm-479) {
+                                                                display: none;
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
-
-
                                     }
 
-                                    .btn-wrap{
-                                        .btn{width: 110px; height: 36px; flex: 0 0 110px; border: 1px solid #DFE1E3; background: #fff; outline: 0; display: flex; align-items: center; justify-content: center; color: #101B25; font-size: 14px; font-weight: 500; line-height: 1; border-radius: 30px; padding: 5px; margin: 0;}
+                                    .mob-footer-wrap {
+                                        width: 100%;
+                                        border-top: 1px solid #ecedef;
+                                        margin: 0;
+                                        padding: 10px 0 0 0;
+                                        display: none;
+                                        @media ($sm-479) {display: block;}
+                                        .btn-wrap {
+                                            display: block;
+                                            padding: 10px 0 0 0;
+                                            .btn {
+                                                width: 100%;
+                                                height: 36px;
+                                                flex: 0 0 110px;
+                                                border: 1px solid #dfe1e3;
+                                                background: #fff;
+                                                outline: 0;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                color: #101b25;
+                                                font-size: 14px;
+                                                font-weight: 500;
+                                                line-height: 1;
+                                                border-radius: 30px;
+                                                padding: 5px;
+                                                margin: 0;
+                                            }
+                                        }
+                                        ul {
+                                            padding: 0;
+                                            margin: 0;
+                                            display: flex;
+                                            gap: 5px;
+                                            row-gap: 3px;
+                                            flex-wrap: wrap;
+                                            li {
+                                                padding: 0;
+                                                margin: 0;
+                                                list-style: none;
+                                                font-size: 12px;
+                                                color: #101b25;
+                                                font-weight: 500;
+                                                position: relative;
+                                                word-break: break-all;
+                                                border: 0;
+                                                & + li {
+                                                    padding-left: 8px;
+                                                    margin: 0;
+                                                    border: 0;
+                                                    &:before {
+                                                        width: 3px;
+                                                        height: 3px;
+                                                        border-radius: 50%;
+                                                        background: #415362;
+                                                        content: "";
+                                                        position: absolute;
+                                                        inset: 0 auto 0 0;
+                                                        margin: auto;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .offer-exp-wrap {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            gap: 5px;
+                                            .exp-red {
+                                                padding: 0;
+                                                margin: 0;
+                                                font-size: 12px;
+                                                color: #ef4444;
+                                                font-weight: 500;
+                                            }
+                                        }
                                     }
 
-
+                                    .btn-wrap {
+                                        @media ($sm-479) {
+                                            display: none;
+                                        }
+                                        .btn {
+                                            width: 110px;
+                                            height: 36px;
+                                            flex: 0 0 110px;
+                                            border: 1px solid #dfe1e3;
+                                            background: #fff;
+                                            outline: 0;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            color: #101b25;
+                                            font-size: 14px;
+                                            font-weight: 500;
+                                            line-height: 1;
+                                            border-radius: 30px;
+                                            padding: 5px;
+                                            margin: 0;
+                                            @media ($sm-1679) {
+                                                font-size: 12px;
+                                                width: 90px;
+                                                height: 34px;
+                                            }
+                                        }
+                                    }
                                 }
                             }
-
                         }
-                        .compare-btn{ padding:15px 0 0 0;
-                            .btn{height: 44px; border: 0; background: #5090CC; outline: 0; display: flex; align-items: center; justify-content: center; color: #FFFFFF; font-size: 14px; font-weight: 500; line-height: 1; border-radius: 30px; padding: 5px 20px; margin: 0;}
+                        .compare-btn {
+                            padding: 15px 0 0 0;
+                            @media ($sm-1679) {
+                                padding: 10px 0 0 0;
+                            }
+                            .btn {
+                                height: 44px;
+                                border: 0;
+                                background: #5090cc;
+                                outline: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #ffffff;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 1;
+                                border-radius: 30px;
+                                padding: 5px 20px;
+                                margin: 0;
+                                @media ($sm-1679) {
+                                    font-size: 12px;
+                                    height: 38px;
+                                    padding: 5px 15px;
+                                }
+                            }
                         }
                     }
                 }
