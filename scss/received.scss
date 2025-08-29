@@ -564,3 +564,67 @@
         }
     }
 }
+
+.re-activity-outer-wrap{ width: 100%; padding: 0 0 0 33px;
+    @media ($sm-1679) { padding: 0 0 0 25px;}
+    @media ($sm-479) { padding: 0 0 0 0;}
+    .re-activity-wrap{ border: 1px solid #ECEDEF; background: #FFFFFF; padding: 15px;
+        .re-ac-head{display: flex; align-items: center; justify-content: space-between; padding: 0 0 15px 0; margin: 0 0 15px 0; border-bottom: 1px solid #ECEDEF;
+            @media ($sm-1679) { padding: 0 0 10px 0; margin: 0 0 10px 0;}
+            .title{ color: #101B25; font-size: 16px; font-weight: 600;
+                @media ($sm-1679) {font-size: 14px;}
+            }
+            .img-arrow{width: 28px;
+                @media ($sm-1679) { width: 25px;}
+            }
+            &.active{
+                .img-arrow{transform: rotate(90deg);}
+            }
+        }
+        .re-ac-content-wrap{ position: relative;
+            .left-border{ position: absolute; left: 7px; width: 1px; height: 100%; padding:10px 0 0px 0; z-index: 1;
+                img{ height: 100%; object-fit: cover;}
+            }
+            .re-ac-list-wrap{ display: flex; gap: 15px;
+                .left-wrap{ width: 15px; flex: 0 0 15px; padding: 5px 0 0 0; background: #fff;
+                    .dot{width: 15px; height: 15px; border: 1px solid #F59E0B; position: relative; border-radius: 50%; background: #fff; position: relative; z-index: 9;
+                        &:after{position: absolute; inset: 0; margin: auto; content: ''; width: 5px; height: 5px; background: #F59E0B; border-radius: 50%;}
+                    }
+                }
+                .right-wrap{ flex: 1; display: flex; gap: 10px;
+                    @media ($sm-579) { flex-direction: column; gap: 5px;}
+                    .re-ac-txt-wrap{ flex: 1;
+                        .name{ font-size: 14px; color: #101B25; font-weight: 500; line-height: 1.2; padding: 0 0 2px 0;
+                            @media ($sm-1679) {font-size: 13px;}
+                        }
+                        .bill-info{ margin: 0; padding: 0; display: flex; flex-wrap: wrap;
+                             @media ($sm-579) { flex-direction: column;}
+                            li{ margin: 0; padding: 0 0 0 0; border: 0; font-size: 12px; color: #415362; font-weight: 400; position: relative;
+                                &+li{ margin: 0 0 0 5px; padding: 0 0 0 8px;
+                                    @media ($sm-579) {margin: 0; padding: 0;}
+                                    &:before{ width: 3px; height: 3px; background: #415362; border-radius: 50%; position: absolute; content: ''; inset: 0 auto 0 0; margin: auto;
+                                        @media ($sm-579) { display: none;}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .re-ac-btn-wrap{ padding: 5px 0 0 0;
+                        @media ($sm-579) { padding: 0;}
+                        .btn{ outline: 0; border: 0; cursor: pointer; background: none; padding: 0; margin: 0; display: flex; align-items: center; gap: 3px;
+                            span{color: #101B25; font-size: 12px; font-weight: 500; color: #5090CC;}
+                            img{ width: 14px;}
+                        }
+                    }
+                }
+                &.rc-second-color{ padding: 15px 0 0 0; position: relative; z-index: 1;
+                    .left-wrap{
+                        .dot{ border-color: #8B5CF6;
+                            &:after{background: #8B5CF6;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
