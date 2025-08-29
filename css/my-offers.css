@@ -253,6 +253,155 @@
   .product-details .offer-btn-block .btn-1.reject {
     color: #EF4444 !important; }
 
+/* Compare starts */
+@media (max-width: 991px) {
+  .comparision-wrap {
+    padding-top: 20px; } }
+.comparision-wrap .com-title {
+  color: #101b25;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 0 20px 0; }
+  @media (max-width: 1679px) {
+    .comparision-wrap .com-title {
+      font-size: 18px;
+      padding: 0 0 15px 0; } }
+  @media (max-width: 1199px) {
+    .comparision-wrap .com-title {
+      font-size: 16px; } }
+.comparision-wrap .com-list-wrap .com-sub-title {
+  color: #101b25;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 0 15px 0; }
+  @media (max-width: 1679px) {
+    .comparision-wrap .com-list-wrap .com-sub-title {
+      font-size: 16px;
+      padding: 0 0 10px 0; } }
+  @media (max-width: 1199px) {
+    .comparision-wrap .com-list-wrap .com-sub-title {
+      font-size: 14px; } }
+.comparision-wrap .com-list-wrap .list {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .comparision-wrap .com-list-wrap .list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center; }
+    .comparision-wrap .com-list-wrap .list li .img {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px; }
+      @media (max-width: 1679px) {
+        .comparision-wrap .com-list-wrap .list li .img {
+          width: 35px;
+          height: 35px;
+          flex: 0 0 35px; } }
+      .comparision-wrap .com-list-wrap .list li .img img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%; }
+    .comparision-wrap .com-list-wrap .list li .txt {
+      flex: 1; }
+      .comparision-wrap .com-list-wrap .list li .txt .name {
+        color: #101b25;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0 0 5px 0; }
+        @media (max-width: 1679px) {
+          .comparision-wrap .com-list-wrap .list li .txt .name {
+            font-size: 14px;
+            padding: 0 0 3px 0; } }
+        @media (max-width: 767px) {
+          .comparision-wrap .com-list-wrap .list li .txt .name {
+            font-size: 12px; } }
+        .comparision-wrap .com-list-wrap .list li .txt .name a {
+          color: #5090cc;
+          text-decoration: underline; }
+      .comparision-wrap .com-list-wrap .list li .txt .score {
+        color: #415362;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0; }
+        .comparision-wrap .com-list-wrap .list li .txt .score span {
+          font-weight: 500;
+          color: #101b25;
+          font-size: 14px;
+          padding: 0 0 0 2px; }
+          @media (max-width: 1679px) {
+            .comparision-wrap .com-list-wrap .list li .txt .score span {
+              font-size: 12px; } }
+    .comparision-wrap .com-list-wrap .list li .total {
+      color: #415362;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0; }
+      @media (max-width: 1679px) {
+        .comparision-wrap .com-list-wrap .list li .total {
+          font-size: 14px; } }
+      @media (max-width: 1199px) {
+        .comparision-wrap .com-list-wrap .list li .total {
+          font-size: 12px; } }
+      .comparision-wrap .com-list-wrap .list li .total.color-green {
+        color: #1bb746; }
+    .comparision-wrap .com-list-wrap .list li + li {
+      padding-top: 15px; }
+      @media (max-width: 1679px) {
+        .comparision-wrap .com-list-wrap .list li + li {
+          padding-top: 10px; } }
+.comparision-wrap .com-list-wrap + .com-list-wrap {
+  border-top: 1px solid #dfe1e3;
+  padding: 20px 0 0 0;
+  margin: 20px 0 0 0; }
+  @media (max-width: 1679px) {
+    .comparision-wrap .com-list-wrap + .com-list-wrap {
+      padding: 15px 0 0 0;
+      margin: 15px 0 0 0; } }
+.comparision-wrap .btn-wrap {
+  padding: 25px 0 0 0; }
+  @media (max-width: 1679px) {
+    .comparision-wrap .btn-wrap {
+      padding: 20px 0 0 0; } }
+  .comparision-wrap .btn-wrap .btn {
+    background: #f4f5f6;
+    height: 44px;
+    border-radius: 20px;
+    margin: 0;
+    padding: 5px;
+    outline: 0;
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    color: #101b25;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500; }
+    @media (max-width: 1679px) {
+      .comparision-wrap .btn-wrap .btn {
+        font-size: 13px;
+        height: 40px; } }
+    @media (max-width: 767px) {
+      .comparision-wrap .btn-wrap .btn {
+        font-size: 12px;
+        height: 38px; } }
+
+/* Compare ends */
 .custom-container-preview {
   max-width: 630px; }
   .custom-container-preview .preview-details {

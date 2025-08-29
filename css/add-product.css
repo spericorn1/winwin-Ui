@@ -166,7 +166,8 @@
   padding-bottom: 12px;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1679px) {
   .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec {
@@ -263,6 +264,9 @@
   .add-product-form .form-outer .lft-sec .form-wrp .form-control {
     height: 36px;
   }
+}
+.add-product-form .form-outer .lft-sec .form-wrp .form-control::-moz-placeholder {
+  color: #7B8D9F;
 }
 .add-product-form .form-outer .lft-sec .form-wrp .form-control::placeholder {
   color: #7B8D9F;
@@ -493,6 +497,9 @@
   .add-product-form .form-outer .lft-sec .dimension-group .dimension-input {
     height: 32px;
   }
+}
+.add-product-form .form-outer .lft-sec .dimension-group .dimension-input::-moz-placeholder {
+  color: #7B8D9F;
 }
 .add-product-form .form-outer .lft-sec .dimension-group .dimension-input::placeholder {
   color: #7B8D9F;
@@ -919,6 +926,4 @@
   .add-product-form .form-outer .rt-sec .product-card .product-details .variant-wrp .variant-btn {
     height: 34px;
   }
-}
-
-/*# sourceMappingURL=add-product.css.map */
+}/*# sourceMappingURL=add-product.css.map */

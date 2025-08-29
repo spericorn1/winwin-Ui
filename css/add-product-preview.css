@@ -159,7 +159,7 @@
 }
 .add-product-form .form-outer .lft-sec .form-label {
   font-weight: 500;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
   font-size: 14px;
   color: #101b25;
   line-height: 20px;
@@ -570,6 +570,35 @@
 .add-product-form .form-outer .lft-sec .item-title span {
   color: #415362;
 }
+.add-product-form .form-outer .lft-sec .item-sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  color: #101B25;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .item-sub-title {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .item-sub-title {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 579px) {
+  .add-product-form .form-outer .lft-sec .item-sub-title {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+.add-product-form .form-outer .lft-sec .item-sub-title span {
+  color: #415362;
+}
 .add-product-form .form-outer .lft-sec .quantity {
   display: flex;
   align-items: center;
@@ -600,45 +629,144 @@
   align-items: center;
   gap: 8px;
 }
-.add-product-form .form-outer .lft-sec .dimension-group .dimension-input {
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp {
   width: 33.3333333333%;
-  border: 1px solid #dfe1e3;
-  border-radius: 50px;
-  font-size: 14px;
-  outline: none;
-  text-align: center;
-  transition: all 0.2s ease;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  height: 48px;
 }
 @media (max-width: 1679px) {
-  .add-product-form .form-outer .lft-sec .dimension-group .dimension-input {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp {
     font-size: 14px;
     height: 42px;
   }
 }
 @media (max-width: 1481px) {
-  .add-product-form .form-outer .lft-sec .dimension-group .dimension-input {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp {
     height: 38px;
   }
 }
 @media (max-width: 1199px) {
-  .add-product-form .form-outer .lft-sec .dimension-group .dimension-input {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp {
     height: 32px;
   }
 }
-.add-product-form .form-outer .lft-sec .dimension-group .dimension-input::-moz-placeholder {
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .btn-check:checked + .btn {
+  border: 1px solid #5090CC;
+}
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp::-moz-placeholder {
   color: #7b8d9f;
 }
-.add-product-form .form-outer .lft-sec .dimension-group .dimension-input::placeholder {
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp::placeholder {
   color: #7b8d9f;
 }
-.add-product-form .form-outer .lft-sec .dimension-group .dimension-input:focus {
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp:focus {
   outline: none;
   box-shadow: none;
+}
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .payment-freq {
+  border: 1px solid #dfe1e3;
+  background: #F4F5F6;
+  border-radius: 50px;
+  color: #101B25;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .payment-freq {
+    height: 42px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .payment-freq {
+    height: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .payment-freq {
+    height: 32px;
+    font-size: 13px;
+  }
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp {
+  width: 44px;
+  height: 44px;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp {
+    font-size: 14px;
+    height: 42px;
+    width: 42px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp {
+    height: 38px;
+    width: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp {
+    height: 32px;
+    width: 32px;
+  }
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .btn-check:checked + .btn {
+  border: 1px solid #5090CC;
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp::-moz-placeholder {
+  color: #7b8d9f;
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp::placeholder {
+  color: #7b8d9f;
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp:focus {
+  outline: none;
+  box-shadow: none;
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .payment-freq {
+  border: 1px solid #dfe1e3;
+  background: #F4F5F6;
+  border-radius: 50px;
+  color: #101B25;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+@media (max-width: 1679px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .payment-freq {
+    height: 42px;
+    width: 42px;
+  }
+}
+@media (max-width: 1481px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .payment-freq {
+    height: 38px;
+    width: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .payment-freq {
+    height: 32px;
+    width: 32px;
+    font-size: 13px;
+  }
 }
 .add-product-form .form-outer .lft-sec .dimension-group .dimension-separator {
   font-size: 16px;
