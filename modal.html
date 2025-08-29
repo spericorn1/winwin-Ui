@@ -52,6 +52,8 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#counterofferaccept">
             Counter Offer Accept
         </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createAccountLogin">create Account Login</button>
+        
 
     </div>
 
@@ -355,6 +357,28 @@
 
     <!-- Counter Offer Accept modal -->
     <div class="modal custom-modal accept-offer-modal fade" id="counterofferaccept" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+
+                    <div class="company-logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="of-title min">Are you sure you want to<br/> accept this offer?</div>
+                    <div class="of-para">Once confirmed, the offer will be finalized and cannot be changed.</div>
+                    <div class="re-btn-wrap">
+                        <button class="btn color-red"><span>Cancel</span></button>
+                        <button class="btn cnfm"><span>Accept Offer</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create accout or login -->
+    <div class="modal custom-modal accept-offer-modal fade" id="createAccountLogin" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
             <div class="modal-content custom-modal-content">
