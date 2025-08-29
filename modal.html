@@ -2,26 +2,26 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-   <title>Win Win X</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="css/common.css">
-   <link rel="stylesheet" href="css/login.css">
-   <link rel="stylesheet" href="css/modal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <title>Win Win X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
-     <div>
-         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pswdSuccessModal">
-             Password changed Successfully
-         </button>
-         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEmailModal">
-             Verify Email
-         </button>
+    <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pswdSuccessModal">
+            Password changed Successfully
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verifyEmailModal">
+            Verify Email
+        </button>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#activeProfileModal">
             Active Profile
         </button>
@@ -46,11 +46,20 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutsuccessModal">
             Checkout success
         </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accept-offer">
+            Accept Offer
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#counterofferaccept">
+            Counter Offer Accept
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createAccountLogin">create Account Login</button>
         
-     </div>
+
+    </div>
 
     <!-- Passwored change modal -->
-    <div class="modal custom-modal info-modal fade" id="pswdSuccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal fade" id="pswdSuccessModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -60,7 +69,8 @@
                     <h2>Password changed Successfully</h2>
                     <p>Your password has been successfully change. You can now continue.</p>
                     <div class="btn-block">
-                        <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Back to log in</button>
+                        <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Back to log
+                            in</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +78,8 @@
     </div>
 
     <!-- Verify email -->
-    <div class="modal custom-modal verify-email-modal fade" id="verifyEmailModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal verify-email-modal fade" id="verifyEmailModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
@@ -86,8 +97,10 @@
                         <p>Please verify your email using the link we’ve sent to design@ofspace.co</p>
                     </div>
                     <div class="btn-block btn-block-2-col d-flex">
-                        <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc" data-bs-dismiss="modal">Resend</button>
-                        <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Verify Email with Code</button>
+                        <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc"
+                            data-bs-dismiss="modal">Resend</button>
+                        <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Verify Email
+                            with Code</button>
                     </div>
                 </div>
             </div>
@@ -95,7 +108,8 @@
     </div>
 
     <!-- Active profile modal -->
-    <div class="modal custom-modal info-modal fade" id="activeProfileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal fade" id="activeProfileModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -116,7 +130,8 @@
     </div>
 
     <!-- Phone number verified modal -->
-    <div class="modal custom-modal info-modal fade"id="phoneVerifiedModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal fade" id="phoneVerifiedModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -137,7 +152,8 @@
     </div>
 
     <!-- Password changed success  modal -->
-    <div class="modal custom-modal info-modal fade" id="pswdChangedSuccsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal fade" id="pswdChangedSuccsModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -158,10 +174,11 @@
     </div>
 
     <!-- Crop profile picture modal -->
-    <div class="modal custom-modal img-crop-modal fade" id="picCropModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal img-crop-modal fade" id="picCropModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                
+
                 <div class="modal-header">
                     <h5 class="modal-title">Crop Profile Picture</h5>
                     <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
@@ -187,7 +204,8 @@
     </div>
 
     <!-- ready make payment modal -->
-    <div class="modal custom-modal info-modal make-payment fade" id="makepaymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal make-payment fade" id="makepaymentModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -198,11 +216,12 @@
                     <p>Double-check everything and hit confirm when you’re good to go!</p>
                     <div class="confirmation-blk">
                         <div class="conscent-box">
-                            <label class="form-check-label" for="act1"> 
+                            <label class="form-check-label" for="act1">
                                 <input class="form-check-input" type="checkbox" name="act" id="act1" value="option1">
                             </label>
                             <span class="txt">
-                                I confirm that the information provided is correct and that I/we will comply with all procedures outlined in this legal document.
+                                I confirm that the information provided is correct and that I/we will comply with all
+                                procedures outlined in this legal document.
                             </span>
                         </div>
                         <div class="signed-doc">
@@ -213,13 +232,15 @@
                                 <img src="./img/check.svg" alt="">
                             </button>
                             <button class="btn">
-                                 <img src="./img/cancel.svg" alt="">
+                                <img src="./img/cancel.svg" alt="">
                             </button>
                         </div>
                         <p class="date">Date: 24-09-2023</p>
-                         <div class="btn-block btn-block-2-col d-flex">
-                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Confirm</button>
+                        <div class="btn-block btn-block-2-col d-flex">
+                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn modal-btn-1 hover-opc"
+                                data-bs-dismiss="modal">Confirm</button>
                         </div>
                     </div>
                 </div>
@@ -228,7 +249,8 @@
     </div>
 
     <!-- ready make payment modal -->
-    <div class="modal custom-modal info-modal make-payment fade" id="makepaymenteditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal info-modal make-payment fade" id="makepaymenteditModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -239,11 +261,12 @@
                     <p>Double-check everything and hit confirm when you’re good to go!</p>
                     <div class="confirmation-blk">
                         <div class="conscent-box">
-                            <label class="form-check-label" for="act1"> 
+                            <label class="form-check-label" for="act1">
                                 <input class="form-check-input" type="checkbox" name="act" id="act1" value="option1">
                             </label>
                             <span class="txt">
-                                I confirm that the information provided is correct and that I/we will comply with all procedures outlined in this legal document.
+                                I confirm that the information provided is correct and that I/we will comply with all
+                                procedures outlined in this legal document.
                             </span>
                         </div>
                         <div class="signed-doc">
@@ -255,9 +278,11 @@
                             </button>
                         </div>
                         <p class="date">Date: 24-09-2023</p>
-                         <div class="btn-block btn-block-2-col d-flex">
-                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc" data-bs-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Confirm</button>
+                        <div class="btn-block btn-block-2-col d-flex">
+                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn modal-btn-1 hover-opc"
+                                data-bs-dismiss="modal">Confirm</button>
                         </div>
                     </div>
                 </div>
@@ -266,7 +291,8 @@
     </div>
 
     <!-- Success modal -->
-    <div class="modal custom-modal checkout-success fade" id="checkoutsuccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal checkout-success fade" id="checkoutsuccessModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -284,7 +310,8 @@
     </div>
 
     <!-- Success modal -->
-    <div class="modal custom-modal checkout-success fade" id="checkoutacceptedModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal custom-modal checkout-success fade" id="checkoutacceptedModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body text-center">
@@ -304,10 +331,82 @@
         </div>
     </div>
 
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Accept Offer modal -->
+    <div class="modal custom-modal accept-offer-modal fade" id="accept-offer" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+
+                    <div class="of-icon">
+                        <img src="img/offer-img.svg" alt="" class="img">
+                        <img src="img/accept-icon.svg" alt="" class="tic-icon">
+                    </div>
+                    <div class="of-title">Accept Offer</div>
+                    <div class="of-para">By accepting, you agree to the buyer’s terms and move forward with the sale.
+                    </div>
+                    <div class="re-btn-wrap">
+                        <button class="btn"><span>Cancel</span></button>
+                        <button class="btn cnfm"><span>Accept</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter Offer Accept modal -->
+    <div class="modal custom-modal accept-offer-modal fade" id="counterofferaccept" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+
+                    <div class="company-logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="of-title min">Are you sure you want to<br/> accept this offer?</div>
+                    <div class="of-para">Once confirmed, the offer will be finalized and cannot be changed.</div>
+                    <div class="re-btn-wrap">
+                        <button class="btn color-red"><span>Cancel</span></button>
+                        <button class="btn cnfm"><span>Accept Offer</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create accout or login -->
+    <div class="modal custom-modal accept-offer-modal fade" id="createAccountLogin" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                <div class="modal-body custom-modal-body">
+                    
+                     <div class="acc-icon">
+                        <img src="img/create-login-icon.svg" alt="">
+                    </div>
+                    <div class="of-title min">Create an Account or Log In</div>
+                    <div class="of-para">In order to publish this product to the Marketplace, we need you to create an account or log in.</div>
+                    <div class="re-btn-wrap flex-column">
+                        <button class="btn cnfm"><span>Create an Account</span></button>
+                        <button class="btn"><span>Log In</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

@@ -313,3 +313,303 @@
         }
     }
 }
+
+
+/* Compare starts */
+
+.comparision-wrap {
+    @media ($sm-991) {
+        padding-top: 20px;
+    }
+    .com-title {
+        color: #101b25;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0 0 20px 0;
+        @media ($sm-1679) {
+            font-size: 18px;
+            padding: 0 0 15px 0;
+        }
+        @media ($sm-1199) {
+            font-size: 16px;
+        }
+    }
+    .com-list-wrap {
+        .com-sub-title {
+            color: #101b25;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0 0 15px 0;
+            @media ($sm-1679) {
+                font-size: 16px;
+                padding: 0 0 10px 0;
+            }
+            @media ($sm-1199) {
+                font-size: 14px;
+            }
+        }
+        .list {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                align-items: center;
+                .img {
+                    width: 40px;
+                    height: 40px;
+                    flex: 0 0 40px;
+                    @media ($sm-1679) {
+                        width: 35px;
+                        height: 35px;
+                        flex: 0 0 35px;
+                    }
+                    img {
+                        border-radius: 50%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .txt {
+                    flex: 1;
+                    .name {
+                        color: #101b25;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        margin: 0;
+                        padding: 0 0 5px 0;
+                        @media ($sm-1679) {
+                            font-size: 14px;
+                            padding: 0 0 3px 0;
+                        }
+                        @media ($sm-767) {
+                            font-size: 12px;
+                        }
+                        a {
+                            color: #5090cc;
+                            text-decoration: underline;
+                        }
+                    }
+                    .score {
+                        color: #415362;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.2;
+                        margin: 0;
+                        padding: 0;
+                        span {
+                            font-weight: 500;
+                            color: #101b25;
+                            font-size: 14px;
+                            padding: 0 0 0 2px;
+                            @media ($sm-1679) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .total {
+                    color: #415362;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    margin: 0;
+                    padding: 0;
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+                    @media ($sm-1199) {
+                        font-size: 12px;
+                    }
+                    &.color-green {
+                        color: #1bb746;
+                    }
+                }
+                & + li {
+                    padding-top: 15px;
+                    @media ($sm-1679) {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        & + .com-list-wrap {
+            border-top: 1px solid #dfe1e3;
+            padding: 20px 0 0 0;
+            margin: 20px 0 0 0;
+            @media ($sm-1679) {
+                padding: 15px 0 0 0;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+    .btn-wrap {
+        padding: 25px 0 0 0;
+        @media ($sm-1679) {
+            padding: 20px 0 0 0;
+        }
+        .btn {
+            background: #f4f5f6;
+            height: 44px;
+            border-radius: 20px;
+            margin: 0;
+            padding: 5px;
+            outline: 0;
+            box-shadow: none;
+            display: block;
+            width: 100%;
+            color: #101b25;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 500;
+            @media ($sm-1679) {
+                font-size: 13px;
+                height: 40px;
+            }
+            @media ($sm-767) {
+                font-size: 12px;
+                height: 38px;
+            }
+        }
+    }
+}
+
+/* Compare ends */
+
+
+
+.custom-container-preview{
+    max-width: 630px;
+    .preview-details{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .preview-title{
+            margin-bottom: 25px;
+            h2{
+                font-size: 24px;
+                margin-bottom: 8px;
+                @media ($sm-1679) {
+                    font-size: 22px;
+                }
+                @media ($sm-1481) {
+                    font-size: 20px;
+                }
+            }
+            p{
+                color: #415362;
+                margin-bottom: 0;
+                @media ($sm-1679) {
+                    font-size: 15px;
+                }
+                @media ($sm-1481) {
+                    font-size: 14px;
+                }
+            }
+        }
+        .overvw-btn-block{
+            justify-content: space-between;
+            padding-top: 20px;
+            .btn-1{
+                width: calc(50% - 8px);
+            }
+        }
+        .slider-sec{
+            width: 100%;
+        }
+        .product-card{
+            border: none;
+            margin-top: 0;
+        }
+        .slider-sec .product-thumbs .thumb-img-block{
+            margin-right: 8px;
+        }
+        .slider-sec .product-slider .prod-img-cover {
+            height: 445px;
+            @media ($sm-1679) {
+                height: 360px;
+            }
+            @media ($sm-1481) {
+                height: 310px;
+            }
+            @media ($sm-767) {
+                height: 290px;
+            }
+            @media ($sm-579) {
+                height: 265px;
+            }
+        }
+        .product-slider-cover{
+            border: 1px solid #B9D3EB;
+            border-radius: 12px;
+            padding: 12px;
+            @media ($sm-579) {
+                padding: 0;
+                border: none;
+            }
+        }
+        .preview-sec-card{
+            border: 1px solid #ECEDEF;
+            box-shadow: 0px 2px 4px 0px #0000000A;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            .details-heading{
+                border: none;
+                font-size: 20px;
+                margin: 0;
+                padding-bottom: 15px;
+                font-weight: 800;
+                @media ($sm-1679) {
+                    font-size: 18px;
+                }
+                @media ($sm-1481) {
+                    font-size: 16px;
+                }
+                @media ($sm-579) {
+                    font-weight: 500;
+                }
+            }
+            .card-btn-block{
+                margin-top: 20px;
+                .edit-pricing-btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 14px 15px;
+                    background-color: #fff;
+                    border: 1px solid #B8C4D0;
+                    box-shadow: 0px 2px 4px 0px #2A455D0F;
+                    border-radius: 50px;
+                    width: 100%;
+                    transition: .3s;
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+                    img{
+                        margin-right: 4px;
+                    }
+                    &:hover{
+                        border-color: rgba($color: #101B25, $alpha: 0.6) !important;
+                    }
+                }
+            }
+        }
+        .product-card .product-details .details-row {
+            .details-label, .details-value{
+                font-size: 14px;
+            }
+            
+        }
+    }
+}

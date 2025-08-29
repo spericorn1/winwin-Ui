@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Equipment Depot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/add-product-preview.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div class="container">
+            <div class="container custom-container">
+                <div class="head-inner-wrap checkout-head-inner">
+                    <div class="logo-wrap">
+                        <img src="img/logo.svg" alt="" class="logo">
+                    </div>
+                    <div class="head-step-wrap checkout-step-wrap">
+                        <ul class="list">
+                            <li class="active">
+                                <div class="name">Product</div>
+                                <div class="round">
+                                    <img src="img/tick.svg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">Price</div>
+                                <div class="round"></div>
+                            </li>
+                            <li>
+                                <div class="name">Shipping</div>
+                                <div class="round"></div>
+                            </li>
+                            <li>
+                                <div class="name">Preview</div>
+                                <div class="round"></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="add-product-form">
+        <div class="container custom-container2">
+            <div class="top-sec">
+                <div class="top-title"> Set Price</div>
+                <div class="top-contetn">Set price you would like to receive for your product</div>
+
+            </div>
+            <div class="form-outer">
+                <div class="lft-sec">
+                    <form class="for-wrp">
+                        <div class="connect-sec mt-0">
+                            <div class="conect-txt">Allow Counter Offer</div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+
+                        </div>
+                        
+                        <div class="form-grp">
+                            <label class="form-label">Select Variant</label>
+                            <div class="form-wrp">
+                                <select class="form-control form-select">
+                                    <option>Variant 1</option>
+                                    <option>Variant 2</option>
+                                    <option>Variant 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-grp">
+                            <label class="form-label">Base Price</label>
+                            <div class="form-wrp">
+                                <select class="form-control form-select" placeholder="$4300">
+                                    <option selected>$4300</option>
+                                    <option>$4200</option>
+                                    <option>$4100</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="item-sub-title">
+                                Set Your Installments
+                        </div> 
+                        <div class="form-grp">
+                            <label class="form-label">Payment Frequency</label>
+                            <div class="dimension-group">
+                                <div class="chk-custom-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check">Weekly</label>
+                                </div>
+                                <div class="chk-custom-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check2">Bi -Weekly</label>
+                                </div>
+                                <div class="chk-custom-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check3">Monthly</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grp">
+                            <label class="form-label">Number of Installments</label>
+                            <div class="dimension-group content-start">
+                                <div class="chk-installment-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check">02</label>
+                                </div>
+                                <div class="chk-installment-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check2">04</label>
+                                </div>
+                                <div class="chk-installment-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check3">06</label>
+                                </div>
+                                <div class="chk-installment-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check4" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check4">08</label>
+                                </div>
+                                <div class="chk-installment-wrp">
+                                    <input type="checkbox" class="btn-check" id="btn-check5" autocomplete="off">
+                                    <label class="btn payment-freq" for="btn-check5">10</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-grp">
+                            <label class="form-label">Installment Amount</label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="$810">
+                                <span class="error-msg">error msg</span>
+                            </div>
+                        </div>
+
+                        <div class="form-grp">
+                            <label class="form-label">Minimum Down Payment</label>
+                            <div class="form-wrp input-group">
+                                <input type="text" class="form-control" placeholder="$30">
+                                <span class="error-msg">error msg</span>
+                            </div>
+                        </div>
+                         <div class="connect-sec">
+                            <div class="conect-txt">Payment Protection Plan<span class="info-icon ms-2"><img src="./img/info-icon.svg" alt=""></span></div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+
+                        </div>
+                        <div class="btn-wrp">
+                            <button class="continue-btn btn"> Continue</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="rt-sec">
+                    <div class="preview-card">
+                        <div class="preview-header">
+                            <label class="preview-label">Preview</label>
+                        </div>
+
+                        <div class="slider-sec">
+                            <div class="product-slider">
+                                <div class="prod-img-cover"><img src="img/mac1.png" class="img-fluid"
+                                        alt="Product Image">
+                                </div>
+                                <div class="prod-img-cover"><img src="img/mac2.png" class="img-fluid"
+                                        alt="Product Image">
+                                </div>
+                                <div class="prod-img-cover"><img src="img/item4.png" class="img-fluid"
+                                        alt="Product Image">
+                                </div>
+                                <div class="prod-img-cover"><img src="img/item5.png" class="img-fluid"
+                                        alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="product-thumbs">
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block"><img src="img/mac1.png" class="img-fluid" alt="Thumb">
+                                    </div>
+                                </div>
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block">
+                                        <img src="img/mac2.png" class="img-fluid" alt="Thumb">
+                                        <button class="remove-btn">
+                                            <img src="./img/delete.svg" alt="">
+                                        </button>
+                                        <button class="drag-icon">
+                                            <img src="./img/drag-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block">
+                                        <img src="img/item4.png" class="img-fluid" alt="Thumb">
+                                        <button class="drag-icon">
+                                            <img src="./img/Icon.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block">
+                                        <img src="img/item5.png" class="img-fluid" alt="Thumb">
+                                        <span class="count">12+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-header">
+                                <h2 class="product-title">MacBook Air 13-inch</h2>
+                                <p class="product-description">
+                                    The 13-inch MacBook Air is a lightweight and portable laptop known for its thin
+                                    design and long battery life.<span class="see-more">See full description</span>
+                                </p>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="details-heading">Details</h3>
+                                <div class="details-row">
+                                    <p class="details-label">Category:</p>
+                                    <p class="details-value">Electronics</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Sub-Category:</p>
+                                    <p class="details-value">Laptops & Computers</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Condition:</p>
+                                    <p class="details-value">New</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Size:</p>
+                                    <p class="details-value">14.4</p>
+                                </div>
+                                <div class="variant-wrp">
+                                    <button class="variant-btn">Variant 1</button>
+                                    <button class="variant-btn">Variant 2</button>
+                                    <button class="variant-btn">Variant 3</button>
+                                    <button class="variant-btn">Variant 4</button>
+                                    <button class="variant-btn">Variant 5</button>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Quantity:</p>
+                                    <p class="details-value">2</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Model Number:</p>
+                                    <p class="details-value">Series new</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Color:</p>
+                                    <p class="details-value">Blue</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Size:</p>
+                                    <p class="details-value">XS-4XL</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">SKU code:</p>
+                                    <p class="details-value">PRD-12345</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Material:</p>
+                                    <p class="details-value">Stainless Steel</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Pattern:</p>
+                                    <p class="details-value">Mat Finishing</p>
+                                </div>
+                                <h3 class="details-heading">Pricing Details</h3>
+                                <div class="details-row">
+                                    <p class="details-label">Base Price:</p>
+                                    <p class="details-value">$430.00</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Base Price:</p>
+                                    <p class="details-value">$430.00</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Minimum Down Payment:</p>
+                                    <p class="details-value">$30</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Installment Amount:</p>
+                                    <p class="details-value">$810</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Number of Installments:</p>
+                                    <p class="details-value">08</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Payment Frequency:</p>
+                                    <p class="details-value">Bi -Weekly</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.product-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                arrows: false,
+                asNavFor: '.product-thumbs',
+                prevArrow: '<button type="button" class="slick-prev"><img src="img/Arrow.svg"></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="img/Arrow.svg"></button>',
+                responsive: [
+                    {
+                        breakpoint: 579, // ✅ At 579px and below
+                        settings: {
+                            arrows: true, // hide arrows
+                            dots: true     // show dots
+                        }
+                    }
+                ]
+            });
+
+            $('.product-thumbs').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '.product-slider',
+                focusOnSelect: true,
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 440,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 380,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+
+            });
+        });
+    </script>
+</body>
+
+</html>
