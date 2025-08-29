@@ -187,8 +187,7 @@
   height: 100%;
   width: 100%;
   border-radius: 12px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .product-details .slider-sec .product-thumbs {
   margin-top: 24px;
@@ -244,8 +243,7 @@
 .product-details .slider-sec .product-thumbs .thumb-img-block img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
 }
 @media (max-width: 991px) {
@@ -414,8 +412,7 @@
 .product-details .right-sec .product-info .seller-box .user-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50px;
 }
 .product-details .right-sec .product-info .seller-box .detail-sec .name-txt {
@@ -1342,8 +1339,7 @@
 .review-section .customer-reviews .review-item .review-avatar img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50px;
 }
 .review-section .customer-reviews .review-item .review-content .review-author {
@@ -1404,8 +1400,7 @@
 .review-section .customer-reviews .review-item .review-imgs .img-sec img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
 }
 .review-section .customer-reviews .review-item .date-sec {
@@ -2240,8 +2235,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-left: 16px;
   flex-shrink: 0;
   display: flex;
@@ -2302,7 +2296,6 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-<<<<<<< HEAD
 }
 
 /* counter offer details starts */
@@ -2348,7 +2341,7 @@
 }
 .accept-offer-wrap .per-offer-wrap .txt .name {
   font-size: 18px;
-  color: #101B25;
+  color: #101b25;
   font-weight: 500;
   line-height: 1.2;
   margin: 0;
@@ -2397,7 +2390,7 @@
   color: #101b25;
   font-weight: 600;
   line-height: 1.2;
-  border-bottom: 1px solid #DFE1E3;
+  border-bottom: 1px solid #dfe1e3;
 }
 @media (max-width: 1679px) {
   .accept-offer-wrap .head-wrap .subtitle-wrap {
@@ -2466,7 +2459,7 @@
   padding: 0 0 20px 0;
   font-family: "Instrument Sans", sans-serif;
   font-size: 16px;
-  color: #101B25;
+  color: #101b25;
   font-weight: 500;
   line-height: 1.2;
   width: 60%;
@@ -2528,7 +2521,7 @@
 .accept-offer-wrap .table-group-wrap .table-align-wrap.total-wrap .sp-table-wrap .td1 {
   font-size: 18px;
   font-weight: 500;
-  color: #101B25;
+  color: #101b25;
 }
 @media (max-width: 1679px) {
   .accept-offer-wrap .table-group-wrap .table-align-wrap.total-wrap .sp-table-wrap .td1 {
@@ -2548,7 +2541,7 @@
 .accept-offer-wrap .table-group-wrap .table-align-wrap.total-wrap .sp-table-wrap .td2 {
   font-size: 18px;
   font-weight: 600;
-  color: #101B25;
+  color: #101b25;
 }
 @media (max-width: 1679px) {
   .accept-offer-wrap .table-group-wrap .table-align-wrap.total-wrap .sp-table-wrap .td2 {
@@ -2579,14 +2572,14 @@
 .accept-offer-wrap .btn-wrap .btn {
   outline: 0;
   box-shadow: none;
-  border: 1px solid #DFE1E3;
+  border: 1px solid #dfe1e3;
   border-radius: 30px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  color: #101B25;
+  color: #101b25;
   height: 44px;
 }
 @media (max-width: 1679px) {
@@ -2606,17 +2599,14 @@
   }
 }
 .accept-offer-wrap .btn-wrap .btn.bg-blue {
-  background: #5090CC;
-  border-color: #5090CC;
-  color: #FFFFFF;
+  background: #5090cc;
+  border-color: #5090cc;
+  color: #ffffff;
 }
 .accept-offer-wrap .btn-wrap .btn.color-red {
-  color: #EF4444;
+  color: #ef4444;
 }
 
 /* counter offer details ends */
 
 /*# sourceMappingURL=detail-page.css.map */
-=======
-}/*# sourceMappingURL=detail-page.css.map */
->>>>>>> 079ae5a9f3aa1e6e3f4ad3f86698bd3adb80c36f
