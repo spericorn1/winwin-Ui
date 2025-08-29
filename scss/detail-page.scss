@@ -71,7 +71,7 @@ margin: 0;
         padding-bottom: 40px;
     }
      @media($sm-991){
-        padding-bottom: 0px;
+        padding-bottom: 30px;
     }
     .product-inner-sec{
       
@@ -79,6 +79,7 @@ margin: 0;
             flex-wrap: wrap;
         }
     }
+    &.btm-pad-adj{padding-bottom: 10px;}
     .slider-sec{
     width: 519px;
     flex-shrink: 0;
@@ -1516,6 +1517,18 @@ margin: 0;
                 padding: 2px;
                 border: 1px solid #fff;
 
+                &.input-f-width-num{ display: block; position: relative;
+                    .form-control{ border-radius: 30px; width: 100%; padding-right: 100px;
+                        @media($sm-1679) { padding-right: 80px;}
+                    }
+                    .num-align{position: absolute; inset: 0 20px 0 auto; margin: auto; display: flex; align-items: center; font-size: 16px; font-weight: 500; line-height: 1; color: #415362; z-index: 9;
+                        @media($sm-1679) { font-size: 14px;}
+                        @media($sm-1481) { font-size: 12px;}
+                        &.color-orange{ color: #F27A2A;}
+                        &.color-green{ color: #1BB746;}
+                    }
+                }
+
                 .form-control {
                     height: 52px;
                     border: 1px solid #DFE1E3;  
@@ -1596,6 +1609,7 @@ margin: 0;
                 @media($sm-1481){
                     // font-size: 12px;
                 }
+                span{ color: #101B25; font-weight: 500;}
 
             }
             .installments-container{

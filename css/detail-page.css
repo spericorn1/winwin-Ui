@@ -112,13 +112,16 @@
 }
 @media (max-width: 991px) {
   .product-details {
-    padding-bottom: 0px;
+    padding-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .product-details .product-inner-sec {
     flex-wrap: wrap;
   }
+}
+.product-details.btm-pad-adj {
+  padding-bottom: 10px;
 }
 .product-details .slider-sec {
   width: 519px;
@@ -1720,6 +1723,48 @@
   border: 1px solid #fff;
   /* highlight wrapper on focus */
 }
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num {
+  display: block;
+  position: relative;
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .form-control {
+  border-radius: 30px;
+  width: 100%;
+  padding-right: 100px;
+}
+@media (max-width: 1679px) {
+  .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .form-control {
+    padding-right: 80px;
+  }
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .num-align {
+  position: absolute;
+  inset: 0 20px 0 auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #415362;
+  z-index: 9;
+}
+@media (max-width: 1679px) {
+  .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .num-align {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1481px) {
+  .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .num-align {
+    font-size: 12px;
+  }
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .num-align.color-orange {
+  color: #F27A2A;
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp.input-f-width-num .num-align.color-green {
+  color: #1BB746;
+}
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .form-wrp .form-control {
   height: 52px;
   border: 1px solid #DFE1E3;
@@ -1801,6 +1846,10 @@
   .counteroffer-wrapper .counteroffer-card .counteroffer-group .counteroffer-submitted {
     font-size: 13px;
   }
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .counteroffer-submitted span {
+  color: #101B25;
+  font-weight: 500;
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .installments-container {
   display: flex;
