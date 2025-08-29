@@ -361,3 +361,158 @@
         }
     }
 }
+
+
+
+/* accept offer starts */
+.accept-offer-modal {
+    margin: 0;
+    padding: 0;
+    .custom-modal-dialog {
+        margin: 0 auto;
+        padding: 0;
+        .custom-modal-content {
+            margin: 0 auto;
+            padding: 25px;
+            width: 400px;
+            background: #ffffff;
+            border-radius: 15px;
+            @media ($sm-1679) {
+                width: 350px;
+            }
+            @media ($sm-991) {
+                padding: 20px 15px;
+            }
+            @media ($sm-767) {
+                width: 300px;
+            }
+            .custom-modal-body {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .of-icon {
+                    width: 56px;
+                    height: 56px;
+                    position: relative;
+                    margin: 0 0 15px 0;
+                    @media ($sm-1679) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    @media ($sm-991) {
+                        width: 45px;
+                        height: 45px;
+                        margin: 0 0 10px 0;
+                    }
+                    .img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+                    .tic-icon {
+                        position: absolute;
+                        right: 3px;
+                        top: 3px;
+                        width: 12px;
+                        height: 12px;
+                        @media ($sm-1679) {
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+                .of-title {
+                    color: #101b25;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 1.2;
+                    margin: 0;
+                    padding: 0 0 10px 0;
+                    text-align: center;
+                    @media ($sm-1679) {
+                        font-size: 22px;
+                    }
+                    @media ($sm-1481) {
+                        font-size: 20px;
+                    }
+                    @media ($sm-991) {
+                        font-size: 18px;
+                    }
+                }
+                .of-para {
+                    color: #415362;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    margin: 0;
+                    padding: 0 0 15px 0;
+                    text-align: center;
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+                    @media ($sm-991) {
+                        font-size: 12px;
+                        line-height: 1.4;
+                        padding: 0 0 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .re-btn-wrap {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        @media ($sm-479) {
+            flex-direction: column;
+        }
+        .btn {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border: 1px solid #dfe1e3;
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            background: #fff !important;
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+            @media ($sm-1679) {
+                height: 40px;
+            }
+            @media ($sm-767) {
+                height: 38px;
+            }
+
+            &.cnfm {
+                background: #5090cc !important;
+                border: 0;
+                position: relative;
+                span {
+                    color: #fff;
+                }
+            }
+            span {
+                font-family: $primary-font;
+                font-size: 14px;
+                color: #101b25;
+                font-weight: 500;
+                line-height: 1;
+                @media ($sm-1679) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+/* accept offer ends */

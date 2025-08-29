@@ -46,6 +46,9 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#checkoutsuccessModal">
             Checkout success
         </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#accept-offer">
+            Accept Offer
+        </button>
         
      </div>
 
@@ -303,6 +306,29 @@
             </div>
         </div>
     </div>
+
+ <!-- Accept Offer modal -->
+    <div class="modal custom-modal accept-offer-modal fade" id="accept-offer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+                   
+                    <div class="of-icon">
+                        <img src="img/offer-img.svg" alt="" class="img">
+                        <img src="img/accept-icon.svg" alt="" class="tic-icon">
+                    </div>
+                    <div class="of-title">Accept Offer</div>
+                    <div class="of-para">By accepting, you agree to the buyer’s terms and move forward with the sale.</div>
+                    <div class="re-btn-wrap">
+                        <button class="btn"><span>Cancel</span></button>
+                        <button class="btn cnfm"><span>Accept</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
