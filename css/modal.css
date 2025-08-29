@@ -419,6 +419,10 @@
   margin: 0;
   padding: 0;
 }
+.accept-offer-modal .modal-close-btn {
+  top: 12px;
+  right: 12px;
+}
 .accept-offer-modal .custom-modal-dialog {
   margin: 0 auto;
   padding: 0;
@@ -480,7 +484,8 @@
 .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-icon .img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
 }
 .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-icon .tic-icon {
@@ -515,6 +520,27 @@
 @media (max-width: 767px) {
   .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo img {
     width: 70px;
+  }
+}
+.accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .acc-icon {
+  padding: 0 0 24px 0;
+}
+@media (max-width: 1679px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .acc-icon {
+    padding: 0 0 19px 0;
+  }
+}
+.accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .acc-icon img {
+  width: 66px;
+}
+@media (max-width: 1679px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .acc-icon img {
+    width: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .acc-icon img {
+    width: 50px;
   }
 }
 .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title {
@@ -636,6 +662,4 @@
   color: #EF4444;
 }
 
-/* accept offer ends */
-
-/*# sourceMappingURL=modal.css.map */
+/* accept offer ends *//*# sourceMappingURL=modal.css.map */
