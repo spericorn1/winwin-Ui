@@ -368,6 +368,10 @@
 .accept-offer-modal {
     margin: 0;
     padding: 0;
+    .modal-close-btn{
+        top: 12px;
+        right: 12px;
+    }
     .custom-modal-dialog {
         margin: 0 auto;
         padding: 0;
@@ -433,6 +437,13 @@
                     img{ width: 85px;
                         @media ($sm-1679) { width: 75px;}
                         @media ($sm-767) { width: 70px;}
+                    }
+                }
+                .acc-icon{ padding: 0 0 24px 0;
+                    @media ($sm-1679) { padding: 0 0 19px 0;}
+                    img{ width: 66px;
+                        @media ($sm-1679) { width: 56px;}
+                        @media ($sm-767) { width: 50px;}
                     }
                 }
                 .of-title {
