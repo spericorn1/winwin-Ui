@@ -412,9 +412,21 @@
       .custom-container-preview .preview-details .preview-title h2 {
         font-size: 24px;
         margin-bottom: 8px; }
+        @media (max-width: 1679px) {
+          .custom-container-preview .preview-details .preview-title h2 {
+            font-size: 22px; } }
+        @media (max-width: 1481px) {
+          .custom-container-preview .preview-details .preview-title h2 {
+            font-size: 20px; } }
       .custom-container-preview .preview-details .preview-title p {
         color: #415362;
         margin-bottom: 0; }
+        @media (max-width: 1679px) {
+          .custom-container-preview .preview-details .preview-title p {
+            font-size: 15px; } }
+        @media (max-width: 1481px) {
+          .custom-container-preview .preview-details .preview-title p {
+            font-size: 14px; } }
     .custom-container-preview .preview-details .overvw-btn-block {
       justify-content: space-between;
       padding-top: 20px; }
