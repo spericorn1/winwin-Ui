@@ -435,6 +435,11 @@
     width: 350px;
   }
 }
+@media (max-width: 1199px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content {
+    width: 320px;
+  }
+}
 @media (max-width: 991px) {
   .accept-offer-modal .custom-modal-dialog .custom-modal-content {
     padding: 20px 15px;
@@ -491,6 +496,27 @@
     height: 10px;
   }
 }
+.accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo {
+  padding: 0 0 20px 0;
+}
+@media (max-width: 1679px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo {
+    padding: 0 0 15px 0;
+  }
+}
+.accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo img {
+  width: 85px;
+}
+@media (max-width: 1679px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo img {
+    width: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .company-logo img {
+    width: 70px;
+  }
+}
 .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title {
   color: #101b25;
   font-size: 24px;
@@ -513,6 +539,19 @@
 @media (max-width: 991px) {
   .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title {
     font-size: 18px;
+  }
+}
+.accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title.min {
+  font-size: 20px;
+}
+@media (max-width: 1679px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title.min {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1481px) {
+  .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-title.min {
+    font-size: 16px;
   }
 }
 .accept-offer-modal .custom-modal-dialog .custom-modal-content .custom-modal-body .of-para {
@@ -592,6 +631,9 @@
   .accept-offer-modal .re-btn-wrap .btn span {
     font-size: 12px;
   }
+}
+.accept-offer-modal .re-btn-wrap .btn.color-red span {
+  color: #EF4444;
 }
 
 /* accept offer ends */
