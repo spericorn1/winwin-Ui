@@ -313,3 +313,176 @@
         }
     }
 }
+
+
+/* Compare starts */
+
+.comparision-wrap {
+    @media ($sm-991) {
+        padding-top: 20px;
+    }
+    .com-title {
+        color: #101b25;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0 0 20px 0;
+        @media ($sm-1679) {
+            font-size: 18px;
+            padding: 0 0 15px 0;
+        }
+        @media ($sm-1199) {
+            font-size: 16px;
+        }
+    }
+    .com-list-wrap {
+        .com-sub-title {
+            color: #101b25;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0 0 15px 0;
+            @media ($sm-1679) {
+                font-size: 16px;
+                padding: 0 0 10px 0;
+            }
+            @media ($sm-1199) {
+                font-size: 14px;
+            }
+        }
+        .list {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            li {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                align-items: center;
+                .img {
+                    width: 40px;
+                    height: 40px;
+                    flex: 0 0 40px;
+                    @media ($sm-1679) {
+                        width: 35px;
+                        height: 35px;
+                        flex: 0 0 35px;
+                    }
+                    img {
+                        border-radius: 50%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .txt {
+                    flex: 1;
+                    .name {
+                        color: #101b25;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1.2;
+                        margin: 0;
+                        padding: 0 0 5px 0;
+                        @media ($sm-1679) {
+                            font-size: 14px;
+                            padding: 0 0 3px 0;
+                        }
+                        @media ($sm-767) {
+                            font-size: 12px;
+                        }
+                        a {
+                            color: #5090cc;
+                            text-decoration: underline;
+                        }
+                    }
+                    .score {
+                        color: #415362;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 1.2;
+                        margin: 0;
+                        padding: 0;
+                        span {
+                            font-weight: 500;
+                            color: #101b25;
+                            font-size: 14px;
+                            padding: 0 0 0 2px;
+                            @media ($sm-1679) {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .total {
+                    color: #415362;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.2;
+                    margin: 0;
+                    padding: 0;
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+                    @media ($sm-1199) {
+                        font-size: 12px;
+                    }
+                    &.color-green {
+                        color: #1bb746;
+                    }
+                }
+                & + li {
+                    padding-top: 15px;
+                    @media ($sm-1679) {
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        & + .com-list-wrap {
+            border-top: 1px solid #dfe1e3;
+            padding: 20px 0 0 0;
+            margin: 20px 0 0 0;
+            @media ($sm-1679) {
+                padding: 15px 0 0 0;
+                margin: 15px 0 0 0;
+            }
+        }
+    }
+    .btn-wrap {
+        padding: 25px 0 0 0;
+        @media ($sm-1679) {
+            padding: 20px 0 0 0;
+        }
+        .btn {
+            background: #f4f5f6;
+            height: 44px;
+            border-radius: 20px;
+            margin: 0;
+            padding: 5px;
+            outline: 0;
+            box-shadow: none;
+            display: block;
+            width: 100%;
+            color: #101b25;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1;
+            font-weight: 500;
+            @media ($sm-1679) {
+                font-size: 13px;
+                height: 40px;
+            }
+            @media ($sm-767) {
+                font-size: 12px;
+                height: 38px;
+            }
+        }
+    }
+}
+
+/* Compare ends */
