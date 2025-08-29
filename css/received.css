@@ -664,8 +664,8 @@
   }
 }
 .re-activity-outer-wrap .re-activity-wrap {
-  border: 1px solid #ECEDEF;
-  background: #FFFFFF;
+  border: 1px solid #ecedef;
+  background: #ffffff;
   padding: 15px;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-head {
@@ -674,7 +674,7 @@
   justify-content: space-between;
   padding: 0 0 15px 0;
   margin: 0 0 15px 0;
-  border-bottom: 1px solid #ECEDEF;
+  border-bottom: 1px solid #ecedef;
 }
 @media (max-width: 1679px) {
   .re-activity-outer-wrap .re-activity-wrap .re-ac-head {
@@ -683,7 +683,7 @@
   }
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-head .title {
-  color: #101B25;
+  color: #101b25;
   font-size: 16px;
   font-weight: 600;
 }
@@ -731,7 +731,7 @@
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .left-wrap .dot {
   width: 15px;
   height: 15px;
-  border: 1px solid #F59E0B;
+  border: 1px solid #f59e0b;
   position: relative;
   border-radius: 50%;
   background: #fff;
@@ -745,7 +745,7 @@
   content: "";
   width: 5px;
   height: 5px;
-  background: #F59E0B;
+  background: #f59e0b;
   border-radius: 50%;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap {
@@ -764,7 +764,7 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-txt-wrap .name {
   font-size: 14px;
-  color: #101B25;
+  color: #101b25;
   font-weight: 500;
   line-height: 1.2;
   padding: 0 0 2px 0;
@@ -839,10 +839,10 @@
   gap: 3px;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-btn-wrap .btn span {
-  color: #101B25;
+  color: #101b25;
   font-size: 12px;
   font-weight: 500;
-  color: #5090CC;
+  color: #5090cc;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-btn-wrap .btn img {
   width: 14px;
@@ -853,10 +853,10 @@
   z-index: 1;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap.rc-second-color .left-wrap .dot {
-  border-color: #8B5CF6;
+  border-color: #8b5cf6;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap.rc-second-color .left-wrap .dot:after {
-  background: #8B5CF6;
+  background: #8b5cf6;
 }
 
 /*# sourceMappingURL=received.css.map */
