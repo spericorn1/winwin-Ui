@@ -2001,3 +2001,175 @@
         padding-right: 15px;
     }
 }
+
+
+/* counter offer details starts */
+    .accept-offer-wrap{
+        @media ($sm-767) { padding-top: 30px;}
+
+        .per-offer-wrap{ display: flex; gap: 15px; padding: 0 0 25px 0;
+            @media ($sm-1679) { gap: 10px; padding: 0 0 20px 0;}
+            .img{ width: 48px; height: 48px;
+                @media ($sm-1679) { width: 45px; height: 45px; }
+                @media ($sm-1481) { width: 42px; height: 42px; }
+                img{ border-radius: 50%; width: 100%; height: 100%;}
+            }
+            .txt{ flex: 1;
+                .name{ font-size: 18px; color: #101B25; font-weight: 500; line-height: 1.2; margin: 0; padding: 0 0 5px 0;
+                    @media ($sm-1679) { font-size: 16px;}
+                    @media ($sm-1481) { font-size: 14px; padding: 0 0 3px 0; }
+                }
+                .score{ font-size: 16px; color: #415362; font-weight: 400; line-height: 1.2; padding: 0; margin: 0;
+                    @media ($sm-1679) { font-size: 14px;}
+                    @media ($sm-1481) { font-size: 12px; }
+                }
+            }
+        }
+
+.box-wrap {
+        & + .box-wrap {
+            padding-top: 20px;
+        }
+    }
+
+    .head-wrap {
+        padding: 0 0 10px 0;
+        .subtitle-wrap {
+            margin: 0;
+            padding: 0 0 10px 0;
+            font-family: $primary-font;
+            font-size: 18px;
+            color: #101b25;
+            font-weight: 600;
+            line-height: 1.2;
+            border-bottom: 1px solid #DFE1E3;
+            @media ($sm-1679) {
+                font-size: 16px;
+            }
+            @media ($sm-1481) { font-size: 14px; padding: 0 0 5px 0; }
+        }
+    }
+
+    .sp-table-wrap {
+        padding: 0px;
+        margin: 0 0 20px 0;
+        @media ($sm-1679) {
+            margin: 0 0 10px 0;
+        }
+        tr {
+            td {
+                &.td1 {
+                    margin: 0;
+                    padding: 0 0 20px 0;
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    color: #415362;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    width: 40%;
+                    word-break: break-all;
+                    @media ($sm-1679) {
+                        padding: 0 0 12px 0;
+                        font-size: 14px;
+                    }
+                    @media ($sm-1481) { font-size: 13px; }
+                    @media ($sm-991) { width: 60%;}
+                    @media ($sm-479) {
+                        width: 47%; font-size: 12px;
+                    }
+                    .info{ width: 16px;
+                        @media ($sm-1679) { width: 14px;}
+                    }
+                }
+                &.td2 {
+                    text-align: right;
+                    margin: 0;
+                    padding: 0 0 20px 0;
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    color: #101B25;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    width: 60%;
+                    word-break: break-all;
+                    @media ($sm-1679) {
+                        padding: 0 0 12px 0;
+                        font-size: 14px;
+                    }
+                    @media ($sm-1481) { font-size: 13px; }
+                    @media ($sm-991) { width: 40%;}
+                    @media ($sm-479) {
+                        width: 52%; font-size: 12px;
+                    }
+                    span {
+                        font-weight: 400;
+                        color: #415362;
+                    }
+                }
+            }
+        }
+        &.mr-0 {
+            margin-bottom: 0;
+        }
+    }
+
+    .table-group-wrap {
+        .table-align-wrap {
+            padding: 5px 0 20px 0;
+            @media ($sm-1679) {
+                padding: 5px 0 15px 0;
+            }
+            .sp-table-wrap {
+                margin: 0;
+                padding: 0;
+                border-bottom: 1px solid #ecedef;
+                @media ($sm-1679) {
+                    padding-bottom: 10px;
+                }
+            }
+            &.total-wrap {
+                padding: 0;
+                .sp-table-wrap {
+                    border: 0;
+                    .td1 {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #101B25;
+                        @media ($sm-1679) {
+                            font-size: 16px;
+                        }
+                        @media ($sm-1481) {
+                            font-size: 14px;
+                        }
+                        @media ($sm-479) { font-size: 13px;}
+                    }
+                    .td2 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #101B25;
+                        @media ($sm-1679) {
+                            font-size: 16px;
+                        }
+                        @media ($sm-1481) {
+                            font-size: 14px;
+                        }
+                        @media ($sm-479) { font-size: 13px;}
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-wrap{ display: flex; gap: 8px; flex-direction: column; padding: 20px 0 0 0;
+        @media ($sm-767) { padding: 20px 10px 0 10px;}
+        .btn{ outline: 0; box-shadow: none; border: 1px solid #DFE1E3; border-radius: 30px; width: 100%; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #101B25; height: 44px;
+            @media ($sm-1679) { height: 40px;}
+            @media ($sm-767) { font-size: 13px; height: 38px;}
+            @media ($sm-479) { font-size: 12px;}
+            &.bg-blue{ background: #5090CC; border-color: #5090CC; color: #FFFFFF;}
+            &.color-red{color: #EF4444;}
+        }
+    }
+
+    }
+/* counter offer details ends */
