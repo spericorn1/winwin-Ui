@@ -17,6 +17,8 @@
      <link rel="stylesheet" href="css/add-product-preview.css">
      <link rel="stylesheet" href="css/header.css">
      <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/detail-page.css">
+    <link rel="stylesheet" href="css/my-offers.css">
 
     
 </head>
@@ -56,312 +58,60 @@
             </div>
         </div>
     </div>
-    <section class="add-product-form">
-        <div class="container custom-container2">
-            <div class="top-sec">
-                <div class="top-title"> Add Product Details</div>
-                <div class="top-contetn">Add your details and product image</div>
-               
-            </div>
-            <div class="form-outer">
-                <div class="lft-sec">
-                    <form class="for-wrp">
-                        <div class="form-grp ">
-                             <label class="form-label">Product Image</label>
-                                <div class="preview-img-sec">
-                                    <img src="./img/product-image-preview.png" alt="">
-                                </div>
-                                <p class="text-sec">You can add a maximum of 0/10 images.</p>
-                        </div>
-                        <div class="form-grp ">
-                             <label class="form-label">Product Video</label>
-                             <div class="preview-video-sec">
-                                    <img src="./img/product-video-preview.png" alt="">
-                                    <button class="play-btn">
-                                        <img src="./img/Icon.png" alt="">
-                                    </button>
-                                </div>
-                                <p class="text-sec">You can upload only a video</p>
-                        </div>
-                        <div class="form-grp">
-                             <label class="form-label">Product Title</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="Bluetooth Thermal Label Printer" value="Apple Macbook Pro 16”">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div>
-                         <div class="form-grp">
-                             <label class="form-label">Description</label>
-                            <div class="form-wrp input-group form-desc">
-                               <textarea class="form-control form-text-area" placeholder="Add your description">The 13-inch MacBook Air is a lightweight and portable laptop known for its thin design and long battery life
-                               </textarea>
-                               <span class="txt">Min 15 words required</span>
-                               <span class="error-msg">error  msg</span>
-                            </div>
-                        </div>
-                     
-                            <div class="link-sec">
-                                 <span class="icon"><img src="img/generate-ai.svg" alt="ico"></span>   <a href="" class="link-txt"><span>Generate with AI</span></a>
-                            </div>
-                         
-                        <div class="connect-sec">
-                            <div class="conect-txt">Connect this product to your Shop? </div>
-                            <label class="toggle-switch">
-                            <input type="checkbox">
-                            <span class="slider"></span>
-                            </label>
+    
 
-                        </div>
-                          <div class="form-grp">
-                             <label class="form-label">Connect this product to your Shop? (Optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="Tucker’s Tech Store">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div>
-                        <div class="form-grp">
-                            <label class="form-label">Category</label>
-                            <div class="form-wrp">
-                                <select class="form-control form-select">
-                                <option value="" disabled selected>Select category</option>
-                                <option>Bluetooth Thermal Label Printer</option>
-                                <option>Inkjet Printer</option>
-                                <option>Laser Printer</option>
-                                </select>
-                            </div>
-                            </div>
+    <section class="detail-sec">
+        <div class="container custom-container-preview">
+            <div class="product-details preview-details">
 
-                            <div class="form-grp">
-                            <label class="form-label">Sub-Category</label>
-                            <div class="form-wrp">
-                                <select class="form-control form-select">
-                                <option value="" disabled selected>Select sub-category</option>
-                                <option>Accessories</option>
-                                <option>Labels</option>
-                                <option>Cartridges</option>
-                                </select>
-                            </div>
-                            </div>
+                <div class="slider-sec">
+                    <div class="preview-title text-center">
+                        <h2>Preview</h2>
+                        <p>Preview your product before Publishing</p>
+                    </div>
 
-                            <div class="form-grp">
-                            <label class="form-label">Condition</label>
-                            <div class="form-wrp">
-                                <select class="form-control form-select">
-                                <option>New</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
-                            </div>
-                            </div>
-                            <div class="item-title">
-                                Variants <span>(optional)</span>
-                            </div> 
-                            <div class="form-grp">
-                             <label class="form-label">Quantity</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="" value="10">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Model (Optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="Series - new" >
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="split-blk">
-                            <div class="form-grp">
-                             <label class="form-label">Color (Optional)</label>
-                             <div class="form-wrp">
-                             <select class="form-control form-select">
-                                <option>Black</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
+                    <div class="preview-sec-card">
+                        <div class="product-slider-cover">
+                            <div class="product-slider">
+                                <div class="prod-img-cover"><img src="img/mac1.png" class="img-fluid" alt="Product Image">
                                 </div>
-                             </div>
-                             <div class="form-grp">
-                             <label class="form-label">Size  (Optional)</label>
-                             <div class="round-wrp">
-                                <select class="form-control form-select">
-                                <option>Letter</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
-                                <div class="size-wrp">
-                                    <span>XS-4XL</span> 
+                                <div class="prod-img-cover"><img src="img/mac2.png" class="img-fluid" alt="Product Image">
                                 </div>
-                             </div>
-                             </div>
-                        </div>
-                            <div class="form-grp">
-                             <label class="form-label">Enter SKU code (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Meterial (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Pattern (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="item-title">
-                                Variant 2
-                            </div> 
-                            <div class="form-grp">
-                             <label class="form-label">Quantity</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="" value="10">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Model (Optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="Series - new" >
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="split-blk">
-                            <div class="form-grp">
-                             <label class="form-label">Color (Optional)</label>
-                             <div class="form-wrp">
-                             <select class="form-control form-select">
-                                <option>Black</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
+                                <div class="prod-img-cover"><img src="img/mac3.png" class="img-fluid" alt="Product Image">
                                 </div>
-                             </div>
-                             <div class="form-grp">
-                             <label class="form-label">Size  (Optional)</label>
-                             <div class="round-wrp">
-                                <select class="form-control form-select">
-                                <option>Letter</option>
-                                <option>Used</option>
-                                <option>Refurbished</option>
-                                </select>
-                                <div class="size-wrp">
-                                    <span>XS-4XL</span> 
+                                <div class="prod-img-cover"><img src="img/mac4.png" class="img-fluid" alt="Product Image">
                                 </div>
-                             </div>
-                             </div>
-                        </div>
-                            <div class="form-grp">
-                             <label class="form-label">Enter SKU code (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
                             </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Meterial (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        <div class="form-grp">
-                             <label class="form-label">Pattern (optional)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="PRD-12345">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                        
-
-                                 <div class="form-grp">
-                                    <label class="form-label">Package Dimension (lbs)</label>
-                                    <div class="dimension-group">
-                                    <input type="text" class="dimension-input" placeholder="L">
-                                    <span class="dimension-separator">×</span>
-                                    <input type="text" class="dimension-input" placeholder="W">
-                                    <span class="dimension-separator">×</span>
-                                    <input type="text" class="dimension-input" placeholder="H">
+                            <div class="product-thumbs">
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block"><img src="img/mac1.png" class="img-fluid" alt="Thumb">
                                     </div>
                                 </div>
-                                 <div class="form-grp">
-                             <label class="form-label">Package weight (kg)</label>
-                            <div class="form-wrp input-group">
-                                <input type="text" class="form-control" placeholder="5">
-                                <span class="error-msg">error  msg</span>
-                            </div>
-                        </div> 
-                         <button class="add-btn btn"><span class="ico"><img src="img/plus.svg" alt="plus"></span>Add Variant</button>
-                         <div class="btn-wrp">
-                            <button class="continue-btn btn"> Continue</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="rt-sec">
-                    <div class="preview-card">
-                        <div class="preview-header">
-                            <label class="preview-label">Preview</label>
-                        </div>
-
-                        <div class="slider-sec">
-                        <div class="product-slider">
-                            <div class="prod-img-cover"><img src="img/mac1.png" class="img-fluid" alt="Product Image">
-                            </div>
-                            <div class="prod-img-cover"><img src="img/mac2.png" class="img-fluid" alt="Product Image">
-                            </div>
-                            <div class="prod-img-cover"><img src="img/item4.png" class="img-fluid" alt="Product Image">
-                            </div>
-                            <div class="prod-img-cover"><img src="img/item5.png" class="img-fluid" alt="Product Image">
-                            </div>
-                        </div>
-                        <div class="product-thumbs">
-                            <div class="thumb-img-wrp">
-                                <div class="thumb-img-block"><img src="img/mac1.png" class="img-fluid" alt="Thumb">
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block"><img src="img/mac2.png" class="img-fluid" alt="Thumb">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="thumb-img-wrp">
-                                <div class="thumb-img-block">
-                                    <img src="img/mac2.png" class="img-fluid" alt="Thumb">
-                                    <button class="remove-btn">
-                                        <img src="./img/delete.svg" alt="">
-                                    </button>
-                                    <button class="drag-icon">
-                                        <img src="./img/drag-icon.svg" alt="">
-                                    </button>
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block"><img src="img/mac3.png" class="img-fluid" alt="Thumb">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="thumb-img-wrp">
-                                <div class="thumb-img-block">
-                                    <img src="img/item4.png" class="img-fluid" alt="Thumb">
-                                    <button class="drag-icon">
-                                        <img src="./img/Icon.png" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="thumb-img-wrp">
-                                <div class="thumb-img-block">
-                                    <img src="img/item5.png" class="img-fluid" alt="Thumb">
-                                    <span class="count">12+</span>
+                                <div class="thumb-img-wrp">
+                                    <div class="thumb-img-block"><img src="img/mac4.png" class="img-fluid" alt="Thumb">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-card">
+                        <div class="product-card mt-3 p-0">
                             <div class="product-header">
                                 <h2 class="product-title">MacBook Air 13-inch</h2>
                                 <p class="product-description">
-                                    The 13-inch MacBook Air is a lightweight and portable laptop known for its thin design and long battery life.<span class="see-more">See full description</span>
+                                    The 13-inch MacBook Air is a lightweight and portable laptop known for its thin
+                                    design and long battery life.
+                                    The 13-inch MacBook Air...<span class="see-more">See full description</span>
                                 </p>
                             </div>
-
-                            <div class="product-details">
+    
+                            <div class="product-details mt-2 p-0">
                                 <h3 class="details-heading">Details</h3>
                                 <div class="details-row">
                                     <p class="details-label">Category:</p>
@@ -369,59 +119,124 @@
                                 </div>
                                 <div class="details-row">
                                     <p class="details-label">Sub-Category:</p>
-                                    <p class="details-value">Laptops & Computers</p>
+                                    <p class="details-value">Laptop</p>
                                 </div>
                                 <div class="details-row">
                                     <p class="details-label">Condition:</p>
                                     <p class="details-value">New</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">Size:</p>
-                                    <p class="details-value">14.4</p>
-                                </div>
-                                <div class="variant-wrp">
-                                    <button class="variant-btn">Variant 1</button>
-                                    <button class="variant-btn">Variant 2</button>
-                                    <button class="variant-btn">Variant 3</button>
-                                    <button class="variant-btn">Variant 4</button>
-                                    <button class="variant-btn">Variant 5</button>
+                                    <p class="details-label">Model Number:</p>
+                                    <p class="details-value">1232443</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">Quantity:</p>
+                                    <p class="details-label">Size:</p>
+                                    <p class="details-value">50.5"</p>
+                                </div>
+                            </div>
+                            <div class="card-btn-block">
+                                <button class="edit-pricing-btn hover-opc">
+                                    <img src="img/edit-3.svg" alt=""> Edit Product Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-sec-card">
+                        <div class="product-card p-0">
+                            <div class="product-details p-0">
+                                <h3 class="details-heading">Pricing Details</h3>
+                                <div class="details-row">
+                                    <p class="details-label">Base Price:</p>
+                                    <p class="details-value">$430.00</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Installment Amount:</p>
+                                    <p class="details-value">$810</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Minimum Down Payment:</p>
+                                    <p class="details-value">$46</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Number of Installment:</p>
                                     <p class="details-value">2</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">Model Number:</p>
-                                    <p class="details-value">Series new</p>
+                                    <p class="details-label">Payment Frequency:</p>
+                                    <p class="details-value">Bi-Weekly</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">Color:</p>
-                                    <p class="details-value">Blue</p>
+                                    <p class="details-label">Installment Amount:</p>
+                                    <p class="details-value">$18.99</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">Size:</p>
-                                    <p class="details-value">XS-4XL</p>
+                                    <p class="details-label">Number of Installments:</p>
+                                    <p class="details-value">4</p>
                                 </div>
                                 <div class="details-row">
-                                    <p class="details-label">SKU code:</p>
-                                    <p class="details-value">PRD-12345</p>
-                                </div>
-                                <div class="details-row">
-                                    <p class="details-label">Material:</p>
-                                    <p class="details-value">Stainless Steel</p>
-                                </div>
-                                <div class="details-row">
-                                    <p class="details-label">Pattern:</p>
-                                    <p class="details-value">Mat Finishing</p>
+                                    <p class="details-label">Payment Frequency:</p>
+                                    <p class="details-value">Monthly</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="card-btn-block">
+                            <button class="edit-pricing-btn hover-opc">
+                                <img src="img/edit-3.svg" alt=""> Edit Product Details
+                            </button>
                         </div>
+                    </div>
+
+                    <div class="preview-sec-card">
+                        <div class="product-card p-0">
+                            <div class="product-details p-0">
+                                <h3 class="details-heading">Shipping & Return Policy Details</h3>
+                                <div class="details-row">
+                                    <p class="details-label">Origin Zip Code:</p>
+                                    <p class="details-value">479</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Buyer Minimum TrustScore:</p>
+                                    <p class="details-value">455 & Above</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Package  Dimension (lbs):</p>
+                                    <p class="details-value">46</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Package weight (kg):</p>
+                                    <p class="details-value">2KG</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Return Policy:</p>
+                                    <p class="details-value">30 Days</p>
+                                </div>
+                                <div class="details-row">
+                                    <p class="details-label">Shipping Options:</p>
+                                    <p class="details-value">Fedex, UPS, UPSC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-btn-block">
+                            <button class="edit-pricing-btn hover-opc">
+                                <img src="img/edit-3.svg" alt=""> Edit Product Details
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="overvw-btn-block d-flex">
+                        <button class="btn-1 border-btn">Save as Draft</button>
+                        <button class="btn-1">Publish Now</button>
+                    </div>
 
                 </div>
+                
             </div>
         </div>
+
     </section>
+
+
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Slick JS -->
@@ -460,6 +275,7 @@
        asNavFor: '.product-slider',
        focusOnSelect: true,
        arrows: false,
+       variableWidth: true,
          responsive: [
              {
                        breakpoint: 440,

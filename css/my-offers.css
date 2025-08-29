@@ -253,4 +253,95 @@
   .product-details .offer-btn-block .btn-1.reject {
     color: #EF4444 !important; }
 
+.custom-container-preview {
+  max-width: 630px; }
+  .custom-container-preview .preview-details {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .custom-container-preview .preview-details .preview-title {
+      margin-bottom: 25px; }
+      .custom-container-preview .preview-details .preview-title h2 {
+        font-size: 24px;
+        margin-bottom: 8px; }
+      .custom-container-preview .preview-details .preview-title p {
+        color: #415362;
+        margin-bottom: 0; }
+    .custom-container-preview .preview-details .overvw-btn-block {
+      justify-content: space-between;
+      padding-top: 20px; }
+      .custom-container-preview .preview-details .overvw-btn-block .btn-1 {
+        width: calc(50% - 8px); }
+    .custom-container-preview .preview-details .slider-sec {
+      width: 100%; }
+    .custom-container-preview .preview-details .product-card {
+      border: none;
+      margin-top: 0; }
+    .custom-container-preview .preview-details .slider-sec .product-thumbs .thumb-img-block {
+      margin-right: 8px; }
+    .custom-container-preview .preview-details .slider-sec .product-slider .prod-img-cover {
+      height: 445px; }
+      @media (max-width: 1679px) {
+        .custom-container-preview .preview-details .slider-sec .product-slider .prod-img-cover {
+          height: 360px; } }
+      @media (max-width: 1481px) {
+        .custom-container-preview .preview-details .slider-sec .product-slider .prod-img-cover {
+          height: 310px; } }
+      @media (max-width: 767px) {
+        .custom-container-preview .preview-details .slider-sec .product-slider .prod-img-cover {
+          height: 290px; } }
+      @media (max-width: 579px) {
+        .custom-container-preview .preview-details .slider-sec .product-slider .prod-img-cover {
+          height: 265px; } }
+    .custom-container-preview .preview-details .product-slider-cover {
+      border: 1px solid #B9D3EB;
+      border-radius: 12px;
+      padding: 12px; }
+      @media (max-width: 579px) {
+        .custom-container-preview .preview-details .product-slider-cover {
+          padding: 0;
+          border: none; } }
+    .custom-container-preview .preview-details .preview-sec-card {
+      border: 1px solid #ECEDEF;
+      box-shadow: 0px 2px 4px 0px #0000000A;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 25px; }
+      .custom-container-preview .preview-details .preview-sec-card .details-heading {
+        border: none;
+        font-size: 20px;
+        margin: 0;
+        padding-bottom: 15px;
+        font-weight: 800; }
+        @media (max-width: 1679px) {
+          .custom-container-preview .preview-details .preview-sec-card .details-heading {
+            font-size: 18px; } }
+        @media (max-width: 1481px) {
+          .custom-container-preview .preview-details .preview-sec-card .details-heading {
+            font-size: 16px; } }
+        @media (max-width: 579px) {
+          .custom-container-preview .preview-details .preview-sec-card .details-heading {
+            font-weight: 500; } }
+      .custom-container-preview .preview-details .preview-sec-card .card-btn-block {
+        margin-top: 20px; }
+        .custom-container-preview .preview-details .preview-sec-card .card-btn-block .edit-pricing-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 14px 15px;
+          background-color: #fff;
+          border: 1px solid #B8C4D0;
+          box-shadow: 0px 2px 4px 0px #2A455D0F;
+          border-radius: 50px;
+          width: 100%;
+          transition: .3s; }
+          @media (max-width: 1679px) {
+            .custom-container-preview .preview-details .preview-sec-card .card-btn-block .edit-pricing-btn {
+              font-size: 14px; } }
+          .custom-container-preview .preview-details .preview-sec-card .card-btn-block .edit-pricing-btn img {
+            margin-right: 4px; }
+          .custom-container-preview .preview-details .preview-sec-card .card-btn-block .edit-pricing-btn:hover {
+            border-color: rgba(16, 27, 37, 0.6) !important; }
+    .custom-container-preview .preview-details .product-card .product-details .details-row .details-label, .custom-container-preview .preview-details .product-card .product-details .details-row .details-value {
+      font-size: 14px; }
+
 /*# sourceMappingURL=my-offers.css.map */
