@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.table-outer-wrap {
+  padding: 10px 0 60px 0;
+}
+@media (max-width: 767px) {
+  .table-outer-wrap {
+    padding: 10px 0 40px 0;
+  }
+}
+.table-outer-wrap .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.4;
+  color: #101b25;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+@media (max-width: 1679px) {
+  .table-outer-wrap .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .table-outer-wrap .title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .table-outer-wrap .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .table-outer-wrap .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .table-outer-wrap .title {
+    font-size: 14px;
+  }
+}
+.table-outer-wrap .table-wrap {
+  scrollbar-width: thin;
+  scrollbar-color: #5090cc #fff;
+  overflow: auto;
+}
+.table-outer-wrap .table-wrap .table-all tr th {
+  color: #101b25;
+  font-size: 16px;
+  line-height: 1.4;
+  white-space: nowrap;
+  padding: 13px 20px;
+  margin: 0;
+  font-weight: 600;
+  border: 1px solid #f4f4f4;
+  background: #f4f5f6;
+}
+@media (max-width: 1679px) {
+  .table-outer-wrap .table-wrap .table-all tr th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .table-outer-wrap .table-wrap .table-all tr th {
+    padding: 8px 10px;
+  }
+}
+.table-outer-wrap .table-wrap .table-all tr td {
+  color: #101b25;
+  font-size: 14px;
+  line-height: 1.4;
+  white-space: nowrap;
+  padding: 10px 20px;
+  margin: 0;
+  font-weight: 400;
+  border: 1px solid #f4f4f4;
+}
+@media (max-width: 1679px) {
+  .table-outer-wrap .table-wrap .table-all tr td {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .table-outer-wrap .table-wrap .table-all tr td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}
+.table-outer-wrap .table-wrap .table-all tr:nth-child(odd) td {
+  background: #f4f5f6;
+}
+.table-outer-wrap .table-wrap .table-all tr .btn-wrap .btn {
+  margin: 0;
+  padding: 7px 12px;
+  background: #5090cc;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+@media (max-width: 1679px) {
+  .table-outer-wrap .table-wrap .table-all tr .btn-wrap .btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .table-outer-wrap .table-wrap .table-all tr .btn-wrap .btn {
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+}
+.table-outer-wrap .table-wrap .table-all tr .btn-wrap .btn.btn-white {
+  background: #fff;
+  border: 1px solid #f4f4f4;
+  color: #5090cc;
+}
+.table-outer-wrap .table-wrap .table-all tr .btn-wrap .btn + .btn {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=table.css.map */
