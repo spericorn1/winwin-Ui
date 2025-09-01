@@ -154,7 +154,14 @@
 
    <div class="container custom-container">
       <div class="table-outer-wrap">
-         <h2 class="title">Lorem Ipsum</h2>
+
+         <div class="head-wrap">
+            <h2 class="title">Lorem Ipsum</h2>
+            <div class="btn-wrap">
+               <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Announcement </button>
+            </div>
+         </div>
+
          <div class="table-wrap">
             <table width="100%" cellpadding="0" cellspacing="0" class="table-all">
                <tr>
@@ -165,6 +172,7 @@
                   <th>Created At</th>
                   <th>Updated At</th>
                   <th>Priority</th>
+                  <th>Status</th>
                   <th>Action</th>
                </tr>
                <tr>
@@ -175,10 +183,15 @@
                   <td>10/10/2025</td>
                   <td>10/10/2025</td>
                   <td>1</td>
+                  <td>Active</td>
                   <td>
-                     <div class="btn-wrap">
-                        <button class="btn">Active</button>
-                        <button class="btn btn-white">Inactive/Disable</button>
+                     <div class="action-list">
+                        <ul>
+                           <li><button><img src="img/action-icon-1.svg" alt="edit"></button></li>
+                           <li><button><img src="img/action-icon-2.svg" alt="delete"></button></li>
+                           <li><button><img src="img/action-icon-3.svg" alt="active"></button></li>
+                           <li><button><img src="img/action-icon-4.svg" alt="inactive"></button></li>
+                        </ul>
                      </div>
                   </td>
                </tr>
@@ -190,10 +203,15 @@
                   <td>10/10/2025</td>
                   <td>10/10/2025</td>
                   <td>1</td>
+                  <td>Active</td>
                   <td>
-                     <div class="btn-wrap">
-                        <button class="btn">Active</button>
-                        <button class="btn btn-white">Inactive/Disable</button>
+                     <div class="action-list">
+                        <ul>
+                           <li><button><img src="img/action-icon-1.svg" alt="edit"></button></li>
+                           <li><button><img src="img/action-icon-2.svg" alt="delete"></button></li>
+                           <li><button><img src="img/action-icon-3.svg" alt="active"></button></li>
+                           <li><button><img src="img/action-icon-4.svg" alt="inactive"></button></li>
+                        </ul>
                      </div>
                   </td>
                </tr>
@@ -205,10 +223,15 @@
                   <td>10/10/2025</td>
                   <td>10/10/2025</td>
                   <td>1</td>
+                  <td>Active</td>
                   <td>
-                     <div class="btn-wrap">
-                        <button class="btn">Active</button>
-                        <button class="btn btn-white">Inactive/Disable</button>
+                     <div class="action-list">
+                        <ul>
+                           <li><button><img src="img/action-icon-1.svg" alt="edit"></button></li>
+                           <li><button><img src="img/action-icon-2.svg" alt="delete"></button></li>
+                           <li><button><img src="img/action-icon-3.svg" alt="active"></button></li>
+                           <li><button><img src="img/action-icon-4.svg" alt="inactive"></button></li>
+                        </ul>
                      </div>
                   </td>
                </tr>
@@ -220,10 +243,15 @@
                   <td>10/10/2025</td>
                   <td>10/10/2025</td>
                   <td>1</td>
+                  <td>Offline</td>
                   <td>
-                     <div class="btn-wrap">
-                        <button class="btn">Active</button>
-                        <button class="btn btn-white">Inactive/Disable</button>
+                     <div class="action-list">
+                        <ul>
+                           <li><button><img src="img/action-icon-1.svg" alt="edit"></button></li>
+                           <li><button><img src="img/action-icon-2.svg" alt="delete"></button></li>
+                           <li><button><img src="img/action-icon-3.svg" alt="active"></button></li>
+                           <li><button><img src="img/action-icon-4.svg" alt="inactive"></button></li>
+                        </ul>
                      </div>
                   </td>
                </tr>
@@ -377,6 +405,119 @@
             </div>
          </div>
 
+      </div>
+   </div>
+
+
+   <!-- Modal -->
+   <div class="modal fade add-annoncemet-modal-wrap" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog custom-modal-dialog">
+         <div class="modal-content custom-modal-content">
+
+
+            <div class="head-wrap">
+               <h2 class="title">Lorem Ipsum</h2>
+            </div>
+
+            <div class="table-wrap">
+               <table width="100%" cellpadding="0" cellspacing="0" class="table-all">
+                  <tr>
+                     <th>Title</th>
+                     <th>Message</th>
+                     <th>Link</th>
+                     <th>Priority</th>
+                     <th>Start Date</th>
+                     <th>End Date</th>
+                  </tr>
+                  <tr>
+                     <td>Lorem Ipsum</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>0</td>
+                     <td>11/08/2018</td>
+                     <td>11/08/2018</td>
+                  </tr>
+                  <tr>
+                     <td>Lorem Ipsum</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>0</td>
+                     <td>11/08/2018</td>
+                     <td>11/08/2018</td>
+                  </tr>
+                  <tr>
+                     <td>Lorem Ipsum</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>0</td>
+                     <td>11/08/2018</td>
+                     <td>11/08/2018</td>
+                  </tr>
+                  <tr>
+                     <td>Lorem Ipsum</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>Lorem Ipsum is simply dummy text</td>
+                     <td>0</td>
+                     <td>11/08/2018</td>
+                     <td>11/08/2018</td>
+                  </tr>
+               </table>
+
+
+
+
+
+
+            </div>
+            <div class="footer-btn-wrap">
+               <div class="align-wrap">
+                  <button class="btn" data-bs-dismiss="modal"><span>Cancel</span></button>
+                  <button class="btn cnfm"><span>Save</span></button>
+               </div>
+            </div>
+
+
+            <div class="footer-pagination-wrap">
+               <div class="left-wrap">
+                  <div class="entry-wrap">
+                     <span>Show</span>
+                     <select name="" id="" class="select">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                     </select>
+                     <span>Entries</span>
+                  </div>
+               </div>
+               <div class="right-wrap">
+                  <div class="pagination-wrap">
+                     <ul class="list">
+                        <li class="active">
+                           <div class="num"><a href="">1</a></div>
+                        </li>
+                        <li>
+                           <div class="num"><a href="">2</a></div>
+                        </li>
+                        <li>
+                           <div class="num"><a href="">3</a></div>
+                        </li>
+                        <li>
+                           <div class="num"><a href="">4</a></div>
+                        </li>
+                        <li>
+                           <div class="num"><a href="">5</a></div>
+                        </li>
+                        <li>
+                           <a href=""><img src="img/arrow-right.svg" alt=""></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+
+
+         </div>
       </div>
    </div>
 
