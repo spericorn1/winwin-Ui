@@ -690,7 +690,7 @@
                 padding-top: 0px;
                 background-color: #fff;
                 box-shadow: 0px -7px 10px 2px #0917370F;
-                padding: 20px !important;
+                padding: 10px !important;
             }
             @media ($sm-579) {
                 flex-wrap: wrap;
@@ -1306,7 +1306,10 @@
         padding: 16px;
         margin-top: 16px;
     }
-
+    @media($sm-767){
+        border: none;
+        padding: 0px;
+    }
     .product-header {
         // margin-bottom: 15px;
 
@@ -1491,6 +1494,7 @@
                 line-height: 28px;
                 letter-spacing: -1.5%;
                 color: #101b25;
+                padding-bottom: 15px;
                 @media ($sm-1679) {
                     font-size: 18px;
                     line-height: 26px;
@@ -1502,6 +1506,9 @@
                 @media ($sm-1199) {
                     font-size: 14px;
                     line-height: 22px;
+                }
+                @media($sm-767){
+                    padding-bottom: 10px;
                 }
             }
             .counteroffer-baseprice {
@@ -1678,6 +1685,13 @@
             .installments-container {
                 display: flex;
                 gap: 10px;
+                .down-arrw{
+                    border: none;
+                    box-shadow: none;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                }
                 .installment-option {
                     background-color: #f4f5f6;
                     width: 44px;
@@ -1921,6 +1935,9 @@
     }
 
     .note-section {
+        @media($sm-767){
+            padding-bottom: 30px;
+        }
         .note-title {
             padding-bottom: 10px;
             font-weight: 500;
@@ -1987,7 +2004,7 @@
     .shipping-options {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        // gap: 12px;
         background: #ffffff;
         box-shadow: 0px 2px 4px 0px #0000000a;
 
@@ -1995,10 +2012,16 @@
         .shipping-option {
             display: flex;
             align-items: center;
-            padding: 7px 14px;
+            padding: 12px 14px;
 
             cursor: pointer;
             position: relative;
+            &:first-child{
+                // padding-bottom: 0px;
+            }
+            &:last-child{
+                // padding-top: 0px;
+            }
             &.active,
             &:hover {
                 background: #f8f9fa;
@@ -2075,11 +2098,12 @@
                 }
                 .shipping-desc {
                     font-weight: 400;
-                    // font-size: 12px;
+                    font-size: 12px;
                     line-height: 16px;
                     letter-spacing: 0px;
                     vertical-align: middle;
                     color: #415362;
+                    margin-bottom: 0px;
                 }
             }
         }

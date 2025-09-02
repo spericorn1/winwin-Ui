@@ -836,7 +836,7 @@
     padding-top: 0px;
     background-color: #fff;
     box-shadow: 0px -7px 10px 2px rgba(9, 23, 55, 0.0588235294);
-    padding: 20px !important;
+    padding: 10px !important;
   }
 }
 @media (max-width: 579px) {
@@ -1570,6 +1570,12 @@
     margin-top: 16px;
   }
 }
+@media (max-width: 767px) {
+  .product-card {
+    border: none;
+    padding: 0px;
+  }
+}
 .product-card .product-header .product-title {
   font-weight: 600;
   font-size: 24px;
@@ -1766,6 +1772,7 @@
   line-height: 28px;
   letter-spacing: -1.5%;
   color: #101b25;
+  padding-bottom: 15px;
 }
 @media (max-width: 1679px) {
   .counteroffer-wrapper .counteroffer-card .counteroffer-header .counteroffer-title {
@@ -1783,6 +1790,11 @@
   .counteroffer-wrapper .counteroffer-card .counteroffer-header .counteroffer-title {
     font-size: 14px;
     line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .counteroffer-wrapper .counteroffer-card .counteroffer-header .counteroffer-title {
+    padding-bottom: 10px;
   }
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-header .counteroffer-baseprice {
@@ -1974,6 +1986,13 @@
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .installments-container {
   display: flex;
   gap: 10px;
+}
+.counteroffer-wrapper .counteroffer-card .counteroffer-group .installments-container .down-arrw {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
 }
 .counteroffer-wrapper .counteroffer-card .counteroffer-group .installments-container .installment-option {
   background-color: #f4f5f6;
@@ -2238,6 +2257,11 @@
 .charges-section .offer-section .offer-buttons .offer-btn.active {
   border: 1px solid #91a3b6;
 }
+@media (max-width: 767px) {
+  .charges-section .note-section {
+    padding-bottom: 30px;
+  }
+}
 .charges-section .note-section .note-title {
   padding-bottom: 10px;
   font-weight: 500;
@@ -2305,7 +2329,6 @@
 .shipping-wrapper .shipping-options {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   background: #ffffff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0392156863);
   border-radius: 12px;
@@ -2313,7 +2336,7 @@
 .shipping-wrapper .shipping-options .shipping-option {
   display: flex;
   align-items: center;
-  padding: 7px 14px;
+  padding: 12px 14px;
   cursor: pointer;
   position: relative;
 }
@@ -2382,10 +2405,12 @@
 }
 .shipping-wrapper .shipping-options .shipping-option .shipping-info .shipping-desc {
   font-weight: 400;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0px;
   vertical-align: middle;
   color: #415362;
+  margin-bottom: 0px;
 }
 
 .container-right-end {
