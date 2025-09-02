@@ -398,18 +398,34 @@
 }
 
 .head-space-wrap {
-    padding-bottom: 82px;
+    padding-bottom: 120px; //background: red;
     @media ($sm-1481) {
-        padding-bottom: 70px;
+        padding-bottom: 110px;
     }
     @media ($sm-991) {
-        padding-bottom: 130px;
+        padding-bottom: 170px;
     }
     @media ($sm-767) {
-        padding-bottom: 120px;
+        padding-bottom: 160px;
     }
     @media ($sm-479) {
-        padding-bottom: 150px;
+        padding-bottom: 190px;
+    }
+    .head-stickey-wrap {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9;
+        &.shrink {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            transition: all 0.5s ease;
+            //background: #efebeb;
+            .logo{ max-height: 50px;}
+        }
     }
 }
 .ve-header-wrap {
@@ -418,21 +434,14 @@
     transition: all 0.5s ease;
     background: #fff;
     z-index: 999;
-    position: absolute;
-    left: 0;
-    right: 0;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
     width: 100%;
     @media ($sm-479) {
         padding: 10px 0 7px 0;
     }
-    &.shrink {
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        transition: all 0.5s ease;
-        //background: #efebeb;
-    }
+
     .align-wrap {
         display: flex;
         align-items: center;
