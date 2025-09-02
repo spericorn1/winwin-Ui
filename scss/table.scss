@@ -182,6 +182,9 @@
                                 max-height: 10px;
                             }
                         }
+                        &.active{ background: #5090cc; 
+                            img{filter:brightness(0) invert(1);}
+                        }
                     }
                     .form-check-td{
                         height: 22px;
@@ -221,58 +224,6 @@
         }
     }
 
-    .table-wrap {
-        scrollbar-width: thin;
-        scrollbar-color: #5090cc #fff;
-        overflow: auto;
-        max-height: 70vh;
-        @media ($sm-579) {
-            max-height: inherit;
-        }
-        .table-all {
-            tr {
-                th {
-                    color: #101b25;
-                    font-size: 16px;
-                    line-height: 1.4;
-                    white-space: nowrap;
-                    padding: 13px 20px;
-                    margin: 0;
-                    font-weight: 600;
-                    border: 1px solid #f4f4f4;
-                    background: #f4f5f6;
-                    @media ($sm-1679) {
-                        font-size: 14px;
-                    }
-                    @media ($sm-767) {
-                        padding: 10px 10px;
-                    }
-                }
-                td {
-                    color: #101b25;
-                    font-size: 14px;
-                    line-height: 1.4;
-                    white-space: nowrap;
-                    padding: 13px 20px;
-                    margin: 0;
-                    font-weight: 400;
-                    border: 1px solid #f4f4f4;
-                    @media ($sm-1679) {
-                        font-size: 13px;
-                    }
-                    @media ($sm-767) {
-                        padding: 10px 10px;
-                        font-size: 12px;
-                    }
-                }
-                &:nth-child(odd) {
-                    td {
-                        background: #f4f5f6;
-                    }
-                }
-            }
-        }
-    }
     .footer-btn-wrap {
         padding: 20px 0 0 0;
         display: flex;
@@ -350,103 +301,112 @@
             border-radius: 20px;
             padding: 20px;
             border: 0;
-            @media ($sm-479) {
-                max-height: 98vh;
-            }
         }
     }
 
-    .footer-pagination-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #ffffff;
-        border-radius: 12px;
-        min-height: auto;
-        padding: 20px 0 0 0;
-        @media ($sm-579) {
-            flex-direction: column;
-            gap: 10px;
+    .form-outer-wrap {
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 0px;
+            font-size: 14px;
+            color: #101b25;
+            line-height: 20px;
+            letter-spacing: 0%;
+            margin-bottom: 4px;
+            @media ($sm-1679) {
+                font-size: 13px;
+            }
+            span {
+                color: #415362;
+            }
         }
-        .left-wrap {
-            .entry-wrap {
-                display: flex;
-                gap: 10px;
-                align-items: center;
-                span {
-                    font-size: 16px;
-                    color: #101b25;
-                    font-weight: 700;
-                    @media ($sm-1679) {
-                        font-size: 14px;
-                    }
-                    @media ($sm-1199) {
-                        font-size: 13px;
+
+        .form-grp {
+            margin-bottom: 25px;
+            @media ($sm-991) {
+                margin-bottom: 20px;
+            }
+            .form-wrp {
+                &.input-group {
+                }
+                &.cal-in-wrap {
+                    .form-control {
+                        padding-right: 50px;
+                        @media ($sm-1679) {
+                            padding-right: 40px;
+                        }
                     }
                 }
-                .select {
-                    border: 1px solid #e3edff;
-                    border-radius: 30px;
-                    height: 30px;
+            }
+            .form-control {
+                height: 52px;
+                border: 1px solid #dfe1e3;
+                border-radius: 100px !important;
+                display: flex;
+                align-items: center;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                color: #101b25;
+                padding-left: 20px;
+
+                @media ($sm-1679) {
+                    font-size: 14px;
+                    line-height: 22px;
+                    height: 48px;
+                }
+
+                @media ($sm-1481) {
                     font-size: 13px;
-                    color: #101b25;
-                    padding: 5px 10px;
-                    outline: 0;
+                    line-height: 20px;
+                    height: 42px;
+                }
+
+                &::placeholder {
+                    color: #7b8d9f;
+                }
+                &:hover,
+                &:focus {
+                    box-shadow: none;
+                    outline: none;
+                }
+
+                &.form-text-area {
+                    height: 124px;
+                    border-radius: 15px !important;
+                    resize: none;
+                    appearance: none;
                     @media ($sm-1679) {
-                        font-size: 12px;
+                        height: 110px;
+                    }
+                    @media ($sm-1481) {
+                        height: 100px;
+                    }
+                    @media ($sm-1199) {
+                        height: 90px;
                     }
                 }
             }
         }
-        .right-wrap {
-            .pagination-wrap {
-                .list {
-                    display: flex;
-                    margin: 0;
-                    padding: 0;
-                    gap: 5px;
-                    li {
-                        list-style: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        .num {
-                            width: 28px;
-                            height: 28px;
-                            background: #fff;
-                            border-radius: 50%;
-                            font-size: 14px;
-                            color: #5090cc;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            @media ($sm-1679) {
-                                font-size: 12px;
-                                width: 25px;
-                                height: 25px;
-                            }
-                        }
-                        img {
-                            @media ($sm-1679) {
-                                max-width: 10px;
-                                display: block;
-                            }
-                        }
-                        a {
-                            text-decoration: none;
-                            color: #5090cc;
-                        }
-                        &.active {
-                            .num {
-                                background: #5090cc;
-                                color: #fff;
-                                a {
-                                    color: #fff;
-                                }
-                            }
-                        }
-                    }
-                }
+        .error-msg {
+            position: absolute;
+            color: red;
+            bottom: -18px;
+            font-size: 14px;
+            padding-left: 20px;
+            @media ($sm-1679) {
+                font-size: 13px;
+            }
+        }
+        .cal {
+            position: absolute;
+            inset: 0 20px 0 auto;
+            margin: auto;
+            max-width: 50px;
+            @media ($sm-1679) {
+                max-width: 40px;
+                right: 15px;
             }
         }
     }
