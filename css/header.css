@@ -494,9 +494,6 @@
   top: 0;
   transition: all 0.5s ease;
 }
-.head-space-wrap .head-stickey-wrap.shrink .logo {
-  max-height: 50px;
-}
 
 .ve-header-wrap {
   padding: 15px 0;
