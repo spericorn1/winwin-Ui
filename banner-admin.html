@@ -19,6 +19,7 @@
    <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/table.css">
+   <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
@@ -158,7 +159,7 @@
          <div class="head-wrap">
             <h2 class="title">Banner Admin</h2>
             <div class="btn-wrap">
-               <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Banner</button>
+               <button class="btn" data-bs-toggle="modal" data-bs-target="#addSliderModal">Add Banner</button>
             </div>
          </div>
 
@@ -422,15 +423,20 @@
 
 
    <!-- Modal -->
-   <div class="modal fade add-annoncemet-modal-wrap add-banner-modal show" style="display: block;  background-color: #ddd;" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+   <div class="modal fade custom-modal add-annoncemet-modal-wrap add-banner-modal" id="addSliderModal" tabindex="-1" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
       <div class="modal-dialog custom-modal-dialog modal-dialog-centered">
          <div class="modal-content custom-modal-content">
-
-
+             <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                 <img src="img/modal-close.svg" alt="">
+             </button>
+            
             <div class="head-wrap">
-               <h2 class="title">Lorem Ipsum</h2>
+               <h2 class="title">Banner Slider</h2>
             </div>
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                <img src="img/modal-close.svg" alt="">
+            </button>
 
             <div class="banner-inp-cover">
                 <div class="row">
@@ -446,9 +452,9 @@
                         <div class="cusotm-input-col">
                             <label class="inp-label" for="">Banner Type</label>
                             <select class="cutom-inp form-control" name="" id="">
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
+                                <option value="">Homepage</option>
+                                <option value="">Category</option>
+                                <option value="">Product</option>
                             </select>
                             <div class="inp-req">Required *</div>
                         </div>
@@ -462,59 +468,174 @@
                             <div class="inp-req">Required *</div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Priority</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Enter Priority" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Start Date</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Start Date" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">End Date</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="End Date" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-2">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Status</label>
+                            <div class="active-toggle">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Web Image</label>
+                            <div class="img-upload-cover">
+                                <label class="btn-upload" id="upload-container">
+                                    <input class="form-file" id="upload-files" type="file" multiple="multiple"/>
+                                    <div class="img-sec"> <img src="img/plus-icon.svg" alt="plus-icon"></div>
+                                    <span class="txt">Add Photo</span>
+                                    <p class="text-sec">or drag and drop.</p>
+                                </label>
+
+                                <div class="preview-block">
+                                    <div class="preview-item">
+                                        <img class="preview-img" src="img/banner-1.png" alt="">
+                                        <button class="remove-btn">
+                                            <img src="img/img-del.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Mobile Image</label>
+                            <div class="img-upload-cover">
+                                <label class="btn-upload" id="upload-container">
+                                    <input class="form-file" id="upload-files" type="file" multiple="multiple"/>
+                                    <div class="img-sec"> <img src="img/plus-icon.svg" alt="plus-icon"></div>
+                                    <span class="txt">Add Photo</span>
+                                    <p class="text-sec">or drag and drop.</p>
+                                </label>
+
+                                <div class="preview-block">
+                                    <div class="preview-item">
+                                        <img class="preview-img" src="img/banner-1.png" alt="">
+                                        <button class="remove-btn">
+                                            <img src="img/img-del.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="table-wrap">
-               <table width="100%" cellpadding="0" cellspacing="0" class="table-all">
-                  <tr>
-                     <th>Title</th>
-                     <th>Message</th>
-                     <th>Link</th>
-                     <th>Priority</th>
-                     <th>Start Date</th>
-                     <th>End Date</th>
-                  </tr>
-                  <tr>
-                     <td>Lorem Ipsum</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>0</td>
-                     <td>11/08/2018</td>
-                     <td>11/08/2018</td>
-                  </tr>
-                  <tr>
-                     <td>Lorem Ipsum</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>0</td>
-                     <td>11/08/2018</td>
-                     <td>11/08/2018</td>
-                  </tr>
-                  <tr>
-                     <td>Lorem Ipsum</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>0</td>
-                     <td>11/08/2018</td>
-                     <td>11/08/2018</td>
-                  </tr>
-                  <tr>
-                     <td>Lorem Ipsum</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>Lorem Ipsum is simply dummy text</td>
-                     <td>0</td>
-                     <td>11/08/2018</td>
-                     <td>11/08/2018</td>
-                  </tr>
-               </table>
 
 
+            <h4 class="multiple-4">CTA Management:</h4>
+            
+            <div class="banner-inp-cover">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Label</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Enter Label" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">URL</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Enter url" id=""
+                                aria-describedby="">
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Product</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Enter Product" id=""
+                                aria-describedby="">
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Variant</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="Enter Variant" id=""
+                                aria-describedby="">
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Category</label>
+                            <select class="cutom-inp form-control" name="" id="">
+                                <option value="">Category</option>
+                                <option value="">Category</option>
+                                <option value="">Category</option>
+                            </select>
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Title Position</label>
+                            <select class="cutom-inp form-control" name="" id="">
+                                <option value="">Left</option>
+                                <option value="">Right</option>
+                            </select>
+                            <div class="inp-req">Required *</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Button Background</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="" id=""
+                                aria-describedby="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="cusotm-input-col">
+                            <label class="inp-label" for="">Button Text Color</label>
+                            <input type="text" class="cutom-inp form-control" placeholder="" id=""
+                                aria-describedby="">
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
+
             <div class="footer-btn-wrap">
                <div class="align-wrap">
                   <button class="btn" data-bs-dismiss="modal"><span>Cancel</span></button>
@@ -522,43 +643,6 @@
                </div>
             </div>
 
-
-            <div class="footer-pagination-wrap">
-               <div class="left-wrap">
-                  <div class="entry-wrap">
-                     <span>Show</span>
-                     <select name="" id="" class="select">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                     </select>
-                     <span>Entries</span>
-                  </div>
-               </div>
-               <div class="right-wrap">
-                  <div class="pagination-wrap">
-                     <ul class="list">
-                        <li class="active">
-                           <div class="num"><a href="">1</a></div>
-                        </li>
-                        <li>
-                           <div class="num"><a href="">2</a></div>
-                        </li>
-                        <li>
-                           <div class="num"><a href="">3</a></div>
-                        </li>
-                        <li>
-                           <div class="num"><a href="">4</a></div>
-                        </li>
-                        <li>
-                           <div class="num"><a href="">5</a></div>
-                        </li>
-                        <li>
-                           <a href=""><img src="img/arrow-right.svg" alt=""></a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
 
 
 
