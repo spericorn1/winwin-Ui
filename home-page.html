@@ -39,6 +39,8 @@
    </div>
 
 
+<div class="head-space-wrap">
+   <div class="head-stickey-wrap">
    <div class="header-strip-wrap">
       <div class="container">
          <div class="align-wrap">
@@ -137,6 +139,11 @@
          </div>
       </div>
    </div>
+
+
+</div></div>
+
+
    
    <div class="menu-highlight-wrap">
       <div class="container">
@@ -1180,6 +1187,17 @@
 
          // toggle class on body
          document.body.classList.toggle("menu-opened");
+      });
+   </script>
+
+   <script>
+
+      $(window).scroll(function () {
+         if ($(this).scrollTop() > 100) {
+            $('.head-stickey-wrap').addClass('shrink');
+         } else {
+            $('.head-stickey-wrap').removeClass('shrink');
+         }
       });
    </script>
 </body>
