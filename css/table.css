@@ -227,6 +227,12 @@
     max-height: 10px;
   }
 }
+.table-outer-wrap .table-wrap .action-list ul li button.active {
+  background: #5090cc;
+}
+.table-outer-wrap .table-wrap .action-list ul li button.active img {
+  filter: brightness(0) invert(1);
+}
 
 .add-annoncemet-modal-wrap .head-wrap {
   padding: 0 0 15px 0;

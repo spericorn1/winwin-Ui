@@ -181,6 +181,9 @@
                                 max-height: 10px;
                             }
                         }
+                        &.active{ background: #5090cc; 
+                            img{filter:brightness(0) invert(1);}
+                        }
                     }
                 }
             }
