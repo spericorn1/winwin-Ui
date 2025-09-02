@@ -1035,7 +1035,7 @@ body {
 
 .trust-score-section {
 
-
+    
   .trust-card {
    box-shadow: 0px 2px 4px 0px #0000000A;
    background: #FFFFFF;
@@ -1719,31 +1719,21 @@ body {
     }
 }
 
-.trust-progress-dyn{
-    display: flex;
-    justify-content: center;
-    .progress-cover{
-        position: relative;
-        .needle-block{
-            width: 100%;
-            height: 100%;
-            background-color: rgba($color: green, $alpha: 0.4);
-            position: absolute;
-            top: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .needle{
-            left: -105px;
-            width: 120px;
-            position: absolute;
-            bottom: 0;
-            display: inline-block;
-            background-color: rgba($color: red, $alpha: 0.4);
-            transform-origin: center;
-            transition: .3s;
-            transform-origin: center;
+.overview-animation-block{
+    height: 180px;
+    position: relative;
+    .joy-gif{
+        position: absolute;
+        bottom: -55px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 300px;
+        @media (max-width: 360px) {
+            height: 400px;
+            width: 200px;
+            max-width: none;
+            object-fit: cover;
         }
     }
 }
