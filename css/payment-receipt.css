@@ -140,6 +140,11 @@
   background-color: #F8F9FA;
   padding: 20px;
 }
+@media (max-width: 1679px) {
+  .payment-reciept-cover .payment-reciept-block .det-table-block {
+    padding: 15px 10px;
+  }
+}
 .payment-reciept-cover .payment-reciept-block .det-table-block h5 {
   margin-bottom: 15px;
   color: #101B25;
@@ -155,7 +160,7 @@
   width: 100%;
 }
 .payment-reciept-cover .payment-reciept-block .det-table-block .val-table tr td {
-  padding: 6px 0;
+  padding: 6px 5px 6px 0;
   font-size: 14px;
 }
 @media (max-width: 1679px) {
@@ -214,4 +219,6 @@
   font-weight: 500;
   color: #415362;
   padding-top: 20px;
-}/*# sourceMappingURL=payment-receipt.css.map */
+}
+
+/*# sourceMappingURL=payment-receipt.css.map */

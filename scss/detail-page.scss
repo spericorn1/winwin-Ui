@@ -2244,7 +2244,7 @@
                     font-weight: 400;
                     line-height: 1.2;
                     width: 40%;
-                    word-break: break-all;
+                    word-break: break-word;
                     @media ($sm-1679) {
                         padding: 0 0 12px 0;
                         font-size: 14px;
@@ -2256,8 +2256,7 @@
                         width: 60%;
                     }
                     @media ($sm-479) {
-                        width: 47%;
-                        font-size: 12px;
+                        width: 50%;
                     }
                     .info {
                         width: 16px;
@@ -2276,7 +2275,7 @@
                     font-weight: 500;
                     line-height: 1.2;
                     width: 60%;
-                    word-break: break-all;
+                    word-break: break-word;
                     @media ($sm-1679) {
                         padding: 0 0 12px 0;
                         font-size: 14px;
@@ -2288,8 +2287,7 @@
                         width: 40%;
                     }
                     @media ($sm-479) {
-                        width: 52%;
-                        font-size: 12px;
+                        width: 50%;
                     }
                     span {
                         font-weight: 400;

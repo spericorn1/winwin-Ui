@@ -346,7 +346,7 @@
             padding: 0 0 15px 0;
             @media ($sm-1679) {
                 font-size: 16px;
-                padding: 0 0 10px 0;
+                padding: 0 0 15px 0;
             }
             @media ($sm-1199) {
                 font-size: 14px;
@@ -393,7 +393,7 @@
                             padding: 0 0 3px 0;
                         }
                         @media ($sm-767) {
-                            font-size: 12px;
+                            font-size: 13px;
                         }
                         a {
                             color: #5090cc;
@@ -403,7 +403,7 @@
                     .score {
                         color: #415362;
                         font-weight: 400;
-                        font-size: 12px;
+                        font-size: 14px;
                         line-height: 1.2;
                         margin: 0;
                         padding: 0;
@@ -413,7 +413,7 @@
                             font-size: 14px;
                             padding: 0 0 0 2px;
                             @media ($sm-1679) {
-                                font-size: 12px;
+                                font-size: 13px;
                             }
                         }
                     }
@@ -438,7 +438,7 @@
                 & + li {
                     padding-top: 15px;
                     @media ($sm-1679) {
-                        padding-top: 10px;
+                        //padding-top: 10px;
                     }
                 }
             }

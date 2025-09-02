@@ -2566,7 +2566,7 @@
   font-weight: 400;
   line-height: 1.2;
   width: 40%;
-  word-break: break-all;
+  word-break: break-word;
 }
 @media (max-width: 1679px) {
   .accept-offer-wrap .sp-table-wrap tr td.td1 {
@@ -2586,8 +2586,7 @@
 }
 @media (max-width: 479px) {
   .accept-offer-wrap .sp-table-wrap tr td.td1 {
-    width: 47%;
-    font-size: 12px;
+    width: 50%;
   }
 }
 .accept-offer-wrap .sp-table-wrap tr td.td1 .info {
@@ -2608,7 +2607,7 @@
   font-weight: 500;
   line-height: 1.2;
   width: 60%;
-  word-break: break-all;
+  word-break: break-word;
 }
 @media (max-width: 1679px) {
   .accept-offer-wrap .sp-table-wrap tr td.td2 {
@@ -2628,8 +2627,7 @@
 }
 @media (max-width: 479px) {
   .accept-offer-wrap .sp-table-wrap tr td.td2 {
-    width: 52%;
-    font-size: 12px;
+    width: 50%;
   }
 }
 .accept-offer-wrap .sp-table-wrap tr td.td2 span {

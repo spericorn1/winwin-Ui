@@ -134,7 +134,7 @@
                             color: #101b25;
                             font-weight: 600;
                             line-height: 1.2;
-                            word-break: break-all;
+                            word-break: break-word;
                             @media ($sm-1679) {
                                 font-size: 18px;
                             }
@@ -154,15 +154,15 @@
                                 margin: 0;
                                 list-style: none;
                                 font-size: 16px;
-                                color: #415362;
+                                color: #415362; 
                                 font-weight: 500;
                                 position: relative;
-                                line-height: 1.2;
+                                line-height: 1.6;
                                 @media ($sm-1679) {
                                     font-size: 14px;
                                 }
                                 @media ($sm-1199) {
-                                    font-size: 12px;
+                                    font-size: 13px;
                                 }
                                 .num {
                                     color: #101b25;
@@ -334,13 +334,13 @@
                                                     color: #101b25;
                                                     font-weight: 500;
                                                     position: relative;
-                                                    word-break: break-all;
+                                                    word-break: break-word;
                                                     border: 0;
                                                     @media ($sm-1679) {
                                                         font-size: 14px;
                                                     }
                                                     @media ($sm-991) {
-                                                        font-size: 12px;
+                                                        font-size: 13px;
                                                     }
                                                     .red-color {
                                                         color: #ef4444;
@@ -384,10 +384,10 @@
                                                     color: #415362;
                                                     font-weight: 400;
                                                     position: relative;
-                                                    word-break: break-all;
-                                                    border: 0;
+                                                    word-break: break-word;
+                                                    border: 0; 
                                                     @media ($sm-1679) {
-                                                        font-size: 12px;
+                                                        font-size: 13px;
                                                     }
                                                     .num {
                                                         color: #101b25;
@@ -397,7 +397,7 @@
                                                             font-size: 14px;
                                                         }
                                                         @media ($sm-991) {
-                                                            font-size: 12px;
+                                                            font-size: 13px;
                                                         }
                                                     }
                                                     & + li {
@@ -471,7 +471,7 @@
                                                 color: #101b25;
                                                 font-weight: 500;
                                                 position: relative;
-                                                word-break: break-all;
+                                                word-break: break-word;
                                                 border: 0;
                                                 & + li {
                                                     padding-left: 8px;
@@ -526,7 +526,7 @@
                                             padding: 5px;
                                             margin: 0;
                                             @media ($sm-1679) {
-                                                font-size: 12px;
+                                                font-size: 13px;
                                                 width: 90px;
                                                 height: 34px;
                                             }
@@ -556,8 +556,8 @@
                                 padding: 5px 20px;
                                 margin: 0;
                                 @media ($sm-1679) {
-                                    font-size: 12px;
-                                    height: 38px;
+                                    font-size: 13px;
+                                    height: 36px;
                                     padding: 5px 15px;
                                 }
                             }
@@ -671,7 +671,7 @@
                             color: #101b25;
                             font-weight: 500;
                             line-height: 1.2;
-                            padding: 0 0 2px 0;
+                            padding: 0 0 5px 0;
                             @media ($sm-1679) {
                                 font-size: 13px;
                             }
@@ -688,7 +688,7 @@
                                 margin: 0;
                                 padding: 0 0 0 0;
                                 border: 0;
-                                font-size: 12px;
+                                font-size: 13px;
                                 color: #415362;
                                 font-weight: 400;
                                 position: relative;
@@ -733,7 +733,7 @@
                             gap: 3px;
                             span {
                                 color: #101b25;
-                                font-size: 12px;
+                                font-size: 14px;
                                 font-weight: 500;
                                 color: #5090cc;
                             }

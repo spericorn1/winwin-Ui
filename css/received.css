@@ -180,7 +180,7 @@
   color: #101b25;
   font-weight: 600;
   line-height: 1.2;
-  word-break: break-all;
+  word-break: break-word;
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .title {
@@ -208,7 +208,7 @@
   color: #415362;
   font-weight: 500;
   position: relative;
-  line-height: 1.2;
+  line-height: 1.6;
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .list li {
@@ -217,7 +217,7 @@
 }
 @media (max-width: 1199px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .list li {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .list li .num {
@@ -412,7 +412,7 @@
   color: #101b25;
   font-weight: 500;
   position: relative;
-  word-break: break-all;
+  word-break: break-word;
   border: 0;
 }
 @media (max-width: 1679px) {
@@ -422,7 +422,7 @@
 }
 @media (max-width: 991px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-top ul li {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-top ul li .red-color {
@@ -464,12 +464,12 @@
   color: #415362;
   font-weight: 400;
   position: relative;
-  word-break: break-all;
+  word-break: break-word;
   border: 0;
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-btm ul li {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-btm ul li .num {
@@ -484,7 +484,7 @@
 }
 @media (max-width: 991px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-btm ul li .num {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .txt .txt-btm ul li + li {
@@ -557,7 +557,7 @@
   color: #101b25;
   font-weight: 500;
   position: relative;
-  word-break: break-all;
+  word-break: break-word;
   border: 0;
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .mob-footer-wrap ul li + li {
@@ -612,7 +612,7 @@
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .btn-wrap .btn {
-    font-size: 12px;
+    font-size: 13px;
     width: 90px;
     height: 34px;
   }
@@ -643,8 +643,8 @@
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .compare-btn .btn {
-    font-size: 12px;
-    height: 38px;
+    font-size: 13px;
+    height: 36px;
     padding: 5px 15px;
   }
 }
@@ -767,7 +767,7 @@
   color: #101b25;
   font-weight: 500;
   line-height: 1.2;
-  padding: 0 0 2px 0;
+  padding: 0 0 5px 0;
 }
 @media (max-width: 1679px) {
   .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-txt-wrap .name {
@@ -789,7 +789,7 @@
   margin: 0;
   padding: 0 0 0 0;
   border: 0;
-  font-size: 12px;
+  font-size: 13px;
   color: #415362;
   font-weight: 400;
   position: relative;
@@ -840,7 +840,7 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-btn-wrap .btn span {
   color: #101b25;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   color: #5090cc;
 }
