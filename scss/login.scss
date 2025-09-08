@@ -623,20 +623,26 @@
                     width: 48px;
                     height: 48px;
                     text-align: center;
-                    border-radius: 12px;
+                    border-radius: 14px;
                     padding: 5px;
                     background-color: #fff;
                     color: #101B25;
                     box-shadow: unset;
+                    position: relative;
+                    
                     @media (max-width: 360px) {
                         width: 42px;
                         height: 42px;
                         border-radius: 10px;
                     }
+                    
                     &:focus, &:focus-within, &:focus-visible{
-                        border-color: #5090CC;
-                        outline: #5090CC;
-                        box-shadow: 0 0 0 3px #DCE9F5;
+                        // border-color: #5090CC;
+                        // outline: #5090CC;
+                        // box-shadow: 0 0 0 3px #DCE9F5;
+                        outline: #DCE9F5 solid 3px;
+                        border-color: #fff;
+                        box-shadow: 0 0 0 1px inset #5090CC;
                     }
 
                 }
