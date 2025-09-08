@@ -801,7 +801,7 @@
 @media (max-width: 579px) {
   .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-txt-wrap .bill-info li + li {
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0 0;
   }
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap .right-wrap .re-ac-txt-wrap .bill-info li + li:before {
