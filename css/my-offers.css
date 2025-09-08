@@ -57,8 +57,8 @@
   padding-bottom: 20px;
 }
 .my-offer-details .offer-profile-wrapper {
-  border-top: solid 1px #ECEDEF;
-  border-bottom: solid 1px #ECEDEF;
+  border-top: solid 1px #ecedef;
+  border-bottom: solid 1px #ecedef;
   padding: 24px 0;
   align-items: center;
 }
@@ -98,7 +98,7 @@
 }
 .my-offer-details .offer-profile-wrapper .left-block .name-det-block .name-det .name {
   display: inline-block;
-  color: #101B25;
+  color: #101b25;
   font-size: 18px;
   font-weight: 600;
   margin-right: 8px;
@@ -146,7 +146,7 @@
 }
 .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .score {
   display: inline-flex;
-  color: #101B25;
+  color: #101b25;
   font-size: 14px;
   margin-right: 8px;
 }
@@ -161,7 +161,7 @@
 .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .contact-seller {
   display: inline-flex;
   align-items: center;
-  color: #5090CC;
+  color: #5090cc;
   font-weight: 500;
   font-size: 14px;
   text-decoration: underline;
@@ -187,7 +187,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: #101B25;
+  background-color: #101b25;
 }
 @media (max-width: 579px) {
   .my-offer-details .offer-profile-wrapper .left-block .name-det-block .trust-score-wrp .contact-seller::before {
@@ -236,39 +236,45 @@
   font-weight: 500;
   padding-bottom: 12px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #DFE1E3;
-  color: #101B25;
+  border-bottom: 1px solid #dfe1e3;
+  color: #101b25;
 }
 @media (max-width: 1679px) {
   .my-offer-details .charges-section .charges-header {
     font-size: 16px;
   }
 }
-.my-offer-details .charges-section .charge-row .charge-label, .my-offer-details .charges-section .charge-row .total-label {
+.my-offer-details .charges-section .charge-row .charge-label,
+.my-offer-details .charges-section .charge-row .total-label {
   font-size: 16px;
-  color: #101B25;
+  color: #101b25;
 }
 @media (max-width: 1679px) {
-  .my-offer-details .charges-section .charge-row .charge-label, .my-offer-details .charges-section .charge-row .total-label {
+  .my-offer-details .charges-section .charge-row .charge-label,
+  .my-offer-details .charges-section .charge-row .total-label {
     font-size: 14px;
   }
 }
-.my-offer-details .charges-section .charge-row .charge-value, .my-offer-details .charges-section .charge-row .total-value {
+.my-offer-details .charges-section .charge-row .charge-value,
+.my-offer-details .charges-section .charge-row .total-value {
   font-size: 16px;
   font-weight: 500;
-  color: #101B25;
+  color: #101b25;
 }
 @media (max-width: 1679px) {
-  .my-offer-details .charges-section .charge-row .charge-value, .my-offer-details .charges-section .charge-row .total-value {
+  .my-offer-details .charges-section .charge-row .charge-value,
+  .my-offer-details .charges-section .charge-row .total-value {
     font-size: 14px;
   }
 }
-.my-offer-details .charges-section .total-row .total-label, .my-offer-details .charges-section .total-row .total-value {
+.my-offer-details .charges-section .total-row .total-label,
+.my-offer-details .charges-section .total-row .total-value {
   font-weight: 500;
   font-size: 18px;
 }
 @media (max-width: 1679px) {
-  .my-offer-details .charges-section .total-row .total-label, .my-offer-details .charges-section .total-row .total-value {
+  .my-offer-details .charges-section .total-row .total-label,
+  .my-offer-details .charges-section .total-row .total-value {
     font-size: 16px !important;
   }
 }
@@ -279,7 +285,7 @@
   padding: 5px 0;
   display: flex;
   align-items: center;
-  color: #101B25;
+  color: #101b25;
   font-size: 16px;
   font-weight: 500;
 }
@@ -314,7 +320,7 @@
 .vw-offer-usr-block .det-block h4 {
   font-size: 18px;
   font-weight: 500;
-  color: #101B25;
+  color: #101b25;
   margin-bottom: 0;
 }
 @media (max-width: 1679px) {
@@ -334,7 +340,7 @@
 }
 
 .charges-section .sec-sep {
-  border-bottom: solid 1px #DFE1E3;
+  border-bottom: solid 1px #dfe1e3;
 }
 
 .product-details .offer-btn-block .btn-1 {
@@ -344,7 +350,7 @@
   box-shadow: 0px 2px 4px 0px rgba(42, 69, 93, 0.0588235294);
 }
 .product-details .offer-btn-block .btn-1.reject {
-  color: #EF4444 !important;
+  color: #ef4444 !important;
 }
 
 /* Compare starts */
@@ -485,6 +491,11 @@
     font-size: 12px;
   }
 }
+@media (max-width: 579px) {
+  .comparision-wrap .com-list-wrap .list li .total {
+    font-size: 13px;
+  }
+}
 .comparision-wrap .com-list-wrap .list li .total.color-green {
   color: #1bb746;
 }
@@ -619,7 +630,7 @@
   }
 }
 .custom-container-preview .preview-details .product-slider-cover {
-  border: 1px solid #B9D3EB;
+  border: 1px solid #b9d3eb;
   border-radius: 12px;
   padding: 12px;
 }
@@ -630,7 +641,7 @@
   }
 }
 .custom-container-preview .preview-details .preview-sec-card {
-  border: 1px solid #ECEDEF;
+  border: 1px solid #ecedef;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0392156863);
   padding: 15px;
   border-radius: 12px;
@@ -667,7 +678,7 @@
   justify-content: center;
   padding: 14px 15px;
   background-color: #fff;
-  border: 1px solid #B8C4D0;
+  border: 1px solid #b8c4d0;
   box-shadow: 0px 2px 4px 0px rgba(42, 69, 93, 0.0588235294);
   border-radius: 50px;
   width: 100%;
@@ -684,7 +695,8 @@
 .custom-container-preview .preview-details .preview-sec-card .card-btn-block .edit-pricing-btn:hover {
   border-color: rgba(16, 27, 37, 0.6) !important;
 }
-.custom-container-preview .preview-details .product-card .product-details .details-row .details-label, .custom-container-preview .preview-details .product-card .product-details .details-row .details-value {
+.custom-container-preview .preview-details .product-card .product-details .details-row .details-label,
+.custom-container-preview .preview-details .product-card .product-details .details-row .details-value {
   font-size: 14px;
 }
 
