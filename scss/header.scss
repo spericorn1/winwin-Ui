@@ -537,7 +537,7 @@
                     font-size: 12px;
                     padding: 0 10px 0 15px;
                 }
-                img {
+                .drp-arw{
                     width: 9px;
                     display: block;
                 }
@@ -1154,8 +1154,6 @@
     }
 }
 
-
-
 .cat-list{
     .dropdown-toggle{
         background-color: transparent !important;
@@ -1167,16 +1165,40 @@
         border-radius: 0;
         padding-top: 2px;
         padding-bottom: 2px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        .menu-label{
+            width: 100%;
+            display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        flex-grow: 1;
+                        padding-right: 10px;
+        }
         img{
             margin-left: auto;
+            flex-shrink: 0;
         }
         &::after{
             display: none;
         }
     }
-    .dropdown-menu{
+    .catg-dropdown{
         padding: 0 !important;
+        border: 1px solid #ECEDEF;
+box-shadow: 0px 24px 64px -4px #1B25331A;
+border-radius: 8px;
+width: 300px;
+max-height: 500px;
+overflow-y: auto;
+scrollbar-width: thin;
+            scrollbar-color: #F4F5F6 #fff;
+ top: 10px !important;
+    right: -20px !important;
         .all-catg{
+            cursor:pointer;
             color: #101B25;
             font-size: 16px;
             font-weight: 600;
@@ -1185,6 +1207,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .all-cat-close{
+                font-size: 10;
+                cursor:pointer;
+                display: inline-block;
+            }
             &:hover{
                 transition: .3s;
                 opacity: .8;
@@ -1192,22 +1219,37 @@
         }
         .catg-btn{
             color: #101B25;
-            font-size: 11px;
+            font-size: 14px;
             font-weight: 500;
             border-bottom: 1px solid #ECEDEF;
             padding: 12px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+cursor:pointer;
+
             &:hover{
                 transition: .3s;
                 opacity: .8;
             }
+            .arw-down{
+                transition: 0.3s;
+                flex-shrink: 0;
+               
+            }
+            .arw-active{
+                transform: rotate(180deg);
+            }
+        }
+        .sub-catg-wrp{
+            border-bottom: 1px solid #ECEDEF;
         }
         .sub-catg{
             padding: 10px 12px;
             color: #415362;
             font-size: 14px;
+cursor:pointer;
+
             &:hover{
                 transition: .3s;
                 opacity: .8;
@@ -1215,5 +1257,3 @@
         }
     }
 }
-
-
