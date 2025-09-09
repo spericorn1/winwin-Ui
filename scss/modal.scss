@@ -565,6 +565,21 @@
         font-weight: 600;
         color: #101B25;
     }
+    .add-bnr-btn{
+        padding: 12px 15px;
+        width: 190px;
+        font-size: 14px;
+        @media ($sm-1679) {
+            font-size: 12px;
+        }
+        @media ($sm-479) {
+            width: 100%;
+        }
+    }
+    .add-btn-block{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #DFE1E3;
+    }
     .img-upload-cover{
         border: 1px dashed #cad0d4;
         min-height: 148px;
