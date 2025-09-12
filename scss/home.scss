@@ -135,22 +135,25 @@
                     }
                 }
             }
+            &.align-right{
+                 flex-direction: row-reverse !important; background-position: bottom left !important;
+            }
             &.slide1 {
-                background-image: url(../img/banner-1.png);
+                // background-image: url('/img/banner-1.png');
                 background-repeat: no-repeat;
                 background-position: bottom right;
                 background-size: auto 100%;
                 @media ($sm-479) {
-                    background-image: url(../img/banner-1-mob.png);
+                    // background-image: url('/img/banner-1-mob.png');
                 }
             }
             &.slide11 {
-                background-image: url(../img/banner-2.png);
+                // background-image: url('/img/banner-2.png');
                 background-repeat: no-repeat;
                 background-position: bottom right;
                 background-size: auto 100%;
                 @media ($sm-479) {
-                    background-image: url(../img/banner-1-mob.png);
+                    // background-image: url('/img/banner-1-mob.png');
                 }
             }
         }
