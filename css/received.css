@@ -167,7 +167,8 @@
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content {
@@ -380,7 +381,8 @@
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .rc-img img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -716,7 +718,8 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .left-border img {
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap {
   display: flex;
@@ -857,6 +860,4 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap.rc-second-color .left-wrap .dot:after {
   background: #8b5cf6;
-}
-
-/*# sourceMappingURL=received.css.map */
+}/*# sourceMappingURL=received.css.map */

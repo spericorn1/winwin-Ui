@@ -428,6 +428,9 @@
     height: 42px;
   }
 }
+.add-annoncemet-modal-wrap .form-outer-wrap .form-grp .form-control::-moz-placeholder {
+  color: #7b8d9f;
+}
 .add-annoncemet-modal-wrap .form-outer-wrap .form-grp .form-control::placeholder {
   color: #7b8d9f;
 }
@@ -439,7 +442,9 @@
   height: 124px;
   border-radius: 15px !important;
   resize: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 @media (max-width: 1679px) {
   .add-annoncemet-modal-wrap .form-outer-wrap .form-grp .form-control.form-text-area {
@@ -479,6 +484,4 @@
     max-width: 40px;
     right: 15px;
   }
-}
-
-/*# sourceMappingURL=table.css.map */
+}/*# sourceMappingURL=table.css.map */
