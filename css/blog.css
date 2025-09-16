@@ -276,6 +276,7 @@
 @media (max-width: 650px) {
   .blog-layout .featured-blog .content {
     padding: 15px 0px 0px;
+    flex: 1;
   }
 }
 .blog-layout .featured-blog .content h2 {
