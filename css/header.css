@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
 /*** mobile Landscape Size ***/
 /*** medium devices (tablets, less than 992px) ***/
@@ -359,6 +360,17 @@
       right: 0;
       top: 0;
       transition: all 0.5s ease; }
+  .head-space-wrap.hdr-inner {
+    padding: 60px; }
+    @media (max-width: 1441px) {
+      .head-space-wrap.hdr-inner {
+        padding: 50px; } }
+    @media (max-width: 650px) {
+      .head-space-wrap.hdr-inner {
+        padding-top: 70px; } }
+    @media (max-width: 479px) {
+      .head-space-wrap.hdr-inner {
+        padding-top: 100px; } }
 
 .ve-header-wrap {
   padding: 15px 0;
