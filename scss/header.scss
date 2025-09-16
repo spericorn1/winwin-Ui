@@ -675,12 +675,16 @@
     width: 100%;
     gap: 10px;
     padding: 15px 0;
+    position: relative;
     @media ($sm-991) {
         display: flex;
     }
     .search-wrap {
         position: relative;
         flex: 1;
+        @media ($sm-991) {
+            position: static;
+        }
         .input-wrap {
             width: 100%;
             .img {
@@ -1016,6 +1020,10 @@
             border: 1px solid #F6F7F9;
             background-color: #fff;
             border-radius: 16px;
+            @media ($sm-991) {
+                overflow-y: auto;
+                max-height: 75vh;
+            }
             .dropdown-top-cover{
                 border-bottom: 1px solid #F6F7F9;
                 padding-bottom: 10px;
@@ -1109,6 +1117,10 @@
                 @media ($sm-767) {
                     max-height: 60vh;
                 }
+                @media ($sm-579) {
+                    flex-wrap: wrap;
+                    padding-right: 0;
+                }
             }
             .left-block{
                 width: 250px;
@@ -1122,7 +1134,6 @@
                 }
                 @media ($sm-579) {
                     width: 100%;
-                    border: none;
                 }
             }
             .right-block{
@@ -1136,10 +1147,14 @@
                     max-width: calc(100% - 220px);
                 }
                 @media ($sm-579) {
-                    display: none;
+                    width: 100%;
+                    max-width: 100%;
                 }
                 .drp-link-block{
                     padding: 0 24px;
+                    @media ($sm-579) {
+                        padding: 0 15px;
+                    }
                 }
             }
             .drp-title{
