@@ -1737,3 +1737,121 @@ body {
         }
     }
 }
+
+.retail-contract-container{
+    max-width: 600px;
+    margin: 0 auto;
+    .content-cover{
+        .data-txt{
+            p{
+                color: #415362;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
+                .sub-tl-txt{
+                    font-weight: 500;
+                    color: #101B25;
+                }
+            }
+        }
+    }
+
+    .conscent-box-wrapper{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        .chk-title{
+            font-size: 16px;
+            font-weight: 500;
+            color: #101B25;
+            padding-left: 8px;
+            @media ($sm-1679) {
+                font-size: 14px;
+            }
+        }
+        .shipping-checkbox {
+          display: none;
+        }
+    
+        .checkbox-custom {
+          width: 18px;
+          height: 18px;
+          border-radius: 4px;
+          border: 2px solid #ccc;
+          display: inline-block;
+          position: relative;
+          flex-shrink: 0;
+          transition: all 0.2s ease;
+        }
+    
+        .shipping-checkbox:checked + .checkbox-custom {
+          border-color: #5090CC;
+          background-color:#fff;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 5px;
+            height: 10px;
+            border: solid #5090CC;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+          }
+        }
+    }
+    .signed-block{
+        background-color: #F6F7F9;
+        border-radius: 16px;
+        padding: 16px;
+
+        .signed-doc{
+            display: flex;
+            margin-bottom: 12px;
+            .sign-wrp{
+                min-height: 48px;
+                flex-grow: 1;
+                font-size: 24px;
+                line-height: 24px;
+                border-radius: 8px;
+                padding: 8px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                flex: 1;
+                border: none;
+                text-align: center;
+                font-family: "Great Vibes", cursive;
+                img{
+                    max-height: 24px;
+                }
+            }
+            .btn-block{
+                display: flex;
+                flex-shrink: 0;
+            }
+            .btn{
+                background-color: #fff;
+                width: 48px;
+                height: 48px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 8px;
+            }
+        }
+        .custom-input-col{
+            margin-bottom: 12px;
+        }
+        .date{
+            font-size: 16px;
+            font-weight: 500;
+            color: #101B25;
+            @media ($sm-1679) {
+                font-size: 14px;
+            }
+        }
+    }
+}

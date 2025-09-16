@@ -560,13 +560,17 @@
   display: none;
   width: 100%;
   gap: 10px;
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
   @media (max-width: 991px) {
     .search-mob-wrap {
       display: flex; } }
   .search-mob-wrap .search-wrap {
     position: relative;
     flex: 1; }
+    @media (max-width: 991px) {
+      .search-mob-wrap .search-wrap {
+        position: static; } }
     .search-mob-wrap .search-wrap .input-wrap {
       width: 100%; }
       .search-mob-wrap .search-wrap .input-wrap .img {
@@ -847,6 +851,10 @@
     border: 1px solid #F6F7F9;
     background-color: #fff;
     border-radius: 16px; }
+    @media (max-width: 991px) {
+      .head-space-wrap .search-dropdown-body .search-dropdown-cover {
+        overflow-y: auto;
+        max-height: 75vh; } }
     .head-space-wrap .search-dropdown-body .search-dropdown-cover .dropdown-top-cover {
       border-bottom: 1px solid #F6F7F9;
       padding-bottom: 10px; }
@@ -925,6 +933,10 @@
       @media (max-width: 767px) {
         .head-space-wrap .search-dropdown-body .search-dropdown-cover .dropdown-wrapper {
           max-height: 60vh; } }
+      @media (max-width: 579px) {
+        .head-space-wrap .search-dropdown-body .search-dropdown-cover .dropdown-wrapper {
+          flex-wrap: wrap;
+          padding-right: 0; } }
     .head-space-wrap .search-dropdown-body .search-dropdown-cover .left-block {
       width: 250px;
       border-right: 1px solid #F6F7F9;
@@ -937,8 +949,7 @@
           width: 220px; } }
       @media (max-width: 579px) {
         .head-space-wrap .search-dropdown-body .search-dropdown-cover .left-block {
-          width: 100%;
-          border: none; } }
+          width: 100%; } }
     .head-space-wrap .search-dropdown-body .search-dropdown-cover .right-block {
       flex-grow: 1;
       max-width: calc(100% - 250px);
@@ -951,9 +962,13 @@
           max-width: calc(100% - 220px); } }
       @media (max-width: 579px) {
         .head-space-wrap .search-dropdown-body .search-dropdown-cover .right-block {
-          display: none; } }
+          width: 100%;
+          max-width: 100%; } }
       .head-space-wrap .search-dropdown-body .search-dropdown-cover .right-block .drp-link-block {
         padding: 0 24px; }
+        @media (max-width: 579px) {
+          .head-space-wrap .search-dropdown-body .search-dropdown-cover .right-block .drp-link-block {
+            padding: 0 15px; } }
     .head-space-wrap .search-dropdown-body .search-dropdown-cover .drp-title {
       border-bottom: 1px solid #F6F7F9;
       color: #7B8D9F;
