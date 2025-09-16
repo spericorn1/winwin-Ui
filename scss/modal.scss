@@ -52,6 +52,61 @@
             }
         }
     }
+
+
+    .modal-btn-2-col {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        @media ($sm-479) {
+            flex-direction: column;
+        }
+        .btn {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            border: 1px solid #dfe1e3;
+            border-radius: 30px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 44px;
+            background: #fff !important;
+            transition: 0.3s;
+            &:hover {
+                opacity: 0.8;
+            }
+            @media ($sm-1679) {
+                height: 40px;
+            }
+            @media ($sm-767) {
+                height: 38px;
+            }
+
+            &.cnfm {
+                background: #5090cc !important;
+                border: 0;
+                position: relative;
+                span {
+                    color: #fff;
+                }
+            }
+            span {
+                font-family: $primary-font;
+                font-size: 14px;
+                color: #101b25;
+                font-weight: 500;
+                line-height: 1;
+                @media ($sm-1679) {
+                    font-size: 12px;
+                }
+            }
+            &.color-red{ 
+                span{color: #EF4444;}
+            }
+        }
+    }
 }
 .info-modal{
     .modal-dialog{
@@ -668,4 +723,70 @@
             }
         }
     }
+}
+
+.counter-offer-ric-modal{
+    .custom-modal-body{
+        padding: 24px;
+    }
+    .modal-dialog{
+        @media (min-width: 767px) {
+            max-width: 600px;
+        }
+    }
+    .modal-icon{
+        text-align: center;
+        margin-bottom: 20px;
+        @media ($sm-579) {
+            margin-bottom: 12px;
+        }
+        img{
+            @media ($sm-579) {
+                max-width: 48px;
+            }
+        }
+    }
+    h2{
+        color: #101B25;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        @media ($sm-1679) {
+            font-size: 22px;
+        }
+        @media ($sm-579) {
+            font-size: 16px;
+        }
+    }
+    .ric-link-block{
+        margin-bottom: 20px;
+        .ric-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F7FAFD;
+            padding: 12px;
+            color: #5090CC;
+            font-weight: 500;
+            text-decoration: underline;
+            text-align: left;
+            @media ($sm-1679) {
+                font-size: 14px;
+            }
+            @media ($sm-479) {
+                font-size: 13px;
+            }
+            img{
+                margin-right: 8px;
+                @media ($sm-1679) {
+                    width: 22px;
+                }
+                @media ($sm-579) {
+                    width: 18px;
+                }
+            }
+        }
+    }
+    
+
 }
