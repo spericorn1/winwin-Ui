@@ -431,6 +431,12 @@
         @media ($sm-1441){
             padding: 50px;
         }
+        @media (max-width:650px){
+            padding-top: 70px;
+        }
+        @media (max-width:479px){
+            padding-top: 100px;
+        }
     }
 }
 .ve-header-wrap {

@@ -694,4 +694,29 @@
   .blog-listing .blog-cards .blog-card .content .date {
     font-size: 13px;
   }
+}
+
+.blog-search {
+  border: 1px solid #DFE1E3;
+  border-radius: 44px;
+  display: none;
+}
+@media (max-width: 650px) {
+  .blog-search {
+    display: block;
+  }
+}
+.blog-search .form-control {
+  padding: 12px 18px;
+  font-size: 14px;
+  color: #7B8D9F;
+  background: url(../img/search-blog.svg) no-repeat left 15px center;
+  background-size: 20px;
+  padding-left: 46px;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.blog-search .form-control::-webkit-input-placeholder {
+  color: #7B8D9F;
 }/*# sourceMappingURL=blog.css.map */

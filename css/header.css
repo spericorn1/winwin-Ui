@@ -503,6 +503,16 @@
     padding: 50px;
   }
 }
+@media (max-width: 650px) {
+  .head-space-wrap.hdr-inner {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 479px) {
+  .head-space-wrap.hdr-inner {
+    padding-top: 100px;
+  }
+}
 
 .ve-header-wrap {
   padding: 15px 0;
