@@ -1,0 +1,309 @@
+@import "partials";
+.make-payment{
+    padding: 60px 0px 100px 0px;
+    @media($sm-1679){
+        padding: 50px 0px 80px 0px;
+    }
+    @media($sm-1481){
+        padding: 40px 0px 60px 0px;
+    }
+    @media($sm-1199){
+        padding: 30px 0px 30px 0px;
+    }
+    .top-title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 56px;
+        color: #101B25;
+        padding-bottom: 50px;
+        @media($sm-1679){
+            font-size: 44px;
+            line-height: 54px;
+            padding-bottom: 40px;
+        }
+        @media($sm-1481){
+            font-size: 40px;
+            line-height: 52px;
+            padding-bottom: 30px;
+        }
+        @media($sm-1199){
+            font-size: 36px;
+            line-height: 46px;
+            padding-bottom: 20px;
+        }
+        @media($sm-991){
+            font-size: 32px;
+            line-height: 32px;
+        }
+        @media($sm-767){
+            font-size: 28px;
+            line-height: 38px;
+        }
+         @media($sm-579){
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+    .img-sec{
+        width: 100%;
+        height: 567px;
+        @media($sm-1679){
+            height: 500px;
+        }
+        @media($sm-1481){
+            height: 450px;
+        }
+        @media($sm-1199){
+            height: 400px;
+        }
+        @media($sm-991){
+            height: 350px;
+        }
+        @media($sm-767){
+            height: 300px;
+        }
+        @media($sm-579){
+            height: 280px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+    }
+}
+    .subtitle{
+
+        font-weight: 600;
+        color: #101B25;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1.04%;
+        padding-bottom: 24px;
+        @media($sm-1679){
+            font-size: 28px;
+            line-height: 38px;
+            padding-bottom: 20px;
+        }
+        @media($sm-1481){
+            font-size: 26px;
+            line-height: 36px;
+            padding-bottom: 15px;
+        }
+        @media($sm-1199){
+            font-size: 24px;
+            line-height: 34px;
+        }
+        @media($sm-991){
+            font-size: 20px;
+            line-height: 30px;
+        }
+        @media($sm-767){
+            font-size: 18px;
+            line-height: 28px;
+            padding-bottom: 10px;
+        }
+        @media($sm-579){
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+    }
+.our-story{
+    padding-bottom: 100px;
+    @media($sm-1679){
+        padding-bottom: 80px;
+    }
+    @media($sm-1481){
+        padding-bottom: 60px;
+    }
+    @media($sm-1199){
+        padding-bottom: 30px;
+    }
+    .story-inner-sec{
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+        @media($sm-579){
+            flex-wrap: wrap;
+        }
+        .lft-sec , .rt-sec{
+            width: 48%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            color: #415362;
+            @media($sm-1679){
+                font-size: 16px;
+            }
+            @media($sm-1481){
+                font-size: 14px;
+            }
+            @media($sm-579){
+                width: 100%;
+            }
+
+        }
+    }
+
+}
+
+.people-behind{
+    padding-bottom: 100px;
+    @media($sm-1679){
+        padding-bottom: 80px;
+    }
+    @media($sm-1481){
+        padding-bottom: 60px;
+    }
+    @media($sm-1199){
+        padding-bottom: 30px;
+    }
+    
+}
+    .team-section{
+
+        .team-card {
+            background: rgba(248, 249, 250, 1);
+            padding: 48px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media($sm-1679){
+                padding: 38px;
+            }
+            @media($sm-1481){
+                padding: 30px;
+            }
+            @media($sm-1199){
+                padding: 20px;
+            }
+            @media($sm-767){
+                flex-wrap: wrap;
+                margin-bottom: 10px !important;
+            }
+            &.row-reverse-sec{
+                flex-direction: row-reverse;
+                .col-lt-sec{
+                    padding-right: 0px;
+                    padding-left: 102px;
+                    @media($sm-1679){
+                    padding-left: 92px;
+                }
+                @media($sm-1481){
+                    padding-left: 82px;
+                }
+                @media($sm-1199){
+                    padding-left: 72px;
+                }
+                @media($sm-991){
+                    padding-left: 62px;
+                }
+                @media($sm-767){
+                    padding-left: 22px;
+                }
+                @media($sm-579){
+                    padding-left: 0px;
+                }
+                }
+                .col-rt-sec{
+                    // padding-right: 102px;
+                }
+            }
+            .col-lt-sec{
+                flex: 1;
+                padding-right: 102px;
+                @media($sm-1679){
+                    padding-right: 92px;
+                }
+                @media($sm-1481){
+                    padding-right: 82px;
+                }
+                @media($sm-1199){
+                    padding-right: 72px;
+                }
+                @media($sm-991){
+                    padding-right: 10px;
+                }
+                @media($sm-767){
+                    padding-right: 10px;
+                    width: 100%;
+                }
+                @media($sm-579){
+                    padding-right: 0px;
+                }
+            }
+            .col-rt-sec{
+                width: 364px;
+                height: 412px;
+                @media($sm-991){
+                    width: 280px;
+                    height: 300px;
+                }
+                @media($sm-767){
+                    width: 100%;
+                    height: 240px;
+
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 12px;
+                    max-width: 100%;
+                    
+                }
+                .team-img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .team-name{
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 24px;
+                color: rgba(16, 27, 37, 1);
+                line-height: 32px;
+                letter-spacing: -1.2%;
+                @media($sm-1679){
+                    font-size: 22px;
+                }
+                @media($sm-1481){
+                    font-size: 20px;
+                }
+                @media($sm-1199){
+                    font-size: 18px;
+                }
+                @media($sm-991){
+                    font-size: 16px;
+                }
+                @media($sm-767){
+                    font-size: 14px;
+                }
+            }
+            .team-bio{
+        
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                margin-bottom: 16px;
+                @media($sm-1679){
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                @media($sm-1481){
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                @media($sm-1199){
+                    font-size: 13px;
+                    line-height: 23px;
+                }
+
+            }
+        }
+    }
