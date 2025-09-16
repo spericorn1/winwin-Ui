@@ -191,7 +191,8 @@
   padding-bottom: 12px;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .img-sec img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .add-product-form .form-outer .lft-sec .for-wrp .form-grp .msg-grp .txt {
   font-weight: 600;
@@ -254,6 +255,9 @@
   .add-product-form .form-outer .lft-sec .form-wrp .form-control {
     height: 36px;
   }
+}
+.add-product-form .form-outer .lft-sec .form-wrp .form-control::-moz-placeholder {
+  color: #7b8d9f;
 }
 .add-product-form .form-outer .lft-sec .form-wrp .form-control::placeholder {
   color: #7b8d9f;
@@ -647,6 +651,9 @@
 .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp .btn-check:checked + .btn {
   border: 1px solid #5090CC;
 }
+.add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp::-moz-placeholder {
+  color: #7b8d9f;
+}
 .add-product-form .form-outer .lft-sec .dimension-group .chk-custom-wrp::placeholder {
   color: #7b8d9f;
 }
@@ -713,6 +720,9 @@
 }
 .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp .btn-check:checked + .btn {
   border: 1px solid #5090CC;
+}
+.add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp::-moz-placeholder {
+  color: #7b8d9f;
 }
 .add-product-form .form-outer .lft-sec .dimension-group.content-start .chk-installment-wrp::placeholder {
   color: #7b8d9f;
@@ -942,7 +952,8 @@
   height: 100%;
   width: 100%;
   border-radius: 12px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .add-product-form .form-outer .rt-sec .preview-card .product-thumbs {
   margin-top: 24px;
@@ -1100,7 +1111,8 @@
 .add-product-form .form-outer .rt-sec .preview-card .product-thumbs .thumb-img-block img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 @media (max-width: 991px) {
@@ -1408,7 +1420,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: 16px;
   flex-shrink: 0;
   display: flex;
@@ -1464,6 +1477,4 @@
 }
 .slick-dots li button::before {
   display: none;
-}
-
-/*# sourceMappingURL=add-product-preview.css.map */
+}/*# sourceMappingURL=add-product-preview.css.map */

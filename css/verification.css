@@ -105,6 +105,10 @@ body {
     font-size: 12px;
   }
 }
+.input-wrap .fields-wrap input::-moz-placeholder {
+  color: #7b8d9f;
+  opacity: 1;
+}
 .input-wrap .fields-wrap input::placeholder {
   color: #7b8d9f;
   opacity: 1;
@@ -122,7 +126,9 @@ body {
   border-radius: 30px;
   outline: 0;
   background: #fff url(../img/select-arrow.svg) no-repeat 95% center;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 @media (max-width: 1679px) {
   .input-wrap .fields-wrap select {
@@ -130,6 +136,10 @@ body {
     font-size: 12px;
     background-size: 10px;
   }
+}
+.input-wrap .fields-wrap select::-moz-placeholder {
+  color: #7b8d9f;
+  opacity: 1;
 }
 .input-wrap .fields-wrap select::placeholder {
   color: #7b8d9f;
@@ -531,7 +541,8 @@ body {
   border-radius: 6px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .level-id-wrap .leval-head-wrap .head-wrap {
   text-align: center;
@@ -1155,6 +1166,9 @@ body {
     font-size: 12px;
   }
 }
+.about-me-section .about-me-card .form-sec .form-control::-moz-placeholder, .about-me-section .about-me-card .form-sec textarea::-moz-placeholder, .about-me-section .about-me-card .form-sec .form-select::-moz-placeholder {
+  color: #7B8D9F;
+}
 .about-me-section .about-me-card .form-sec .form-control::placeholder, .about-me-section .about-me-card .form-sec textarea::placeholder,
 .about-me-section .about-me-card .form-sec .form-select::placeholder {
   color: #7B8D9F;
@@ -1270,7 +1284,8 @@ body {
 .trust-score-section .trust-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .trust-score-section .trust-video img {
@@ -1631,7 +1646,8 @@ body {
 .membership-section .price-card .benefit-item .benefit-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50px;
 }
 .membership-section .price-card .btn-primary {
@@ -1824,7 +1840,8 @@ body {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .add-profile-container .img-input-cover .img-input-label .img-item .edit-icon {
   display: inline-block;
@@ -1873,7 +1890,8 @@ body {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .add-profile-container .prof-img-block h4 {
   text-align: center;
@@ -1930,8 +1948,7 @@ body {
     height: 400px;
     width: 200px;
     max-width: none;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-}
-
-/*# sourceMappingURL=verification.css.map */
+}/*# sourceMappingURL=verification.css.map */
