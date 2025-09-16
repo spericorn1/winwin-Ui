@@ -214,6 +214,8 @@
     display: flex;
     gap: 12px;
     flex-direction: row-reverse;
+    border: 0;
+    padding: 0;
   }
 }
 .blog-layout .featured-blog .feature-bnr {
@@ -633,7 +635,17 @@
   border-radius: 12px;
 }
 .blog-listing .blog-cards .blog-card .content {
-  padding: 1rem;
+  padding: 24px 20px 28px;
+}
+@media (max-width: 1199px) {
+  .blog-listing .blog-cards .blog-card .content {
+    padding: 20px 20px 24px;
+  }
+}
+@media (max-width: 650px) {
+  .blog-listing .blog-cards .blog-card .content {
+    padding: 20px;
+  }
 }
 .blog-listing .blog-cards .blog-card .content h3 {
   font-size: 20px;
@@ -676,6 +688,7 @@
   font-size: 14px;
   font-weight: 500;
   color: #6b7280;
+  margin-bottom: 0;
 }
 @media (max-width: 1199px) {
   .blog-listing .blog-cards .blog-card .content .date {

@@ -156,6 +156,8 @@
         display: flex;
         gap: 12px;
         flex-direction: row-reverse;
+        border: 0;
+        padding: 0;
      }
     .feature-bnr{
         width: 100%;
@@ -509,8 +511,13 @@
       
 
       .content {
-        padding: 1rem;
-
+        padding: 24px 20px 28px;
+        @media ($sm-1199){
+            padding: 20px 20px 24px;
+        }
+        @media (max-width:650px){
+            padding: 20px;
+        }
         h3 {
           font-size: 20px;
           line-height: 28px;
@@ -543,6 +550,7 @@
           font-size: 14px;
           font-weight: 500;
           color: #6b7280;
+          margin-bottom: 0;
           @media ($sm-1199){
             font-size: 13px;
           }
