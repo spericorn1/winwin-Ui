@@ -29,6 +29,13 @@ input{
     //     max-width: 100%;
     // }
 }
+.custom-container02{
+    @media ($lg-1200) {
+             max-width: 850px;
+    margin: auto;
+        }
+
+}
 a{
     cursor: pointer;
     transition: .3s;
