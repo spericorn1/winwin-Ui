@@ -286,7 +286,36 @@
                     color: #101b25;
                 }
             }
-
+            .variant-box{
+                margin-bottom: 20px;
+                .variant-label{
+                    color: #101b25;
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    @media ($sm-1679) {
+                        font-size: 13px;
+                    }
+                }
+                .variant-select-box{
+                    border: 1px solid #b8c4d0;
+                    padding: 8px 15px;
+                    background-color: #fff;
+                    border: 1px solid #DFE1E3;
+                    border-radius: 50px !important;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #101b25;
+                    // background-position: calc(100% - 25px) center;
+                    width: auto;
+                    padding-right: 40px;
+                    min-width: 180px;
+                    box-shadow: none;
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+                }
+            }
             .seller-box {
                 border-top: 1px solid #ecedef;
                 display: flex;

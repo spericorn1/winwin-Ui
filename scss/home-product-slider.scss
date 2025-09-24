@@ -106,6 +106,9 @@
     }
 }
 .product-slider-def{
+    .slick-list{
+        height: auto !important;
+    }
     .slick-slide{
         padding: 0 12px;
         @media ($sm-479) {

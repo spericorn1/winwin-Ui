@@ -174,7 +174,7 @@
                         font-size: 16px;
                         font-weight: 400;
                         color: #415362;
-                        max-width: 265px;
+                        max-width: 220px;
                         line-height: 1.6;
                         @media ($sm-1679) {
                             font-size: 14px;
@@ -289,13 +289,6 @@
         @media ($sm-1199) {
             padding: 8px 0;
         }
-        @media ($sm-479) {
-            padding: 12px 0;
-            .row{
-                align-items: center;
-                flex-direction: column;
-            }
-        }
         .left-wrap {
             height: 100%;
             display: flex;
@@ -331,19 +324,12 @@
         .right-wrap {
             display: flex;
             justify-content: end;
-            @media ($sm-479) {
-                justify-content: center;
-                padding-top: 15px;
-            }
             .guarantee-wrap {
                 display: flex;
                 gap: 12px;
                 align-items: center;
                 @media ($sm-767) {
                     gap: 5px;
-                }
-                @media ($sm-479) {
-                    flex-direction: row-reverse;
                 }
                 span {
                     font-size: 14px;
