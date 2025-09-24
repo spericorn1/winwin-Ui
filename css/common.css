@@ -44,6 +44,13 @@ input {
 .custom-container2 {
   max-width: 1062px;
 }
+@media (min-width: 1200px) {
+  .custom-container02 {
+    max-width: 850px;
+    margin: auto;
+  }
+}
+
 a {
   cursor: pointer;
   transition: 0.3s;
@@ -196,4 +203,6 @@ a:hover {
     font-size: 11.2px;
     line-height: 11px;
   }
-}/*# sourceMappingURL=common.css.map */
+}
+
+/*# sourceMappingURL=common.css.map */
