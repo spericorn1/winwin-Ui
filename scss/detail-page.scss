@@ -849,7 +849,7 @@
         display: flex;
         align-items: center;
         // justify-content: space-between;
-        justify-content: center;
+        // justify-content: center;
 
         @media ($sm-991) {
             min-width: 800px;
@@ -873,14 +873,17 @@
                     font-size: 14px;
                     // padding: 6px 14px;
                     // padding: 8px 30px;
-                    padding: 8px 56px;
+                    padding: 8px 40px;
                 }
                 @media (max-width: 1052px) {
-                    padding: 8px 50px;
+                    // padding: 8px 50px;
                     // padding: 8px 46px;
                 }
                 @media ($sm-991) {
-                    padding: 8px 33px;
+                    padding: 8px 20px;
+                }
+                @media ($sm-479) {
+                    padding: 8px 15px;
                 }
                 &.active {
                     border-bottom: 1px solid #5090cc !important;
