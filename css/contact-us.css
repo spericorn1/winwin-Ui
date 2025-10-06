@@ -227,7 +227,8 @@
 .get-in-touch .get-in-touch-inner .lt-sectn .contact-detail .detail-sec .block-sec .icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .get-in-touch .get-in-touch-inner .lt-sectn .contact-detail .detail-sec .block-sec .block-rt .block-title {
   font-weight: 500;
@@ -356,6 +357,9 @@
     height: 36px;
   }
 }
+.get-in-touch .get-in-touch-inner .rt-sectn .contact-form-wrapper .contact-form-box .form-group .form-control::-moz-placeholder {
+  color: #7B8D9F;
+}
 .get-in-touch .get-in-touch-inner .rt-sectn .contact-form-wrapper .contact-form-box .form-group .form-control::placeholder {
   color: #7B8D9F;
 }
@@ -412,6 +416,4 @@
   background: #DCE9F5;
   color: #fff;
   cursor: not-allowed;
-}
-
-/*# sourceMappingURL=contact-us.css.map */
+}/*# sourceMappingURL=contact-us.css.map */
