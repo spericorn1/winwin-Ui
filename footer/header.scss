@@ -1342,6 +1342,9 @@
         right: -20px !important;
         @media ($sm-479) {
             width: 100vw !important;
+            min-height: calc(100dvh - 190px);
+            overflow-y: auto;
+            padding-bottom: 30px !important;
         }
         .all-catg{
             cursor:pointer;
