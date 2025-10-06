@@ -558,6 +558,59 @@
                 border: none;
             }
         }
+        .variant-wrp {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 10px;
+                overflow: hidden;
+                margin-top: 24px;
+                margin-bottom: 5px;
+                padding-bottom: 0;
+                scrollbar-width: thin;
+                scrollbar-color: #5090cc #fff;
+
+                @media ($sm-1679) {
+                    margin-top: 20px;
+                }
+
+                
+
+                
+
+                &:hover {
+                    overflow-x: scroll;
+                }
+
+                .variant-btn {
+
+                    &.active,
+                    &:hover {
+
+                        border: 1px solid #DFE1E3;
+                        background-color: #F7FAFD;
+                        color: #101B25;
+                    }
+
+
+
+                    padding: 8px 20px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    border: 1px solid #5090CC;
+                    color: #5090CC;
+                    background-color: #FFFFFF;
+                    border-radius: 36px;
+                    min-width: 207px;
+                    height: 36px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+
+                    @media ($sm-1679) {
+                        height: 34px;
+                    }
+                }
+            }
         .preview-sec-card {
             border: 1px solid #ecedef;
             box-shadow: 0px 2px 4px 0px #0000000a;
