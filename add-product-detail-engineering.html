@@ -172,33 +172,97 @@ The 13-inch MacBook Air is a lightweight and portable laptop known for its thin 
                                         <div class="form-grp">
                                             <div class="slider-sec">
                                                 <div class="item-inner-title">Variants <span>Product Images</span></div>
+
+
+                                                <!-- Single item -->
+                                                <div class="form-grp">
+                                                    <div class="msg-grp">
+                                                        <div class="btn-upload">
+                                                            <div class="img-sec">
+                                                                <img src="img/plus-icon.svg" alt="plus-icon" />
+                                                            </div>
+                                                            <span class="txt">Add Photo</span>
+                                                            <p class="text-sec">or drag and drop.</p>
+                                                            <input type="file" class="form-control d-none"
+                                                                id="productImage" multiple />
+                                                        </div>
+                                                    </div>
+                                                    <p class="text-sec">
+                                                        You can add a maximum of 0/10 images.
+                                                    </p>
+                                                </div>
+
+
                                                 <div class="product-slider-left">
                                                     <div class="prod-img-cover">
-                                                        <img src="img/mac1.png" class="img-fluid" alt="Product Image" />
+                                                        <div class="add-prod-img-slider">
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac1.png"  alt="Product Image" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac2.png" alt="Thumb" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/item4.png" alt="Thumb" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac1.png" alt="Product Image" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac1.png" alt="Product Image" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac1.png" alt="Product Image" />
+                                                            </div>
+                                                            <div class="add-prod-img-lg">
+                                                                <img src="img/mac1.png" alt="Product Image" />
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="product-thumbs-left">
-                                                    <div class="thumb-img-wrp">
-                                                        <div class="thumb-img-block">
-                                                            <img src="img/mac1.png" class="img-fluid" alt="Thumb" />
+                                                <div class="product-thumbs-left product-thumbs-slider-left">
+                                                    <div class="thumb-slider-cover">
+                                                        <div class="add-thumb-slider">
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/mac1.png" class="img-fluid" alt="Thumb" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/mac2.png" class="img-fluid" alt="Thumb" />
+                                                                    <button class="remove-btn">
+                                                                        <img src="./img/delete.svg" alt="" />
+                                                                    </button>
+                                                                    <button class="drag-icon">
+                                                                        <img src="./img/drag-icon.svg" alt="" />
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/item4.png" class="img-fluid" alt="Thumb" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/item4.png" class="img-fluid" alt="Thumb" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/item4.png" class="img-fluid" alt="Thumb" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="thumb-img-wrp">
+                                                                <div class="thumb-img-block">
+                                                                    <img src="img/item4.png" class="img-fluid" alt="Thumb" />
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="thumb-img-wrp">
-                                                        <div class="thumb-img-block">
-                                                            <img src="img/mac2.png" class="img-fluid" alt="Thumb" />
-                                                            <button class="remove-btn">
-                                                                <img src="./img/delete.svg" alt="" />
-                                                            </button>
-                                                            <button class="drag-icon">
-                                                                <img src="./img/drag-icon.svg" alt="" />
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="thumb-img-wrp">
-                                                        <div class="thumb-img-block">
-                                                            <img src="img/item4.png" class="img-fluid" alt="Thumb" />
-                                                        </div>
-                                                    </div>
+
+
                                                     <div class="thumb-img-wrp">
                                                         <div class="thumb-img-block">
                                                             <button class="add-photo"><span>+</span>Add Photo</button>
@@ -510,6 +574,28 @@ The 13-inch MacBook Air is a lightweight and portable laptop known for its thin 
                     },
                 ],
             });
+
+            // Thumb slider
+            $(".add-prod-img-slider").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: ".add-thumb-slider"
+            });
+
+            $(".add-thumb-slider").slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: ".add-prod-img-slider",
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true,
+                variableWidth: true,
+                arrows: true,
+                infinite: false,
+            })
+
         });
         $(document).ready(function () {
             // $(".product-slider-left").slick({
