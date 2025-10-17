@@ -1257,3 +1257,67 @@
         }
     }
 }
+
+
+.shipping-insurance-sec{
+    background-color: #F8F9FA;
+    border-radius: 12px;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    .form-check{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0;
+        &:first-child{
+            margin-bottom: 10px;
+            @media ($sm-1679) {
+                margin-bottom: 5px;
+            }
+        }
+        .form-check-label{
+            color: #101B25;
+            font-size: 16px;
+            font-weight: 500;
+            @media ($sm-1679) {
+                font-size: 14px;
+            }
+        }
+        .form-check-input{
+            border: 1.5px solid #CBD1D7 !important;
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            box-shadow: none !important;
+            position: relative;
+            &::after{
+                content: '';
+                width: 6px;
+                height: 6px;
+                display: block;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                background-color: #5090CC;
+                border-radius: 50%;
+                opacity: 0;
+            }
+            &:checked{
+                background-image: none;
+                border-color: #5090CC !important;
+                background-color: #DCE9F5;
+                &::after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+
+.shipping-options-scroll{
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #5090cc #f4f8fd;
+}
