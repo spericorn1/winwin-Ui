@@ -49,20 +49,24 @@
     padding: 0 15px;
   }
 }
+.rec-content-wrap .rec-container-wrap .rec-head-wrap {
+  margin: 0 0 25px 0;
+}
+@media (max-width: 1679px) {
+  .rec-content-wrap .rec-container-wrap .rec-head-wrap {
+    margin: 0 0 20px 0;
+  }
+}
 .rec-content-wrap .rec-container-wrap .rec-head-wrap ul {
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 -1px 0;
   border-bottom: 1px solid #dfe1e3;
   display: flex;
   overflow: auto;
   overflow-y: hidden;
   scrollbar-width: thin;
   scrollbar-color: #5090cc transparent;
-}
-@media (max-width: 1679px) {
-  .rec-content-wrap .rec-container-wrap .rec-head-wrap ul {
-    margin: 0 0 20px 0;
-  }
+  padding: 0 0 1px 0;
 }
 .rec-content-wrap .rec-container-wrap .rec-head-wrap ul li {
   padding: 10px 0;
@@ -81,6 +85,7 @@
   font-weight: 500;
   padding: 0 15px;
   position: relative;
+  display: block;
 }
 @media (max-width: 1199px) {
   .rec-content-wrap .rec-container-wrap .rec-head-wrap ul li a {
@@ -208,8 +213,7 @@
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content {
@@ -422,8 +426,7 @@
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .rc-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -759,8 +762,7 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .left-border img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap {
   display: flex;
@@ -901,4 +903,6 @@
 }
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap.rc-second-color .left-wrap .dot:after {
   background: #8b5cf6;
-}/*# sourceMappingURL=received.css.map */
+}
+
+/*# sourceMappingURL=received.css.map */
