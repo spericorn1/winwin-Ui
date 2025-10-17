@@ -1,0 +1,79 @@
+@import "partials";
+.seller-center-wrap {
+    padding: 10px 0 20px 0;
+    @media ($sm-1679) {
+        padding: 5px 0 15px 0;
+    }
+    .row-align {
+        row-gap: 15px;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #101b25;
+        margin-bottom: 15px;
+        @media ($sm-1679) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        @media ($sm-767) {
+            font-size: 16px;
+        }
+    }
+    .box-wrap {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 15px 25px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 0 0 0 0;
+        height: 100%;
+        min-height: 100px;
+        @media ($sm-1679) {
+            padding: 10px 15px;
+            min-height: 90px;
+        }
+        .icon {
+            img {
+                max-width: 24px;
+                max-height: 24px;
+                @media ($sm-1679) {
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+                @media ($sm-767) {
+                    max-width: 18px;
+                    max-height: 18px;
+                }
+            }
+        }
+        .txt {
+            flex: 1;
+            .sub-title {
+                font-weight: 500;
+                font-size: 16px;
+                color: #101b25;
+                margin: 0 0 5px 0;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
+            }
+            .para {
+                font-weight: 400;
+                font-size: 14px;
+                color: #415362;
+                line-height: 1.6;
+                padding: 0;
+                margin: 0;
+                max-width: 420px;
+                @media ($sm-1679) {
+                    font-size: 13px;
+                }
+                @media ($sm-767) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
