@@ -325,6 +325,7 @@
       border-collapse: separate;
       tr {
         th {
+          vertical-align: middle;
           margin: 0;
           padding: 15px 15px;
           border: 0;
@@ -371,6 +372,7 @@
           font-size: 16px;
           font-weight: 500;
           transition: all 0.3s;
+          vertical-align: middle;
           @media ($sm-1679) {
             font-size: 14px;
             padding: 25px 15px;

@@ -935,3 +935,120 @@
         }
     }
 }
+
+
+
+
+.input-count-group{
+    display: flex;
+    align-items: center;
+    .add-cnt-btn{
+        flex-shrink: 0;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: #fff;
+        border: solid 1px #b8c4d0;
+        @media ($sm-1481) {
+            height: 40px;
+            width: 40px;
+            img{
+                max-width: 13px;
+            }
+        }
+        @media ($sm-1199) {
+            height: 37px;
+            width: 37px;
+            img{
+                max-width: 13px;
+            }
+        }
+    }
+    .form-wrp{
+        margin: 0 10px;
+        @media ($sm-479) {
+            margin: 0 5px;
+        }
+    }
+}
+.input-group-val-end{
+    position: relative;
+    .input-group-text {
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        background-color: transparent;
+        height: 52px;
+        border: 1px solid #b8c4d0;
+        border-right: none;
+        @media ($sm-1679) {
+            font-size: 14px;
+            line-height: 22px;
+            height: 48px;
+        }
+        @media ($sm-1481) {
+            font-size: 13px;
+            line-height: 20px;
+            height: 42px;
+        }
+        @media ($sm-1199) {
+            height: 40px;
+        }
+    }
+    .txt-val{
+        position: absolute;
+        display: inline-block;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 25px;
+        z-index: 9;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1BB746;
+        @media ($sm-1679) {
+            font-size: 14px;
+        }
+        @media ($sm-1481) {
+            font-size: 13px;
+        }
+        @media ($sm-479) {
+            padding-right: 20px;
+        }
+        &.txt-org{
+            color: #F27A2A;
+        }
+    }
+    .form-control{
+        border-radius: 0;
+        border-top-right-radius: 100px !important;
+        border-bottom-right-radius: 100px !important;
+        padding-right: 100px;
+        @media ($sm-479) {
+            padding-right: 80px;
+            padding-left: 15px !important;
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+
+.add-product-form .form-outer .lft-sec .form-wrp.input-group-val-end .form-control{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
