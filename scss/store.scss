@@ -18,6 +18,7 @@
 .store-container-wrap{ width: 850px; margin: 0 auto; padding: 0 0 90px 0;
     @media($sm-1679){ padding: 0 0 50px 0; }
     @media($sm-991){ width: 100%;}
+    @media($sm-767){ padding: 0 0 30px 0; }
     .store-content-wrap{
         .profile-pic-wrap{
             @media($sm-579){ position: relative; background: #fff; border-radius: 15px 15px 0 0; text-align: center; margin: -30px 0 0 0; padding: 50px 0 0 0;}
@@ -155,4 +156,169 @@
 
 
     }
+}
+
+.store-product-listing-wrap{
+    .head-wrap{ display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 0 0 15px 0;
+        @media($sm-479){ flex-direction: column; gap: 10px;}
+        .left-wrap{ display: flex; gap: 8px; flex-wrap: wrap;
+            h2{ margin: 0; padding: 0; font-size: 20px; font-weight: 500; color: #101B25;
+                @media($sm-1679){ font-size: 18px;}
+                @media($sm-991){ font-size: 16px;}
+            }
+            .published{ display: flex; align-items: center;gap:4px;
+                img{ width: 16px;
+                    @media($sm-1679){ width: 14px;}
+                }
+                span{ color: #7B8D9F; font-size: 12px; font-weight: 400;}
+            }
+        }
+        .right-wrap{
+            @media($sm-479){ width: 100%;}
+            .btn{ margin: 0; padding: 3px 20px 5px 20px; border: 0; outline: 0; cursor: pointer; height: 36px; background: #5090CC; border-radius: 30px;
+                @media($sm-1679){ height: 34px;}
+                @media($sm-767){ height: 32px;}
+                @media($sm-579){ padding: 3px 15px 3px 15px;}
+                @media($sm-479){ width: 100%;}
+                img{width: 16px;
+                    @media($sm-1679){ width: 14px;}
+                }
+                span{ font-size: 14px; font-weight: 500; color: #FFFFFF;
+                    @media($sm-1679){ font-size: 13px;}
+                }
+            }
+        }
+    }
+
+
+
+    .pr-list {
+                    border: 1px solid #ecedef;
+                    border-radius: 15px;
+                    padding: 15px;
+                    width: 100%;
+                    @media ($sm-767) {
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+                    .pr-head-wrap {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        width: 100%;
+                        @media ($sm-1679) {
+                            gap: 15px;
+                        }
+                    }
+                    .img {
+                        width: 72px;
+                        height: 72px;
+                        background: #ecedef;
+                        border-radius: 10px;
+                        flex: 0 0 72px;
+                        @media ($sm-1679) {
+                            width: 60px;
+                            height: 60px;
+                            flex: 0 0 65px;
+                        }
+                        @media ($sm-1199) {
+                            width: 50px;
+                            height: 50px;
+                            flex: 0 0 50px;
+                        }
+                        @media ($sm-579) {
+                            width: 40px;
+                            height: 40px;
+                            flex: 0 0 40px;
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                    .content {
+                        flex: 1;
+                        .title {
+                            padding: 0 0 5px 0;
+                            margin: 0;
+                            font-size: 20px;
+                            color: #101b25;
+                            font-weight: 600;
+                            line-height: 1.2;
+                            word-break: break-word;
+                            @media ($sm-1679) {
+                                font-size: 18px;
+                            }
+                            @media ($sm-1199) {
+                                font-size: 16px;
+                            }
+                        }
+                        .list {
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            gap: 5px;
+                            flex-wrap: wrap;
+                            row-gap: 2px;
+                            li {
+                                padding: 0;
+                                margin: 0;
+                                list-style: none;
+                                font-size: 16px;
+                                color: #415362;
+                                font-weight: 500;
+                                position: relative;
+                                line-height: 1.6;
+                                @media ($sm-1679) {
+                                    font-size: 14px;
+                                }
+                                @media ($sm-1199) {
+                                    font-size: 13px;
+                                }
+                                .num {
+                                    color: #101b25;
+                                }
+                                & + li {
+                                    padding-left: 7px;
+                                    &:before {
+                                        width: 3px;
+                                        height: 3px;
+                                        border-radius: 50%;
+                                        background: #415362;
+                                        content: "";
+                                        position: absolute;
+                                        inset: 0 auto 0 0;
+                                        margin: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .arrow {
+                        width: 36px;
+                        flex: 0 0 36px;
+                        @media ($sm-1679) {
+                            width: 32px;
+                            flex: 0 0 32px;
+                        }
+                        @media ($sm-991) {
+                            width: 26px;
+                            flex: 0 0 26px;
+                        }
+                    }
+                    & + .pr-list {
+                        margin-top: 15px;
+                    }
+                    &.active {
+                        .arrow {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+
+
+
+
 }
