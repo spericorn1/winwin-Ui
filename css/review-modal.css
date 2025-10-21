@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
@@ -16,12 +17,23 @@
 /*** laptop with MDPI (medium density per inch) resolution ***/
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+@media (max-width: 379px) {
+  .review-modal .modal-body {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .review-modal .modal-dialog {
   max-width: 516px;
 }
 .review-modal .modal-dialog .modal-header {
   border: none;
   padding-bottom: 0;
+}
+@media (max-width: 379px) {
+  .review-modal .modal-dialog .modal-header {
+    padding-top: 0px;
+  }
 }
 .review-modal .modal-dialog .modal-header .modal-title {
   color: #101B25;
@@ -56,6 +68,11 @@
   margin-bottom: 12px;
   padding: 0px 22px;
 }
+@media (max-width: 379px) {
+  .review-modal .modal-dialog .modal-content .buyer-card .buyer-info {
+    flex-wrap: wrap;
+  }
+}
 .review-modal .modal-dialog .modal-content .buyer-card .buyer-info img {
   width: 52px;
   height: 52px;
@@ -89,6 +106,11 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media (max-width: 379px) {
+  .review-modal .modal-dialog .modal-content .rating-section {
+    flex-wrap: wrap;
+  }
 }
 .review-modal .modal-dialog .modal-content .rating-section .rate-title {
   font-weight: 600;
@@ -138,6 +160,12 @@
   justify-content: center;
   margin-top: 10px;
 }
+@media (max-width: 379px) {
+  .review-modal .modal-footer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 .review-modal .modal-footer .btn {
   border: 1px solid #DFE1E3;
   height: 44px;
@@ -159,31 +187,34 @@
     width: 47%;
   }
 }
-
-.review-modal .btn-cancel {
-  background-color: #f9fafb;
-  border: 1px solid #e5e7eb;
-  color: #111827;
-  border-radius: 50px;
-  padding: 8px 30px;
-  font-weight: 500;
+@media (max-width: 379px) {
+  .review-modal .modal-footer .btn {
+    width: 100%;
+  }
 }
 
-.review-modal .btn-cancel:hover {
-  background-color: #f3f4f6;
+.rating {
+  font-size: 22px;
+  position: relative;
+  top: -23px;
 }
 
-.review-modal .btn-confirm {
-  background-color: #2563eb;
-  color: #fff;
-  border-radius: 50px;
-  padding: 8px 30px;
-  font-weight: 500;
-  border: none;
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  color: #7B8D9F;
+  cursor: pointer;
 }
 
-.review-modal .btn-confirm:hover {
-  background-color: #1e40af;
+.rating > span::before {
+  content: "★";
+  position: absolute;
+  color: #7B8D9F;
+}
+
+.rating > span.active::before {
+  color: #FFBB00;
 }
 
 /*# sourceMappingURL=review-modal.css.map */

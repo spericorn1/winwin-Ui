@@ -1,12 +1,21 @@
 @import "partials";
 
  .review-modal{
-
+    .modal-body{
+      @media(max-width:379px){
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
     .modal-dialog {
       max-width: 516px;
       .modal-header {
       border: none;
       padding-bottom: 0;
+
+      @media(max-width:379px){
+        padding-top: 0px;
+      }
       .modal-title {
         color: #101B25;
         font-weight: 500;
@@ -36,6 +45,9 @@
       gap: 12px;
       margin-bottom: 12px;
       padding: 0px 22px;
+      @media(max-width:379px){
+        flex-wrap: wrap;
+      }
 
       img{
         width: 52px;
@@ -76,6 +88,9 @@
       padding-top: 20px;
       padding-left: 20px;
       padding-right: 20px;
+      @media(max-width:379px){
+        flex-wrap: wrap;
+      }
       .rate-title{
   
         font-weight: 600;
@@ -125,6 +140,10 @@
       justify-content: center;
   
       margin-top: 10px;
+      @media(max-width:379px){
+        padding-left: 0px;
+        padding-right: 0px;
+      }
       .btn{
         border: 1px solid #DFE1E3;
         height: 44px;
@@ -143,36 +162,38 @@
         @media($sm-579){
           width: 47%;
         }
+        @media(max-width:379px){
+          width: 100%;
+        }
 
       }
     }
  } 
-    // .review-modal 
 
 
 
-    .review-modal .btn-cancel {
-      background-color: #f9fafb;
-      border: 1px solid #e5e7eb;
-      color: #111827;
-      border-radius: 50px;
-      padding: 8px 30px;
-      font-weight: 500;
-    }
+    .rating {
+   
+    font-size: 22px;
+  position: relative;
+    top: -23px;
 
-    .review-modal .btn-cancel:hover {
-      background-color: #f3f4f6;
-    }
+  }
 
-    .review-modal .btn-confirm {
-      background-color: #2563eb;
-      color: #fff;
-      border-radius: 50px;
-      padding: 8px 30px;
-      font-weight: 500;
-      border: none;
-    }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    color: #7B8D9F;
+    cursor: pointer;
+  }
 
-    .review-modal .btn-confirm:hover {
-      background-color: #1e40af;
-    }
+  .rating > span::before {
+    content: "★";
+    position: absolute;
+    color: #7B8D9F;
+  }
+
+  .rating > span.active::before {
+    color: #FFBB00;
+  }
