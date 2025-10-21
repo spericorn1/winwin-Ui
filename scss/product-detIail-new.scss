@@ -255,6 +255,9 @@
             margin: 0 0 10px 0;
         }
         tr {
+            .total-amt{
+                border-top: 1px solid #ECEDEF;
+            }
             td {
                 &.td1 {
                     margin: 0;

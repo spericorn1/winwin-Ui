@@ -1,0 +1,92 @@
+@import "partials";
+
+.success-outer-wrap {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content-wrap {
+        text-align: center;
+        width: 480px;
+        @media ($sm-1679) {
+            width: 440px;
+        }
+        @media ($sm-479) {
+            width: 100%;
+            padding: 0 15px;
+        }
+        img {
+            width: 40px;
+            display: inline-block;
+            margin: 0 0 15px 0;
+            @media ($sm-1679) {
+                width: 35px;
+            }
+        }
+        .title {
+            font-size: 24px;
+            color: #101b25;
+            font-weight: 500;
+            margin: 0;
+            padding: 0 0 10px 0;
+            line-height: 1.2;
+            @media ($sm-1679) {
+                font-size: 22px;
+            }
+            @media ($sm-991) {
+                font-size: 20px;
+            }
+        }
+        .para {
+            color: #415362;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 60px 25px 60px;
+            @media ($sm-1679) {
+                font-size: 14px;
+                padding-bottom: 20px;
+            }
+            @media ($sm-479) {
+                padding: 0 15px 15px 15px;
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            @media ($sm-479) {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .btn {
+                outline: 0;
+                width: 100%;
+                background: #ffffff;
+                border: 1px solid #dfe1e3;
+                border-radius: 30px;
+                cursor: pointer;
+                height: 44px;
+                padding: 3px 10px;
+                position: relative;
+                @media ($sm-1679) {
+                    height: 40px;
+                }
+                span {
+                    color: #101b25;
+                    font-size: 14px;
+                    font-weight: 500;
+                    @media ($sm-1679) {
+                        font-size: 13px;
+                    }
+                }
+                &.btn-color {
+                    background: #5090cc;
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
