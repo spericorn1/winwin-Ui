@@ -213,7 +213,8 @@
             border-bottom-left-radius: 0px !important; }
           .add-product-form .form-outer .lft-sec .form-wrp .form-control.form-text-area {
             height: 124px;
-            border-radius: 12px !important; }
+            border-radius: 12px !important;
+            padding-bottom: 25px; }
             @media (max-width: 1679px) {
               .add-product-form .form-outer .lft-sec .form-wrp .form-control.form-text-area {
                 height: 110px; } }
@@ -260,7 +261,18 @@
           line-height: 16px;
           letter-spacing: 0%;
           color: #7b8d9f;
-          z-index: 9; }
+          z-index: 9;
+          background: #fff;
+          width: calc(100% - 19px);
+          left: 0;
+          right: 0;
+          text-align: right;
+          margin: 0 auto !important;
+          padding-right: 8px;
+          bottom: 3px; }
+          @media (max-width: 1679px) {
+            .add-product-form .form-outer .lft-sec .form-wrp .txt {
+              bottom: 2.5px; } }
       .add-product-form .form-outer .lft-sec .link-sec {
         text-align: right;
         font-weight: 500;
@@ -795,6 +807,37 @@
     @media (max-width: 479px) {
       .input-count-group .form-wrp {
         margin: 0 5px; } }
+    .input-count-group .form-wrp.input-f-width-num {
+      display: block;
+      position: relative; }
+      .input-count-group .form-wrp.input-f-width-num .form-control {
+        border-radius: 30px;
+        width: 100%;
+        padding-right: 100px; }
+        @media (max-width: 1679px) {
+          .input-count-group .form-wrp.input-f-width-num .form-control {
+            padding-right: 80px; } }
+      .input-count-group .form-wrp.input-f-width-num .num-align {
+        position: absolute;
+        inset: 0 20px 0 auto;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: #415362;
+        z-index: 9; }
+        @media (max-width: 1679px) {
+          .input-count-group .form-wrp.input-f-width-num .num-align {
+            font-size: 14px; } }
+        @media (max-width: 1481px) {
+          .input-count-group .form-wrp.input-f-width-num .num-align {
+            font-size: 12px; } }
+        .input-count-group .form-wrp.input-f-width-num .num-align.color-orange {
+          color: #f27a2a; }
+        .input-count-group .form-wrp.input-f-width-num .num-align.color-green {
+          color: #1bb746; }
 
 .input-group-val-end {
   position: relative;
@@ -818,7 +861,7 @@
         height: 42px; } }
     @media (max-width: 1199px) {
       .input-group-val-end .input-group-text {
-        height: 40px; } }
+        height: 36px; } }
   .input-group-val-end .txt-val {
     position: absolute;
     display: inline-block;
@@ -863,5 +906,20 @@
 .add-product-form .form-outer .lft-sec .form-wrp.input-group-val-end .form-control {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important; }
+
+.add-product-form .form-outer .lft-sec .form-wrp.text-max-cover {
+  border: 1px solid #dfe1e3 !important;
+  border-radius: 12px; }
+  .add-product-form .form-outer .lft-sec .form-wrp.text-max-cover:hover {
+    border: 1px solid #5090cc !important;
+    border-color: #5090cc !important;
+    box-shadow: 0 0 0 2px rgba(80, 144, 204, 0.3); }
+  .add-product-form .form-outer .lft-sec .form-wrp.text-max-cover .form-text-area {
+    border: none;
+    resize: none; }
+  .add-product-form .form-outer .lft-sec .form-wrp.text-max-cover .txt {
+    display: block;
+    position: static;
+    text-align: right; }
 
 /*# sourceMappingURL=add-product.css.map */

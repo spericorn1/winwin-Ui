@@ -232,6 +232,7 @@
                     &.form-text-area {
                         height: 124px;
                         border-radius: 12px !important;
+                        padding-bottom: 25px;
                         @media ($sm-1679) {
                             height: 110px;
                         }
@@ -294,6 +295,18 @@
                     letter-spacing: 0%;
                     color: #7b8d9f;
                     z-index: 9;
+
+                    background: #fff;
+                    width: calc(100% - 19px);
+                    left: 0;
+                    right: 0;
+                    text-align: right;
+                    margin: 0 auto !important;
+                    padding-right: 8px;
+                    bottom: 3px;
+                    @media ($sm-1679) {
+                        bottom: 2.5px;
+                    }
                 }
             }
             .link-sec {
@@ -973,6 +986,42 @@
         @media ($sm-479) {
             margin: 0 5px;
         }
+        &.input-f-width-num {
+            display: block;
+            position: relative;
+            .form-control {
+                border-radius: 30px;
+                width: 100%;
+                padding-right: 100px;
+                @media ($sm-1679) {
+                    padding-right: 80px;
+                }
+            }
+            .num-align {
+                position: absolute;
+                inset: 0 20px 0 auto;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1;
+                color: #415362;
+                z-index: 9;
+                @media ($sm-1679) {
+                    font-size: 14px;
+                }
+                @media ($sm-1481) {
+                    font-size: 12px;
+                }
+                &.color-orange {
+                    color: #f27a2a;
+                }
+                &.color-green {
+                    color: #1bb746;
+                }
+            }
+        }
     }
 }
 .input-group-val-end{
@@ -995,7 +1044,7 @@
             height: 42px;
         }
         @media ($sm-1199) {
-            height: 40px;
+            height: 36px;
         }
     }
     .txt-val{
@@ -1051,4 +1100,23 @@
 .add-product-form .form-outer .lft-sec .form-wrp.input-group-val-end .form-control{
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
+}
+
+.add-product-form .form-outer .lft-sec .form-wrp.text-max-cover {
+    border: 1px solid #dfe1e3 !important;
+    border-radius: 12px;
+    &:hover {
+        border: 1px solid #5090cc !important;
+        border-color: #5090cc !important;
+        box-shadow: 0 0 0 2px rgba(80, 144, 204, 0.3);
+    }
+    .form-text-area{
+        border: none;
+        resize: none;
+    }
+    .txt{
+        display: block;
+        position: static;
+        text-align: right;
+    }
 }
