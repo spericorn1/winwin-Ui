@@ -1808,6 +1808,19 @@ body {
         .signed-doc{
             display: flex;
             margin-bottom: 12px;
+            @media (max-width: 390px) {
+                flex-wrap: wrap;
+            }
+            .signed-inp{
+                flex-grow: 1;
+                @media (max-width: 390px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                .sign-wrp{
+                    width: 100%;
+                }
+            }
             .sign-wrp{
                 min-height: 48px;
                 flex-grow: 1;
@@ -1830,6 +1843,10 @@ body {
             .btn-block{
                 display: flex;
                 flex-shrink: 0;
+                @media (max-width: 390px) {
+                    width: 100%;
+                    justify-content: flex-end;
+                }
             }
             .btn{
                 background-color: #fff;

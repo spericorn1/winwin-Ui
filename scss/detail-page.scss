@@ -1758,6 +1758,14 @@
                     &:hover {
                         border: 1px solid #5090cc;
                     }
+                    @media ($sm-767) {
+                        &:hover {
+                            border: 1px solid #f4f5f6;
+                        }
+                        &.active{
+                            border: 1px solid #5090cc !important;
+                        }
+                    }
                 }
             }
             .frequency-container {
@@ -1788,6 +1796,11 @@
                     &.active,
                     &:hover {
                         border: 1px solid #5090cc;
+                    }
+                    @media ($sm-767) {
+                        &:hover {
+                            border: 1px solid #f4f5f6;
+                        }
                     }
                 }
             }
