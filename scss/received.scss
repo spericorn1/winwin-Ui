@@ -150,6 +150,7 @@
                         background: #ecedef;
                         border-radius: 10px;
                         flex: 0 0 72px;
+                        flex-shrink: 0;
                         @media ($sm-1679) {
                             width: 60px;
                             height: 60px;
@@ -161,9 +162,9 @@
                             flex: 0 0 50px;
                         }
                         @media ($sm-579) {
-                            width: 40px;
-                            height: 40px;
-                            flex: 0 0 40px;
+                            width: 48px;
+                            height: 48px;
+                            flex: 0 0 48px;
                         }
                         img {
                             width: 100%;
@@ -408,9 +409,9 @@
                                                         }
                                                     }
                                                     &.exp {
-                                                        @media ($sm-479) {
-                                                            display: none;
-                                                        }
+                                                        // @media ($sm-479) {
+                                                        //     display: none;
+                                                        // }
                                                     }
                                                 }
                                             }
@@ -950,6 +951,63 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+.rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .list li .sold{
+    color: #1BB746;
+    display: inline-flex;
+    align-items: center;
+    img{
+        margin-right: 5px;
+        margin-top: -3px;
+    }
+}
+.rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list.pr-list-sold{
+    .content .list li{
+        margin-right: 40px;
+        padding-left: 40px;
+        @media ($sm-579) {
+            margin-right: 30px;
+            padding-left: 30px;
+        }
+        @media ($sm-479) {
+            margin-right: 10px;
+            padding-left: 10px;
+        }
+        &:first-child{
+            padding-left: 0;
+            min-width: 130px;
+            @media ($sm-1679) {
+                min-width: 110px;
+            }
+            @media ($sm-479) {
+                min-width: auto;
+            }
+        }
+        &:nth-child(2){
+            min-width: 120px;
+            @media ($sm-1679) {
+                min-width: 100px;
+            }
+            @media ($sm-579) {
+                min-width: 80px;
+            }
+        }
+        &:last-child{
+            margin-right: 0;
+            @media ($sm-479) {
+                width: 100%;
+                padding-left: 0;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        & + li:before{
+            left: 0;
         }
     }
 }

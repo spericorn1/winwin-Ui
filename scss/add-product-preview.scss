@@ -889,7 +889,8 @@
                         font-weight: 600;
                         border: 0;
                         background-color: #DCE9F5;
-
+                        border: solid 1px #DCE9F5;
+                        max-width: 100%;
                         span {
                             font-size: 20px;
                             line-height: 1;
