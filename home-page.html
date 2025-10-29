@@ -537,6 +537,7 @@
 
 
                <ul class="list">
+                  <li class="header-mob-search-btn"><a href="#"><img src="img/search-header.svg" alt=""></a></li>
                   <li><a href="#"><img src="img/head-ico-3.svg" alt=""></a></li>
                   <li><a href="#"><img src="img/head-ico-2.svg" alt=""></a></li>
                   <li><a href="#"><img src="img/head-ico-1.svg" alt=""></a></li>
@@ -554,9 +555,15 @@
          </div>
       </div>
       <div class="mob-score">
+         <div class="mob-score-left"></div>
          <div class="head-score-wrap">
             <img src="img/score-bar.svg" alt="" class="img">
             <div class="score-txt">TrustScore <span>40/1000</span></div>
+         </div>
+         <div class="mob-score-right">
+            <button class="category-btn-mob">
+               <img src="img/filter.svg" alt="">
+            </button>
          </div>
       </div>
    </div>
@@ -569,9 +576,13 @@
                <input type="text" class="txt" placeholder="Search WinWinX">
             </div>
          </div>
-         <div class="filter-wrap">
+         <div class="filter-wrap mob-search-hide">
             <img src="img/filter.svg" alt="">
          </div>
+         <!-- close -->
+         <buttton class="filter-wrap mob-search-close">
+            <img src="img/close.svg" alt="">
+         </buttton>
 
          <!-- Search dropdown -->
          <div class="search-dropdown-body d-none">
@@ -792,6 +803,241 @@
 
 
 </div></div>
+
+   <!-- Mob search item -->
+   <div class="mob-search-item">
+      <div class="container">
+        <div class="search-mob-wrap">
+           <div class="search-wrap">
+              <div class="input-wrap">
+                 <img src="img/head-search.svg" alt="" class="img">
+                 <input type="text" class="txt" placeholder="Search WinWinX">
+              </div>
+           </div>
+           
+           <!-- close -->
+           <buttton class="filter-wrap mob-search-close">
+              <img src="img/close.svg" alt="">
+           </buttton>
+   
+           <!-- Search dropdown -->
+           <div class="search-dropdown-body d-none">
+              <div class="search-dropdown-cover">
+                 <div class="dropdown-top-cover">
+                             <div class="popular-block">
+                                <h5>Popular Search</h5>
+                                <div class="srch-popular-item srch-popular-slider">
+                                   <div class="ct-item"><a href="#" class="link">Laptop <span class="srch-close"><img src="img/modal-close.svg" alt=""></span></a></div>
+                                   <div class="ct-item"><a href="#" class="link">Electronics</a></div>
+                                   <div class="ct-item"><a href="#" class="link">Fashion & Apparel</a></div>
+                                   <div class="ct-item"><a href="#" class="link">Home & Living</a></div>
+                                   <div class="ct-item"><a href="#" class="link">Health & Beauty</a></div>
+                                   <div class="ct-item"><a href="#" class="link">Toys, Kids & Baby</a></div>
+                                </div>
+                             </div>
+                             <div class="search-more-block">
+                                <div class="search-more-card">
+                                   <a class="search-more-link more-link-ai" href="#">
+                                      <div class="icn">
+                                         <img src="img/search-ai.svg" alt="">
+                                      </div>
+                                      <div class="txt">
+                                         Search anything- Driven by AI
+                                      </div>
+                                   </a>
+                                </div>
+                                <div class="search-more-card">
+                                   <a class="search-more-link" href="#">
+                                      <div class="icn">
+                                         <img src="img/head-search.svg" alt="">
+                                      </div>
+                                      <div class="txt">
+                                         I want a cheap but sturdy backpack for hiking with my dog
+                                      </div>
+                                   </a>
+                                </div>
+                             </div>
+                          </div>
+   
+                 <div class="dropdown-top-cover">
+                    <div class="popular-block">
+                       <h5>Popular Search</h5>
+                       <div class="srch-popular-item srch-popular-slider">
+                          <div class="ct-item"><a href="#" class="link">Laptop <span class="srch-close"><img src="img/modal-close.svg" alt=""></span></a></div>
+                          <div class="ct-item"><a href="#" class="link">Electronics</a></div>
+                          <div class="ct-item"><a href="#" class="link">Fashion & Apparel</a></div>
+                          <div class="ct-item"><a href="#" class="link">Home & Living</a></div>
+                          <div class="ct-item"><a href="#" class="link">Health & Beauty</a></div>
+                          <div class="ct-item"><a href="#" class="link">Toys, Kids & Baby</a></div>
+                       </div>
+                    </div>
+                    <div class="search-more-block">
+                       <div class="search-more-card">
+                          <a class="search-more-link more-link-ai" href="#">
+                             <div class="icn">
+                                <img src="img/search-ai.svg" alt="">
+                             </div>
+                             <div class="txt">
+                                Search anything- Driven by AI
+                             </div>
+                          </a>
+                       </div>
+                       <div class="search-more-card">
+                          <a class="search-more-link" href="#">
+                             <div class="icn">
+                                <img src="img/head-search.svg" alt="">
+                             </div>
+                             <div class="txt">
+                                I want a cheap but sturdy backpack for hiking with my dog
+                             </div>
+                          </a>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="dropdown-wrapper">
+                    <div class="left-block">
+                       <div class="drp-title">Quick picks</div>
+                       <div class="drp-link-block">
+                          <div class="drp-link-card-1">
+                             <a class="drp-link-1" href="">
+                                <div class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </div>
+                                <div class="link-label">
+                                   Laptop hp
+                                </div>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-1">
+                             <a class="drp-link-1" href="">
+                                <div class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </div>
+                                <div class="link-label">
+                                   Laptop hp
+                                </div>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-1">
+                             <a class="drp-link-1" href="">
+                                <div class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </div>
+                                <div class="link-label">
+                                   Laptop hp
+                                </div>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-1">
+                             <a class="drp-link-1" href="">
+                                <div class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </div>
+                                <div class="link-label">
+                                   Laptop gaming
+                                </div>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-1">
+                             <a class="drp-link-1" href="">
+                                <div class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </div>
+                                <div class="link-label">
+                                   Laptop touchscreen
+                                </div>
+                             </a>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="right-block">
+                       <div class="drp-title">Suggested Products</div>
+                       <div class="drp-link-block">
+                          <div class="drp-link-card-2">
+                             <a class="drp-link-2" href="">
+                                <div class="icon">
+                                   <img src="img/Beauty.png" alt="">
+                                </div>
+                                <div class="link-data">
+                                   <p>Apple MacBook Pro 13"</p>
+                                   <div class="rw">
+                                      <img class="str" src="img//star-fill.svg" alt="">
+                                      <span class="rw-det">
+                                         4.8 <span class="cnt">(09 Reviews)</span>
+                                      </span>
+                                   </div>
+                                </div>
+                                <span class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </span>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-2">
+                             <a class="drp-link-2" href="">
+                                <div class="icon">
+                                   <img src="img/Beauty.png" alt="">
+                                </div>
+                                <div class="link-data">
+                                   <p>Apple MacBook Pro 13"</p>
+                                   <div class="rw">
+                                      <img class="str" src="img//star-fill.svg" alt="">
+                                      <span class="rw-det">
+                                         4.8 <span class="cnt">(09 Reviews)</span>
+                                      </span>
+                                   </div>
+                                </div>
+                                <span class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </span>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-2">
+                             <a class="drp-link-2" href="">
+                                <div class="icon">
+                                   <img src="img/Beauty.png" alt="">
+                                </div>
+                                <div class="link-data">
+                                   <p>Apple MacBook Pro 13"</p>
+                                   <div class="rw">
+                                      <img class="str" src="img//star-fill.svg" alt="">
+                                      <span class="rw-det">
+                                         4.8 <span class="cnt">(09 Reviews)</span>
+                                      </span>
+                                   </div>
+                                </div>
+                                <span class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </span>
+                             </a>
+                          </div>
+                          <div class="drp-link-card-2">
+                             <a class="drp-link-2" href="">
+                                <div class="icon">
+                                   <img src="img/Beauty.png" alt="">
+                                </div>
+                                <div class="link-data">
+                                   <p>Apple MacBook Pro 13"</p>
+                                   <div class="rw">
+                                      <img class="str" src="img//star-fill.svg" alt="">
+                                      <span class="rw-det">
+                                         4.8 <span class="cnt">(09 Reviews)</span>
+                                      </span>
+                                   </div>
+                                </div>
+                                <span class="arw">
+                                   <img src="img/sub-menu-arrow-right.svg" alt="">
+                                </span>
+                             </a>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+   </div>
+
 
 
    

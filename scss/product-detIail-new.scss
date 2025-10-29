@@ -282,6 +282,9 @@
                     @media ($sm-479) {
                         width: 50%;
                     }
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                    }
                     .info {
                         width: 16px;
                         @media ($sm-1679) {
@@ -313,6 +316,9 @@
                     @media ($sm-479) {
                         width: 50%;
                     }
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                    }
                     span {
                         font-weight: 400;
                         color: #415362;
@@ -328,7 +334,6 @@
     
         font-weight: 500;
         font-size: 20px;
-        line-height: 28px;
         padding: 20px 0px;
         display: flex;
         align-items: center;
@@ -382,6 +387,15 @@
             font-size: 14px;
             line-height: 20px;
 
+        }
+        input[type="date"]{
+            position: relative;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         .btn-grp{
             display: flex;
@@ -550,5 +564,38 @@
             }
         }
 
+    }
+}
+
+.down-payment-confirm-box{
+    width: 100%;
+    background-color: #F0FFE4;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    @media ($sm-991) {
+        padding: 12px 15px;
+    }
+    .icon{
+        flex-shrink: 0;
+        margin-right: 15px;
+        img{
+            max-width: 19px;
+        }
+    }
+    .info{
+        font-size: 12px;
+        color: #2A9623;
+        font-weight: 500;
+        @media ($sm-479) {
+            font-size: 11px;
+        }
+        br{
+            @media ($sm-991) {
+                display: none;
+            }
+        }
     }
 }
