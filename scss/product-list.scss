@@ -163,13 +163,14 @@
                 .filter-close{
                     margin-left: 12px;
                     padding: 2px;
+                    padding-right: 0;
                     border: none;
                     border-radius: 5px;
                     line-height: 0;
                     background-color: #fff;
-                    @media (min-width: 992px) {
-                        display: none;
-                    }
+                    // @media (min-width: 992px) {
+                    //     display: none;
+                    // }
                     img{
                         width: 20px;
                         opacity: .6;
@@ -332,7 +333,9 @@
             width: 75%;
             flex: 0 0 auto;
             padding: 0 0 0 30px;
-
+            @media (max-width: 1400px) {
+                width: calc(100% - 300px);
+            }
             @media ($sm-991) {
                 width: 100%;
                 padding: 0;
@@ -980,5 +983,67 @@
     @media (max-width: 1400px) {
         width: 300px;
         padding: 20px;
+    }
+}
+
+.product-list-wrap .product-align-wrap {
+    .product-form-wrap{
+        transition: .3s;
+    }
+    &.filter-disabled{
+        .product-form-wrap{
+            padding: 0 !important;
+            width: 55px;
+            .filter-box-data{
+                display: none !important;
+            }
+            .filter-data-sm{
+                display: block;
+            }
+        }
+        .product-list-content-wrap{
+            width: calc(100% - 55px);
+            .product-box{
+                max-width: 25%;
+                @media ($sm-1199) {
+                    max-width: 33.3%;
+                }
+            }
+            
+        }
+    }
+    .product-form-wrap{
+        .filter-data-sm{
+            width: 100%;
+            display: none;
+            @media ($sm-991) {
+                display: none !important;
+            }
+            .filter-web-toggle{
+                width: 100%;
+                text-align: center;
+                border: none;
+                border-bottom: 1px solid #ECEDEF;
+                background-color: transparent;
+                box-shadow: none;
+                padding: 15px 5px;
+                img{
+                    margin-left: 2px;
+                }
+            }
+            .filter-data-block{
+                padding: 5px;
+                .filter-data-cnt{
+                    width: 100%;
+                    padding: 6px 3px;
+                    border-radius: 5px;
+                    background-color: #F7FAFD;
+                    text-align: center;
+                    color: rgba($color: #122852, $alpha: 0.5);
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 }

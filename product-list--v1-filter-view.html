@@ -157,250 +157,271 @@
       </div>
       <section class="product-list-wrap">
          <div class="container">
-            <div class="product-align-wrap">
+            <!-- filter-disabled -->
+            <div class="product-align-wrap ">
                <div class="product-form-wrap active">
-                  <div class="filter-reset-title">
-                     <div class="title">Filters</div>
-                     <div class="right-block">
-                        <div class="reset"><img src="img/refresh.svg" alt=""> Reset</div>
-                        <button class="filter-close">
-                           <img src="img/close.svg" alt="">
-                        </button>
-                     </div>
-                     <div class="filter-cnt-wrapper">
-                        <span class="filter-cnt">5 Filter Selected</span>
-                     </div>
-                  </div>
-                  <div class="group-wrap">
-                     <div class="title">Sellers TrustScore</div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                        <label class="form-check-label" for="radioDefault1">
-                        All Users (455 or higher)
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-                        <label class="form-check-label" for="radioDefault2">
-                        OK (505 or higher)
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" checked>
-                        <label class="form-check-label" for="radioDefault3">
-                        Great (705 or higher)
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                        <label class="form-check-label" for="checkDefault">
-                        Excellent (900 or higher)
-                        </label>
-                     </div>
-                  </div>
-                  <div class="group-wrap">
-                     <div class="title">Product Condition</div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
-                        <label class="form-check-label" for="radioDefault4">
-                        All
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
-                        <label class="form-check-label" for="radioDefault5">
-                        New
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
-                        <label class="form-check-label" for="radioDefault6">
-                        Used
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault7" checked>
-                        <label class="form-check-label" for="radioDefault7">
-                        Renewed
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault8" checked>
-                        <label class="form-check-label" for="radioDefault8">
-                        Vintage
-                        </label>
-                     </div>
-                  </div>
-                  <div class="group-wrap">
-                     <div class="title">Purchase Options</div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault9">
-                        <label class="form-check-label" for="radioDefault9">
-                        All
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault10" checked>
-                        <label class="form-check-label" for="radioDefault10">
-                        Allow Counteroffer
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault11" checked>
-                        <label class="form-check-label" for="radioDefault11">
-                        No Counteroffer
-                        </label>
-                     </div>
-                  </div>
-                  <div class="group-wrap">
-                     <div class="title">Distance</div>
-                     <div class="form-fields">
-                        <label for="" class="name">From ZIP Code</label>
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="ZIP Code">
+
+                  <div class="filter-data-sm">
+                     <button class="filter-web-toggle">
+                        <img src="img/filter-web-sm.svg" alt="">
+                     </button>
+                     <div class="filter-data-block">
+                        <div class="filter-data-cnt">
+                           5<br>Filter
                         </div>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault12">
-                        <label class="form-check-label" for="radioDefault12">
-                        Any Distance
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault13" checked>
-                        <label class="form-check-label" for="radioDefault13">
-                        Within 5 miles
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault14" checked>
-                        <label class="form-check-label" for="radioDefault14">
-                        Within 10 miles
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault15" checked>
-                        <label class="form-check-label" for="radioDefault15">
-                        Within 25 miles
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault16" checked>
-                        <label class="form-check-label" for="radioDefault16">
-                        Within 50 miles
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault17" checked>
-                        <label class="form-check-label" for="radioDefault17">
-                        Within 100 miles
-                        </label>
-                     </div>
-                  </div>
-                  <div class="group-wrap">
-                     <div class="title">Price Range</div>
-                     <div class="form-fields group-form-fields">
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="Min : $200">
-                        </div>
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="Max : $1500">
-                        </div>
-                     </div>
-                     <div class="range-wrap">
-                        <input type="range" class="form-range" id="range1">
                      </div>
                   </div>
 
-                  <!-- check box -->
-                  <div class="group-wrap">
-                     <div class="title">Price Range</div>
+                  <div class="filter-box-data">
 
-                     <div class="price-toggle-wrapper">
-                        <button class="price-toggle-btn active">Base Price</button>
-                        <button class="price-toggle-btn amnt-btn">Installment Amount</button>
-                     </div>
-
-                     <div class="title">Price</div>
-                     <div class="form-fields group-form-fields">
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="Min : $200">
+                     <div class="filter-reset-title">
+                        <div class="title">Filters</div>
+                        <div class="right-block">
+                           <div class="reset"><img src="img/refresh.svg" alt=""> Reset</div>
+                           <button class="filter-close">
+                              <img src="img/close.svg" alt="">
+                           </button>
                         </div>
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="Max : $1500">
+                        <div class="filter-cnt-wrapper">
+                           <span class="filter-cnt">5 Filter Selected</span>
                         </div>
                      </div>
-                     <div class="range-wrap">
-                        <input type="range" class="form-range" id="range1">
+                     <div class="group-wrap">
+                        <div class="title">Sellers TrustScore</div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                           <label class="form-check-label" for="radioDefault1">
+                           All Users (455 or higher)
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                           <label class="form-check-label" for="radioDefault2">
+                           OK (505 or higher)
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3" checked>
+                           <label class="form-check-label" for="radioDefault3">
+                           Great (705 or higher)
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
+                           <label class="form-check-label" for="checkDefault">
+                           Excellent (900 or higher)
+                           </label>
+                        </div>
                      </div>
-
-                     <div class="price-box">
+                     <div class="group-wrap">
+                        <div class="title">Product Condition</div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+                           <label class="form-check-label" for="radioDefault4">
+                           All
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+                           <label class="form-check-label" for="radioDefault5">
+                           New
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
+                           <label class="form-check-label" for="radioDefault6">
+                           Used
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault7" checked>
+                           <label class="form-check-label" for="radioDefault7">
+                           Renewed
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault8" checked>
+                           <label class="form-check-label" for="radioDefault8">
+                           Vintage
+                           </label>
+                        </div>
+                     </div>
+                     <div class="group-wrap">
+                        <div class="title">Purchase Options</div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault9">
+                           <label class="form-check-label" for="radioDefault9">
+                           All
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault10" checked>
+                           <label class="form-check-label" for="radioDefault10">
+                           Allow Counteroffer
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault11" checked>
+                           <label class="form-check-label" for="radioDefault11">
+                           No Counteroffer
+                           </label>
+                        </div>
+                     </div>
+                     <div class="group-wrap">
+                        <div class="title">Distance</div>
                         <div class="form-fields">
-
-                           <div class="form-check">
-                              <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                 $50 - $74.99
-                              </label>
+                           <label for="" class="name">From ZIP Code</label>
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="ZIP Code">
                            </div>
-
-                           <div class="form-check">
-                              <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                 $50 - $74.99
-                              </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault12">
+                           <label class="form-check-label" for="radioDefault12">
+                           Any Distance
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault13" checked>
+                           <label class="form-check-label" for="radioDefault13">
+                           Within 5 miles
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault14" checked>
+                           <label class="form-check-label" for="radioDefault14">
+                           Within 10 miles
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault15" checked>
+                           <label class="form-check-label" for="radioDefault15">
+                           Within 25 miles
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault16" checked>
+                           <label class="form-check-label" for="radioDefault16">
+                           Within 50 miles
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault17" checked>
+                           <label class="form-check-label" for="radioDefault17">
+                           Within 100 miles
+                           </label>
+                        </div>
+                     </div>
+                     <div class="group-wrap">
+                        <div class="title">Price Range</div>
+                        <div class="form-fields group-form-fields">
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="Min : $200">
                            </div>
-
-                           <div class="form-check">
-                              <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                 $50 - $74.99
-                              </label>
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="Max : $1500">
                            </div>
+                        </div>
+                        <div class="range-wrap">
+                           <input type="range" class="form-range" id="range1">
+                        </div>
+                     </div>
 
+                     <!-- check box -->
+                     <div class="group-wrap">
+                        <div class="title">Price Range</div>
+
+                        <div class="price-toggle-wrapper">
+                           <button class="price-toggle-btn active">Base Price</button>
+                           <button class="price-toggle-btn amnt-btn">Installment Amount</button>
                         </div>
 
-                        <button class="show-all-btn">Show all (10)</button>
-                     </div>
-
-                  </div>
-
-
-                  <div class="group-wrap">
-                     <div class="title">Seller’s Trustscore</div>
-                     <div class="form-fields">
-                        <!-- <label for="" class="name">455- Higher Score</label> -->
-                        <div class="txt-wrap">
-                           <input type="text" class="txt" placeholder="455- Higher Score">
+                        <div class="title">Price</div>
+                        <div class="form-fields group-form-fields">
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="Min : $200">
+                           </div>
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="Max : $1500">
+                           </div>
                         </div>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault21">
-                        <label class="form-check-label" for="flexCheckDefault21">
-                        Any Distance
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault22">
-                        <label class="form-check-label" for="flexCheckDefault22">
-                        Within 5 miles
-                        </label>
-                     </div>
-                     <div class="form-check">
-                        <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault23">
-                        <label class="form-check-label" for="flexCheckDefault23">
-                        Within 10 miles
-                        </label>
-                     </div>
-                     
-                  </div>
+                        <div class="range-wrap">
+                           <input type="range" class="form-range" id="range1">
+                        </div>
 
-                  <!-- check box item end -->
+                        <div class="price-box">
+                           <div class="form-fields">
 
-                  <div class="btn-wrap mt-4">
-                     <button class="btn"><span>Cancel</span></button>
-                     <button class="btn btn-color"><span>Apply</span></button>
+                              <div class="form-check">
+                                 <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 <label class="form-check-label" for="flexCheckDefault">
+                                    $50 - $74.99
+                                 </label>
+                              </div>
+
+                              <div class="form-check">
+                                 <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 <label class="form-check-label" for="flexCheckDefault">
+                                    $50 - $74.99
+                                 </label>
+                              </div>
+
+                              <div class="form-check">
+                                 <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                 <label class="form-check-label" for="flexCheckDefault">
+                                    $50 - $74.99
+                                 </label>
+                              </div>
+
+                           </div>
+
+                           <button class="show-all-btn">Show all (10)</button>
+                        </div>
+
+                     </div>
+
+
+                     <div class="group-wrap">
+                        <div class="title">Seller’s Trustscore</div>
+                        <div class="form-fields">
+                           <!-- <label for="" class="name">455- Higher Score</label> -->
+                           <div class="txt-wrap">
+                              <input type="text" class="txt" placeholder="455- Higher Score">
+                           </div>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault21">
+                           <label class="form-check-label" for="flexCheckDefault21">
+                           Any Distance
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault22">
+                           <label class="form-check-label" for="flexCheckDefault22">
+                           Within 5 miles
+                           </label>
+                        </div>
+                        <div class="form-check">
+                           <input class="form-check-input form-input-checkbox" type="checkbox" value="" id="flexCheckDefault23">
+                           <label class="form-check-label" for="flexCheckDefault23">
+                           Within 10 miles
+                           </label>
+                        </div>
+                        
+                     </div>
+
+                     <!-- check box item end -->
+
+                     <div class="btn-wrap mt-4">
+                        <button class="btn"><span>Cancel</span></button>
+                        <button class="btn btn-color"><span>Apply</span></button>
+                     </div>
+
+
                   </div>
+                  <!-- end -->
+
+
                </div>
                <div class="product-list-content-wrap">
                   <div class="pr-banner-wrap">
@@ -437,7 +458,7 @@
                   </div>
                   <div class="pr-list-wrap">
                      <div class="row row-align">
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
@@ -464,7 +485,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
@@ -491,7 +512,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
@@ -518,7 +539,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
@@ -544,7 +565,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
@@ -570,7 +591,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-6 col-xl-4">
+                        <div class="col-6 col-xl-4 product-box">
                            <div class="content-wrap">
                               <div class="gray-wrap">
                                  <div class="head">
