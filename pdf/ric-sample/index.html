@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+         content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+      <title>win win x</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+         rel="stylesheet">
+      <style>
+         * {
+         font-family: "Instrument Sans", sans-serif;
+         }
+         div {
+         box-sizing: border-box;
+         }
+         @page {
+         size: A4;
+         margin: 0;
+         padding: 60px 50px;
+         }
+         @media print {
+         /***Always insert a page break before the element***/
+         .pb_before {
+         page-break-before: always !important;
+         }
+         /***Always insert a page break after the element***/
+         .pb_after {
+         page-break-after: always !important;
+         }
+         /***Avoid page break before the element (if possible)***/
+         .pb_before_avoid {
+         page-break-before: avoid !important;
+         }
+         /***Avoid page break after the element (if possible)***/
+         .pb_after_avoid {
+         page-break-after: avoid !important;
+         }
+         /* Avoid page break inside the element (if possible) */
+         .pbi_avoid {
+         page-break-inside: avoid !important;
+         }
+         }
+         .pdf-wrp {
+         width: 794px;
+         /* height: 1123px; */
+         margin: 0 auto;
+         }
+      </style>
+   </head>
+   <body style="margin: 0; background-color: #fff; position: relative; font-family: 'Instrument Sans', sans-serif;">
+      <div class="pdf-wrp" style="display: block; background-color: #fff; padding:0;">
+         <div class="header">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0 0 20px 0; margin: 0;">
+               <tr>
+                  <td
+                     style="text-transform: uppercase; font-size: 40px; font-weight: bold; margin: 0; padding: 0 0 30px 0; color: #000;">
+                     RETAIL INSTALLMENT CONTRACT
+                  </td>
+               </tr>
+               <tr>
+                  <td style="font-size: 16px; padding: 0 0 20px 0;"><strong>(Subject to Federal and State
+                     Regulations)</strong>
+                  </td>
+               </tr>
+               <tr>
+                  <td style="font-size: 16px; padding: 0 0 20px 0;"><strong>Date of Contract:</strong> [Insert Date]
+                  </td>
+               </tr>
+               <tr>
+                  <td style="font-size: 16px; padding: 0 0 20px 0;"><strong>Contract Number:</strong> [Insert Unique
+                     Identifier]
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Seller/Creditor:</strong> <br />
+                        Name: [Seller's Full Legal Name]<br />
+                        Address: [Seller's Address, City, State, ZIP]<br />
+                        Phone: [Seller's Phone Number]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Buyer(s):</strong><br />
+                        Name(s): [Buyer's Full Name(s)]<br />
+                        Address: [Buyer's Address, City, State, ZIP]<br />
+                        Phone: [Buyer's Phone Number]<br />
+                        Social Security Number(s): [Optional, if required for credit reporting]<br />
+                        Date of Birth: [Buyer date of birth]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> <strong>State of
+                        Transaction: [Insert State] County: [Insert County]</strong>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"><strong><i>The
+                        Seller agrees to sell, and the Buyer agrees to purchase, the goods/services
+                        described
+                        below
+                        under the terms of this Retail Installment Contract and Security Agreement (the
+                        "Contract").
+                        This Contract creates a security interest in the Goods (as defined below) to secure
+                        the Buyer's
+                        obligations. Buyer acknowledges receipt of a copy of this Contract.</i></strong>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Description of Goods or Services Purchased:</strong><br />
+                        [Provide detailed description, including make, model, serial number, quantity, condition
+                        (new/used), and any accessories. For example: "One (1) new XYZ Appliance Model 123, Serial
+                        No. ABC456."]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> <strong>Purchase
+                        Details:</strong> <br />
+                        Cash Price of Goods/Services: $ [Amount]<br />
+                        Sales Tax: $ [Amount]<br />
+                        Other Charges (itemize):
+                     </p>
+                     <ul style="margin: 0; padding: 0 0 20px 20px;">
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Documentary Fee: $
+                           [Amount]
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0;line-height: 1.6;">Delivery Fee: $ [Amount]
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0;line-height: 1.6;">Taxes (Sales, Use, etc.):
+                           $[amount] [State specific]
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0;line-height: 1.6;">Other, e.g., Extended
+                           Warranty]: $ [Amount] <br />
+                           Total Cash Price (including taxes and fees): $ [Amount]<br />
+                           Down Payment: $ [Amount] (Cash: $ [ ], Trade-in: $ [ ], Other: $ [ ])<br />
+                           Amount Financed: $ [Amount] (Total Cash Price minus Down Payment)
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"><strong>FEDERAL
+                        TRUTH-IN-LENDING DISCLOSURES</strong><br />
+                        <strong>These disclosures are provided pursuant to the Truth in Lending Act (TILA) and
+                        Regulation Z. All amounts are in U.S. dollars. Buyer acknowledges that this is a
+                        closed-end
+                        credit transaction.</strong>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0 0 20px 0;" border="1">
+               <tr>
+                  <th style="text-align: left; width: 20%; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 10px 0; line-height: 1.4;"><strong>ANNUAL
+                        PERCENTAGE
+                        RATE</strong>
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 0 0; line-height: 1.4;">The cost of your
+                        credit as a
+                        yearly rate.
+                     </p>
+                  </th>
+                  <th style="text-align: left; width: 20%; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 10px 0; line-height: 1.4;"><strong>FINANCE
+                        CHARGE</strong>
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 0 0; line-height: 1.4;">The dollar
+                        amount the
+                        credit will cost
+                        you.
+                     </p>
+                  </th>
+                  <th style="text-align: left; width: 20%; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 10px 0; line-height: 1.4;"><strong>AMOUNT
+                        FINANCED</strong>
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 0 0; line-height: 1.4;">The amount of
+                        credit provided
+                        to you or on
+                        your behalf.
+                     </p>
+                  </th>
+                  <th style="text-align: left; width: 20%; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 10px 0; line-height: 1.4;"><strong>TOTAL OF
+                        PAYMENTS</strong>
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 0 0; line-height: 1.4;">The amount
+                        you will have
+                        paid after you
+                        have made all
+                        payments as
+                        scheduled.
+                     </p>
+                  </th>
+                  <th style="text-align: left; width: 20%; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 10px 0; line-height: 1.4;"><strong>TOTAL SALE
+                        PRICE</strong>
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 0 0; line-height: 1.4;">The total cost of
+                        your purchase
+                        on credit,
+                        including your
+                        down payment
+                        of $ [Down
+                        Payment
+                        Amount].
+                     </p>
+                  </th>
+               </tr>
+               <tr>
+                  <td style="text-align: left; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0; line-height: 1.4;">[APR] %</p>
+                  </td>
+                  <td style="text-align: left; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0; line-height: 1.4;">$ [Finance
+                        Charge Amount]
+                     </p>
+                  </td>
+                  <td style="text-align: left; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0; line-height: 1.4;">$ [Amount
+                        Financed]
+                     </p>
+                  </td>
+                  <td style="text-align: left; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0; line-height: 1.4;">$ [Total of
+                        Payments
+                        Amount]
+                     </p>
+                  </td>
+                  <td style="text-align: left; padding: 10px;" valign="top">
+                     <p style="font-size: 16px; margin: 0; padding: 0; line-height: 1.4;">$ [Total Sale
+                        Price Amount]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> <strong>Your
+                        Payment Schedule Will Be:</strong><br />
+                        Number of Payments: [Number]<br />
+                        Amount of Each Payment: $ [Amount]<br />
+                        When Payments Are Due: [e.g., Monthly, beginning on [Date], and on the same day each month
+                        thereafter]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Security Interest:</strong> You are giving a security interest in the goods or
+                        services being
+                        purchased
+                        [and any proceeds or accessions thereto]. This security interest is governed by the
+                        Uniform
+                        Commercial Code (UCC) Article 9 in the applicable state.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Late Charge:</strong> If a payment is more than [e.g., 10] days late, you
+                        will be charged [e.g., 5%
+                        of the
+                        payment amount or $10, whichever is greater], to the extent permitted by applicable
+                        state law.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Prepayment:</strong> If you pay off early, you [may/may not] have to pay
+                        a penalty. You may be
+                        entitled to a refund of part of the finance charge, calculated using [e.g., the
+                        actuarial method or
+                        Rule of 78s, as per state law]. No refund will be made if it is less than $1.00.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Additional Information:</strong> See below for more details about
+                        nonpayment, default, any required
+                        repayment in full before the scheduled date, and security interests.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"><strong>Security
+                        Interest:</strong> You are giving a security interest in: [Describe Collateral: The
+                        Goods
+                        described above, including all accessories, proceeds, and replacements]. (See Security
+                        Agreement section below.)
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">
+                        <strong>Assumption of Contract:</strong> [Insert if Allowed: e.g., You may not transfer this
+                        Contract without
+                        our written consent.]
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p
+                        style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6; font-weight: bold;">
+                        <i>
+                        NOTICE TO THE BUYER: DO NOT SIGN THIS CONTRACT BEFORE YOU READ IT
+                        OR IF IT CONTAINS ANY BLANK SPACES. YOU ARE ENTITLED TO AN EXACT
+                        COPY OF THE CONTRACT YOU SIGN. KEEP THIS COPY TO PROTECT YOUR
+                        LEGAL RIGHTS</i>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <p
+                        style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6; font-weight: bold;">
+                        <i>
+                        (This notice must appear in at least 10-point bold type per FTC Rule 16 C.F.R. §
+                        433.2; Customize per State Law, e.g., Florida Stat. § 520.07 requires additional
+                        Spanish translation if applicable.)</i>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Payment Terms</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;">You promise to pay
+                        the Seller/Creditor (or its assigns) the Total of Payments shown above, in the
+                        number and amounts specified in the Payment Schedule. Payments must be made at [Seller's
+                        Address] or as otherwise directed. Payments will be applied first to late charges, then to
+                        accrued
+                        finance charges, and the remainder to principal. The finance charge is calculated using
+                        [simple
+                        interest/precomputed interest] method. The Annual Percentage Rate (APR) may vary if
+                        permitted
+                        by state law.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">SECURITY AGREEMENT (UCC Article 9)
+                     </h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> To secure payment
+                        of all obligations under this Contract, Buyer grants Seller a purchase money
+                        security interest in the Goods. This is a continuing security interest in the Goods, all
+                        accessions,
+                        accessories, repairs/replacements, proceeds, and products thereof. Buyer authorizes Seller
+                        to file
+                        a UCC-1 Financing Statement with the appropriate state filing office. Buyer will not sell,
+                        transfer, or encumber the Goods without Seller's consent. Seller may inspect the Goods at
+                        reasonable times. Upon default, Seller may repossess the Goods without judicial process
+                        (where
+                        permitted by law) and hold/sell them per UCC § 9-610, applying proceeds to the balance owed
+                        (deficiency payable by Buyer; surplus to Buyer). Buyer waives notice of sale where allowed.
+                        Risk of Loss: Buyer bears risk of loss/damage to Goods upon delivery.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Insurance Requirements</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> You must maintain
+                        [property/collision/liability] insurance on the goods for the full term of this
+                        contract, naming the Seller/Creditor as loss payee. If you fail to do so, the
+                        Seller/Creditor may
+                        purchase insurance at your expense and add the cost to your balance. Proof of insurance must
+                        be
+                        provided upon request.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">BUYER'S REPRESENTATIONS AND
+                        WARRANTIES
+                     </h2>
+                     <ul style="margin: 0; padding: 0 0 20px 20px;">
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Buyer is [Insert Age:
+                           18+] years old, resides at the address provided, and is purchasing
+                           for personal/family/household use.
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Buyer has inspected the
+                           Goods and accepts them "AS IS" unless a separate warranty
+                           applies. [If Applicable: Manufacturer's Warranty: See Attached.]
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">No oral agreements
+                           modify this Contract; this is the entire agreement.
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Default Provisions</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> You will be in
+                        default if:
+                     </p>
+                     <ol style="margin: 0; padding: 0 0 20px 20px;">
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">You fail to make any
+                           payment when due;
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">You fail to maintain
+                           required insurance;
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;"> The goods are damaged,
+                           lost, or destroyed without adequate insurance proceeds;
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">You file for bankruptcy
+                           or become insolvent;
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">You breach any other
+                           term of this contract.
+                        </li>
+                     </ol>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Upon default,
+                        after any required notice and opportunity to cure as mandated by applicable state
+                        law, the Seller/Creditor may:
+                     </p>
+                     <ul style="margin: 0; padding: 0 0 20px 20px;">
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Accelerate the entire
+                           balance and demand immediate payment;
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Repossess the goods
+                           (subject to state repossession laws, including any required notices
+                           and redemption rights);
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Sue for the balance
+                           owed, plus reasonable attorney fees, court costs, and collection
+                           expenses (to the extent permitted by state law);
+                        </li>
+                        <li style="font-size: 16px; padding: 0 0 10px 0; line-height: 1.6;">Report the default to
+                           credit bureaus.
+                        </li>
+                     </ul>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Repossession and Sale</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> If the goods are
+                        repossessed, they may be sold at public or private sale after [e.g., 10 days]
+                        notice, as required by state law. Proceeds will be applied to expenses and then to your
+                        balance.
+                        You remain liable for any deficiency, plus costs.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">State-Specific Provisions</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> This Contract is
+                        governed by the laws of the State of [Insert State], UCC as adopted therein,
+                        federal TILA/Regulation Z, and other applicable federal law. Any disputes must be resolved
+                        in
+                        [Insert County/State] courts.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Assignment</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> The Seller may
+                        assign this contract without notice. You agree to make payments to the assignee.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Governing Law</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> This contract is
+                        governed by federal law and the laws of the state where the goods are delivered
+                        [or where the Buyer resides]. If any provision is unenforceable, the rest remains valid.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Entire Agreement</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> This is the
+                        entire agreement between the parties. No oral changes are binding.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="section" style="padding-bottom: 20px;">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Buyer Acknowledgment</h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> By signing, you
+                        acknowledge receipt of a copy of this contract, receipt of Goods in good
+                        condition, understand its terms, and agree to them. You have been provided all required
+                        disclosures under TILA and applicable state laws.
+                     </p>
+                  </td>
+               </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0 0 10px 0; margin: 0;">
+               <tr>
+                  <td style="width: 70%;">
+                     <span style="font-size: 16px; font-weight: bold;">Buyer
+                     Signature: </span><span
+                        style="border-bottom: 1px solid #000; width: 70%; display: inline-block;"></span>
+                  </td>
+                  <td style="width: 30%;"><span style="font-size: 16px; font-weight: bold;">Date: </span><span
+                     style="border-bottom: 1px solid #000; width: 80%; display: inline-block;"></span></td>
+               </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0 0 10px 0; margin: 0;">
+               <tr>
+                  <td style="width: 70%;">
+                     <span style="font-size: 16px; font-weight: bold;">Co-Buyer Signature (if
+                     applicable):</span><span
+                        style="border-bottom: 1px solid #000; width: 44%; display: inline-block;"></span>
+                  </td>
+                  <td style="width: 30%;"><span style="font-size: 16px; font-weight: bold;">Date:</span><span
+                     style="border-bottom: 1px solid #000; width: 70%; display: inline-block;"></span></td>
+               </tr>
+            </table>
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td style="width: 70%;">
+                     <span style="font-size: 16px; font-weight: bold;">Seller Signature:</span><span
+                        style="border-bottom: 1px solid #000; width: 70%; display: inline-block;"></span>
+                  </td>
+                  <td style="width: 30%;"><span style="font-size: 16px; font-weight: bold;">Date:</span><span
+                     style="border-bottom: 1px solid #000; width: 70%; display: inline-block;"></span></td>
+               </tr>
+            </table>
+         </div>
+         <p><strong> </strong></p>
+         <p> </p>
+         <strong> </strong>
+      </div>
+      <div class="pb_before"></div>
+      <div class="pdf-wrp" style="display: block; background-color: #fff; padding:0px;">
+         <div class="section">
+            <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
+               <tr>
+                  <td>
+                     <h2 style="margin: 0; padding: 0 0 10px 0; font-size: 25px;">Additional State-Specific Addendum
+                        (Required for Multi-State
+                        Use)
+                     </h2>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Attach this as
+                        Exhibit A for each transaction. Customize based on state law . 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> State: [Insert]
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Maximum Finance
+                        Charge: [Insert % or Method; e.g., 18% per Conn. Gen. Stat. § 42-84]. 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Warning Notices:
+                        [Insert State-Required Language, e.g., Texas: "A DOCUMENTARY FEE
+                        MAY NOT EXCEED..."; Florida: Additional Buyer Rights]. 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Refund Method:
+                        [Pro Rata/Rule of 78s; State-Specific]. 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Other: [e.g., No
+                        Prepayment Penalty; Repossession Rules]. 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> Buyer Initials:
+                        _____ (Acknowledges State Addendum) 
+                     </p>
+                     <p style="font-size: 16px; margin: 0; padding: 0 0 20px 0; line-height: 1.6;"> For Assistance:
+                        Consult CFPB at consumerfinance.gov or state attorney general. Update for
+                        changes in law (e.g., via Federal Register). 
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

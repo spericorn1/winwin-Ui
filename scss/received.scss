@@ -1032,3 +1032,59 @@
 .re-activity-outer-wrap .re-activity-wrap .re-ac-content-wrap .re-ac-list-wrap.rc-second-color{
     padding-top: 0;
 }
+
+
+
+/* Gradient style */
+.rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label{
+    gap: 0; column-gap: 15px;
+    @media ($sm-1679) {
+        column-gap: 10px;
+    }
+}
+.re-activity-outer-wrap .re-activity-wrap{
+    margin: 15px 0 0 0;
+    .re-ac-content-wrap{ background: none;
+        padding: 0;
+        .left-border{display: none;}
+        .re-ac-list-wrap{background: none !important; padding: 0;
+            .left-wrap{ padding: 0; position: relative;
+                &:after{ background: url(../img/gradient-bg-plain.svg) no-repeat; background-size: auto 100%; content: ''; position: absolute; inset: 0 0 0 0; margin: auto; height: 100%; width: 1px; }
+                 .dot{
+                    // &:before{ content: ''; position: absolute; background: #fff; inset: -3px 0 0 0; height: 18px; z-index: -1;}
+                 }
+            }
+            .right-wrap{
+                .re-ac-txt-wrap{
+                    padding-bottom: 10px;
+                }
+            }
+            &:first-child{}
+            &:last-child{
+                .left-wrap{
+                    &:after{ inset:inherit; background-color: #fff !important; top: -100%; right: 0; left: 0;}
+                    &:before{display: none;}
+                }
+                .right-wrap{
+                .re-ac-txt-wrap{
+                    padding-bottom: 0;
+                }
+            }
+            }
+            .left-wrap{ }
+            &.rc-second-color{ 
+                &:first-child{
+                    .left-wrap{
+                        &:before{display: none;}
+                    }
+                }
+                &:last-child{}
+                .left-wrap{
+                    &:after{background-image: url(../img/gradient-bg-color.svg);}
+                    &:before{ background: url(../img/gradient-bg-color.svg); background-size: auto 100%; content: ''; position: absolute; inset:0% 0 0 0; margin: auto; height: 100%; width: 1px; background-color: #fff; top: -75%; }
+                }
+            }
+            &+.re-ac-list-wrap{padding-top: 0;}
+        }
+    }
+}
