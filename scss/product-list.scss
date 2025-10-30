@@ -886,3 +886,99 @@
         display: block;
     }
 }
+
+.product-list-wrap .product-align-wrap .product-form-wrap .group-wrap{
+    .price-toggle-wrapper{
+        display: flex;
+        width: 100%;
+        background-color: #F6F7F9;
+        border-radius: 100px;
+        padding: 4px;
+        margin-bottom: 15px;
+        .price-toggle-btn{
+            padding: 6px 10px;
+            border-radius: 100px;
+            color: #415362;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            text-align: center;
+            @media ($sm-1679) {
+                font-size: 13px;
+            }
+            &:first-child{
+                width: 100px;
+                margin-right: 2px;
+            }
+            &.amnt-btn{
+                flex-grow: 1;
+            }
+
+            &:hover, &.active{
+                background-color: #fff;
+                color: #101B25;
+                
+            }
+            &.active{
+                box-shadow: rgba(0, 0, 0, 0.10) 0px 10px 15px 0px, #3C41500F 0px 0px 0px 1px;
+                
+            }
+        }
+    }
+}
+
+.product-list-wrap .product-align-wrap .product-form-wrap .group-wrap {
+    .form-check .form-check-input{
+        &.form-input-checkbox{
+            border-radius: 3px;
+            border: solid 1.5px #CBD1D7;
+            &:checked{
+                background-image: url('../img/tic-blue.svg');
+                background-size: 12px;
+                background-position: center;
+                border-color: #5090CC;
+                background-color: #DCE9F5;
+            }
+        }
+    }
+    .show-all-btn{
+        color: #5090CC;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        transition: .3s;
+        &:hover{
+            opacity: .8;
+        }
+    }
+}
+
+.product-list-wrap .product-align-wrap .product-form-wrap .filter-reset-title {
+    &.filter-check-reset{
+        flex-wrap: wrap;
+    }
+    .filter-cnt-wrapper{
+        width: 100%;
+        .filter-cnt{
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba($color: #122852, $alpha: 0.5);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 50px;
+            background-color: #F7FAFD;
+            text-align: center;
+        }
+    }
+}
+
+.product-list-wrap .product-align-wrap .product-form-wrap{
+    @media (max-width: 1400px) {
+        width: 300px;
+        padding: 20px;
+    }
+}

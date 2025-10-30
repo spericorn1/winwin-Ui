@@ -174,8 +174,11 @@
           font-size: 20px;
           color: #101b25;
           font-weight: 600;
-          line-height: 1.2;
-          word-break: break-word; }
+          word-break: break-word;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden; }
           @media (max-width: 1679px) {
             .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pr-list .content .title {
               font-size: 18px; } }
@@ -495,7 +498,7 @@
                 height: 36px;
                 flex: 0 0 110px;
                 border: 1px solid #dfe1e3;
-                background: #fff;
+                background: #fff !important;
                 outline: 0;
                 display: flex;
                 align-items: center;

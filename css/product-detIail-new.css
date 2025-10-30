@@ -479,4 +479,20 @@
       .down-payment-confirm-box .info br {
         display: none; } }
 
+.procuct-detail-new .outer-tbl-wrp .sp-table-wrap .tracking-id {
+  color: #5090CC !important; }
+.procuct-detail-new .outer-tbl-wrp .sp-table-wrap .txt-red {
+  color: #EF3C38 !important; }
+.procuct-detail-new .outer-tbl-wrp .sp-table-wrap .txt-orange {
+  color: #F68922 !important; }
+.procuct-detail-new .outer-tbl-wrp .sp-table-wrap .success-info {
+  color: #1BB746 !important; }
+.procuct-detail-new .outer-tbl-wrp .sp-table-wrap .order-copy-btn {
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  margin-left: 5px; }
+  .procuct-detail-new .outer-tbl-wrp .sp-table-wrap .order-copy-btn img {
+    margin-top: -2px; }
+
 /*# sourceMappingURL=product-detIail-new.css.map */

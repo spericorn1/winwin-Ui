@@ -388,16 +388,15 @@
                     .name-txt {
                         display: flex;
                         font-weight: 600;
-                        font-size: 18px;
-                        line-height: 24px;
+                        font-size: 16px;
                         letter-spacing: 0%;
                         vertical-align: middle;
                         color: #101b25;
                         @media ($sm-1679) {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                         @media ($sm-1481) {
-                            font-size: 14px;
+                            font-size: 13px;
                         }
                         @media ($sm-1199) {
                             font-size: 13px;
@@ -406,8 +405,18 @@
                             margin-bottom: 5px;
                         }
                     }
+                    .name{
+                        max-width: 150px;
+                        @media ($sm-1679) {
+                            max-width: 200px;
+                        }
+                        @media ($sm-767) {
+                            max-width: none;
+                        }
+                    }
                     .rating {
                         margin-left: 10px;
+                        flex-shrink: 0;
                     }
                 }
             }
@@ -425,7 +434,7 @@
         }
         .rating {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
             line-height: 24px;
             letter-spacing: 0%;
             color: #415362;
@@ -848,14 +857,16 @@
     .product-tabs-nav {
         display: flex;
         align-items: center;
+        flex-wrap: nowrap;
         // justify-content: space-between;
         // justify-content: center;
 
-        @media ($sm-991) {
-            min-width: 800px;
-        }
+        // @media ($sm-991) {
+        //     min-width: 800px;
+        // }
         .product-tab-item {
             border: none;
+            flex-shrink: 0;
             .product-tab-link {
                 color: #415362;
                 font-weight: 500;
