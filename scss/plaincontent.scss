@@ -1,0 +1,105 @@
+@import "partials";
+.plaincontent-wrap {
+  padding: 50px 0;
+  @media ($sm-1679) {
+    padding: 30px 0;
+  }
+  .ric-info-wrapper{ max-width: 800px; margin: 0 auto;}
+  img {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 600;
+    color: #101b25;
+    margin: 0;
+    padding-bottom: 20px;
+    @media ($sm-1679) {
+      font-size: 40px;
+    }
+
+    @media ($sm-1481) {
+      font-size: 36px;
+    }
+
+    @media ($sm-1199) {
+      font-size: 30px;
+    }
+
+    @media ($sm-991) {
+      font-size: 25px;
+    }
+
+    @media ($sm-767) {
+      font-size: 24px;
+    }
+
+    @media ($sm-579) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #415362;
+    @media ($sm-1679) {
+      font-size: 14px;
+    }
+  }
+
+  ul {
+    @media ($sm-579) {
+      padding-left: 15px;
+    }
+    li {
+      color: #415362;
+      font-size: 16px;
+      margin-bottom: 10px;
+      word-break: break-all;
+      @media ($sm-1679) {
+        font-size: 14px;
+      }
+      a {
+        color: #415362;
+      }
+    }
+  }
+
+  .btn-wrap {
+    padding: 0 0 0 0;
+    @media ($sm-1679) {
+      padding: 0 0 0 0;
+    }
+    .btn {
+      margin: 0 auto;
+      padding: 10px;
+      border: 0;
+      cursor: pointer;
+      outline: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 44px;
+      border-radius: 30px;
+      background: #5090cc !important;
+      width: 100%;
+      position: relative;
+      max-width: 200px;
+      @media ($sm-1679) {
+        height: 40px;
+      }
+      span {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: $primary-font;
+        line-height: 1;
+        @media ($sm-1679) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

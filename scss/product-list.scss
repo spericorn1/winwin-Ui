@@ -1047,3 +1047,13 @@
         }
     }
 }
+
+.product-list-wrap .product-align-wrap .product-form-wrap .group-wrap .form-fields.group-form-fields .txt-wrap{
+    position: relative;
+    .txtrange{ position: absolute; inset: 0 auto 0 15px; margin: auto; display: flex; align-items: center; font-size: 14px;
+        @media ($sm-1679) { font-size: 12px;}
+    }
+    .txt{ padding-left: 60px;
+        @media ($sm-1679) {padding-left: 55px;}
+    }
+}
