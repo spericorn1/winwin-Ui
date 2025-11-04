@@ -1826,3 +1826,7 @@ cursor:pointer;
         }
     }
 }
+
+.menu-opened .blur-container {
+    overflow: hidden !important;
+}
