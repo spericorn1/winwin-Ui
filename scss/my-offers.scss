@@ -609,6 +609,10 @@
                     @media ($sm-1679) {
                         height: 34px;
                     }
+                    @media ($sm-479) {
+                        min-width: 48%;
+                        width: 45%;
+                    }
                 }
             }
         .preview-sec-card {

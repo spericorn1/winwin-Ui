@@ -112,7 +112,7 @@
           .add-product-form .form-outer .lft-sec .variant-wrp {
             margin-bottom: 20px; } }
         .add-product-form .form-outer .lft-sec .variant-wrp:hover {
-          overflow-x: scroll; }
+          overflow-x: auto; }
         .add-product-form .form-outer .lft-sec .variant-wrp .variant-btn {
           padding: 8px 20px;
           font-weight: 500;
@@ -137,6 +137,10 @@
           @media (max-width: 1199px) {
             .add-product-form .form-outer .lft-sec .variant-wrp .variant-btn {
               font-size: 13px; } }
+          @media (max-width: 479px) {
+            .add-product-form .form-outer .lft-sec .variant-wrp .variant-btn {
+              min-width: 48%;
+              width: 45%; } }
       .add-product-form .form-outer .lft-sec .preview-img-sec {
         width: 100%;
         display: flex;
@@ -669,7 +673,9 @@
             font-size: 12px;
             font-weight: 600;
             border: 0;
-            background-color: #DCE9F5; }
+            background-color: #DCE9F5;
+            border: solid 1px #DCE9F5;
+            max-width: 100%; }
             .add-product-form .form-outer .lft-sec .product-thumbs-left .thumb-img-block .add-photo span {
               font-size: 20px;
               line-height: 1; }
@@ -1337,7 +1343,7 @@
               scrollbar-width: thin;
               scrollbar-color: #5090cc #fff; }
               .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp:hover {
-                overflow-x: scroll; }
+                overflow-x: auto; }
               .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn {
                 border: 1px solid #DFE1E3;
                 color: #101B25;
@@ -1355,6 +1361,10 @@
                 @media (max-width: 1679px) {
                   .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn {
                     height: 34px; } }
+                @media (max-width: 479px) {
+                  .add-product-form .form-outer .rt-sec .preview-card .product-card .product-details .variant-wrp .variant-btn {
+                    min-width: 48%;
+                    width: 45%; } }
 
 .shipping-wrapper {
   margin-top: 10px;

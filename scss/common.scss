@@ -275,3 +275,17 @@ a{
   }
 }
 
+
+
+.details-mob-section{
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+        display: none !important;
+    }
+}
+
+.details-web-only{
+    @media ($sm-767) {
+        display: none !important;
+    }
+}

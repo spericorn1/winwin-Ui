@@ -990,10 +990,15 @@
     .product-form-wrap{
         transition: .3s;
     }
+    
     &.filter-disabled{
         .product-form-wrap{
             padding: 0 !important;
             width: 55px;
+            @media ($sm-991) {
+                width: 0;
+                left: -10px;
+            }
             .filter-box-data{
                 display: none !important;
             }
@@ -1003,9 +1008,14 @@
         }
         .product-list-content-wrap{
             width: calc(100% - 55px);
+            @media ($sm-991) {
+                width: 100%;
+            }
             .product-box{
-                max-width: 25%;
-                @media ($sm-1199) {
+                @media (min-width: 1200px){
+                    max-width: 25%;
+                }
+                @media (min-width: 992px) and ($sm-1199) {
                     max-width: 33.3%;
                 }
             }
