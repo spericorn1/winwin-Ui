@@ -477,6 +477,31 @@
                             color: #7b8d9f;
                         }
                     }
+                    .form-select{
+                        border-radius: 100px;
+                        height: 52px;
+                        @media ($sm-1679) {
+                        height: 48px;
+                        }
+
+                        @media ($sm-1481) {
+                            height: 42px;
+                        }
+
+                        @media ($sm-1199) {
+                            height: 36px;
+                        }
+                        &::after {
+                            content: "▾";
+                            position: absolute;
+                            right: 20px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 14px;
+                            color: #666;
+                            pointer-events: none;
+                        }
+                    }
                     .info {
                         position: absolute;
                         left: 20px;

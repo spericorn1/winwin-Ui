@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 /*** all Mobile Screen (iphone 6,7,8) ***/
@@ -598,6 +599,35 @@
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .textarea::placeholder {
   opacity: 1;
   color: #7b8d9f;
+}
+.custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .form-select {
+  border-radius: 100px;
+  height: 52px;
+}
+@media (max-width: 1679px) {
+  .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .form-select {
+    height: 48px;
+  }
+}
+@media (max-width: 1481px) {
+  .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .form-select {
+    height: 42px;
+  }
+}
+@media (max-width: 1199px) {
+  .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .form-select {
+    height: 36px;
+  }
+}
+.custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .form-select::after {
+  content: "▾";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+  pointer-events: none;
 }
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .info {
   position: absolute;
