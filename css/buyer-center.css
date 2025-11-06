@@ -448,6 +448,9 @@
   max-width: 850px;
   margin: 0 auto;
   padding: 30px 0 50px; }
+  @media (max-width: 1679px) {
+    .buyer-center-outer .buyer-offer-cover {
+      padding: 10px 0 50px; } }
   .buyer-center-outer .buyer-offer-cover .rec-head-wrap {
     margin: 0 0 25px 0; }
     @media (max-width: 1679px) {
@@ -480,6 +483,9 @@
           display: block;
           min-width: 180px;
           text-align: center; }
+          @media (max-width: 1481px) {
+            .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li .tab-btn {
+              min-width: 160px; } }
           @media (max-width: 1199px) {
             .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li .tab-btn {
               font-size: 13px; } }
@@ -488,7 +494,8 @@
               padding: 0 10px; } }
           @media (max-width: 579px) {
             .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li .tab-btn {
-              font-size: 12px; } }
+              font-size: 12px;
+              min-width: auto; } }
         .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li.active a {
           color: #5090cc; }
           .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li.active a:after {
@@ -501,10 +508,475 @@
             bottom: -11px; }
             @media (max-width: 1199px) {
               .buyer-center-outer .buyer-offer-cover .rec-head-wrap ul li.active a:after {
-                bottom: -10px; } }
-  .buyer-center-outer .buyer-offer-cover .buyer-tab-body {
-    padding: 20px 0; }
+                bottom: -9px; } }
+  .buyer-center-outer .buyer-offer-cover .buyer-tab-body .wishist-empty {
+    padding-top: 15px; }
     .buyer-center-outer .buyer-offer-cover .buyer-tab-body .wishist-empty .img-block img {
       max-height: 240px; }
+  .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper {
+    padding-top: 5px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    @media (max-width: 1679px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper {
+        margin-bottom: 20px;
+        padding-top: 0; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper .tab-title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #101B25; }
+      @media (max-width: 1679px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper .tab-title {
+          font-size: 18px; } }
+      @media (max-width: 1481px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper .tab-title {
+          font-size: 16px; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper .right-block .tab-filter {
+      background-image: url("../img/tab-filter.svg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+      padding-left: 25px;
+      font-size: 14px;
+      color: #7B8D9F;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      outline: none; }
+      @media (max-width: 1679px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .tab-title-wrapper .right-block .tab-filter {
+          font-size: 13px; } }
+  .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+    margin-bottom: 15px;
+    border: solid 1px #DFE1E3;
+    border-radius: 12px;
+    padding: 25px 20px;
+    padding-right: 75px;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    @media (max-width: 1679px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        padding: 20px 18px;
+        padding-right: 60px; } }
+    @media (max-width: 1481px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        padding: 15px;
+        padding-right: 60px; } }
+    @media (max-width: 991px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        padding-right: 40px; } }
+    @media (max-width: 767px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        padding-right: 30px; } }
+    @media (max-width: 579px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        padding: 15px; } }
+    @media (max-width: 579px) {
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card {
+        flex-wrap: wrap; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon {
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 30px; }
+      @media (max-width: 1679px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon {
+          top: 27px; } }
+      @media (max-width: 1481px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon {
+          top: 25px; } }
+      @media (max-width: 991px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon {
+          right: 20px; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon.arw-icon-mob {
+        position: static;
+        line-height: 0;
+        margin-left: 15px; }
+        @media (min-width: 578px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon.arw-icon-mob {
+            display: none; } }
+      @media (max-width: 579px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon.arw-icon-web {
+          display: none; } }
+      @media (max-width: 1481px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .arw-icon img {
+          width: 7px; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .img-block {
+      flex-shrink: 0;
+      border-radius: 12px;
+      background-color: #F6F7F9;
+      width: 109px;
+      min-height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 579px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .img-block {
+          width: 100%;
+          border-radius: 12px;
+          height: 125px;
+          margin-bottom: 15px; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .img-block img {
+        max-width: 80%;
+        max-height: 80%; }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block {
+      flex-grow: 1;
+      padding-left: 30px; }
+      @media (max-width: 767px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block {
+          padding-left: 15px; } }
+      @media (max-width: 579px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block {
+          padding-left: 0; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #F4F4F4;
+        padding-bottom: 15px; }
+        @media (max-width: 1481px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block {
+            padding-bottom: 12px; } }
+        @media (max-width: 767px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block {
+            flex-wrap: wrap;
+            padding-bottom: 10px; } }
+        @media (max-width: 479px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block {
+            border: none; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .prod-name {
+          font-size: 16px;
+          font-weight: 500;
+          color: #101B25;
+          max-width: 55%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: 10px; }
+          @media (max-width: 1679px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .prod-name {
+              font-size: 15px; } }
+          @media (max-width: 767px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .prod-name {
+              max-width: 100%;
+              width: 100%;
+              margin-bottom: 5px; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block {
+          display: flex;
+          align-items: center;
+          flex-shrink: 0; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block span {
+            display: inline-block; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block .base {
+            color: #415362;
+            font-size: 14px; }
+            @media (max-width: 1679px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block .base {
+                font-size: 13px; } }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block .current {
+            font-size: 15px;
+            font-weight: 500;
+            color: #101B25;
+            display: inline-flex;
+            align-items: center;
+            padding-left: 10px; }
+            @media (max-width: 1679px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block .current {
+                font-size: 14px; } }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .amnt-block .current::before {
+              content: '';
+              margin-right: 10px;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              display: inline-block;
+              background-color: #101B25; }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .title-right-block {
+          display: flex;
+          align-items: center; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .title-right-block .completed-sts {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+            padding: 4px 15px;
+            border-radius: 50px;
+            background-color: #1BB746;
+            margin-left: 15px; }
+            @media (max-width: 479px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .top-block .title-right-block .completed-sts {
+                display: none; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block {
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        @media (max-width: 1481px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block {
+            padding-top: 12px; } }
+        @media (max-width: 767px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block {
+            padding-top: 10px; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block {
+          display: flex;
+          align-items: center; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .usr-img {
+            flex-shrink: 0;
+            margin-right: 8px; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .usr-img img {
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              border: solid 2px #fff;
+              box-shadow: 0px 6px 5px 0px #0000000F; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data h4 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #415362;
+            margin-bottom: 3px; }
+            @media (max-width: 1481px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data h4 {
+                font-size: 13px; } }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data .score-det {
+            display: flex;
+            align-items: center; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data .score-det .score {
+              flex-shrink: 0;
+              margin-right: 4px;
+              line-height: 0; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data .score-det .val {
+              display: inline-block;
+              font-size: 12px;
+              font-weight: 500;
+              color: #415362; }
+              @media (max-width: 1481px) {
+                .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .score-block .score-data .score-det .val {
+                  font-size: 11px; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block {
+          display: flex;
+          align-items: center; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .info-block {
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1BB746; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .info-block.expired {
+              color: #7B8D9F; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .info-block.rejected {
+              color: #EF4444; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .info-block.expiry-warning {
+              color: #F27A2A; }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .info-block img {
+              flex-shrink: 0;
+              margin-right: 8px; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .resubmit-btn {
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: #1BB746;
+            background-color: #D6F0D4A1;
+            padding: 8px 15px;
+            border-radius: 50px;
+            border: none;
+            margin-right: 30px; }
+            @media (max-width: 479px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .resubmit-btn {
+                display: none; } }
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .resubmit-btn img {
+              margin-right: 5px; }
+            @media (max-width: 767px) {
+              .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .data-block .bottom-block .right-block .resubmit-btn {
+                margin-right: 10px; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block {
+      width: 100%;
+      padding-top: 25px; }
+      @media (min-width: 478px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block {
+          display: none; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block .resubmit-btn {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 600;
+        color: #1BB746;
+        background-color: #D6F0D4A1;
+        padding: 12px 15px;
+        border-radius: 50px;
+        border: none;
+        width: 100%;
+        justify-content: center; }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block .resubmit-btn img {
+          margin-right: 8px; }
+        @media (max-width: 767px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block .resubmit-btn {
+            margin-right: 10px; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card .mob-btn-block .completed-sts {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 50px;
+        background-color: #1BB746; }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased {
+      padding: 15px;
+      display: block; }
+      @media (max-width: 350px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased {
+          padding: 12px; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .data-block {
+        padding-left: 12px; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .data-block .top-block {
+        padding-bottom: 0;
+        border: none;
+        padding-top: 2px;
+        flex-wrap: nowrap; }
+        @media (max-width: 579px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .data-block .top-block {
+            padding-top: 0; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .data-block .top-block .prod-name {
+          max-width: 100%; }
+        @media (max-width: 350px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .data-block .top-block .amnt-block .current {
+            font-size: 12px; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .img-wrapper {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ECEDEF; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block {
+        width: 100%;
+        padding-top: 12px;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 767px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block {
+            flex-wrap: wrap; } }
+        @media (max-width: 579px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block {
+            flex-direction: column;
+            align-items: flex-start; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left {
+          color: #415362; }
+          @media (max-width: 1679px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left {
+              font-size: 14px; } }
+          @media (max-width: 991px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left {
+              font-size: 13px; } }
+          @media (max-width: 579px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left {
+              margin-bottom: 8px; } }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left .dt {
+            font-weight: 500; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left .nxt-date {
+            color: #FEBC2F; }
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-left .completed {
+            color: #27C840; }
+        @media (max-width: 767px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .paynow-block {
+            order: 3;
+            width: 100%;
+            padding-top: 15px; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .paynow-btn {
+          font-size: 12px;
+          padding: 4px 20px;
+          margin-left: 20px; }
+          @media (max-width: 767px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .paynow-btn {
+              padding: 8px 20px;
+              margin-left: 0; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-right {
+          padding-left: 10px;
+          margin-left: auto;
+          color: #415362; }
+          @media (max-width: 1679px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-right {
+              font-size: 14px; } }
+          @media (max-width: 991px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-right {
+              font-size: 13px; } }
+          @media (max-width: 579px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .bottom-date-block .dt-right {
+              margin-left: unset;
+              padding-left: 0; } }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .img-block {
+        width: 48px;
+        height: 48px;
+        min-height: auto;
+        margin-bottom: 0; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .righ-item .purchased {
+        display: inline-flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 600;
+        color: #1BB746;
+        background-color: #D6F0D4A1;
+        padding: 7px 15px;
+        border-radius: 50px;
+        border: none;
+        width: 100%;
+        justify-content: center; }
+        @media (max-width: 479px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .righ-item .purchased {
+            width: 24px;
+            height: 24px;
+            padding: 0;
+            border-radius: 50%; } }
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .righ-item .purchased img {
+          margin-right: 8px; }
+          @media (max-width: 479px) {
+            .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .righ-item .purchased img {
+              margin-right: 0; } }
+        @media (max-width: 479px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.offer-card-purchased .righ-item .purchased .pr-label {
+            display: none; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .data-block .top-block {
+      flex-wrap: wrap; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .data-block .top-block .prod-name {
+        max-width: 100%;
+        padding-right: 0; }
+        @media (max-width: 479px) {
+          .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .data-block .top-block .prod-name {
+            margin-bottom: 0; } }
+      @media (max-width: 479px) {
+        .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .data-block .top-block .amnt-block {
+          display: none; } }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .info-pending {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 600;
+      color: #F59E0B;
+      padding: 6px 20px;
+      background-color: #FEF5E7;
+      border-radius: 50px; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .info-pending::before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background-color: #F59E0B;
+        margin-right: 8px; }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .mob-btn-block .offr {
+      font-size: 13px;
+      font-weight: 500;
+      color: #7B8D9F; }
+      .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .mob-btn-block .offr .amt {
+        color: #101B25;
+        font-weight: 600; }
+    .buyer-center-outer .buyer-offer-cover .buyer-tab-body .offer-card-cover .offer-card.pending-card .mob-btn-block .btn-wrpr {
+      padding-top: 15px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex; }
 
 /*# sourceMappingURL=buyer-center.css.map */
