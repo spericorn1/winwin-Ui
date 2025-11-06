@@ -275,8 +275,7 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 1679px) {
   .preview-content-outer .preview-det-cover .review-name-det .img-block img {
@@ -536,4 +535,131 @@
 .preview-content-outer .preview-det-cover .reply-cover .reply-block .reply-form-block .det-btn-block .cmnt-btn.cmnt-submit {
   background-color: #5090CC;
   color: #fff;
-}/*# sourceMappingURL=reviews.css.map */
+}
+
+/* Seller review */
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det {
+  align-items: start;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block {
+  flex: 1;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #101B25;
+  line-height: 1.2;
+  padding: 0 0 3px 0;
+}
+@media (max-width: 1679px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .name {
+    font-size: 16px;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .name .review {
+  color: #415362;
+}
+@media (max-width: 479px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .name .review {
+    display: block;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .info {
+  font-size: 12px;
+  color: #415362;
+  font-weight: 500;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap {
+  padding: 5px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 479px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .rating-wrap {
+  display: flex;
+  align-items: center;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .rating-wrap img {
+  width: 14px;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .rating-wrap .cnt {
+  font-size: 14px;
+  color: #101B25;
+  font-weight: 500;
+  padding-left: 8px;
+}
+@media (max-width: 1679px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .rating-wrap .cnt {
+    font-size: 13px;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .date {
+  padding: 0 0 0 10px;
+  color: #415362;
+  font-size: 14px;
+  position: relative;
+  margin: 0 0 0 10px;
+}
+@media (max-width: 1679px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .date {
+    font-size: 13px;
+  }
+}
+@media (max-width: 479px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .date {
+    margin: 0;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .review-name-det .per-detail-block .rate-date-wrap .date:after {
+  position: absolute;
+  inset: 0 auto 0 0;
+  margin: auto;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #415362;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .det-btn-block {
+  padding-top: 5px !important;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .name .you {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 500;
+}
+@media (max-width: 1679px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .name .you {
+    font-size: 16px;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .name .now {
+  font-size: 14px;
+  color: #415362;
+  font-weight: 500;
+}
+@media (max-width: 1679px) {
+  .preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .name .now {
+    font-size: 13px;
+  }
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .rate-date-wrap {
+  padding: 0;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .rate-date-wrap .date {
+  color: #101B25;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .per-detail-block .reply-form-block {
+  padding-top: 10px;
+}
+.preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .data-p {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=reviews.css.map */

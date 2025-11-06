@@ -452,3 +452,73 @@
         }
     }
 }
+
+
+
+/* Seller review */
+.preview-content-outer{
+    .sellerreview-right-wrap{
+        .preview-det-cover{
+            .review-name-det{ align-items: start;
+                .img-block{}
+                .per-detail-block{ flex: 1;
+                    .name{ font-size: 18px; font-weight: 600; color: #101B25; line-height: 1.2; padding: 0 0 3px 0;
+                        @media ($sm-1679) { font-size: 16px;}
+                        .review{ color: #415362;
+                            @media ($sm-479) { display: block;}
+                        }
+                    }
+                    .info{ font-size: 12px; color:#415362; font-weight: 500;}
+                    .rate-date-wrap{ padding: 5px 0 0 0; display: flex; align-items: center;
+                        @media ($sm-479) { flex-direction: column; align-items: start;}
+                        .rating-wrap{
+                            display: flex;
+                            align-items: center;
+                            img{
+                                width: 14px;
+                            }
+                            .cnt{
+                                font-size: 14px;
+                                color: #101B25;
+                                font-weight: 500;
+                                padding-left: 8px;
+                                @media ($sm-1679) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .date{ padding: 0 0 0 10px; color:#415362; font-size: 14px; position: relative; margin: 0 0 0 10px;
+                            @media ($sm-1679) {
+                                font-size: 13px;
+                            }
+                            @media ($sm-479) {  margin: 0;}
+                            &:after{position: absolute; inset: 0 auto 0 0; margin: auto; content: ''; width: 4px; height: 4px; border-radius: 50%; background: #415362;}
+                        }
+                    }
+                }
+            }
+            .det-btn-block{padding-top: 5px !important;}
+            .reply-cover{
+                .reply-block{
+                    .per-detail-block{
+                        .name{
+                            .you{font-size: 18px; color: #999999; font-weight: 500;
+                                @media ($sm-1679) { font-size: 16px;}
+                            }
+                            .now{font-size: 14px; color: #415362; font-weight: 500;
+                                @media ($sm-1679) {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                        .rate-date-wrap{ padding: 0;
+                            .date{ color: #101B25;}
+                        }
+                        .reply-form-block{padding-top: 10px;}
+                    }
+                    .data-p{ padding:10px 0 10px 0; margin: 0;}
+                }
+            }
+        }
+    }
+}
