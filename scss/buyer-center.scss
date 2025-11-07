@@ -129,6 +129,58 @@
                         margin-left: auto;
                         .prod-share{
                             margin-right: 10px;
+                            position: relative;
+                            &:hover{
+                                .prod-share-dropdown{
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translateY(0);
+                                }    
+                            }
+                            .prod-share-dropdown{
+                                transform: translateY(-8px);
+                                transition: .3s;
+                                background-color: rgba($color: #fff, $alpha: 0.9);
+                                border-radius: 12px;
+                                border: 1px solid #ecedef;
+                                padding: 12px;
+                                min-width: 150px;
+                                position: absolute;
+                                top: calc(100% + 5px);
+                                right: -20px;
+                                box-shadow: 0px 6px 5px 0px #0000000F;
+                                opacity: 0;
+                                visibility: hidden;
+                                h5{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #122852;
+                                    margin-bottom: 10px;
+                                }
+                                .share-item{
+                                    display: flex;
+                                    align-items: center;
+                                    .share-link{
+                                        width: 30px;
+                                        height: 30px;
+                                        border-radius: 8px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        background-color: #31509F;
+                                        margin-right: 8px;
+                                        flex-shrink: 0;
+                                        img{
+                                            filter: brightness(100) invert(100);
+                                            max-width: 17px;
+                                            max-height: 17px;
+                                        }
+                                        &:last-child{
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     .fav-wrap {
