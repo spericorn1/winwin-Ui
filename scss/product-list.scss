@@ -608,6 +608,9 @@
                     @media ($sm-1679) {
                         row-gap: 20px;
                     }
+                    @media ($sm-479) {
+                        --bs-gutter-x: 1rem;
+                    }
                 }
 
                 .content-wrap {
