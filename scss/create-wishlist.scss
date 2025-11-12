@@ -632,6 +632,7 @@
                 }
                 img{
                     max-width: 240px;
+                    max-height: 90%;
                     @media ($sm-1199){
                         max-width: 180px;
                     }
@@ -881,6 +882,35 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap {
+    .text-min-wrap{
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #dfe1e3;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        .textarea{
+            border: none;
+            padding-bottom: 8px;
+            resize: none;
+        }
+        .info{
+            position: static;
+            background-color: #fff;
+            width: 100%;
+            display: block;
+            padding: 5px;
+            padding-left: 20px;
+            font-size: 14px;
+            @media ($sm-1679) {
+                padding-left: 15px;
+                font-size: 12px;
             }
         }
     }
