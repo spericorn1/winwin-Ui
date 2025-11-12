@@ -379,6 +379,13 @@
   justify-content: center;
   position: relative;
 }
+@media (max-width: 579px) {
+  .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .pr-head-wrap .img {
+    width: 100%;
+    height: 127px;
+    flex: unset;
+  }
+}
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .pr-head-wrap .img .forward {
   position: absolute;
   width: 26px;
@@ -401,30 +408,26 @@
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
 }
 @media (max-width: 579px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content {
-    text-align: center;
-    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .title {
-  padding: 0 0 10px;
+  padding: 0 15px 10px 0;
   color: #101B25;
   font-size: 16px;
   position: relative;
-  display: flex;
-  align-items: center;
+  display: block;
   cursor: pointer;
-}
-.rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .title::after {
-  content: "";
-  width: 13px;
-  height: 8px;
-  background: url(../img/chev-right.svg) no-repeat center;
-  display: inline-block;
-  background-size: contain;
-  margin-left: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media (max-width: 1679px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .title {
@@ -434,6 +437,28 @@
 @media (max-width: 1199px) {
   .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .title {
     font-size: 14px;
+  }
+}
+.rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .navigate {
+  cursor: pointer;
+  width: 13px;
+  height: 8px;
+  background: url(../img/chev-right.svg) no-repeat center;
+  display: inline-block;
+  background-size: contain;
+  position: absolute;
+  right: 14px;
+  top: 8px;
+}
+@media (max-width: 1199px) {
+  .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .navigate {
+    right: 0;
+  }
+}
+@media (max-width: 579px) {
+  .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .navigate {
+    bottom: 10px;
+    top: unset;
   }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap.wish-listing .pr-list .content .desc-txt {
