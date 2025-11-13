@@ -502,13 +502,13 @@
                                         outline: 0;
                                         flex: 0 0 18px;
                                         background-color: #dce9f5;
-                                        border: 1px solid #cbd1d7;
+                                        border: 1.5px solid #cbd1d7;
                                         box-shadow: none !important;
-                                        @media ($sm-1679) {
-                                            width: 15px;
-                                            height: 15px;
-                                            flex: 0 0 15px;
-                                        }
+                                        // @media ($sm-1679) {
+                                        //     width: 15px;
+                                        //     height: 15px;
+                                        //     flex: 0 0 15px;
+                                        // }
                                         &:checked {
                                             border-color: #5090cc;
                                             background-color: #dce9f5;
