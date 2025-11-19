@@ -1553,6 +1553,9 @@
         @media ($sm-479) {
             width: 100vw !important;
         }
+        @media (max-height: 700px) {
+            padding-bottom: 120px !important;
+        }
         .all-catg{
             cursor:pointer;
             color: #101B25;

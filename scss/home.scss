@@ -11,6 +11,9 @@
     @media ($sm-579) {
         padding: 0 0 20px 0;
     }
+    @media ($sm-479) {
+        margin-top: 15px;
+    }
     .banner-slider {
         margin: 0;
         padding: 0;
@@ -21,6 +24,10 @@
             align-items: center;
             padding: 80px;
             min-height: 410px;
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: 100%;
+            position: relative;
             @media ($sm-1679) {
                 padding: 50px;
                 min-height: 380px;
@@ -29,21 +36,22 @@
                 min-height: 330px;
             }
             @media ($sm-1199) {
-                padding: 30px;
+                min-height: 298px;
             }
             @media ($sm-991) {
-                min-height: 260px;
+                min-height: 222px;
             }
             @media ($sm-767) {
                 padding: 25px 15px;
                 border-radius: 20px;
-                min-height: 200px;
+                min-height: 164px;
             }
             @media ($sm-579) {
-                min-height: 180px;
+                min-height: 100px;
+                aspect-ratio: 2;
             }
             @media ($sm-479) {
-                min-height: 160px;
+                aspect-ratio: 1.999;
             }
             .left-wrap {
                 .title-wrap {
@@ -88,9 +96,13 @@
                 .btn-wrap {
                     display: flex;
                     gap: 12px;
-                    width: 100%;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 20px;
                     @media ($sm-767) {
                         gap: 8px;
+                        bottom: 10px;
+                        left: 10px;
                     }
                     @media ($sm-479) {
                         gap: 5px;
@@ -120,6 +132,9 @@
                         @media ($sm-991) {
                             height: 32px;
                         }
+                        @media ($sm-767) {
+                            height: 28px;
+                        }
                         @media ($sm-579) {
                             min-width: auto;
                             padding: 5px 15px;
@@ -139,21 +154,21 @@
                  flex-direction: row-reverse !important; background-position: bottom left !important;
             }
             &.slide1 {
-                // background-image: url('/img/banner-1.png');
-                background-repeat: no-repeat;
-                background-position: bottom right;
-                background-size: auto 100%;
-                @media ($sm-479) {
-                    // background-image: url('/img/banner-1-mob.png');
+                background-image: url('../img/bnr-web-1.jpg');
+                @media ($sm-579) {
+                    background-image: url('../img/bnr-mob-1.jpg');
                 }
             }
-            &.slide11 {
-                // background-image: url('/img/banner-2.png');
-                background-repeat: no-repeat;
-                background-position: bottom right;
-                background-size: auto 100%;
-                @media ($sm-479) {
-                    // background-image: url('/img/banner-1-mob.png');
+            &.slide2 {
+                background-image: url('../img/bnr-web-2.jpg');
+                @media ($sm-579) {
+                    background-image: url('../img/bnr-mob-2.jpg');
+                }
+            }
+            &.slide3 {
+                background-image: url('../img/bnr-web-3.jpg');
+                @media ($sm-579) {
+                    background-image: url('../img/bnr-mob-3.jpg');
                 }
             }
         }
