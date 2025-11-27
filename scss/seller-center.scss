@@ -1,8 +1,8 @@
 @import "partials";
 .seller-center-wrap {
-    padding: 10px 0 20px 0;
+    padding: 10px 0 80px 0;
     @media ($sm-1679) {
-        padding: 5px 0 15px 0;
+        padding: 5px 0 50px 0;
     }
     .row-align {
         row-gap: 15px;
@@ -17,7 +17,7 @@
             margin-bottom: 10px;
         }
         @media ($sm-767) {
-            font-size: 16px;
+            font-size: 16px; 
         }
     }
     .box-wrap {
@@ -72,6 +72,28 @@
                 }
                 @media ($sm-767) {
                     font-size: 13px;
+                }
+            }
+        }
+    }
+}
+.account-wrap
+{
+    .box-wrap
+    {
+        .icon
+        {
+            img
+            {
+                max-width:31px;
+                max-height:31px;
+                 @media ($sm-1679) {
+                    max-width: 24px;
+                    max-height: 24px;
+                }
+                @media ($sm-767) {
+                    max-width: 20px;
+                    max-height: 20px;
                 }
             }
         }

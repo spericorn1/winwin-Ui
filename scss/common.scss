@@ -21,7 +21,9 @@ input{
     }
 }
 .custom-container2{
-    max-width: 1062px;
+    @media ($lg-1200 ){
+        max-width: 1062px;
+    }
     @media ($sm-1441){
         // max-width: 1300px;
     }
