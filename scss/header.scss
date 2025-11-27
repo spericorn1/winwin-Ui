@@ -672,6 +672,7 @@
       gap: 15px;
       @media ($sm-1481) { gap: 10px;}
       @media ($sm-579) { gap: 5px;}
+      @media ($sm-479) { gap: 10px;}
       li {
         margin: 0;
         padding: 0;
@@ -685,6 +686,10 @@
           @media ($sm-579) {
             max-width: 18px;
             max-height: 18px;
+          }
+          @media ($sm-479) {
+            max-width: 20px;
+            max-height: 20px;
           }
         }
         .user-prof {

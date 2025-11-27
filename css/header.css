@@ -796,6 +796,11 @@
     gap: 5px;
   }
 }
+@media (max-width: 479px) {
+  .ve-header-wrap .right-wrap .list {
+    gap: 10px;
+  }
+}
 .ve-header-wrap .right-wrap .list li {
   margin: 0;
   padding: 0;
@@ -814,6 +819,12 @@
   .ve-header-wrap .right-wrap .list li img {
     max-width: 18px;
     max-height: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .ve-header-wrap .right-wrap .list li img {
+    max-width: 20px;
+    max-height: 20px;
   }
 }
 .ve-header-wrap .right-wrap .list li .user-prof {
