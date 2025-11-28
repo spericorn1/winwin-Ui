@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>View Offers</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/detail-page.css">
+   <link rel="stylesheet" href="css/trustscore.css">
+</head>
+
+<body>
+
+   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addsocialaccount">
+      Add Social Account
+   </button>
+   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invitetrustedfriend">
+      Invite Trusted Friends
+   </button>
+
+   <div class="modal custom-modal add-social-modal fade" id="addsocialaccount" tabindex="-1"
+      aria-labelledby="addsocialaccount" aria-hidden="true">
+      <div class="modal-dialog custom-modal-dialog modal-dialog-centered">
+         <div class="modal-content custom-modal-content">
+            <div class="modal-body custom-modal-body">
+               <div class="social-content-wrap">
+                  <div class="head-title-wrap">
+                     <div class="title">Add Social Account</div>
+                     <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                     </button>
+                  </div>
+                  <ul class="list">
+                     <li>
+                        <div class="left-wrap">
+                           <div class="head-wrap">
+                              <img src="img/socail-img-1.png" alt="">
+                              <div class="txt-wrap">
+                                 <div class="name">Facebook</div>
+                                 <div class="info-wrap">Not Connected</div>
+                              </div>
+                           </div>
+                           <div class="earn-wrap">Earn 17 Pts</div>
+                        </div>
+                        <div class="btn-wrap">
+                           <button class="btn">Connect</button>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="left-wrap">
+                           <div class="head-wrap">
+                              <img src="img/socail-img-2.png" alt="">
+                              <div class="txt-wrap">
+                                 <div class="name">Instagram</div>
+                                 <div class="info-wrap">Not Connected</div>
+                              </div>
+                           </div>
+                           <div class="earn-wrap">Earn 17 Pts</div>
+                        </div>
+                        <div class="btn-wrap">
+                           <button class="btn">Connect</button>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="left-wrap">
+                           <div class="head-wrap">
+                              <img src="img/socail-img-3.png" alt="">
+                              <div class="txt-wrap">
+                                 <div class="name">X (Twitter)</div>
+                                 <div class="info-wrap">Not Connected</div>
+                              </div>
+                           </div>
+                           <div class="earn-wrap">Earn 17 Pts</div>
+                        </div>
+                        <div class="btn-wrap">
+                           <button class="btn">Connect</button>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="modal custom-modal invite-friend-modal fade" id="invitetrustedfriend" tabindex="-1"
+      aria-labelledby="invitetrustedfriend" aria-hidden="true">
+      <div class="modal-dialog custom-modal-dialog modal-dialog-centered">
+         <div class="modal-content custom-modal-content">
+            <div class="modal-body custom-modal-body">
+               <div class="invite-friend-wrap">
+                  <div class="head-title-wrap">
+                     <div class="title">Invite Trusted Friends</div>
+                     <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                     </button>
+                  </div>
+                  <div class="form-wrap">
+                     <div class="para">Earn 25 trustScore Points for each friend who joins and verifies their account
+                     </div>
+                     <div class="fields-outer-wrap">
+                        <div class="fields-wrap">
+                           <input type="text" class="txt" placeholder="Enter Email or Mobile">
+                           <button class="btn">Invite</button>
+                        </div>
+                        <div class="error">Error Message</div>
+                     </div>
+                  </div>
+                  <div class="friend-list-wrap">
+                     <div class="list-head-wrap">
+                        <div class="title">Invited Friends List</div>
+                        <div class="para">You earned 0/100 Points</div>
+                        <div class="bar">
+                           <span style="width: 20%;"></span>
+                        </div>
+                     </div>
+                     <div class="list-content-wrap">
+                        <table cellpadding="0" cellspacing="0" width="100%">
+                           <tr>
+                              <th>Email/Phone</th>
+                              <th>Status</th>
+                           </tr>
+                           <tr>
+                              <td>+01 7372843573</td>
+                              <td>
+                                 <div class="action pending">Verification Pending</div>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+   <!-- Slick JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+   <!-- scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script src="js/main.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('.product-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            arrows: true,
+            asNavFor: '.product-thumbs',
+            prevArrow: '<button type="button" class="slick-prev"><img src="img/Arrow.svg"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="img/Arrow.svg"></button>',
+            responsive: [
+               {
+                  breakpoint: 579, // ✅ At 579px and below
+                  settings: {
+                     arrows: false, // hide arrows
+                     dots: true     // show dots
+                  }
+               }
+            ]
+         });
+
+         $('.product-thumbs').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.product-slider',
+            focusOnSelect: true,
+            arrows: false,
+            responsive: [
+               {
+                  breakpoint: 440,
+                  settings: {
+                     slidesToShow: 3,
+                     slidesToScroll: 1
+                  }
+               },
+               {
+                  breakpoint: 380,
+                  settings: {
+                     slidesToShow: 2,
+                     slidesToScroll: 1
+                  }
+               }
+            ]
+
+         });
+      });
+   </script>
+</body>
+
+</html>
