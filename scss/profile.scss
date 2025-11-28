@@ -88,8 +88,12 @@
             }
             .list{ margin: 0; padding: 0; display: flex;
                 li{margin: 0; padding: 0; list-style: none;
-                    img{}
-                    &+li{ margin-left: 15px;}
+                    img{ width: 24px;
+                        @media ($sm-1679) { width: 22px;}
+                    }
+                    &+li{ margin-left: 15px;
+                        @media ($sm-1679) { margin-left: 10px;}
+                    }
                 }
             }
         }

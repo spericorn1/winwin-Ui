@@ -349,8 +349,21 @@
   padding: 0;
   list-style: none;
 }
+.profile-head-wrap .right-wrap .share-profile-wrap .list li img {
+  width: 24px;
+}
+@media (max-width: 1679px) {
+  .profile-head-wrap .right-wrap .share-profile-wrap .list li img {
+    width: 22px;
+  }
+}
 .profile-head-wrap .right-wrap .share-profile-wrap .list li + li {
   margin-left: 15px;
+}
+@media (max-width: 1679px) {
+  .profile-head-wrap .right-wrap .share-profile-wrap .list li + li {
+    margin-left: 10px;
+  }
 }
 
 .online-wrap {
