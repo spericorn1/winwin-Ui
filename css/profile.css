@@ -850,7 +850,6 @@
 }
 .profile-review-wrap .rating-categories {
   display: flex;
-  align-items: center;
   padding-bottom: 30px;
 }
 .profile-review-wrap .rating-categories .items {
@@ -867,6 +866,16 @@
 @media (max-width: 1481px) {
   .profile-review-wrap .rating-categories .items {
     padding: 8px 18px;
+  }
+}
+@media (max-width: 767px) {
+  .profile-review-wrap .rating-categories .items {
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 479px) {
+  .profile-review-wrap .rating-categories .items {
+    padding: 8px 5px;
   }
 }
 .profile-review-wrap .rating-categories .items:last-child {
@@ -913,14 +922,20 @@
 .profile-review-wrap .rating-categories .txt {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.4;
   letter-spacing: 0%;
   text-align: center;
   color: #415362;
+  word-break: break-word;
 }
 @media (max-width: 1679px) {
   .profile-review-wrap .rating-categories .txt {
     font-size: 13px;
+  }
+}
+@media (max-width: 479px) {
+  .profile-review-wrap .rating-categories .txt {
+    font-size: 12px;
   }
 }
 .profile-review-wrap .summary-actions {
@@ -1086,16 +1101,39 @@
   color: #ef4444;
 }
 
-.best-sell-sec .see-all-btn {
+.best-sell-sec.pp-wrap .see-all-btn {
   border: 0;
   padding: 0;
 }
+.best-sell-sec.pp-wrap .product-slider-def .product-sl-card .product-det-sm h4 {
+  min-height: 50px;
+}
+@media (max-width: 1679px) {
+  .best-sell-sec.pp-wrap .product-slider-def .product-sl-card .product-det-sm h4 {
+    min-height: 44px;
+  }
+}
+@media (max-width: 1481px) {
+  .best-sell-sec.pp-wrap .product-slider-def .product-sl-card .product-det-sm h4 {
+    min-height: 42px;
+  }
+}
+@media (max-width: 1199px) {
+  .best-sell-sec.pp-wrap .product-slider-def .product-sl-card .product-det-sm h4 {
+    min-height: 40px;
+  }
+}
+@media (max-width: 359px) {
+  .best-sell-sec.pp-wrap .product-slider-def .product-sl-card .product-det-sm h4 {
+    min-height: auto;
+  }
+}
 
 .preview-content-outer .preview-det-cover .comm-data-cover {
-  border-top: 1px solid #ECEDEF;
+  border-top: 1px solid #ecedef;
 }
 .preview-content-outer .preview-det-cover .comm-data-cover .comm-data-block {
-  border-bottom: 1px solid #ECEDEF;
+  border-bottom: 1px solid #ecedef;
   border-top: 0;
 }
 
