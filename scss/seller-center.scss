@@ -17,7 +17,7 @@
             margin-bottom: 10px;
         }
         @media ($sm-767) {
-            font-size: 16px; 
+            font-size: 16px;
         }
     }
     .box-wrap {
@@ -58,6 +58,9 @@
                 @media ($sm-1679) {
                     font-size: 14px;
                 }
+                @media ($sm-767) {
+                    font-size: 16px;
+                }
             }
             .para {
                 font-weight: 400;
@@ -71,23 +74,20 @@
                     font-size: 13px;
                 }
                 @media ($sm-767) {
-                    font-size: 13px;
+                    font-size: 12px;
+                    line-height: 1.4;
                 }
             }
         }
     }
 }
-.account-wrap
-{
-    .box-wrap
-    {
-        .icon
-        {
-            img
-            {
-                max-width:31px;
-                max-height:31px;
-                 @media ($sm-1679) {
+.account-wrap {
+    .box-wrap {
+        .icon {
+            img {
+                max-width: 31px;
+                max-height: 31px;
+                @media ($sm-1679) {
                     max-width: 24px;
                     max-height: 24px;
                 }

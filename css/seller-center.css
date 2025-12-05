@@ -91,6 +91,11 @@
     font-size: 14px;
   }
 }
+@media (max-width: 767px) {
+  .seller-center-wrap .box-wrap .txt .sub-title {
+    font-size: 16px;
+  }
+}
 .seller-center-wrap .box-wrap .txt .para {
   font-weight: 400;
   font-size: 14px;
@@ -107,7 +112,8 @@
 }
 @media (max-width: 767px) {
   .seller-center-wrap .box-wrap .txt .para {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.4;
   }
 }
 

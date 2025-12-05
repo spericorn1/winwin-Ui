@@ -371,6 +371,11 @@
     margin-left: 10px;
   }
 }
+@media (max-width: 767px) {
+  .profile-head-wrap.no-right-col-wrap {
+    padding-bottom: 20px;
+  }
+}
 
 .online-wrap {
   display: flex;

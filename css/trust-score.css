@@ -46,7 +46,7 @@
   }
 }
 .trustscore-outer-wrap .trustscore-content-wrap .profile-action-wrap {
-  border: 1px solid #ECEDEF;
+  border: 1px solid #ecedef;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
   padding: 45px;
   border-radius: 12px;
@@ -112,7 +112,7 @@
   border-radius: 50%;
 }
 .trustscore-outer-wrap .trustscore-content-wrap .profile-action-wrap .title {
-  color: #101B25;
+  color: #101b25;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
@@ -140,7 +140,7 @@
 .trustscore-outer-wrap .trustscore-content-wrap .profile-action-wrap .btn-wrap .btn {
   height: 32px;
   border-radius: 30px;
-  background: #ECEDEF;
+  background: #ecedef;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -172,7 +172,7 @@
   }
 }
 .trustscore-outer-wrap .trustscore-content-wrap .profile-action-wrap .btn-wrap .btn span {
-  color: #101B25;
+  color: #101b25;
   font-size: 12px;
   font-weight: 500;
   padding: 0 0 0 5px;
@@ -182,10 +182,10 @@
   margin-left: 8px;
 }
 .trustscore-outer-wrap .trustscore-content-wrap .profile-action-wrap .btn-wrap .btn.btn-color span {
-  color: #EF4444;
+  color: #ef4444;
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap {
-  border: 1px solid #ECEDEF;
+  border: 1px solid #ecedef;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
   padding: 25px 25px 15px 25px;
   border-radius: 12px;
@@ -198,7 +198,7 @@
 @media (max-width: 479px) {
   .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap {
     border: 0;
-    border-bottom: 1px solid #DFE1E3;
+    border-bottom: 1px solid #dfe1e3;
     box-shadow: none;
     padding: 0 0 10px 0;
     border-radius: 0px;
@@ -230,7 +230,7 @@
 }
 @media (max-width: 479px) {
   .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .table-wrap tr th.col-first {
-    color: #101B25;
+    color: #101b25;
   }
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .table-wrap tr th.col-sec {
@@ -242,7 +242,7 @@
   vertical-align: top;
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .table-wrap tr td.col-first {
-  color: #101B25;
+  color: #101b25;
   font-size: 16px;
   font-weight: 500;
 }
@@ -253,7 +253,7 @@
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .table-wrap tr td.col-sec {
   text-align: right;
-  color: #101B25;
+  color: #101b25;
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
@@ -286,7 +286,7 @@
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .edit span {
   padding: 0 0 0 5px;
-  color: #7B8D9F;
+  color: #7b8d9f;
   font-size: 14px;
   font-weight: 500;
 }
@@ -359,7 +359,7 @@
 }
 @media (max-width: 479px) {
   .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-title {
-    color: #101B25;
+    color: #101b25;
   }
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-outer-wrap .form-field-wrap {
@@ -375,7 +375,7 @@
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-outer-wrap .form-field-wrap .name label {
   font-size: 14px;
-  color: #101B25;
+  color: #101b25;
   font-weight: 500;
   line-height: 1.4;
   display: block;
@@ -395,8 +395,8 @@
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-outer-wrap .form-field-wrap .field-wrap .txt {
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #B8C4D0;
+  background: #ffffff;
+  border: 1px solid #b8c4d0;
   border-radius: 30px;
   display: block;
   width: 100%;
@@ -426,8 +426,8 @@
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-outer-wrap .form-field-wrap .field-wrap .select {
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #B8C4D0;
+  background: #ffffff;
+  border: 1px solid #b8c4d0;
   border-radius: 30px;
   display: block;
   width: 100%;
@@ -481,6 +481,40 @@
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .form-outer-wrap .form-field-wrap.disable {
   opacity: 0.5;
 }
+.trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .about-textarea {
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #b8c4d0;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  color: #091737;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 10px 40px 10px 15px;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  width: 100%;
+  resize: none;
+}
+@media (max-width: 1679px) {
+  .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .about-textarea {
+    height: 100px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 479px) {
+  .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .about-textarea {
+    font-size: 14px;
+    height: 90px;
+  }
+}
+.trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .box-content-wrap .about-textarea::placeholder {
+  opacity: 1;
+  color: rgba(9, 23, 55, 0.5);
+}
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .profile-btn-wrap {
   display: flex;
   padding: 20px 0 0 0;
@@ -493,9 +527,9 @@
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .profile-btn-wrap .btn {
   height: 44px;
   border-radius: 30px;
-  border: 1px solid #DFE1E3;
+  border: 1px solid #dfe1e3;
   font-size: 14px;
-  color: #101B25;
+  color: #101b25;
   font-weight: 500;
   padding: 5px 10px;
   margin: 0;
@@ -518,7 +552,7 @@
   }
 }
 .trustscore-outer-wrap .trustscore-content-wrap .box-outer-wrap .profile-btn-wrap .btn.btn-color {
-  background: #5090CC;
+  background: #5090cc;
   color: #fff;
   margin-left: 10px;
 }
