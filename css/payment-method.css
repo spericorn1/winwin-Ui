@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.acc-payment-sec-outer {
+  padding-bottom: 60px;
+  background-color: #F8F9FA;
+  border-bottom: 1px solid #ECEDEF; }
+  @media (max-width: 1679px) {
+    .acc-payment-sec-outer {
+      padding-bottom: 40px; } }
+  .acc-payment-sec-outer .data-container {
+    max-width: 845px;
+    margin: 0 auto; }
+  .acc-payment-sec-outer .tab-wrapper {
+    margin: 0 0 25px 0; }
+    @media (max-width: 1679px) {
+      .acc-payment-sec-outer .tab-wrapper {
+        margin: 0 0 20px 0; } }
+    .acc-payment-sec-outer .tab-wrapper ul {
+      padding: 0;
+      margin: 0 0 -1px 0;
+      border-bottom: 1px solid #dfe1e3;
+      display: flex;
+      overflow: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scrollbar-color: #5090cc transparent;
+      padding: 0 0 1px 0; }
+      .acc-payment-sec-outer .tab-wrapper ul li {
+        padding: 10px 0;
+        margin: 0;
+        list-style: none;
+        white-space: nowrap; }
+        @media (max-width: 1199px) {
+          .acc-payment-sec-outer .tab-wrapper ul li {
+            padding: 8px 0; } }
+        .acc-payment-sec-outer .tab-wrapper ul li .tab-btn {
+          font-size: 14px;
+          color: #7b8d9f;
+          font-weight: 500;
+          padding: 0 15px;
+          position: relative;
+          display: block;
+          min-width: 180px;
+          text-align: center; }
+          @media (max-width: 1481px) {
+            .acc-payment-sec-outer .tab-wrapper ul li .tab-btn {
+              min-width: 160px; } }
+          @media (max-width: 1199px) {
+            .acc-payment-sec-outer .tab-wrapper ul li .tab-btn {
+              font-size: 13px; } }
+          @media (max-width: 991px) {
+            .acc-payment-sec-outer .tab-wrapper ul li .tab-btn {
+              padding: 0 10px; } }
+          @media (max-width: 579px) {
+            .acc-payment-sec-outer .tab-wrapper ul li .tab-btn {
+              font-size: 12px;
+              min-width: auto; } }
+          .acc-payment-sec-outer .tab-wrapper ul li .tab-btn.active {
+            color: #5090cc; }
+            .acc-payment-sec-outer .tab-wrapper ul li .tab-btn.active:after {
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background: #5090cc;
+              content: "";
+              left: 0;
+              bottom: -11px; }
+              @media (max-width: 1199px) {
+                .acc-payment-sec-outer .tab-wrapper ul li .tab-btn.active:after {
+                  bottom: -9px; } }
+  .acc-payment-sec-outer .tab-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #101B25;
+    margin-bottom: 20px; }
+    @media (max-width: 1679px) {
+      .acc-payment-sec-outer .tab-title {
+        font-size: 18px; } }
+    @media (max-width: 1481px) {
+      .acc-payment-sec-outer .tab-title {
+        font-size: 16px; } }
+  .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card {
+    border: 1px solid #F6F7F9;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px; }
+    .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper {
+      margin-bottom: 20px;
+      align-items: center; }
+      .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .right-block {
+        flex-shrink: 0;
+        margin-left: auto; }
+        .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .right-block .data-status {
+          display: inline-block;
+          padding: 5px 12px;
+          border-radius: 25px;
+          font-size: 14px;
+          color: #5090CC;
+          background-color: #EEF4FA; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .right-block .data-status {
+              font-size: 12px; } }
+          @media (max-width: 579px) {
+            .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .right-block .data-status {
+              padding: 3px 12px; } }
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .right-block .data-status.due {
+            background-color: #FCDADA;
+            color: #EF4444; }
+      .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block {
+        display: flex;
+        align-items: center; }
+        .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .prod-img {
+          flex-shrink: 0; }
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .prod-img .item-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 12px; }
+        .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block {
+          padding-right: 10px; }
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block h4 {
+            font-size: 20px;
+            font-weight: 500;
+            color: #101B25;
+            margin-bottom: 3px;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden; }
+            @media (max-width: 1679px) {
+              .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block h4 {
+                font-size: 18px; } }
+            @media (max-width: 1481px) {
+              .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block h4 {
+                font-size: 16px; } }
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block p {
+            font-size: 16px;
+            color: #415362;
+            margin: 0; }
+            @media (max-width: 1679px) {
+              .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block p {
+                font-size: 14px; } }
+            @media (max-width: 1481px) {
+              .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .top-wrapper .left-block .data-block p {
+                font-size: 13px; } }
+    .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover {
+      border-top: 1px solid #ECEDEF;
+      padding-top: 10px;
+      padding-bottom: 8px; }
+      .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover:last-child {
+        padding-bottom: 0; }
+      .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover .inst-amnt-wrapper {
+        align-items: center;
+        justify-content: space-between; }
+        @media (max-width: 1679px) {
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover .inst-amnt-wrapper {
+            font-size: 14px; } }
+        @media (max-width: 1481px) {
+          .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover .inst-amnt-wrapper {
+            font-size: 13px; } }
+        .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover .inst-amnt-wrapper .amnt-label {
+          color: #101B25; }
+        .acc-payment-sec-outer .active-payment-tab .active-payment-list .active-payment-card .btm-data-cover .inst-amnt-wrapper .amnt {
+          font-family: "Instrument Sans", sans-serif;
+          font-weight: 500;
+          color: #101B25; }
+  .acc-payment-sec-outer .completed-payment-list .completed-payment-card {
+    border: 1px solid #F6F7F9;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 15px; }
+    .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block {
+      display: flex;
+      align-items: center; }
+      .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .prod-img {
+        flex-shrink: 0; }
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .prod-img .item-img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 12px; }
+      .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block {
+        padding-right: 15px; }
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block h4 {
+          font-size: 20px;
+          font-weight: 500;
+          color: #101B25;
+          margin-bottom: 3px;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block h4 {
+              font-size: 18px; } }
+          @media (max-width: 1481px) {
+            .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block h4 {
+              font-size: 16px; } }
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block p {
+          font-size: 16px;
+          color: #415362;
+          margin: 0; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block p {
+              font-size: 14px; } }
+          @media (max-width: 1481px) {
+            .acc-payment-sec-outer .completed-payment-list .completed-payment-card .det-block .data-block p {
+              font-size: 13px; } }
+    .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block {
+      color: #415362;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: 50px;
+      flex-shrink: 0; }
+      @media (max-width: 1679px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block {
+          font-size: 14px; } }
+      @media (max-width: 1481px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block {
+          font-size: 13px; } }
+      @media (max-width: 991px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block {
+          margin-right: 10px; } }
+      @media (max-width: 767px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block {
+          margin-right: 0; } }
+      @media (max-width: 579px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block.date-block-web {
+          display: none; } }
+      .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block.date-block-mob {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 15px; }
+        @media (min-width: 580px) {
+          .acc-payment-sec-outer .completed-payment-list .completed-payment-card .date-block.date-block-mob {
+            display: none; } }
+    .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block {
+      display: flex;
+      justify-content: flex-end;
+      min-width: 80px;
+      flex-shrink: 0; }
+      @media (max-width: 579px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block {
+          min-width: 60px; } }
+      @media (max-width: 579px) {
+        .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block {
+          margin-left: auto;
+          min-width: auto; } }
+      .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block .status {
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #1BB746;
+        background-color: #EAF7EA; }
+        @media (max-width: 1679px) {
+          .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block .status {
+            font-size: 12px; } }
+        @media (max-width: 579px) {
+          .acc-payment-sec-outer .completed-payment-list .completed-payment-card .status-block .status {
+            padding: 3px 12px; } }
+  .acc-payment-sec-outer .payouts-tab {
+    max-width: 458px;
+    margin: 0 auto;
+    padding: 30px 0 100px; }
+    @media (max-width: 1679px) {
+      .acc-payment-sec-outer .payouts-tab {
+        padding: 30px 0 80px; } }
+    @media (max-width: 579px) {
+      .acc-payment-sec-outer .payouts-tab {
+        padding: 0; } }
+    .acc-payment-sec-outer .payouts-tab .payouts-cover {
+      box-shadow: 0px 2px 4px 0px #0000000A;
+      background-color: #fff;
+      border: 1px solid #DFE1E3;
+      border-radius: 8px;
+      padding: 25px 15px 20px; }
+      .acc-payment-sec-outer .payouts-tab .payouts-cover .bal-wrapper {
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 25px;
+        border-bottom: solid 1px #EEEEEE; }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .bal-wrapper .bal-label {
+          font-size: 14px;
+          color: #101B25;
+          font-weight: 500; }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .bal-wrapper .bal-amt {
+          font-size: 21px;
+          color: #101B25;
+          font-weight: 500; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .bal-wrapper .bal-amt {
+              font-size: 18px; } }
+      .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block {
+        padding-top: 15px; }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block .btn-1 {
+          padding: 8px 15px;
+          font-size: 14px; }
+
+/*# sourceMappingURL=payment-method.css.map */
