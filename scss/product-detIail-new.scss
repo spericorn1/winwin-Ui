@@ -622,3 +622,52 @@
         }
     }
 }
+.procuct-detail-new .outer-tbl-wrp{
+    .total-wrapper{
+        margin-bottom: 25px;
+        border-top: 1px solid #ECEDEF;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 15px;
+        @media ($sm-1679) {
+            font-size: 14px;
+        }
+        @media ($sm-1481) {
+            font-size: 13px;
+        }
+        .tot-label{
+            color: #415362;
+        }
+        .tot-amt{
+            color: #101B25;
+        }
+        
+    }
+    .sec-btn-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        .btn-primary{
+            height: 44px;
+            border: none;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            width: calc(50% - 5px);
+            background-color: #5090CC;
+            color: #fff;
+            transition: .3s;
+            &:hover{
+                opacity: .8;
+            }
+        }
+    }
+}
+.procuct-detail-new .outer-tbl-wrp .shipping-form .btn-grp .btn{
+    font-size: 14px;
+}
