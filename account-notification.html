@@ -135,6 +135,19 @@
                 </ul>
             </div>
             
+            <!-- No data -->
+            <div class="notify-nodata-wrapper d-flex">
+                <div class="nodata-block">
+                    <div class="icon">
+                        <img src="img/noti-bell.svg" alt="">
+                    </div>
+                    <h2>No Notifications Yet</h2>
+                    <p>It’s quiet… almost too quiet. Don’t worry — we’ll buzz you when something happens.</p>
+                </div>
+            </div>
+
+
+            <!-- page content -->
             <div class="acc-notify-wrapper d-flex">
                 <!-- left -->
                 <div class="filter-left-block">
@@ -231,6 +244,7 @@
                             <div class="select-wrap">
                                 <select class="form-control form-select" name="" id="">
                                     <option value="" >Sort By</option>
+                                    <option value="">All</option>
                                     <option value="">Latest</option>
                                     <option value="">Old</option>
                                 </select>
@@ -368,6 +382,38 @@
                         </div>
 
                         <div class="acc-notify-card">
+                            <div class="icon-block">
+                                <img class="card-img" src="img/Profile-picture3.png" alt="">
+                            </div>
+                            <div class="data-block">
+                                <div class="top-block d-flex">
+                                    <div class="name-sec">
+                                        <h4 class="title-light"><span class="hlt">Smith</span> started following you</h4>
+                                    </div>
+                                    <div class="dropdown-block">
+                                        <div class="dropdown notify-dropdown">
+                                            <button class="btn notify-dropdown-btn dropdown-toggle" type="button"
+                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <img src="img/vert-dots.svg" alt="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hours-block d-flex">
+                                    <div class="date">
+                                        4 hours ago
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-notify-card card-disabled">
                             <div class="icon-block">
                                 <img class="card-img" src="img/Profile-picture3.png" alt="">
                             </div>

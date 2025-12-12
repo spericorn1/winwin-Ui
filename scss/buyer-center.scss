@@ -815,10 +815,14 @@
                                 font-weight: 500;
                                 color: #101B25;
                                 max-width: 55%;
-                                white-space: nowrap;
+                                // white-space: nowrap;
+                                // overflow: hidden;
+                                // text-overflow: ellipsis;
+                                padding-right: 20px;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
                                 overflow: hidden;
-                                text-overflow: ellipsis;
-                                padding-right: 10px;
                                 @media ($sm-1679) {
                                     font-size: 15px;
                                 }
@@ -826,6 +830,7 @@
                                     max-width: 100%;
                                     width: 100%;
                                     margin-bottom: 5px;
+                                    padding-right: 0;
                                 }
                             }
                             .amnt-block{
@@ -1031,7 +1036,6 @@
                             padding-bottom: 0;
                             border: none;
                             padding-top: 2px;
-                            flex-wrap: nowrap;
                             @media ($sm-579) {
                                 padding-top: 0;
                             }

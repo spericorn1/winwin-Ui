@@ -63,8 +63,49 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#verificationRequired">
             Verification Required
         </button>
-        
 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newsLetterModal">
+            Verification Required
+        </button>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newProductsModal">
+            About New Products
+        </button>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#salesPromotionsModal">
+            Sales and Promotions
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xtraMembershipModal">
+            Xtra Membership
+        </button>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#powerMoveModal">
+            Pick Your Power Move
+        </button>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipSummaryModal">
+            Membership Summary
+        </button>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipSuccessModal">
+            Membership Success
+        </button>
+
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipCancelModal">
+            Membership Cancel
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipCancel2Modal">
+            Membership Cancel step 2
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipCancel3Modal">
+            Membership Cancel step 3
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#membershipCancelSuccessModal">
+            Membership Cancel Success
+        </button>
+        
+        
+        
     </div>
 
     <!-- Passwored change modal -->
@@ -493,6 +534,862 @@
             </div>
         </div>
     </div>
+
+
+    <!-- News letter modal -->
+    <div class="modal custom-modal  acc-preference-modal newsletter-modal fade" id="newsLetterModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+                    <div class="title-wrapper d-flex">
+                        <h4>Newsletter</h4>
+                        <div class="right-block">
+                            <div class="form-check form-switch">
+                                <!-- <label class="form-check-label" for="check1"></label> -->
+                                <input class="form-check-input" type="checkbox" role="switch" id="check1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-p-block">
+                        <p>Provide your email address to stay tuned for exciting offers and the best deals!</p>
+
+                        <div class="top-inp-block">
+                            <input type="text" class="pref-inp">
+                        </div>
+                    </div>
+                    <h3>How Often Would You Like to Hear from Us?</h3>
+
+                    <div class="radio-sec">
+                        <h4>Set frequency of marketing emails</h4>
+                        <div class="radio-card pt-2">
+                            <div class="form-check form-check-select">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                <label class="form-check-label" for="">
+                                    Don’t send me more than
+                                    <span class="chk-select">
+                                        <select class="mnth">
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                        </select>
+                                         emails per month
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="radio-card">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                                <label class="form-check-label" for="radioDefault2">
+                                    No Limitations
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="btn-wrap">
+                        <button class="btn">Cancel</button>
+                        <button class="btn cnfm">Update Info</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications About New Products -->
+    <div class="modal custom-modal  acc-preference-modal new-products-modal fade" id="newProductsModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+                    <div class="title-wrapper d-flex">
+                        <h4>Notifications About New Products</h4>
+                        <div class="right-block">
+                            <div class="form-check form-switch">
+                                <!-- <label class="form-check-label" for="check1"></label> -->
+                                <input class="form-check-input" type="checkbox" role="switch" id="check1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-p-block">
+                        <p>Select the categories of products you would like to get notified about when items get added to the Marketplace.</p>
+                    </div>
+                    
+                    <div class="radio-sec">
+                        <h4>Select Category (Multiple Options)</h4>
+
+                        <div class="catg-wrapper d-flex">
+                            <div class="catg-list-block">
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg1">
+                                        <label class="form-check-label" for="radioCatg1">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg2">
+                                        <label class="form-check-label" for="radioCatg2">
+                                            Education
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg3">
+                                        <label class="form-check-label" for="radioCatg3">
+                                            Entertainment
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg4">
+                                        <label class="form-check-label" for="radioCatg4">
+                                            Hobbies
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg5">
+                                        <label class="form-check-label" for="radioCatg5">
+                                            Housing
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg6">
+                                        <label class="form-check-label" for="radioCatg6">
+                                            Services
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg7">
+                                        <label class="form-check-label" for="radioCatg7">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="catg-list-block">
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg8">
+                                        <label class="form-check-label" for="radioCatg8">
+                                            Clothing & Accessories
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg9">
+                                        <label class="form-check-label" for="radioCatg9">
+                                            Electronics
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg10">
+                                        <label class="form-check-label" for="radioCatg10">
+                                            Family
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg11">
+                                        <label class="form-check-label" for="radioCatg11">
+                                            Home & Garden
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg12">
+                                        <label class="form-check-label" for="radioCatg12">
+                                            Vehicles & Bicycles
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg13">
+                                        <label class="form-check-label" for="radioCatg13">
+                                            My Favorites
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="btn-wrap">
+                        <button class="btn">Cancel</button>
+                        <button class="btn cnfm">Save Preferences</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sales and Promotions -->
+    <div class="modal custom-modal  acc-preference-modal new-products-modal fade" id="salesPromotionsModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body custom-modal-body">
+                    <div class="title-wrapper d-flex">
+                        <h4>Sales and Promotions</h4>
+                        <div class="right-block">
+                            <div class="form-check form-switch">
+                                <!-- <label class="form-check-label" for="check1"></label> -->
+                                <input class="form-check-input" type="checkbox" role="switch" id="check1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="top-p-block">
+                        <p>Select the categories of products you would like to be notified about when items are on sale or have promotions running.</p>
+                    </div>
+                    
+                    <div class="radio-sec">
+                        <h4>Select Category (Multiple Options)</h4>
+
+                        <div class="catg-wrapper d-flex">
+                            <div class="catg-list-block">
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg1">
+                                        <label class="form-check-label" for="radioCatg1">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg2">
+                                        <label class="form-check-label" for="radioCatg2">
+                                            Education
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg3">
+                                        <label class="form-check-label" for="radioCatg3">
+                                            Entertainment
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg4">
+                                        <label class="form-check-label" for="radioCatg4">
+                                            Hobbies
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg5">
+                                        <label class="form-check-label" for="radioCatg5">
+                                            Housing
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg6">
+                                        <label class="form-check-label" for="radioCatg6">
+                                            Services
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg7">
+                                        <label class="form-check-label" for="radioCatg7">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="catg-list-block">
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg8">
+                                        <label class="form-check-label" for="radioCatg8">
+                                            Clothing & Accessories
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg9">
+                                        <label class="form-check-label" for="radioCatg9">
+                                            Electronics
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg10">
+                                        <label class="form-check-label" for="radioCatg10">
+                                            Family
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg11">
+                                        <label class="form-check-label" for="radioCatg11">
+                                            Home & Garden
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg12">
+                                        <label class="form-check-label" for="radioCatg12">
+                                            Vehicles & Bicycles
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="radio-card">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radioDefault" id="radioCatg13">
+                                        <label class="form-check-label" for="radioCatg13">
+                                            My Favorites
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="btn-wrap">
+                        <button class="btn">Cancel</button>
+                        <button class="btn cnfm">Save Preferences</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Xtra Membership -->
+    <div class="modal custom-modal xtra-membership-modal fade" id="xtraMembershipModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="membership-title">
+                        <h2>WinWinXtra Membership</h2>
+                        <p>Because You Deserve the VIP Treatment (Without the Bank Drama)</p>
+                    </div>
+
+                    <div class="membership-tab-title d-flex">
+                        <div class="left-block">
+                            <h2>Go Xtra. Get More. Feel Smug About It.</h2>
+                            <p>You’re already smart for using WinWinX — now it’s time to go Xtra. For just $4.99/month, you unlock perks that make buying, selling, and skipping the nonsense way easier. No fine print. No banker side-eye. Just good deals and good people.</p>
+                        </div>
+                        <div class="right-block">
+                            <div class="tab-btn-cover">
+                                <button class="plan-ab-btn active">Monthly</button>
+                                <button class="plan-ab-btn">Yearly</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab 1 -->
+                    <div class="xtra-tab-outer">
+                        <div class="plan-data-cover">
+                            <div class="logo-off">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                            <div class="tab-title-wrapper d-flex">
+                                <div class="icon">
+                                    <img src="img/premium.svg" alt="">
+                                </div>
+                                <div class="txt">
+                                    <h4>Here’s what you get when you level up to WinWinXtra</h4>
+                                    <div class="amt-wrapper"><span class="amt">$4.99</span> <span class="amt-label">/Per month - cancel any time</span></div>
+                                    <div class="save-info-block">
+                                        <span class="save-info">Save $9.89 compare to the monthly plan</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="list-cover d-flex">
+                                <div class="list-col">
+                                    <ul class="info-li">
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Win-Win Deals</h4>
+                                                <p>Exclusive promos that make your wallet happy.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Pause a Payment Request</h4>
+                                                <p>Because sometimes life happens.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Faster Shipping</h4>
+                                                <p>Get your Best Buy faves ASAP.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Cancel Anytime</h4>
+                                                <p>But you probably won’t want to.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="list-col">
+                                    <ul class="info-li">
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Payment Protection Discounts</h4>
+                                                <p>Peace of mind without the markup.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>Boosted Listings</h4>
+                                                <p>Sellers, this one’s your secret weapon.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="li-data">
+                                                <h4>“For You” Picks</h4>
+                                                <p>Tentative plan to give $25 in WinWinXtra Cash to annual members.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btm-btn-wrapper">
+                            <button class="btn-1 border-btn">Cancel</button>
+                            <button class="btn-1">Join WinWinXtra</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pick Your Power Move -->
+    <div class="modal custom-modal power-move-modal fade" id="powerMoveModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="power-move-title">
+                        <h2>Pick Your Power Move</h2>
+                        <p>You’re one step away from going full WinWinXtra — no banks, no drama, just perks.</p>
+                    </div>
+
+                    <div class="payment-options-cover">
+                        <h4 class="block-title">Payment Options</h4>
+                        <div class="payment-options-wrapper">
+                            <div class="row">
+                                <div class="col-lg-6 payment-col-left">
+                                    <div class="payment-col-cover">
+                                        <img class="w-100" src="img/pymnt-det.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 payment-col-right">
+                                    <div class="membership-det-cover">
+                                        <h2 class="membership-title-sm">WinWinX Membership</h2>
+                                        <div class="amt-wrapper"><span class="amt">$49.99/</span> <span class="amt-label">Per year</span></div>
+
+                                        <div class="membership-amt-wrapper d-flex justify-content-between">
+                                            <div class="label-block">
+                                                <h6>Membership</h6>
+                                                <p>Go all-in and unlock unlimited access to everything that makes WWX awesome. <br>No hidden fees. No fine print. Just full access and bragging rights.</p>
+                                            </div>
+                                            <div class="amnt-block">
+                                                $49.99
+                                            </div>
+                                        </div>
+                                        <div class="sub-total-wrapper d-flex justify-content-between">
+                                            <div class="label-block">
+                                                Subtotal
+                                            </div>
+                                            <div class="amnt-block">
+                                                $49.99
+                                            </div>
+                                        </div>
+                                        <div class="total-wrapper d-flex justify-content-between">
+                                            <div class="label-block">
+                                                Total
+                                            </div>
+                                            <div class="amnt-block">
+                                                $49.99
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-end">
+                        <button class="btn-1 border-btn">Back</button>
+                        <button class="btn-1">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- membershipSummaryModal -->
+    <div class="modal custom-modal membership-summary-modal fade" id="membershipSummaryModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal-sec-title">
+                        <h2>Almost There — Just the Payment Stuff</h2>
+                        <p>You’re about to join the club banks wish they built.</p>
+                    </div>
+                    <h2 class="summary-title-mob">Membership Summary</h2>
+                    <div class="summary-det-outer">
+                        <h2 class="summary-title-web">Membership Summary</h2>
+                        <div class="membership-det-cover">
+                            <div class="sec-block-top">
+                                <h2 class="membership-title-sm">WinWinX Membership</h2>
+                                <div class="amt-wrapper"><span class="amt">$49.99/</span> <span class="amt-label">Per year</span></div>
+                                <div class="renew-date">Renews on Jan 13, 2026</div>
+                            </div>
+
+                            <div class="membership-amt-wrapper d-flex justify-content-between align-items-center">
+                                <div class="label-block">
+                                    <h6>Membership</h6>
+                                    <p>Unlock all the WinWinXtra perks: faster deals, better protection, and exclusive offers that make you feel like you’re cheating the system (legally, of course).</p>
+                                </div>
+                                <div class="amnt-block">
+                                    $49.99
+                                </div>
+                            </div>
+                            <div class="sub-total-wrapper d-flex justify-content-between">
+                                <div class="label-block">
+                                    Subtotal
+                                </div>
+                                <div class="amnt-block">
+                                    $88.00
+                                </div>
+                            </div>
+                            <div class="total-wrapper d-flex justify-content-between">
+                                <div class="label-block">
+                                    Total
+                                </div>
+                                <div class="amnt-block">
+                                    $88.00
+                                </div>
+                            </div>
+
+                            <div class="payment-summary-block">
+                                <h4>Payment Summary</h4>
+                                <div class="data-wrapper d-flex justify-content-between">
+                                    <div class="label-block">
+                                        Card Number:
+                                    </div>
+                                    <div class="val-block">
+                                        123••••••••2343
+                                    </div>
+                                </div>
+                                <div class="data-wrapper d-flex justify-content-between">
+                                    <div class="label-block">
+                                        Card Holder Name:
+                                    </div>
+                                    <div class="val-block">
+                                        Jaxson Calzoni
+                                    </div>
+                                </div>
+                                <div class="data-wrapper d-flex justify-content-between">
+                                    <div class="label-block">
+                                        Email Address:
+                                    </div>
+                                    <div class="val-block">
+                                        yourname@gmail.com
+                                    </div>
+                                </div>
+                                <div class="data-wrapper d-flex justify-content-between">
+                                    <div class="label-block">
+                                        Expire Date:
+                                    </div>
+                                    <div class="val-block">
+                                        12/28
+                                    </div>
+                                </div>
+                                <div class="data-wrapper d-flex justify-content-between">
+                                    <div class="label-block">
+                                        CVV Number:
+                                    </div>
+                                    <div class="val-block">
+                                        435
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrapper d-flex justify-content-between">
+                                <button class="btn-1 border-btn">Back</button>
+                                <button class="btn-1">Make It Official</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership success modal -->
+    <div class="modal custom-modal info-modal success-modal-w fade" id="membershipSuccessModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                    <img src="img/modal-close.svg" alt="">
+                </button>
+                <div class="modal-body text-center">
+                    <div class="modal-icon">
+                        <img src="img/membership-success.svg" alt="">
+                    </div>
+                    <h2>You did it!</h2>
+                    <p>Banks are crying somewhere <br>right now.</p>
+                    <div class="btn-block">
+                        <button type="button" class="btn modal-btn-1 hover-opc">Home Page</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- membership Cancel -->
+    <div class="modal custom-modal membership-cancel-modal fade" id="membershipCancelModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal-sec-title">
+                        <h2>Leaving already?</h2>
+                        <p>The banks will be thrilled.</p>
+                    </div>
+
+                     <div class="amnt-card">
+                        <div class="amt-wrapper"><span class="amt">$49.99/</span> <span class="amt-label">Per year</span></div>
+                        <p>Cancel now and your WinWinXtra benefits go poof. Just saying.</p>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-between">
+                        <button class="btn-1 border-btn">Back</button>
+                        <button class="btn-1">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- membership Cancel step 2 -->
+    <div class="modal custom-modal membership-cancel-modal fade" id="membershipCancel2Modal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal-sec-title">
+                        <h2>Be honest, what didn’t vibe?</h2>
+                        <p>We promise not to take it personally <br>(okay, maybe a little)."</p>
+                    </div>
+
+                    <div class="input-cover">
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Too expensive
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Too difficult to use
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Not using it enough
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Upgraded by mistake
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Missing features
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="checkbox-card">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Missing features
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                        <div class="check-area-card">
+                            <textarea class="check-area" placeholder="Something else?" name="" id=""></textarea>
+                            <p class="max-length">Max word limit 120 words</p>
+                        </div>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-between">
+                        <button class="btn-1 border-btn">Back</button>
+                        <button class="btn-1">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- membership Cancel step 3 -->
+    <div class="modal custom-modal membership-cancel-modal membership-cancel-3 fade" id="membershipCancel3Modal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+                    <div class="modal-sec-title">
+                        <h2>Just a moment please</h2>
+                    </div>
+
+                    <div class="cancel-item-cover">
+                        <h3 class="li-title">What disappears once you cancel:</h3>
+                        <ul class="info-li">
+                            <li>
+                                <div class="li-data">
+                                    <h4>Win-Win Deals</h4>
+                                    <p>Exclusive promos that make your wallet happy.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-data">
+                                    <h4>Skip a Payment Requests:</h4>
+                                    <p>Flexibility to delay certain payments.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-data">
+                                    <h4>Expedited Shipping of Best Buy Products:</h4>
+                                    <p>Faster delivery on partnered purchases.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-data">
+                                    <h4>Payment Protection Plan Discounts:</h4>
+                                    <p>Lower rates on protection and coverage plans.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-data">
+                                    <h4>“Boosted” Product Listings for Sellers:</h4>
+                                    <p>Enhanced visibility for seller posts.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="li-data">
+                                    <h4>3× “Suggest For You” Posts per Month:</h4>
+                                    <p>Priority placement in the WinWinX community feed.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-wrapper btn-wrapper-lg d-flex justify-content-between">
+                        <button class="btn-1 border-btn">Go Back</button>
+                        <button class="btn-1 btn-red">Confirm and Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership success modal -->
+    <div class="modal custom-modal info-modal membership-cancellation-success-modal fade" id="membershipCancelSuccessModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="modal-icon">
+                        <img src="img/green-bg.svg" alt="">
+                    </div>
+                    <h2>Cancellation complete, <br>you’re good to go.</h2>
+                    <p class="mb-2">We’ve stopped your billing. Thanks for giving <br>WinWinXtra a shot.</p>
+                    <div class="btn-block">
+                        <button type="button" class="btn modal-btn-1 hover-opc">Go Back to Home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"

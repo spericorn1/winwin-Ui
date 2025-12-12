@@ -17,9 +17,7 @@
 /*** laptop with HiDPI (High Dots Per Inch) resolution ***/
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .acc-payment-sec-outer {
-  padding-bottom: 60px;
-  background-color: #F8F9FA;
-  border-bottom: 1px solid #ECEDEF; }
+  padding-bottom: 60px; }
   @media (max-width: 1679px) {
     .acc-payment-sec-outer {
       padding-bottom: 40px; } }
@@ -311,10 +309,568 @@
           @media (max-width: 1679px) {
             .acc-payment-sec-outer .payouts-tab .payouts-cover .bal-wrapper .bal-amt {
               font-size: 18px; } }
+      .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block {
+        padding-top: 35px;
+        margin-bottom: 30px; }
+        @media (max-width: 1679px) {
+          .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block {
+            padding-top: 30px;
+            margin-bottom: 20px; } }
+        @media (max-width: 1481px) {
+          .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block {
+            padding-top: 25px;
+            margin-bottom: 20px; } }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block h4 {
+          font-size: 20px;
+          font-weight: 500;
+          color: #101B25;
+          margin-bottom: 35px; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block h4 {
+              font-size: 18px;
+              margin-bottom: 30px; } }
+          @media (max-width: 1481px) {
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block h4 {
+              font-size: 16px; } }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-title {
+          align-items: center;
+          font-size: 16px;
+          font-weight: 500;
+          color: #101B25;
+          margin-bottom: 15px; }
+          @media (max-width: 1679px) {
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-title {
+              font-size: 15px; } }
+          .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-title .icon {
+            display: inline-block;
+            flex-shrink: 0;
+            margin-right: 12px; }
+        .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #F6F7F9;
+          padding: 12px 2px; }
+          .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check {
+            align-items: center; }
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check .form-check-input {
+              margin-right: 12px;
+              margin-top: -1px; }
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check .form-check-label {
+              align-items: center; }
+              .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check .form-check-label .acc-icon {
+                flex-shrink: 0;
+                width: 35px;
+                height: 22px;
+                border-radius: 2px;
+                padding: 2px;
+                background-color: #F8F9FA;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 12px; }
+                .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check .form-check-label .acc-icon img {
+                  max-width: 100%;
+                  max-height: 100%; }
+              .acc-payment-sec-outer .payouts-tab .payouts-cover .payment-method-block .bank-acc-card .form-check .form-check-label .acc-num {
+                color: #415362;
+                font-size: 14px; }
       .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block {
         padding-top: 15px; }
         .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block .btn-1 {
           padding: 8px 15px;
           font-size: 14px; }
+          .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block .btn-1.btn-border {
+            background-color: #fff;
+            color: #101B25;
+            box-shadow: 0px 2px 4px 0px #2A455D0F;
+            border: 1px solid #DFE1E3;
+            align-items: center;
+            display: flex;
+            justify-content: center; }
+            .acc-payment-sec-outer .payouts-tab .payouts-cover .btn-block .btn-1.btn-border img {
+              margin-right: 5px; }
+  .acc-payment-sec-outer .payment-method-tab .payment-method-cover {
+    border: solid 1px #DFE1E3;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 30px 25px; }
+    @media (max-width: 579px) {
+      .acc-payment-sec-outer .payment-method-tab .payment-method-cover {
+        padding: 20px; } }
+
+.summary-data-container {
+  padding: 40px 0; }
+  @media (max-width: 1679px) {
+    .summary-data-container {
+      padding: 30px 0; } }
+  @media (max-width: 767px) {
+    .summary-data-container {
+      padding: 20px 0 0; } }
+  .summary-data-container .summary-title-mob {
+    font-weight: 500;
+    color: #101B25;
+    margin-bottom: 20px;
+    font-size: 18px; }
+    @media (min-width: 580px) {
+      .summary-data-container .summary-title-mob {
+        display: none; } }
+  .summary-data-container .summary-det-outer {
+    border: 1px solid #ECEDEF;
+    box-shadow: 0px 2px 4px 0px #0000000A;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 519px;
+    margin: 0 auto; }
+    @media (max-width: 579px) {
+      .summary-data-container .summary-det-outer {
+        max-width: 100%; } }
+    @media (max-width: 479px) {
+      .summary-data-container .summary-det-outer {
+        padding: 20px; } }
+    .summary-data-container .summary-det-outer h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #101B25;
+      margin-bottom: 25px; }
+      @media (max-width: 1679px) {
+        .summary-data-container .summary-det-outer h2 {
+          font-size: 21px;
+          margin-bottom: 20px; } }
+      @media (max-width: 1481px) {
+        .summary-data-container .summary-det-outer h2 {
+          font-size: 19px; } }
+      @media (max-width: 579px) {
+        .summary-data-container .summary-det-outer h2 {
+          font-size: 18px; } }
+    @media (max-width: 579px) {
+      .summary-data-container .summary-det-outer .summary-title-web {
+        display: none; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .sec-block-top {
+      margin-bottom: 20px; }
+    .summary-data-container .summary-det-outer .membership-det-cover .membership-title-sm {
+      font-size: 16px;
+      color: #415362;
+      margin-bottom: 8px;
+      font-weight: 500; }
+      @media (max-width: 1679px) {
+        .summary-data-container .summary-det-outer .membership-det-cover .membership-title-sm {
+          font-size: 15px; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper {
+      display: flex;
+      margin-bottom: 5px; }
+      .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper .amt {
+        color: #101B25;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-right: 8px; }
+        @media (max-width: 1679px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper .amt {
+            font-size: 21px;
+            line-height: 21px; } }
+        @media (max-width: 1481px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper .amt {
+            font-size: 19px;
+            line-height: 19px; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper .amt-label {
+        margin-top: auto;
+        font-size: 16px;
+        color: #415362;
+        font-weight: 500; }
+        @media (max-width: 1679px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .amt-wrapper .amt-label {
+            font-size: 14px; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .renew-date {
+      font-size: 14px;
+      color: #EF4444;
+      font-weight: 500; }
+      @media (max-width: 1679px) {
+        .summary-data-container .summary-det-outer .membership-det-cover .renew-date {
+          font-size: 13px; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper {
+      padding-bottom: 15px; }
+      .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .label-block {
+        padding-right: 15px;
+        max-width: 350px; }
+        .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .label-block h6 {
+          font-size: 16px;
+          color: #101B25;
+          font-weight: 500;
+          margin-bottom: 4px; }
+          @media (max-width: 1679px) {
+            .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .label-block h6 {
+              font-size: 14px; } }
+        .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .label-block p {
+          margin: 0;
+          font-size: 14px;
+          color: #415362; }
+          @media (max-width: 1679px) {
+            .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .label-block p {
+              font-size: 12px; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .amnt-block {
+        flex-shrink: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #101B25; }
+        @media (max-width: 1679px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .membership-amt-wrapper .amnt-block {
+            font-size: 14px; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .sub-total-wrapper {
+      align-items: center;
+      margin-bottom: 15px; }
+      .summary-data-container .summary-det-outer .membership-det-cover .sub-total-wrapper .label-block {
+        padding-right: 15px;
+        font-size: 14px;
+        color: #415362; }
+      .summary-data-container .summary-det-outer .membership-det-cover .sub-total-wrapper .amnt-block {
+        flex-shrink: 0;
+        font-size: 14px;
+        font-weight: 500;
+        color: #101B25; }
+    .summary-data-container .summary-det-outer .membership-det-cover .total-wrapper {
+      align-items: center;
+      font-size: 18px;
+      color: #101B25;
+      font-weight: 500; }
+      @media (max-width: 1679px) {
+        .summary-data-container .summary-det-outer .membership-det-cover .total-wrapper {
+          font-size: 16px; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .total-wrapper .label-block {
+        padding-right: 15px; }
+      .summary-data-container .summary-det-outer .membership-det-cover .total-wrapper .amnt-block {
+        flex-shrink: 0; }
+    .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block {
+      border-top: 1px solid #ECEDEF;
+      padding-top: 30px;
+      margin-top: 30px; }
+      @media (max-width: 1679px) {
+        .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block {
+          padding-top: 20px;
+          margin-top: 20px; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block h4 {
+        font-size: 16px;
+        color: #101B25;
+        font-weight: 500;
+        margin-bottom: 15px; }
+        @media (max-width: 1679px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block h4 {
+            font-size: 14px; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block .data-wrapper {
+        font-size: 16px;
+        margin-bottom: 12px; }
+        @media (max-width: 1679px) {
+          .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block .data-wrapper {
+            font-size: 14px; } }
+        .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block .data-wrapper .label-block {
+          color: #415362;
+          padding-right: 15px; }
+        .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block .data-wrapper .val-block {
+          flex-shrink: 0;
+          text-align: right;
+          color: #101B25;
+          font-weight: 500;
+          word-break: break-all; }
+          @media (max-width: 400px) {
+            .summary-data-container .summary-det-outer .membership-det-cover .payment-summary-block .data-wrapper .val-block {
+              max-width: 70%; } }
+    .summary-data-container .summary-det-outer .membership-det-cover .btn-wrapper {
+      padding-top: 10px; }
+      @media (max-width: 479px) {
+        .summary-data-container .summary-det-outer .membership-det-cover .btn-wrapper {
+          flex-direction: column; } }
+      .summary-data-container .summary-det-outer .membership-det-cover .btn-wrapper .btn-cancel {
+        background-color: #EF3C38; }
+
+@media (min-width: 1200px) {
+  .xtra-membership-outer .custom-container {
+    max-width: 1000px; } }
+.xtra-membership-outer .xtra-membership-data-cover {
+  padding-top: 15px; }
+.xtra-membership-outer .membership-title {
+  margin-bottom: 50px; }
+  @media (max-width: 1679px) {
+    .xtra-membership-outer .membership-title {
+      margin-bottom: 30px; } }
+  @media (max-width: 1481px) {
+    .xtra-membership-outer .membership-title {
+      margin-bottom: 20px; } }
+  .xtra-membership-outer .membership-title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #101B25;
+    margin-bottom: 4px; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .membership-title h2 {
+        font-size: 21px; } }
+    @media (max-width: 1481px) {
+      .xtra-membership-outer .membership-title h2 {
+        font-size: 19px; } }
+  .xtra-membership-outer .membership-title p {
+    margin: 0;
+    color: #415362; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .membership-title p {
+        font-size: 14px; } }
+.xtra-membership-outer .membership-tab-title {
+  margin-bottom: 25px; }
+  @media (max-width: 1679px) {
+    .xtra-membership-outer .membership-tab-title {
+      margin-bottom: 15px; } }
+  @media (max-width: 767px) {
+    .xtra-membership-outer .membership-tab-title {
+      flex-wrap: wrap; } }
+  .xtra-membership-outer .membership-tab-title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #415362;
+    margin-bottom: 5px; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .membership-tab-title h2 {
+        font-size: 18px; } }
+    @media (max-width: 1481px) {
+      .xtra-membership-outer .membership-tab-title h2 {
+        font-size: 16px; } }
+  .xtra-membership-outer .membership-tab-title p {
+    margin: 0;
+    color: #415362;
+    font-size: 12px; }
+  .xtra-membership-outer .membership-tab-title .left-block {
+    padding-right: 15px; }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .membership-tab-title .left-block {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px; } }
+    .xtra-membership-outer .membership-tab-title .left-block p {
+      max-width: 85%; }
+      @media (max-width: 767px) {
+        .xtra-membership-outer .membership-tab-title .left-block p {
+          max-width: 100%; } }
+  .xtra-membership-outer .membership-tab-title .right-block {
+    margin-left: auto;
+    flex-shrink: 0;
+    margin-top: auto; }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .membership-tab-title .right-block {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center; } }
+  .xtra-membership-outer .membership-tab-title .tab-btn-cover {
+    background-color: #ECEDEF;
+    border-radius: 85px;
+    padding: 3px; }
+    .xtra-membership-outer .membership-tab-title .tab-btn-cover .plan-ab-btn {
+      min-width: 85px;
+      padding: 5px 10px;
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      color: #415362;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 40px;
+      transition: .3s; }
+      @media (max-width: 1679px) {
+        .xtra-membership-outer .membership-tab-title .tab-btn-cover .plan-ab-btn {
+          font-size: 12px; } }
+      .xtra-membership-outer .membership-tab-title .tab-btn-cover .plan-ab-btn.active {
+        color: #101B25;
+        background-color: #fff;
+        box-shadow: 0px 3.67px 2.92px -7.57px #3C415005;
+        box-shadow: 0px 10.76px 8.2px -7.57px #3C415008;
+        box-shadow: 0px 24.67px 22px -7.57px #3C41500A;
+        box-shadow: 0px 47.09px 50.45px -7.57px #3C41500F; }
+      .xtra-membership-outer .membership-tab-title .tab-btn-cover .plan-ab-btn:hover {
+        color: #101B25; }
+.xtra-membership-outer .xtra-tab-outer .plan-data-cover {
+  border: 2px solid #ECEDEF;
+  padding: 30px 30px 15px;
+  border-radius: 16px;
+  position: relative; }
+  @media (max-width: 767px) {
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover {
+      padding: 20px 25px 15px; } }
+  @media (max-width: 479px) {
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover {
+      padding: 20px 20px 15px; } }
+  @media (max-width: 390px) {
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover {
+      padding: 20px 15px 15px; } }
+  .xtra-membership-outer .xtra-tab-outer .plan-data-cover .logo-off {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    opacity: .2;
+    text-align: right; }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .logo-off {
+        right: 20px; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .logo-off img {
+      max-width: 100px; }
+  .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper {
+    margin-bottom: 45px; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper {
+        margin-bottom: 30px; } }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper {
+        flex-wrap: wrap; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #FFF1D9;
+      margin-right: 25px; }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt {
+        width: 100%;
+        padding-top: 10px; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt h4 {
+      font-size: 14px;
+      color: #101B25;
+      font-weight: 500;
+      margin-bottom: 8px; }
+      @media (max-width: 1679px) {
+        .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt h4 {
+          font-size: 13px; } }
+      @media (max-width: 767px) {
+        .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt h4 {
+          margin-bottom: 8px; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper {
+      display: flex; }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper .amt {
+        color: #101B25;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 600;
+        margin-right: 8px; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper .amt {
+            font-size: 26px;
+            line-height: 26px; } }
+        @media (max-width: 1481px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper .amt {
+            font-size: 24px;
+            line-height: 24px; } }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper .amt-label {
+        margin-top: auto;
+        font-size: 14px;
+        color: #415362; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .amt-wrapper .amt-label {
+            font-size: 13px; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .save-info-block {
+      padding-top: 8px; }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .save-info-block .save-info {
+        display: inline-block;
+        padding: 6px 18px;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #415362;
+        background-color: #F3F3F3; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .tab-title-wrapper .txt .save-info-block .save-info {
+            font-size: 13px; } }
+  @media (max-width: 767px) {
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover {
+      flex-wrap: wrap; } }
+  .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .list-col {
+    width: 50%;
+    padding-right: 15px; }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .list-col {
+        width: 100%;
+        padding-right: 0; } }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .list-col:last-child {
+      padding-left: 15px; }
+      @media (max-width: 767px) {
+        .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .list-col:last-child {
+          padding-left: 0; } }
+  .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li {
+      display: flex;
+      margin-bottom: 25px; }
+      @media (max-width: 1679px) {
+        .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li {
+          margin-bottom: 20px; } }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li::before {
+        flex-shrink: 0;
+        content: '';
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        background-image: url("../img/plan-list.svg");
+        background-repeat: no-repeat;
+        display: block;
+        margin-right: 10px; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li::before {
+            width: 22px; } }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: #415362;
+        margin-bottom: 2px; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li h4 {
+            font-size: 13px; } }
+      .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li p {
+        margin: 0;
+        color: #415362;
+        font-size: 14px; }
+        @media (max-width: 1679px) {
+          .xtra-membership-outer .xtra-tab-outer .plan-data-cover .list-cover .info-li li p {
+            font-size: 13px; } }
+.xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-end; }
+  @media (max-width: 1679px) {
+    .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper {
+      padding-top: 20px; } }
+  @media (max-width: 479px) {
+    .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper {
+      flex-wrap: wrap; } }
+  .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .btn-1 {
+    width: 350px; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .btn-1 {
+        width: 300px; } }
+    @media (max-width: 1481px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .btn-1 {
+        width: 260px; } }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .btn-1 {
+        width: auto;
+        padding: 12px 30px; } }
+    @media (max-width: 479px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .btn-1 {
+        width: 100%; } }
+  .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .border-btn {
+    margin-right: 16px;
+    width: 230px;
+    box-shadow: 0px 2px 4px 0px #2A455D0F; }
+    @media (max-width: 1679px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .border-btn {
+        width: 200px; } }
+    @media (max-width: 1481px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .border-btn {
+        width: 180px; } }
+    @media (max-width: 767px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .border-btn {
+        width: auto; } }
+    @media (max-width: 479px) {
+      .xtra-membership-outer .xtra-tab-outer .btm-btn-wrapper .border-btn {
+        width: 100%;
+        margin-bottom: 8px;
+        margin-right: 0; } }
 
 /*# sourceMappingURL=payment-method.css.map */

@@ -21,6 +21,54 @@
   @media (min-width: 1200px) {
     .acc-notification-sec .custom-container {
       max-width: 1000px; } }
+  .acc-notification-sec .notify-nodata-wrapper {
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0; }
+    @media (max-width: 1481px) {
+      .acc-notification-sec .notify-nodata-wrapper {
+        padding: 80px 0; } }
+    @media (max-width: 579px) {
+      .acc-notification-sec .notify-nodata-wrapper {
+        padding: 40px 0;
+        min-height: 45vh; } }
+    .acc-notification-sec .notify-nodata-wrapper .nodata-block {
+      box-shadow: 0px 2px 4px 0px #0000000A;
+      border: 1px solid #ECEDEF;
+      border-radius: 16px;
+      max-width: 489px;
+      width: 100%;
+      padding: 40px;
+      text-align: center; }
+      @media (max-width: 579px) {
+        .acc-notification-sec .notify-nodata-wrapper .nodata-block {
+          border: none;
+          padding: 15px;
+          box-shadow: none; } }
+      .acc-notification-sec .notify-nodata-wrapper .nodata-block .icon {
+        margin-bottom: 20px; }
+        @media (max-width: 1481px) {
+          .acc-notification-sec .notify-nodata-wrapper .nodata-block .icon img {
+            max-width: 38px; } }
+        @media (max-width: 579px) {
+          .acc-notification-sec .notify-nodata-wrapper .nodata-block .icon img {
+            max-width: 38px; } }
+      .acc-notification-sec .notify-nodata-wrapper .nodata-block h2 {
+        font-size: 24px;
+        color: #101B25;
+        margin-bottom: 8px; }
+        @media (max-width: 1679px) {
+          .acc-notification-sec .notify-nodata-wrapper .nodata-block h2 {
+            font-size: 21px; } }
+        @media (max-width: 1481px) {
+          .acc-notification-sec .notify-nodata-wrapper .nodata-block h2 {
+            font-size: 19px; } }
+      .acc-notification-sec .notify-nodata-wrapper .nodata-block p {
+        margin-bottom: 0;
+        color: #415362; }
+        @media (max-width: 1679px) {
+          .acc-notification-sec .notify-nodata-wrapper .nodata-block p {
+            font-size: 14px; } }
   .acc-notification-sec .acc-notify-wrapper {
     padding-top: 10px; }
     @media (max-width: 1481px) {
@@ -50,7 +98,7 @@
           height: 100vh;
           max-width: 95vw;
           overflow-y: auto;
-          z-index: 1;
+          z-index: 99;
           transition: .3s;
           box-shadow: 2px 0 5px 0px #0000000A; } }
       .acc-notification-sec .acc-notify-wrapper .filter-left-block.show {
@@ -297,9 +345,6 @@
           display: flex;
           align-items: center;
           gap: 8px; }
-          @media (max-width: 991px) {
-            .acc-notification-sec .acc-notify-wrapper .notify-right-block .title-sort-wrap .sort-wrap {
-              display: none; } }
           .acc-notification-sec .acc-notify-wrapper .notify-right-block .title-sort-wrap .sort-wrap span {
             font-size: 12px;
             color: #7b8d9f; }
@@ -332,6 +377,9 @@
               @media (max-width: 1199px) {
                 .acc-notification-sec .acc-notify-wrapper .notify-right-block .title-sort-wrap .sort-wrap .select-wrap select {
                   font-size: 13px; } }
+              @media (max-width: 579px) {
+                .acc-notification-sec .acc-notify-wrapper .notify-right-block .title-sort-wrap .sort-wrap .select-wrap select {
+                  width: 100px; } }
               .acc-notification-sec .acc-notify-wrapper .notify-right-block .title-sort-wrap .sort-wrap .select-wrap select::placeholder {
                 color: #7b8d9f;
                 opacity: 1; }
@@ -383,8 +431,18 @@
           padding: 15px;
           display: flex;
           transition: .3s; }
-          .acc-notification-sec .acc-notify-wrapper .notify-right-block .notify-card-outer .acc-notify-card:hover {
+          .acc-notification-sec .acc-notify-wrapper .notify-right-block .notify-card-outer .acc-notify-card:not(.card-disabled):hover {
             border: 1px solid #91A3B6; }
+          .acc-notification-sec .acc-notify-wrapper .notify-right-block .notify-card-outer .acc-notify-card.card-disabled {
+            opacity: .9;
+            cursor: not-allowed !important;
+            position: relative; }
+            .acc-notification-sec .acc-notify-wrapper .notify-right-block .notify-card-outer .acc-notify-card.card-disabled::after {
+              border-radius: 12px;
+              content: '';
+              inset: 0;
+              position: absolute;
+              background-color: rgba(255, 255, 255, 0.6); }
           .acc-notification-sec .acc-notify-wrapper .notify-right-block .notify-card-outer .acc-notify-card .icon-block {
             flex-shrink: 0;
             margin-right: 15px; }
