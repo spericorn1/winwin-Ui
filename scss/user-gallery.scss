@@ -3,7 +3,18 @@
 
 .user-gallery{
     &.product-list-wrap{
-
+        @media($sm-1481){
+            padding: 49px 0 50px;
+        }
+        @media($sm-991){
+            padding: 0px 0 50px;
+        }
+        @media($sm-579){
+            padding-top: 0px;
+        }
+        @media(max-width:470px){
+            padding-top:20px;
+        }
     .product-align-wrap{
         .product-form-wrap{
             padding: 0px;
@@ -68,6 +79,15 @@
             @media($sm-991){
                 padding-left: 0px;
                 width: 100% ;
+                padding: 0px 0px 25px 0px;
+            }
+            @media($sm-579){
+                margin-bottom: 0px;
+                 padding: 0px 0px 25px 0px;
+            }
+             @media(max-width:470px){
+             
+                 padding: 25px 0px 25px 0px;
             }
             .search-title-wrap{
                 display: flex;
@@ -80,7 +100,7 @@
                 @media($sm-1481){
                     margin-bottom: 12px;
                 }
-                @media($sm-579){
+                @media(max-width:666px){
                     flex-wrap: wrap;
                 }
                 .title-wrap{
@@ -100,7 +120,7 @@
                             font-size: 20px;
                             line-height: 28px;
                         }
-                        @media($sm-579){
+                        @media(max-width:666px){
                             font-weight: 500;
                             margin-bottom: 12px;
                         }
@@ -120,7 +140,7 @@
                 }
 
                   .search{
-                    @media($sm-579){
+                    @media($sm-991){
                         display: none;
                     }
                         .input-group-text{
@@ -161,18 +181,51 @@
                 display: flex;
                 padding-top: 30px;
                 flex-wrap: wrap;
-                 gap: 30px;
+                @media($sm-1199){
+                    gap: 0px;
+                 
+                    
+                }
+                //  gap: 30px;
+                .gallery-wrap{
+                    @media($sm-1199){
+                        // width: 48%;
+                        width: calc(100%/2 - 20px);
+                        margin-right: 20px;
+                        // padding: 0px !important;
+                        &:nth-child(even){
+                            margin-right: 0px;
+                            width: calc(100%/2);
+                        }
+
+                    }
+                    @media(max-width:666px){
+                        width: 100%;
+                        margin-right: 0px;
+                          &:nth-child(even){
+                            width: 100%;
+                          }
+
+                            &:last-child{
+                                .gallery-box{
+                                      margin-bottom: 0px;
+                                }
+                          
+                        }
+                    }
+                }
                 .gallery-box{
-                    width: calc((100% - 60px) / 3);
+                    // width: calc((100% - 60px) / 3);
                     // margin-right: 30px;
+                    width: 100%;
                     box-shadow: 0px 4px 6.6px 2px #00000014;
                     background: #FFFFFF;
                     padding: 20px 23px;
                     position: relative;
                     border-radius: 16px;
-                    // margin-bottom: 39px;
+                    margin-bottom: 39px;
                     @media($sm-1199){
-                        width: calc((100%/2) - 20px);
+                        // width: calc((100%/2) - 20px);
                         // margin-right: 20px;
                     //       &:nth-child(even){
                     //          margin-right: 0px;
@@ -199,6 +252,7 @@
                     // }
                     @media($sm-579){
                         width: 100%;
+                      
                     }
                     .trust-score{
                         width: 117px;
@@ -337,7 +391,7 @@
         }
     } 
 } 
-.filter-sort-mob-wrap .content-wrap{
-    display: none;
+.filter-sort-mob-wrap {
+    display: none !important;
 }
 }
