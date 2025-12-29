@@ -125,8 +125,8 @@
                </div>
             </div>
          </div>
-         <div class="container">
-            <div class="search-mob-wrap">
+         <!-- <div class="container">
+            <div class="search-mob-wrap search-mob-gallery">
                <div class="search-wrap">
                   <div class="input-wrap">
                      <img src="img/head-search.svg" alt="" class="img">
@@ -134,10 +134,13 @@
                   </div>
                </div>
                <div class="filter-wrap">
-                  <img src="img/filter.svg" alt="">
+                 <button type="button" class="filter-btn">
+                  <img src="img/filter.svg" alt="Filter">
+                  </button>
+
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
    <!-- Product list starts -->
@@ -177,64 +180,72 @@
                     <span class="arrow-ico"><img src="img/chevron-up1.svg"></span>
                    
                 </div>
-                 <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
+
+                <div class="form-check">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+                     <label class="form-check-label" for="radioDefault4">
                         All Users
                      </label>
                   </div>
+             
                   <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                       Win-Win Users
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
+                     <label class="form-check-label" for="radioDefault6">
+                         Win-Win Users
                      </label>
                   </div>
-                  <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                        Win-Lose Users
+                       <div class="form-check">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+                     <label class="form-check-label" for="radioDefault5">
+                       Win-Lose Users
                      </label>
                   </div>
+
+           
                  
                </div>
                <div class="group-wrap">
                   <div class="title">User Trustscore</div>
+
+
                    <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+                     <label class="form-check-label" for="radioDefault4">
                         All Users
                      </label>
                   </div>
+             
                   <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                       All Verified Users (455 or higher)
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6" checked>
+                     <label class="form-check-label" for="radioDefault6">
+                         All Verified Users (455 or higher)
                      </label>
                   </div>
-                  <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                       OK (505 or higher)
+                       <div class="form-check">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+                     <label class="form-check-label" for="radioDefault5">
+                      OK (505 or higher)
                      </label>
                   </div>
-                  <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                      Great (705 or higher)
+                     <div class="form-check">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+                     <label class="form-check-label" for="radioDefault5">
+                     Great (705 or higher)
                      </label>
                   </div>
-                  <div class="form-check">
-                     <input class="form-check-input checkbox" type="checkbox" value="" id="checkDefault">
-                     <label class="form-check-label" for="checkDefault">
-                       Excellent (900 or higher)
+                   <div class="form-check">
+                     <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5" checked>
+                     <label class="form-check-label" for="radioDefault5">
+                     G Excellent (900 or higher)
                      </label>
                   </div>
+
                </div>
               
-               <div class="btn-wrap">
+               <!-- <div class="btn-wrap">
                   <button class="btn"><span>Cancel</span></button>
                   <button class="btn btn-color"><span>Apply</span></button>
-               </div>
+               </div> -->
             </div>
             <div class="user-gallery-rt-wrap">
                 <div class="search-title-wrap">
@@ -261,6 +272,24 @@
                 <div class="sub-content">
                     But transparency is our key - so we also feature our ’Win-Lose’ Users. Those who, unfortunately, haven’t followed through on their promises. This open & accountable approach ensures that every interaction you have on the WinWinX platform is built on competency, reliability, and honesty in nurturing a commerce experience that’s as trustworthy as it is seamless!
                 </div>
+                  <div class="search-title-wrap search-title-mob">
+             
+                    <div class="search">
+                         <div class="input-group">
+                            <span class="input-group-text">
+                            <img src="img/search-icon.svg">
+                            </span>
+                            <input
+                            type="text"
+                            class="form-control search-input"
+                            placeholder="Search"
+                            />
+                        </div>
+                         <button type="button" class="filter-btn">
+                           <img src="img/filter.svg" alt="Filter">
+                           </button>
+                    </div>
+                </div>
                
                      <div class="gallery-sec row gx-4">
                     <div class="col-lg-4 gallery-wrap">
@@ -276,6 +305,7 @@
                         </div>
                         <div class="position-detil">
                             Owner of Good Guy Builders  a five-star residential remodeling firm located in Napa California. In business over 30 ye...
+                            
                         </div>
                         <div class="read-more">
                             <a href="" class="read-link">Read More</a>
@@ -718,289 +748,7 @@
       integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-   <script>
-      // banner slider
-      if ($(window).width() < 1199) {
-         $('.baner-catg-slider').slick({
-            dots: false,
-            speed: 300,
-            slidesToShow: 1,
-            variableWidth: true,
-            infinite: false,
-            arrows: false,
-         });
-      }
-
-      $('.srch-popular-slider').slick({
-         dots: false,
-         slidesToShow: 1,
-         variableWidth: true,
-         infinite: false,
-         arrows: false,
-      });
-
-      // end
-
-      $('.banner-slider').slick({
-         autoplay: true,
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         dots: true,
-         arrows: false,
-         speed: 500,
-         fade: true,
-         cssEase: 'linear'
-      });
-   </script>
-   <script>
-      // Best selling
-      $('.product-card-slider').slick({
-         autoplay: true,
-         slidesToShow: 4,
-         slidesToScroll: 1,
-         dots: false,
-         arrows: false,
-         centerMode: true,
-         centerPadding: '60px',
-         responsive: [
-            {
-               breakpoint: 1199,
-               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1
-               }
-            },
-            {
-               breakpoint: 600,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '140px',
-               }
-            },
-            {
-               breakpoint: 579,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  centerPadding: '0',
-               }
-            },
-            {
-               breakpoint: 360,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '0',
-               }
-            },
-         ]
-      });
-
-      //   Recommended slider
-      $('.product-rec-slider').slick({
-         autoplay: true,
-         slidesToShow: 5,
-         slidesToScroll: 1,
-         dots: false,
-         arrows: false,
-         centerMode: true,
-         centerPadding: '30px',
-         responsive: [
-            {
-               breakpoint: 1199,
-               settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1
-               }
-            },
-            {
-               breakpoint: 767,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 579,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  centerPadding: '0',
-               }
-            },
-            {
-               breakpoint: 400,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '0',
-               }
-            },
-         ]
-      });
-      // Recently Viewed
-      $('.recently-viewed-slider').slick({
-         autoplay: true,
-         slidesToShow: 4,
-         slidesToScroll: 1,
-         dots: false,
-         arrows: false,
-         responsive: [
-            {
-               breakpoint: 1199,
-               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1
-               }
-            },
-            {
-               breakpoint: 579,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 360,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-               }
-            },
-         ]
-      });
-
-      //   Browse categories
-      $('.browse-categ-slider').slick({
-         autoplay: true,
-         dots: false,
-         slidesToShow: 7,
-         slidesToScroll: 1,
-         arrows: false,
-         centerMode: true,
-         centerPadding: '50px',
-         responsive: [
-            {
-               breakpoint: 1300,
-               settings: {
-                  slidesToShow: 6,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 1199,
-               settings: {
-                  slidesToShow: 5,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 4,
-                  slidesToScroll: 1
-               }
-            },
-            {
-               breakpoint: 767,
-               settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-               }
-            },
-            {
-               breakpoint: 579,
-               settings: "unslick"
-            },
-            // settings: {
-            //     slidesToShow: 2,
-            //     slidesToScroll: 1,
-            //     centerPadding: '0',
-            // }
-            // {
-            // breakpoint: 360,
-            // settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1,
-            //     centerPadding: '0',
-            // }
-            // },
-         ]
-      });
-      $('.explore-interests-slider').slick({
-         autoplay: true,
-         dots: false,
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         arrows: false,
-         centerMode: true,
-         centerPadding: '50px',
-         responsive: [
-            {
-               breakpoint: 1199,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  centerPadding: '22vw',
-               }
-            },
-            {
-               breakpoint: 991,
-               settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  centerPadding: '5vw',
-               }
-            },
-            {
-               breakpoint: 767,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '25vw',
-               }
-            },
-            {
-               breakpoint: 579,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '15vw',
-               }
-            },
-            {
-               breakpoint: 400,
-               settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  centerPadding: '0',
-               }
-            },
-         ]
-      });
-   </script>
+   
    <script>
       const menuBtn = document.querySelector(".menu-hand");
 
@@ -1024,17 +772,16 @@
          }
       });
    </script>
-   <script>
-      $(document).ready(function () {
-         $('.filter-btn').click(function () {
-            $('body').addClass('body-filter')
+  <script>
+         $(document).ready(function () {
+            $('.filter-btn').click(function () {
+               $('.product-form-wrap').addClass('active')
+            })
+            $('.filter-close').click(function () {
+               $('.product-form-wrap').removeClass('active')
+            })
          })
-         $('.close-wrap').click(function () {
-            $('body').removeClass('body-filter')
-         })
-      })
-   </script>
-   
+      </script>
 </body>
 
 </html>
