@@ -178,6 +178,9 @@
             .login-form-outer{
                 max-width: 363px;
                 width: 100%;
+                @media($sm-991){
+                    padding-bottom: 100px;
+                }
                 &.login-about-outer{
                     max-width: 410px;
                 }

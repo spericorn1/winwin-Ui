@@ -225,6 +225,11 @@
   max-width: 363px;
   width: 100%;
 }
+@media (max-width: 991px) {
+  .login-layout .login-container .left-block .login-form-outer {
+    padding-bottom: 100px;
+  }
+}
 .login-layout .login-container .left-block .login-form-outer.login-about-outer {
   max-width: 410px;
 }
