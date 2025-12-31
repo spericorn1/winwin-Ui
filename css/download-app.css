@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.breadcrumb {
+  padding: 30px 0px 16px 0px;
+  margin: 0;
+}
+@media (max-width: 1679px) {
+  .breadcrumb {
+    padding: 25px 0px 11px 0px;
+  }
+}
+@media (max-width: 1481px) {
+  .breadcrumb {
+    padding: 15px 0px;
+  }
+}
+.breadcrumb .list {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1679px) {
+  .breadcrumb .list {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1481px) {
+  .breadcrumb .list {
+    font-size: 12px;
+  }
+}
+@media (max-width: 579px) {
+  .breadcrumb .list {
+    font-size: 10px;
+  }
+}
+.breadcrumb .list li {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb .list li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7b8d9f;
+}
+@media (max-width: 1679px) {
+  .breadcrumb .list li a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1481px) {
+  .breadcrumb .list li a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 579px) {
+  .breadcrumb .list li a {
+    font-size: 10px;
+  }
+}
+.breadcrumb .list li a:hover {
+  text-decoration: underline;
+}
+.breadcrumb .list li a.active {
+  color: #101b25;
+}
+.breadcrumb .list li + li:before {
+  content: "";
+  background-image: url(../img/gray-arrow.svg);
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  margin: 0 8px;
+  color: #999;
+}
+@media (max-width: 1679px) {
+  .breadcrumb .list li + li:before {
+    margin: 0px 6px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-container-dwnld {
+    max-width: 1076px;
+  }
+}
+
+.winx-dwnld-app {
+  background: #F8F9FA;
+}
+
+.dwnld-winx-app {
+  padding-top: 36px;
+  background: #F8F9FA;
+  border-bottom: 1px solid #DFE1E3;
+  padding-bottom: 40px;
+}
+.dwnld-winx-app .title {
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #122852;
+}
+@media (max-width: 1679px) {
+  .dwnld-winx-app .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .dwnld-winx-app .title {
+    font-size: 20px;
+  }
+}
+.dwnld-winx-app .scan-sec {
+  background: #FFFFFF;
+  border-radius: 23px;
+  padding: 80px 75px 70px 75px;
+}
+@media (max-width: 1679px) {
+  .dwnld-winx-app .scan-sec {
+    padding: 60px 65px;
+  }
+}
+@media (max-width: 1481px) {
+  .dwnld-winx-app .scan-sec {
+    padding: 50px 55px;
+  }
+}
+@media (max-width: 1199px) {
+  .dwnld-winx-app .scan-sec {
+    padding: 40px 45px;
+  }
+}
+@media (max-width: 991px) {
+  .dwnld-winx-app .scan-sec {
+    padding: 30px;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec {
+    flex-wrap: wrap;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap {
+  flex: 1;
+  margin-right: 45px;
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: #101B25;
+  padding-bottom: 40px;
+}
+@media (max-width: 1679px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 28px;
+    line-height: 38px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1481px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 26px;
+    line-height: 36px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 1199px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+@media (max-width: 991px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 579px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .scan-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .list-items ul li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #101B25;
+  line-height: 24px;
+  margin-bottom: 38px;
+}
+@media (max-width: 1679px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .list-items ul li {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 1481px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .list-items ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .txt {
+  font-weight: 500;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #101B25;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+@media (max-width: 1679px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .txt {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .left-wrap .txt {
+    padding-top: 0px;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .rt-wrap {
+  width: 342px;
+}
+@media (max-width: 991px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .rt-wrap {
+    width: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .dwnld-winx-app .scan-sec .scan-inner-sec .rt-wrap {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.dwnld-winx-app .scan-sec .scan-inner-sec .rt-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=download-app.css.map */

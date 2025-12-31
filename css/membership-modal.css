@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.xtra-membership-modal.membr-ship-modal .modal-body {
+  padding: 75px 75px 70px;
+}
+@media (max-width: 1679px) {
+  .xtra-membership-modal.membr-ship-modal .modal-body {
+    padding: 50px 50px 45px;
+  }
+}
+@media (max-width: 1481px) {
+  .xtra-membership-modal.membr-ship-modal .modal-body {
+    padding: 35px 40px 35px;
+  }
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .modal-body {
+    padding: 35px 30px 48px;
+  }
+}
+@media (max-width: 479px) {
+  .xtra-membership-modal.membr-ship-modal .modal-body {
+    padding: 30px 20px 40px;
+  }
+}
+@media (min-width: 1350px) {
+  .xtra-membership-modal.membr-ship-modal .modal-dialog {
+    max-width: 1321px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1349px) {
+  .xtra-membership-modal.membr-ship-modal .modal-dialog {
+    max-width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .membership-tab-title {
+    margin-bottom: 27px;
+  }
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner {
+    border-bottom: 2px solid #f4f4f4;
+  }
+}
+@media (max-width: 579px) {
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner {
+    flex-wrap: wrap;
+  }
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover {
+  width: calc(33.3333333333% - 27px);
+  margin-right: 27px;
+  box-shadow: 0px 1.54px 3.08px 0px rgba(0, 0, 0, 0.0392156863);
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+@media (max-width: 1200px) {
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover {
+    margin-right: 0px;
+    margin: 0 10px;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover:first-child {
+    margin-left: 0px;
+  }
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover:last-child {
+    margin-right: 0px;
+  }
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover:last-child {
+  width: 33.3333333333%;
+  margin-right: 0px;
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover:last-child {
+    width: 100%;
+  }
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover .tab-title-wrapper {
+  margin-bottom: 26px;
+  padding: 30px 30px 0px;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover .tab-title-wrapper .txt .per-mnth {
+  color: #415362;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-top: 5px;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover .list-cover {
+  padding: 0px 30px 0px;
+  flex: 1;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-data-cover .list-cover .list-col {
+  padding: 0px;
+  width: 100%;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-choose {
+  padding: 22px 30px 28px;
+  border-top: 1px solid rgba(236, 237, 239, 0.8784313725);
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-choose .choose-plan {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #91a3b6;
+  box-shadow: 0px 2px 4px 0px rgba(42, 69, 93, 0.0588235294);
+  background: #f7fafd;
+  font-weight: 500;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 14px;
+  color: #101b25;
+  border-radius: 50px;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-choose .choose-plan:hover, .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-choose .choose-plan:active, .xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .plan-choose .choose-plan:focus {
+  background-color: #4882b8;
+  color: #eef4fa;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .slick-track {
+  display: flex !important;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  bottom: -25px;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .slick-dots li {
+  width: 48px;
+  height: 3px;
+  background: #e5f2ff;
+  border-radius: 10px;
+  margin: 0 3.5px;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .slick-dots li button {
+  display: none;
+}
+.xtra-membership-modal.membr-ship-modal .xtra-tab-outer .xtra-tab-inner .slick-dots li.slick-active {
+  background: #4882b8;
+}
+@media (max-width: 767px) {
+  .xtra-membership-modal.membr-ship-modal .slick-list {
+    padding: 0 5% 0 0 !important;
+  }
+}
+
+/*# sourceMappingURL=membership-modal.css.map */
