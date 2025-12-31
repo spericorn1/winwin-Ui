@@ -163,10 +163,11 @@
             background-color: #f4f5f6;
             border-radius: 20px;
             height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            overflow: hidden;
+            // padding: 15px;
             @media ($sm-1679) {
                 height: 220px;
             }

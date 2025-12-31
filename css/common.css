@@ -258,4 +258,11 @@ a {
   .details-web-only {
     display: none !important; } }
 
+.media-item-fit {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover; }
+
 /*# sourceMappingURL=common.css.map */
