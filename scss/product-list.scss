@@ -611,25 +611,26 @@
 
             .pr-list-wrap {
                 .row-align {
-                    row-gap: 25px;
-                    @media ($sm-1679) {
-                        row-gap: 20px;
-                    }
-                    @media ($sm-479) {
-                        --bs-gutter-x: 1rem;
-                    }
+                    row-gap: 10px;
+                    --bs-gutter-x: 10px;
+                    // @media ($sm-1679) {
+                    //     row-gap: 20px;
+                    // }
+                    // @media ($sm-479) {
+                    //     --bs-gutter-x: 1rem;
+                    // }
                 }
 
                 .content-wrap {
                     .gray-wrap {
                         background: #f6f7f9;
                         border-radius: 15px;
-                        margin: 0 0 15px 0;
+                        margin: 0 0 8px 0;
                         position: relative;
                         overflow: hidden;
                         @media ($sm-1679) {
                             border-radius: 10px;
-                            margin: 0 0 10px 0;
+                            margin: 0 0 5px 0;
                         }
                         .head {
                             padding: 15px;
@@ -709,12 +710,12 @@
                         }
                     }
                     .pr-detail-wrap {
-                        padding: 0 0 20px 0;
-                        @media ($sm-1679) {
-                            padding: 0 0 15px 0;
-                        }
+                        // padding: 0 0 10px 0;
+                        // @media ($sm-1679) {
+                        //     padding: 0 0 15px 0;
+                        // }
                         .name {
-                            padding: 0 2px 0 0;
+                            // padding: 0 2px 0 0;
                             margin: 0;
                             color: #122852;
                             font-weight: 600;
@@ -740,7 +741,7 @@
                             }
                         }
                         .price-wrap {
-                            padding: 7px 0 0 0;
+                            // padding: 7px 0 0 0;
                             display: flex;
                             // @media ($sm-1679) {
                             //     padding: 20px 0 0 0;

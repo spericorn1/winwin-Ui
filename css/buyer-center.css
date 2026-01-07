@@ -85,20 +85,18 @@
               font-size: 14px; } }
 
 .buyer-center-outer .pr-list-wrap .row-align {
-  row-gap: 25px; }
-  @media (max-width: 1679px) {
-    .buyer-center-outer .pr-list-wrap .row-align {
-      row-gap: 20px; } }
+  row-gap: 10px;
+  --bs-gutter-x: 10px; }
 .buyer-center-outer .pr-list-wrap .content-wrap .gray-wrap {
   background: #f6f7f9;
   border-radius: 15px;
-  margin: 0 0 15px 0;
+  margin: 0 0 8px 0;
   overflow: hidden;
   position: relative; }
   @media (max-width: 1679px) {
     .buyer-center-outer .pr-list-wrap .content-wrap .gray-wrap {
       border-radius: 10px;
-      margin: 0 0 10px 0; } }
+      margin: 0 0 5px 0; } }
   .buyer-center-outer .pr-list-wrap .content-wrap .gray-wrap .head {
     padding: 15px;
     display: flex;
@@ -217,56 +215,49 @@
         height: 130px; } }
     .buyer-center-outer .pr-list-wrap .content-wrap .gray-wrap .img-wrap img {
       max-height: 100%; }
-.buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap {
-  padding: 0 0 20px 0; }
+.buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .name {
+  margin: 0;
+  color: #122852;
+  font-weight: 600;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
   @media (max-width: 1679px) {
-    .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap {
-      padding: 0 0 15px 0; } }
-  .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .name {
-    padding: 0 2px 0 0;
-    margin: 0;
-    color: #122852;
-    font-weight: 600;
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
+    .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .name {
+      font-size: 16px; } }
+.buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .status {
+  color: #415362;
+  font-weight: 400;
+  font-size: 16px; }
+  @media (max-width: 1679px) {
+    .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .status {
+      font-size: 14px; } }
+.buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap {
+  display: flex; }
+  .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span {
+    color: #7b8d9f;
+    font-size: 16px;
+    font-weight: 500; }
     @media (max-width: 1679px) {
-      .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .name {
-        font-size: 16px; } }
-  .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .status {
-    color: #415362;
-    font-weight: 400;
-    font-size: 16px; }
-    @media (max-width: 1679px) {
-      .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .status {
+      .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span {
         font-size: 14px; } }
-  .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap {
-    padding: 7px 0 0 0;
-    display: flex; }
-    .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span {
-      color: #7b8d9f;
-      font-size: 16px;
-      font-weight: 500; }
-      @media (max-width: 1679px) {
-        .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span {
-          font-size: 14px; } }
-      .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span.black {
-        color: #122852;
-        font-weight: 18px;
-        font-weight: 600;
-        position: relative;
-        margin: 0 0 0 8px;
-        padding: 0 0 0 8px; }
-        .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span.black:before {
-          position: absolute;
-          inset: 0 auto 0 0;
-          margin: auto;
-          content: "";
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          background: #101b25; }
+    .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span.black {
+      color: #122852;
+      font-weight: 18px;
+      font-weight: 600;
+      position: relative;
+      margin: 0 0 0 8px;
+      padding: 0 0 0 8px; }
+      .buyer-center-outer .pr-list-wrap .content-wrap .pr-detail-wrap .price-wrap span.black:before {
+        position: absolute;
+        inset: 0 auto 0 0;
+        margin: auto;
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #101b25; }
 .buyer-center-outer .pr-list-wrap .content-wrap .btn-wrap .btn {
   outline: 0;
   border: 0;
