@@ -160,7 +160,7 @@
               }
               &.col-first {
                 font-size: 20px;
-                color: #101B25;
+                color: #415362;
                 font-weight: 500;
                 text-align: left;
                 @media ($sm-1679) {
@@ -264,7 +264,7 @@
         }
         .form-title {
           font-size: 20px;
-          color: #101B25;
+          color: #415362;
           font-weight: 500;
           text-align: left;
           padding-bottom: 20px;
@@ -616,135 +616,6 @@
       font-size: 12px;
       color: #6E788B;
       margin-bottom: 0;
-    }
-  }
-  
-  .address-block-wrap{
-    margin-bottom: 18px;
-    .del-btn{
-      color: #EF4444;
-      img{
-        max-height: 14px;
-        margin-top: -2px;
-      }
-      span{
-        color: #EF4444 !important;
-      }
-    }
-    .edit{
-    }
-    .address-label{
-      display: inline-flex;
-      align-items: center;
-      background-color: #ECEDEF;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: 500;
-      color: #101B25;
-      padding: 7px 15px;
-      img{
-        flex-shrink: 0;
-        margin-right: 4px;
-      }
-    }
-    
-    .address-info-cover{
-
-    }
-    .address-title{
-      font-size: 20px;
-      color: #101B25;
-      font-weight: 500;
-      margin-bottom: 25px;
-      @media ($sm-1679) {
-        font-size: 18px;
-        margin-bottom: 20px;
-      }
-      @media ($sm-1481) {
-        font-size: 16px;
-      }
-      @media ($sm-479) {
-        color: #101b25;
-      }
-    }
-    .address-info{
-      h6{
-        font-weight: 600;
-      }
-      p{
-        max-width: 550px;
-        margin: 0;
-      }
-      h6, p{
-        color: #415362;
-        font-size: 16px;
-        @media  ($sm-1679){
-          font-size: 14px;
-        }
-        
-      }
-    }
-  }
-  .add-address-block{
-    margin-bottom: 18px;
-    margin-top: 15px;
-    .add-address-btn{
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0px 2px 4px 0px #2A455D0F;
-      border: 1px solid #DFE1E3;
-      padding: 14px;
-      font-size: 14px;
-      font-weight: 500;
-      color: #4F91CD;
-      background-color: #fff;
-      transition: .3s;
-      border-radius: 30px;
-      @media ($sm-579) {
-        padding: 12px 15px;
-      }
-      &.btn-disabled{
-        cursor: not-allowed;
-        opacity: .5;
-      }
-      img{
-        flex-shrink: 0;
-        margin-right: 5px;
-      }
-    }
-  }
-  .field-wrap-icon{
-      .icon{
-        position: absolute;
-        left: 0;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        left: 15px;
-        img{
-          width: 14px;
-        }
-      }
-      .select{
-        padding-left: 38px !important;
-      }
-    }
-
-  .add-btn-block{
-    margin-bottom: 10px;
-    .btn-1{
-      min-width: 125px;
-      padding-left: 35px;
-      padding-right: 35px;
-      @media ($sm-1679) {
-        padding: 10px 25px;
-        font-size: 13px;
-      }
-      @media ($sm-579) {
-        padding: 8px 25px;
-      }
     }
   }
 }
