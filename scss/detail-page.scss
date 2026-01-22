@@ -2680,3 +2680,25 @@
         }
     }
 }
+.dimension-group.yes-no-group .chk-custom-wrp{
+    width: auto;
+    line-height: normal;
+    @media ($sm-1679) {
+        min-width: 80px;
+        height: 34px;
+        font-size: 13px;
+    }
+    @media ($sm-1481) {
+        min-width: 74px;
+    }
+}
+
+.protection-plan-sec .right-block{
+    @media ($sm-479) {
+        width: 100%;
+        justify-content: unset;
+        padding-top: 10px;
+    }
+}
+
+.protection-plan-sec

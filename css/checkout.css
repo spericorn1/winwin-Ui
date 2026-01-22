@@ -1311,5 +1311,12 @@
         border-color: #5090CC !important; }
     .checkout-outer-wrap .method-cover .form-check .form-check-label {
       color: #101B25; }
+.checkout-outer-wrap .box-wrap-add-address {
+  margin-bottom: 20px;
+  padding-top: 15px; }
+  @media (max-width: 400px) {
+    .checkout-outer-wrap .box-wrap-add-address .col-6 {
+      max-width: 100%;
+      width: 100%; } }
 
 /*# sourceMappingURL=checkout.css.map */

@@ -1383,6 +1383,12 @@
         margin-bottom: 15px;
         padding: 22px;
         margin-bottom: 15px;
+        @media ($sm-1679) {
+            padding: 20px;
+        }
+        @media ($sm-1199) {
+            padding: 15px;
+        }
         @media ($sm-479) {
             padding: 15px
         }
@@ -1452,6 +1458,12 @@
                     background-color: #ECEDEF;
                     border-radius: 30px;
                     padding: 6px 15px;
+                    @media (max-width: 450px) {
+                        padding: 6px 10px;
+                    }
+                    @media (max-width: 400px) {
+                        font-size: 11px;
+                    }
                     img{
                         margin-top: -1px;
                         width: 12px;
@@ -1485,7 +1497,10 @@
             color: #415362;
             font-size: 16px;
             @media  ($sm-1679){
-            font-size: 14px;
+                font-size: 14px;
+            }
+            @media  ($sm-1481){
+                font-size: 13px;
             }
             
         }
@@ -1546,4 +1561,35 @@
         }
 
     }
+    .box-wrap-add-address{
+        margin-bottom: 20px;
+        padding-top: 15px;
+        .col-6{
+            @media (max-width: 400px) {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        
+    }
+}
+.checkout-outer-wrap .shipping-address-block .address-title-block .right-block .address-actions button{
+    @media ($sm-1679) {
+        font-size: 12px;
+    }
+    span{
+        @media (max-width: 450px) {
+            display: none;
+        }
+    }
+}
+
+.checkout-outer-wrap .shipping-address-block .address-title-block .right-block .address-actions{
+    @media (max-width: 400px) {
+        gap: 6px;
+    }
+}
+
+.protection-plan-sec{
+    
 }

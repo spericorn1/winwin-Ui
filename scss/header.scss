@@ -529,7 +529,7 @@
       @media ($sm-579) {
         gap: 10px;
       }
-      @media ($sm-479) {
+      @media ($sm-767) {
         display: none;
       }
       li {
@@ -671,8 +671,8 @@
       align-items: center;
       gap: 15px;
       @media ($sm-1481) { gap: 10px;}
-      @media ($sm-579) { gap: 5px;}
-      @media ($sm-479) { gap: 10px;}
+      @media ($sm-579) { gap: 5px; column-gap: 10px;}
+      // @media ($sm-479) { gap: 10px;}
       li {
         margin: 0;
         padding: 0;
@@ -683,10 +683,10 @@
             max-width: 20px;
             max-height: 20px;
           }
-          @media ($sm-579) {
-            max-width: 18px;
-            max-height: 18px;
-          }
+          // @media ($sm-579) {
+          //   max-width: 20px;
+          //   max-height: 20px;
+          // }
           @media ($sm-479) {
             max-width: 20px;
             max-height: 20px;
@@ -702,7 +702,7 @@
         }
         &.menu-mob {
           display: none;
-          @media ($sm-479) {
+          @media ($sm-767) {
             display: block;
           }
         }
