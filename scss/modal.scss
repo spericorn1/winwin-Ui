@@ -2469,3 +2469,318 @@
         }
     }
 }
+
+
+/* Subscription confirm modal starts */
+
+.sub-cm-modal {
+  .custom-modal-dialog {
+    width: 775px;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+    @media ($sm-1679) {
+      width: 600px;
+    }
+    @media ($sm-767) {
+      width: 95%;
+    }
+    .custom-modal-content {
+      padding: 0;
+      background: none;
+      border: 0;
+      .custom-modal-body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 17px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.sub-confirm-modal-wrap {
+  background: #fff;
+  border-radius: 17px;
+  position: relative;
+  padding: 55px 35px 20px 35px;
+  max-height: calc(100vh - 60px);
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #5090cc #fff;
+  @media ($sm-1679) {
+    padding: 35px 20px 15px 20px;
+  }
+  @media ($sm-579) {
+    padding: 35px 15px 15px 15px;
+  }
+  .cm-close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 20px;
+    @media ($sm-1679) {
+      right: 10px;
+      top: 10px;
+    }
+  }
+  .cm-headwrap {
+    padding: 0 0 27px 0;
+    @media ($sm-1679) {
+      padding: 0 0 20px 0;
+    }
+    .cm-title {
+      color: #101b25;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0 0 13px 0;
+      @media ($sm-1679) {
+        padding-bottom: 9px;
+      }
+    }
+    .cm-para {
+      color: #415362;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0 0 0 0;
+      .bold {
+        color: inherit;
+        font-weight: 600;
+        font-size: inherit;
+      }
+    }
+  }
+  .cm-save-wrap {
+    display: flex;
+    margin: 0 -12px 20px -12px;
+    @media ($sm-1679) {
+      margin: 0 -9px 15px -9px;
+    }
+    .cm-col-wrap {
+      flex: 0 0 auto;
+      width: 33.3333%;
+      padding: 0 12px;
+      @media ($sm-1679) {
+        padding: 0 9px;
+      }
+      .cm-col-content-wrap {
+        border: 1px solid #ecedef;
+        border-radius: 10px;
+        padding: 22px 10px 15px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media ($sm-1679) {
+          padding: 10px;
+        }
+      }
+      .cm-img-wrap {
+        img {
+          height: 26px;
+        }
+      }
+      .cm-content-wrap {
+        padding-top: 10px;
+        text-align: center;
+        .name {
+          color: #101b25;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 1.2;
+          margin: 0;
+          padding: 0 0 5px 0;
+          @media ($sm-1679) {
+            font-size: 12px;
+          }
+        }
+        .num {
+          color: #101b25;
+          font-size: 31px;
+          font-weight: 600;
+          line-height: 1;
+          margin: 0;
+          padding: 0 0 5px 0;
+          @media ($sm-1679) {
+            font-size: 17px;
+          }
+        }
+        .month {
+          color: #415362;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1;
+          margin: 0;
+          padding: 0 0 0 0;
+          @media ($sm-1679) {
+            font-size: 11px;
+          }
+        }
+      }
+      .cm-btn-wrap {
+        padding-top: 30px;
+        width: 100%;
+        @media ($sm-1679) {
+          padding-top: 15px;
+        }
+        .btn {
+          border-radius: 30px;
+          height: 44px;
+          background: #c7e4ff;
+          width: 100%;
+          border: 0;
+          box-shadow: none;
+          cursor: pointer;
+          font-size: 14px;
+          color: #4882b8;
+          line-height: 1;
+          font-weight: 500;
+          margin: 0;
+          padding: 5px 10px;
+          filter: drop-shadow(0px 12px 10px rgba(60, 65, 80, 0.03));
+          display: block;
+          @media ($sm-1679) {
+            height: 30px;
+            font-size: 12px;
+            padding: 2px 3px;
+          }
+          @media ($sm-579) {
+            height: 15px;
+            font-size: 7px;
+          }
+        }
+      }
+      &.cm-col-best {
+        .cm-img-wrap {
+          img {
+            height: 27px;
+            @media ($sm-1679) {
+              height: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .cm-month-year-outer-wrap {
+    border: 1px solid #ecedef;
+    border-radius: 15px;
+    padding: 15px 0 0 0;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.04));
+    margin: 0 0 25px 0;
+    @media ($sm-1679) {
+      margin-bottom: 15px;
+    }
+    .cm-btn-cover-wrap {
+      padding: 0 10px 10px 10px;
+      display: flex;
+      justify-content: center;
+      .cm-btn-wrap {
+        background: #ecedef;
+        height: 38px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        padding: 0 3px;
+      }
+      .cm-btn {
+        background: none;
+        border-radius: 30px;
+        border: 0;
+        box-shadow: none;
+        cursor: pointer;
+        height: 32px;
+        font-weight: 500;
+        font-size: 14px;
+        color: #415362;
+        padding: 3px 15px;
+        @media ($sm-1679) {
+          font-size: 13px;
+        }
+        &.active {
+          background: #fff;
+          color: #13171a;
+        }
+        &:nth-child(2) {
+          margin: 0 0 0 9px;
+        }
+      }
+    }
+    .cm-content-wrap {
+      .table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        tr {
+          td {
+            margin: 0;
+            padding: 10px 20px 10px 20px;
+            border-bottom: 1px solid #ecedef;
+            @media ($sm-1679) {
+              padding: 9px 15px 9px 15px;
+            }
+            span {
+              font-size: 12px;
+              color: #415362;
+              font-weight: 400;
+              line-height: 1.2;
+              display: inline-block;
+            }
+            .bold {
+              font-weight: 700;
+            }
+            &.vl-col1 {
+              width: 40%;
+              @media ($sm-767) {
+                width: 50px;
+              }
+              span {
+                font-weight: 600;
+              }
+            }
+            &.vl-col2 {
+              text-align: right;
+              width: 60%;
+              @media ($sm-767) {
+                width: 50px;
+              }
+            }
+          }
+          &:last-child {
+            td {
+              border: 0;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .confirm-btn-wrap {
+    text-align: center;
+    .btn {
+      width: 295px;
+      height: 35px;
+      border-radius: 30px;
+      background: #4882b8;
+      display: inline-block;
+      padding: 2px 10px;
+      color: #eef4fa;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1;
+      border: 0;
+      box-shadow: none;
+      cursor: pointer;
+      @media ($sm-579) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* Subscription confirm modal ends */
