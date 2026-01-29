@@ -823,4 +823,334 @@
   background-color: #EFF6FF;
   color: #4F91CD;
   padding: 9px 25px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box {
+  border: 1px solid #ECEDEF;
+  border-radius: 12px;
+  padding: 18px 16px;
+  width: calc(33.3333333333% - 9px);
+}
+@media (max-width: 767px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box:last-child {
+  margin-bottom: 0;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title {
+  display: flex;
+  align-items: center;
+  color: #101B25;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title {
+    font-size: 14px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title .icon {
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .box-title .icon img {
+  max-width: 100%;
+  display: block;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap {
+  display: flex;
+  align-items: center;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .count {
+  color: #101B25;
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 8px;
+  display: inline-block;
+}
+@media (max-width: 991px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .count {
+    font-size: 20px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .txt {
+  color: #415362;
+  font-size: 14px;
+  font-weight: 400;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .txt.due {
+  color: #FF3B30;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap {
+  margin-top: 43px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper {
+  margin: 0 0 25px 0;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper {
+    margin: 0 0 20px 0;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul {
+  padding: 0;
+  margin: 0 0 -1px 0;
+  border-bottom: 1px solid #dfe1e3;
+  display: flex;
+  overflow: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #5090cc transparent;
+  padding: 0 0 1px 0;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li {
+    padding: 8px 0;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn {
+  font-size: 16px;
+  color: #7b8d9f;
+  font-weight: 500;
+  padding: 0 15px;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn {
+    font-size: 12px;
+    min-width: auto;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn.active {
+  color: #5090cc;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn.active:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #5090cc;
+  content: "";
+  left: 0;
+  bottom: -11px;
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .tab-wrapper ul li .tab-btn.active:after {
+    bottom: -9px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6A7282;
+  background: #F9FAFB;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  min-width: 290px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th:nth-child(2) {
+  min-width: 222px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th:nth-child(3) {
+  min-width: 200px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th:last-child {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+  min-width: 100px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr:last-child td {
+  border-radius: 10px;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td {
+  padding: 20px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #415362;
+  border-bottom: 1px solid #ECEDEF;
+  vertical-align: middle;
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td {
+    font-size: 14px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap {
+  display: flex;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content {
+  display: flex;
+  flex-direction: column;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content .title {
+  color: #101828;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 16px;
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content .title {
+    font-size: 15px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content .title {
+    font-size: 14px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content .mail {
+  color: #6A7282;
+  font-size: 14px;
+  line-height: 1;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap .content .mail .link {
+  color: #6A7282;
+  text-decoration: none;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .due {
+  color: #FF3B30;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td.perks {
+  font-weight: 600;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td.perks .bonus {
+  color: #4F91CD;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td:first-child {
+  border-left: 1px solid #ECEDEF;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td:last-child {
+  border-right: 1px solid #ECEDEF;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+  border-left: 1px solid #ECEDEF;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid #ECEDEF;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap {
+    flex-direction: column;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .show-item {
+  font-weight: 500;
+  font-size: 14px;
+  color: #6A7282;
+}
+@media (max-width: 767px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .show-item {
+    margin-bottom: 16px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .table-controls .link {
+  border: 0.78px solid #ECEEEB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 3px;
+  color: #101B25;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 500;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .table-controls .link:hover {
+  background-color: rgba(71, 129, 184, 0.1019607843);
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .table-controls .link.active {
+  background-color: #4882B8;
+}
+.my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl .pagination-wrap .table-controls .link.active img {
+  filter: brightness(20.5);
+  transform: rotate(180deg);
 }/*# sourceMappingURL=rewards.css.map */
