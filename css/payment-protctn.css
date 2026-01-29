@@ -229,7 +229,8 @@
 .payment-protection .protection-inner .bnr img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 .payment-protection .protection-inner .content {
@@ -404,6 +405,4 @@
 }
 .payment-protection .protection-inner .list-items.sub-list-items ul li {
   list-style-type: none;
-}
-
-/*# sourceMappingURL=payment-protctn.css.map */
+}/*# sourceMappingURL=payment-protctn.css.map */

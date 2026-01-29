@@ -917,7 +917,8 @@
 .login-layout .login-container .right-block .bnr-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .login-layout .login-container .right-block .login-slider-cover {
@@ -992,6 +993,4 @@
   .login-layout .login-container .right-block .login-slider-cover .login-slider .item-card h4 {
     font-size: 18px;
   }
-}
-
-/*# sourceMappingURL=login.css.map */
+}/*# sourceMappingURL=login.css.map */

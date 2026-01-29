@@ -275,7 +275,8 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1679px) {
   .preview-content-outer .preview-det-cover .review-name-det .img-block img {
@@ -670,6 +671,4 @@
 .preview-content-outer .sellerreview-right-wrap .preview-det-cover .reply-cover .reply-block .data-p {
   padding: 10px 0 10px 0;
   margin: 0;
-}
-
-/*# sourceMappingURL=reviews.css.map */
+}/*# sourceMappingURL=reviews.css.map */

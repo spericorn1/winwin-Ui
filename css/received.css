@@ -374,9 +374,6 @@
   width: 140px;
   height: 140px;
   flex: 0 0 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 @media (max-width: 579px) {
@@ -589,15 +586,8 @@
   outline: 0;
   flex: 0 0 18px;
   background-color: #dce9f5;
-  border: 1px solid #cbd1d7;
+  border: 1.5px solid #cbd1d7;
   box-shadow: none !important;
-}
-@media (max-width: 1679px) {
-  .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .form-check-input {
-    width: 15px;
-    height: 15px;
-    flex: 0 0 15px;
-  }
 }
 .rec-content-wrap .rec-container-wrap .rec-list-content-wrap .pr-list-wrap .pre-content-wrap .pre-offer-wrap .rc-list li .form-check-label .form-check-input:checked {
   border-color: #5090cc;
