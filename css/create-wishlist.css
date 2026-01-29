@@ -396,7 +396,8 @@
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .upload-wrap .up-image .select {
   width: 22px;
@@ -498,7 +499,8 @@
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .upload-wrap.fullwidth .upload-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
   height: 170px;
 }
@@ -560,6 +562,10 @@
     padding: 5px 15px;
   }
 }
+.custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .txt::-moz-placeholder {
+  opacity: 1;
+  color: #7b8d9f;
+}
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .txt::placeholder {
   opacity: 1;
   color: #7b8d9f;
@@ -584,6 +590,10 @@
     height: 100px;
     padding: 5px 15px 25px 15px;
   }
+}
+.custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .textarea::-moz-placeholder {
+  opacity: 1;
+  color: #7b8d9f;
 }
 .custom-shop-wrap .left-wrap .form-wrap .field-wrap .type-wrap .textarea::placeholder {
   opacity: 1;
@@ -905,7 +915,8 @@
 .custom-shop-wrap .right-wrap .preview-wrap .preview-footer .category-blk .cat-chips .chips .icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
 }
 .custom-shop-wrap .right-wrap .preview-wrap .preview-footer .category-blk .cat-chips .chips .txt {
@@ -926,7 +937,8 @@
 .custom-shop-wrap .right-wrap .preview-wrap .shop-prv-wrap .full-img-wrap .upload-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 .custom-shop-wrap .right-wrap .preview-wrap .shop-prv-wrap .content-wrap {
@@ -962,7 +974,8 @@
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .custom-shop-wrap .right-wrap .preview-wrap .shop-prv-wrap .content-wrap .up-image .select {
   width: 26px;
@@ -1070,6 +1083,4 @@
     padding-left: 15px;
     font-size: 12px;
   }
-}
-
-/*# sourceMappingURL=create-wishlist.css.map */
+}/*# sourceMappingURL=create-wishlist.css.map */

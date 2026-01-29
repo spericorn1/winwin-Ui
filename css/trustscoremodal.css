@@ -429,6 +429,10 @@
     font-size: 14px;
   }
 }
+.invite-friend-modal .invite-friend-wrap .form-wrap .fields-outer-wrap .fields-wrap .txt::-moz-placeholder {
+  opacity: 1;
+  color: rgba(16, 27, 37, 0.24);
+}
 .invite-friend-modal .invite-friend-wrap .form-wrap .fields-outer-wrap .fields-wrap .txt::placeholder {
   opacity: 1;
   color: rgba(16, 27, 37, 0.24);
@@ -667,6 +671,4 @@
 }
 .invite-friend-modal .invite-friend-wrap .friend-list-wrap .list-content-wrap table tr td .action.pending:after {
   background: rgb(245, 158, 11);
-}
-
-/*# sourceMappingURL=trustscoremodal.css.map */
+}/*# sourceMappingURL=trustscoremodal.css.map */

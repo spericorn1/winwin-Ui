@@ -18,339 +18,477 @@
 /*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
 .my-reward-sec {
   padding-top: 20px;
-  padding-bottom: 80px; }
-  @media (max-width: 991px) {
-    .my-reward-sec {
-      padding-bottom: 40px; } }
+  padding-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .my-reward-sec {
+    padding-bottom: 40px;
+  }
+}
+.my-reward-sec .sec-title {
+  margin-bottom: 30px;
+}
+@media (max-width: 1679px) {
   .my-reward-sec .sec-title {
-    margin-bottom: 30px; }
-    @media (max-width: 1679px) {
-      .my-reward-sec .sec-title {
-        margin-bottom: 20px; } }
-    .my-reward-sec .sec-title h2 {
-      margin-bottom: 0;
-      font-size: 24px;
-      color: #101B25;
-      font-weight: 500;
-      font-family: "Instrument Sans", sans-serif; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .sec-title h2 {
-          font-size: 22px; } }
-      @media (max-width: 1481px) {
-        .my-reward-sec .sec-title h2 {
-          font-size: 20px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .sec-title h2 {
-          font-size: 18px; } }
-  .my-reward-sec .reward-tab-btn-wrapper {
-    border-bottom: solid 1px #F4F4F4;
-    display: flex;
-    margin-bottom: 25px;
-    overflow-y: auto; }
-    .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
-      border: none;
-      background-color: #fff;
-      font-size: 14px;
-      color: #101B25;
-      font-weight: 500;
-      padding: 12px 20px;
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 180px;
-      font-weight: 500;
-      margin-right: 5px;
-      white-space: nowrap; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
-          min-width: 150px; } }
-      @media (max-width: 1199px) {
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
-          font-size: 13px; } }
-      @media (max-width: 991px) {
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
-          min-width: auto; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
-          padding: 12px 15px; } }
-      .my-reward-sec .reward-tab-btn-wrapper .tab-btn img {
-        flex-shrink: 0;
-        margin-right: 8px;
-        max-width: 14px;
-        max-height: 14px; }
-      .my-reward-sec .reward-tab-btn-wrapper .tab-btn:after {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background: #5090cc;
-        content: "";
-        left: 0;
-        bottom: 0;
-        opacity: 0;
-        transition: .3s; }
-      .my-reward-sec .reward-tab-btn-wrapper .tab-btn.active, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover {
-        color: #5090cc; }
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn.active img, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover img {
-          filter: brightness(0) saturate(100%) invert(48%) sepia(80%) saturate(324%) hue-rotate(167deg) brightness(94%) contrast(93%); }
-        .my-reward-sec .reward-tab-btn-wrapper .tab-btn.active:after, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover:after {
-          opacity: 1; }
+    margin-bottom: 20px;
+  }
+}
+.my-reward-sec .sec-title h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  color: #101B25;
+  font-weight: 500;
+  font-family: "Instrument Sans", sans-serif;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .sec-title h2 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .sec-title h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .sec-title h2 {
+    font-size: 18px;
+  }
+}
+.my-reward-sec .reward-tab-btn-wrapper {
+  border-bottom: solid 1px #F4F4F4;
+  display: flex;
+  margin-bottom: 25px;
+  overflow-y: auto;
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn {
+  border: none;
+  background-color: #fff;
+  font-size: 14px;
+  color: #101B25;
+  font-weight: 500;
+  padding: 12px 20px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+  font-weight: 500;
+  margin-right: 5px;
+  white-space: nowrap;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
+    min-width: 150px;
+  }
+}
+@media (max-width: 1199px) {
+  .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
+    min-width: auto;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .reward-tab-btn-wrapper .tab-btn {
+    padding: 12px 15px;
+  }
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn img {
+  flex-shrink: 0;
+  margin-right: 8px;
+  max-width: 14px;
+  max-height: 14px;
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn:after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #5090cc;
+  content: "";
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn.active, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover {
+  color: #5090cc;
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn.active img, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(80%) saturate(324%) hue-rotate(167deg) brightness(94%) contrast(93%);
+}
+.my-reward-sec .reward-tab-btn-wrapper .tab-btn.active:after, .my-reward-sec .reward-tab-btn-wrapper .tab-btn:hover:after {
+  opacity: 1;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-col {
+  margin-bottom: 20px;
+}
+@media (max-width: 1481px) {
   .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-col {
-    margin-bottom: 20px; }
-    @media (max-width: 1481px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-col {
-        margin-bottom: 15px; } }
+    margin-bottom: 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
+  border: solid 1px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 14px;
+  padding: 30px 30px 13px;
+  height: 100%;
+}
+@media (max-width: 1679px) {
   .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
-    border: solid 1px #0000001A;
-    border-radius: 14px;
-    padding: 30px 30px 13px;
-    height: 100%; }
-    @media (max-width: 1679px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
-        padding: 20px 25px 13px; } }
-    @media (max-width: 1481px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
-        padding: 16px 25px 13px; } }
-    @media (max-width: 579px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
-        padding: 15px 20px 13px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
-      flex-shrink: 0;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #ECEDEF;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 12px; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
-          width: 44px;
-          height: 44px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
-          width: 40px;
-          height: 40px; } }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon img {
-          max-width: 21px;
-          max-height: 21px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data p {
-      font-size: 14px;
-      color: #4A5565;
-      margin-bottom: 3px; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data p {
-          font-size: 13px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
-      margin: 0;
-      font-size: 24px;
-      font-weight: 600;
-      color: #101828; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
-          font-size: 22px; } }
-      @media (max-width: 1481px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
-          font-size: 20px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
-          font-size: 18px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data {
-      padding-top: 8px;
-      color: #F54900;
-      font-size: 12px; }
-      @media (max-width: 1481px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data {
-          padding-top: 4px;
-          font-size: 11px; } }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data img {
-        margin-right: 4px;
-        margin-top: -2px; }
-        @media (max-width: 1481px) {
-          .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data img {
-            margin-top: -3px; } }
-  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover {
-    margin-bottom: 40px;
-    border-radius: 14px;
-    border: 1px solid #E5E5E5; }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
-      padding: 22px 45px 22px 27px;
-      border-bottom: 1px solid #0000001A;
-      justify-content: space-between;
-      align-items: center; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
-          padding: 16px 45px 16px 27px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
-          padding: 13px 20px; } }
-      @media (max-width: 370px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
-          padding: 13px 15px; } }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title h4 {
-        margin: 0;
-        font-size: 16px;
-        font-weight: 500;
-        color: #4A5565; }
-        @media (max-width: 1679px) {
-          .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title h4 {
-            font-size: 15px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn {
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 500;
-      color: #4F91CD;
-      transition: .3s; }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn:hover {
-        opacity: .8; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn {
-          font-size: 13px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-cover {
-      padding: 12px 0; }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 45px 14px 27px; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
-          padding: 12px 45px 12px 27px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
-          padding: 13px 20px; } }
-      @media (max-width: 370px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
-          padding: 13px 15px; } }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .left-block {
-        padding-right: 15px; }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block {
-        align-items: center; }
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon {
-          flex-shrink: 0;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background-color: #F3F4F6;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 15px; }
-          @media (max-width: 479px) {
-            .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon {
-              width: 36px;
-              height: 36px;
-              margin-right: 8px; } }
-          .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon img {
-            max-width: 18px;
-            max-height: 18px; }
-            @media (max-width: 479px) {
-              .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon img {
-                max-width: 16px;
-                max-height: 16px; } }
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data p {
-          font-size: 14px;
-          color: #101828;
-          margin-bottom: 2px; }
-          @media (max-width: 1679px) {
-            .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data p {
-              font-size: 13px; } }
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 {
-          margin: 0;
-          font-size: 14px;
-          font-weight: 400;
-          color: #6A7282; }
-          @media (max-width: 1679px) {
-            .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 {
-              font-size: 13px; } }
-          .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 .date {
-            display: inline-block;
-            padding-left: 4px; }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block {
-        flex-shrink: 0;
-        font-size: 14px;
-        font-weight: 600;
-        color: #4A5565; }
-        @media (max-width: 1679px) {
-          .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block {
-            font-size: 13px; } }
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block.text-blue {
-          color: #4F91CD; }
+    padding: 20px 25px 13px;
+  }
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
+    padding: 16px 25px 13px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card {
+    padding: 15px 20px 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ECEDEF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .icon img {
+    max-width: 21px;
+    max-height: 21px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data p {
+  font-size: 14px;
+  color: #4A5565;
+  margin-bottom: 3px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data p {
+    font-size: 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #101828;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .data-row .txt-data h4 {
+    font-size: 18px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data {
+  padding-top: 8px;
+  color: #F54900;
+  font-size: 12px;
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data {
+    padding-top: 4px;
+    font-size: 11px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data img {
+  margin-right: 4px;
+  margin-top: -2px;
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .my-rewards-card .info-data img {
+    margin-top: -3px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover {
+  margin-bottom: 40px;
+  border-radius: 14px;
+  border: 1px solid #E5E5E5;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
+  padding: 22px 45px 22px 27px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
+    padding: 16px 45px 16px 27px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
+    padding: 13px 20px;
+  }
+}
+@media (max-width: 370px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title {
+    padding: 13px 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4A5565;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-title h4 {
+    font-size: 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4F91CD;
+  transition: 0.3s;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .all-btn {
+    font-size: 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-cover {
+  padding: 12px 0;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 45px 14px 27px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
+    padding: 12px 45px 12px 27px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
+    padding: 13px 20px;
+  }
+}
+@media (max-width: 370px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper {
+    padding: 13px 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .left-block {
+  padding-right: 15px;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block {
+  align-items: center;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F3F4F6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+@media (max-width: 479px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon img {
+  max-width: 18px;
+  max-height: 18px;
+}
+@media (max-width: 479px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .icon img {
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data p {
+  font-size: 14px;
+  color: #101828;
+  margin-bottom: 2px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data p {
+    font-size: 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6A7282;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 {
+    font-size: 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .det-block .txt-data h4 .date {
+  display: inline-block;
+  padding-left: 4px;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block {
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4A5565;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block {
+    font-size: 13px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .recent-table-cover .recent-td-wrapper .right-block.text-blue {
+  color: #4F91CD;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title {
+  margin-bottom: 25px;
+}
+@media (max-width: 1679px) {
   .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title {
-    margin-bottom: 25px; }
-    @media (max-width: 1679px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title {
-        margin-bottom: 20px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
-      color: #101B25;
-      font-size: 40px;
-      margin-bottom: 0; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
-          font-size: 32px; } }
-      @media (max-width: 1481px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
-          font-size: 28px; } }
-      @media (max-width: 579px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
-          font-size: 24px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
-      font-size: 18px;
-      color: #4A5565;
-      margin-bottom: 0; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
-          font-size: 16px; } }
-      @media (max-width: 1481px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
-          font-size: 15px; } }
-  @media (max-width: 991px) {
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-col {
-      margin-bottom: 15px; } }
-  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card {
-    border: 1px solid #ECEDEF;
-    border-radius: 16px;
-    padding: 32px;
-    height: 100%; }
-    @media (max-width: 991px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card {
-        padding: 25px;
-        text-align: center; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background-color: #ECEDEF;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 15px;
-      margin-bottom: 24px; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
-          width: 60px;
-          height: 60px; } }
-      @media (max-width: 991px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
-          margin-bottom: 20px; } }
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon img {
-        max-width: 26px;
-        max-height: 26px; }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card p {
-      font-size: 16px;
-      color: #4A5565;
-      margin-bottom: 0; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card p {
-          font-size: 14px; } }
-    .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card h4 {
-      margin-bottom: 12px;
-      font-size: 20px;
-      font-weight: 500;
-      color: #0A0A0A; }
-      @media (max-width: 1679px) {
-        .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card h4 {
-          font-size: 18px; } }
-
-/*# sourceMappingURL=rewards.css.map */
+    margin-bottom: 20px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
+  color: #101B25;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title h2 {
+    font-size: 24px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
+  font-size: 18px;
+  color: #4A5565;
+  margin-bottom: 0;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1481px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .sec-title p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-col {
+    margin-bottom: 15px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card {
+  border: 1px solid #ECEDEF;
+  border-radius: 16px;
+  padding: 32px;
+  height: 100%;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #ECEDEF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-bottom: 24px;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
+    margin-bottom: 20px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon img {
+  max-width: 26px;
+  max-height: 26px;
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card p {
+  font-size: 16px;
+  color: #4A5565;
+  margin-bottom: 0;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card p {
+    font-size: 14px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card h4 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0A0A0A;
+}
+@media (max-width: 1679px) {
+  .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card h4 {
+    font-size: 18px;
+  }
+}
+.my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title .perks-title-block h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #122852;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title .perks-title-block h2 img {
+  margin-right: 12px;
+}/*# sourceMappingURL=rewards.css.map */
