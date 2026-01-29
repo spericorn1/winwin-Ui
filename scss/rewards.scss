@@ -1,26 +1,31 @@
 @import "partials";
-.my-reward-sec{
+
+.my-reward-sec {
     padding-top: 20px;
     padding-bottom: 80px;
+
     @media ($sm-991) {
         padding-bottom: 40px;
     }
-    .sec-title{
+
+    .sec-title {
         margin-bottom: 30px;
+
         @media ($sm-1679) {
             margin-bottom: 20px;
         }
-        h2{
+
+        h2 {
             margin-bottom: 0;
             font-size: 24px;
             color: #101B25;
             font-weight: 500;
             font-family: $primary-font;
-            
+
             @media ($sm-1679) {
                 font-size: 22px;
             }
-            
+
             @media ($sm-1481) {
                 font-size: 20px;
             }
@@ -34,11 +39,13 @@
             // }
         }
     }
-    .reward-tab-btn-wrapper{
+
+    .reward-tab-btn-wrapper {
         border-bottom: solid 1px #F4F4F4;
         display: flex;
         margin-bottom: 25px;
         overflow-y: auto;
+
         .tab-btn {
             border: none;
             background-color: #fff;
@@ -54,24 +61,30 @@
             font-weight: 500;
             margin-right: 5px;
             white-space: nowrap;
+
             @media ($sm-1679) {
                 min-width: 150px;
             }
+
             @media ($sm-1199) {
                 font-size: 13px;
             }
+
             @media ($sm-991) {
                 min-width: auto;
             }
+
             @media ($sm-579) {
                 padding: 12px 15px;
             }
-            img{
+
+            img {
                 flex-shrink: 0;
                 margin-right: 8px;
                 max-width: 14px;
-                max-height: 14px; 
+                max-height: 14px;
             }
+
             &:after {
                 position: absolute;
                 width: 100%;
@@ -83,11 +96,15 @@
                 opacity: 0;
                 transition: .3s;
             }
-            &.active, &:hover {
+
+            &.active,
+            &:hover {
                 color: #5090cc;
-                img{
+
+                img {
                     filter: brightness(0) saturate(100%) invert(48%) sepia(80%) saturate(324%) hue-rotate(167deg) brightness(94%) contrast(93%);
                 }
+
                 &:after {
                     opacity: 1;
                 }
@@ -95,30 +112,36 @@
         }
     }
 
-    .rewards-tab-outer{
-        .my-rewards-tab{
-            .my-rewards-col{
+    .rewards-tab-outer {
+        .my-rewards-tab {
+            .my-rewards-col {
                 margin-bottom: 20px;
+
                 @media ($sm-1481) {
                     margin-bottom: 15px;
                 }
             }
-            .my-rewards-card{
-                border:  solid 1px #0000001A;
+
+            .my-rewards-card {
+                border: solid 1px #0000001A;
                 border-radius: 14px;
                 padding: 30px 30px 13px;
                 height: 100%;
+
                 @media ($sm-1679) {
                     padding: 20px 25px 13px;
                 }
+
                 @media ($sm-1481) {
                     padding: 16px 25px 13px;
                 }
+
                 @media ($sm-579) {
                     padding: 15px 20px 13px;
                 }
-                .data-row{
-                    .icon{
+
+                .data-row {
+                    .icon {
                         flex-shrink: 0;
                         width: 50px;
                         height: 50px;
@@ -128,127 +151,158 @@
                         align-items: center;
                         justify-content: center;
                         margin-right: 12px;
+
                         @media ($sm-1679) {
                             width: 44px;
                             height: 44px;
                         }
+
                         @media ($sm-579) {
                             width: 40px;
                             height: 40px;
                         }
-                        img{
+
+                        img {
                             @media ($sm-1679) {
                                 max-width: 21px;
                                 max-height: 21px;
                             }
                         }
                     }
-                    .txt-data{
-                        p{
+
+                    .txt-data {
+                        p {
                             font-size: 14px;
                             color: #4A5565;
                             margin-bottom: 3px;
+
                             @media ($sm-1679) {
                                 font-size: 13px;
                             }
                         }
-                        h4{
+
+                        h4 {
                             margin: 0;
                             font-size: 24px;
                             font-weight: 600;
                             color: #101828;
+
                             @media ($sm-1679) {
                                 font-size: 22px;
                             }
+
                             @media ($sm-1481) {
                                 font-size: 20px;
                             }
+
                             @media ($sm-579) {
                                 font-size: 18px;
                             }
                         }
                     }
                 }
-                .info-data{
+
+                .info-data {
                     padding-top: 8px;
                     color: #F54900;
                     font-size: 12px;
+
                     @media ($sm-1481) {
                         padding-top: 4px;
                         font-size: 11px;
                     }
-                    img{
+
+                    img {
                         margin-right: 4px;
                         margin-top: -2px;
+
                         @media ($sm-1481) {
                             margin-top: -3px;
                         }
                     }
                 }
             }
-            .recent-table-cover{
+
+            .recent-table-cover {
                 margin-bottom: 40px;
                 border-radius: 14px;
                 border: 1px solid #E5E5E5;
-                .recent-title{
+
+                .recent-title {
                     padding: 22px 45px 22px 27px;
                     border-bottom: 1px solid #0000001A;
                     justify-content: space-between;
                     align-items: center;
+
                     @media ($sm-1679) {
                         padding: 16px 45px 16px 27px;
                     }
+
                     @media ($sm-579) {
                         padding: 13px 20px;
                     }
+
                     @media (max-width: 370px) {
                         padding: 13px 15px;
                     }
-                    h4{
+
+                    h4 {
                         margin: 0;
                         font-size: 16px;
                         font-weight: 500;
                         color: #4A5565;
+
                         @media ($sm-1679) {
                             font-size: 15px;
                         }
                     }
                 }
-                .all-btn{
+
+                .all-btn {
                     display: inline-block;
                     font-size: 14px;
                     font-weight: 500;
                     color: #4F91CD;
                     transition: .3s;
-                    &:hover{
+
+                    &:hover {
                         opacity: .8;
                     }
+
                     @media ($sm-1679) {
                         font-size: 13px;
                     }
                 }
-                .recent-td-cover{
+
+                .recent-td-cover {
                     padding: 12px 0;
                 }
-                .recent-td-wrapper{
+
+                .recent-td-wrapper {
                     justify-content: space-between;
                     align-items: center;
                     padding: 14px 45px 14px 27px;
+
                     @media ($sm-1679) {
                         padding: 12px 45px 12px 27px;
                     }
+
                     @media ($sm-579) {
                         padding: 13px 20px;
                     }
+
                     @media (max-width: 370px) {
                         padding: 13px 15px;
                     }
-                    .left-block{
+
+                    .left-block {
                         padding-right: 15px;
                     }
-                    .det-block{
+
+                    .det-block {
                         align-items: center;
-                        .icon{
+
+                        .icon {
                             flex-shrink: 0;
                             width: 40px;
                             height: 40px;
@@ -258,103 +312,125 @@
                             align-items: center;
                             justify-content: center;
                             margin-right: 15px;
+
                             @media ($sm-479) {
                                 width: 36px;
                                 height: 36px;
                                 margin-right: 8px;
                             }
-                            img{
+
+                            img {
                                 max-width: 18px;
                                 max-height: 18px;
+
                                 @media ($sm-479) {
                                     max-width: 16px;
                                     max-height: 16px;
                                 }
                             }
                         }
-                        .txt-data{
-                            p{
+
+                        .txt-data {
+                            p {
                                 font-size: 14px;
                                 color: #101828;
                                 margin-bottom: 2px;
+
                                 @media ($sm-1679) {
                                     font-size: 13px;
                                 }
                             }
-                            h4{
+
+                            h4 {
                                 margin: 0;
                                 font-size: 14px;
                                 font-weight: 400;
                                 color: #6A7282;
+
                                 @media ($sm-1679) {
                                     font-size: 13px;
                                 }
-                                .date{
+
+                                .date {
                                     display: inline-block;
                                     padding-left: 4px;
                                 }
                             }
-                        }                       
+                        }
                     }
-                    .right-block{
+
+                    .right-block {
                         flex-shrink: 0;
                         font-size: 14px;
                         font-weight: 600;
                         color: #4A5565;
+
                         @media ($sm-1679) {
                             font-size: 13px;
                         }
-                        &.text-blue{
+
+                        &.text-blue {
                             color: #4F91CD;
                         }
-                        
+
                     }
                 }
             }
 
-            .how-it-works-sec{
-                .sec-title{
+            .how-it-works-sec {
+                .sec-title {
                     margin-bottom: 25px;
+
                     @media ($sm-1679) {
                         margin-bottom: 20px;
                     }
-                    h2{
+
+                    h2 {
                         color: #101B25;
                         font-size: 40px;
                         margin-bottom: 0;
+
                         @media ($sm-1679) {
                             font-size: 32px;
                         }
+
                         @media ($sm-1481) {
                             font-size: 28px;
                         }
+
                         @media ($sm-579) {
-                        font-size: 24px;
+                            font-size: 24px;
                         }
                     }
-                    p{
+
+                    p {
                         font-size: 18px;
                         color: #4A5565;
                         margin-bottom: 0;
+
                         @media ($sm-1679) {
                             font-size: 16px;
                         }
+
                         @media ($sm-1481) {
                             font-size: 15px;
                         }
                     }
                 }
-                .how-works-col{
+
+                .how-works-col {
                     @media ($sm-991) {
                         margin-bottom: 15px;
                     }
                 }
-                .how-works-card{
+
+                .how-works-card {
                     border: 1px solid #ECEDEF;
                     border-radius: 16px;
                     padding: 32px;
                     height: 100%;
-                    .icon{
+
+                    .icon {
                         width: 64px;
                         height: 64px;
                         border-radius: 50%;
@@ -364,54 +440,61 @@
                         justify-content: center;
                         margin-right: 15px;
                         margin-bottom: 24px;
+
                         @media ($sm-1679) {
                             width: 60px;
                             height: 60px;
                         }
+
                         @media ($sm-991) {
                             margin-bottom: 20px;
                         }
-                        img{
+
+                        img {
                             max-width: 26px;
                             max-height: 26px;
                         }
                     }
-                    p{
+
+                    p {
                         font-size: 16px;
                         color: #4A5565;
                         margin-bottom: 0;
+
                         @media ($sm-1679) {
                             font-size: 14px;
                         }
                     }
-                    h4{
+
+                    h4 {
                         margin-bottom: 12px;
                         font-size: 20px;
                         font-weight: 500;
                         color: #0A0A0A;
+
                         @media ($sm-1679) {
                             font-size: 18px;
                         }
-                    }    
+                    }
                 }
             }
 
         }
 
-        .earn-perks-tab{
-            .earn-perks-title{
-                .perks-title-col{
+        .earn-perks-tab {
+            .earn-perks-title {
+                .perks-title-col {}
 
-                }
-                .perks-title-block{
-                    h2{
+                .perks-title-block {
+                    h2 {
                         font-size: 24px;
                         font-weight: 500;
                         color: #122852;
                         margin: 0;
                         display: flex;
                         align-items: center;
-                        img{
+
+                        img {
                             margin-right: 12px;
                         }
                     }
