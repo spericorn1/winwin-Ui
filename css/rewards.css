@@ -896,6 +896,11 @@
     font-size: 20px;
   }
 }
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .count {
+    font-size: 24px;
+  }
+}
 .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .three-col-wrap .perks-border-box .count-wrap .txt {
   color: #415362;
   font-size: 14px;
@@ -998,6 +1003,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-top: 1px solid rgba(0, 0, 0, 0.1019607843);
 }
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 579px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th {
+    padding: 20px 24px;
+  }
+}
 .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl thead tr th:first-child {
   border-left: 1px solid rgba(0, 0, 0, 0.1019607843);
   border-top-left-radius: 10px;
@@ -1027,9 +1042,15 @@
   border-bottom: 1px solid #ECEDEF;
   vertical-align: middle;
 }
+@media (max-width: 1199px) {
+  .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td {
+    padding: 15px 20px;
+  }
+}
 @media (max-width: 579px) {
   .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td {
     font-size: 14px;
+    padding: 26px 24px;
   }
 }
 .my-reward-sec .rewards-tab-outer .history-tab .reward-history-wrap .table-tab-wrap .payment-tab-outer .all-ctivity-tab .transctn-tbl table.trans-tbl tr td .activity-wrap {

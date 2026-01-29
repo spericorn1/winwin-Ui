@@ -929,6 +929,9 @@
                                 @media ($sm-991) {
                                     font-size: 20px;
                                 }
+                                @media ($sm-579) {
+                                    font-size: 24px;
+                                }
                             }
 
                             .txt {
@@ -1045,7 +1048,12 @@
                                                 padding: 16px 24px;
                                                 border-bottom: 1px solid #0000001A;
                                                 border-top: 1px solid #0000001A;
-
+                                                @media ($sm-1199){
+                                                    padding: 10px 20px;
+                                                }
+                                                @media ($sm-579){
+                                                    padding: 20px 24px;
+                                                }
                                                 &:first-child {
                                                     border-left: 1px solid #0000001A;
                                                     border-top-left-radius: 10px;
@@ -1089,9 +1097,13 @@
                                             border-bottom: 1px solid #ECEDEF;
                                             // display: flex;
                                             // align-items: center;
+                                            @media ($sm-1199){
+                                                padding: 15px 20px;
+                                            }
                                             vertical-align: middle;
                                             @media ($sm-579){
                                                 font-size: 14px;
+                                                 padding: 26px 24px;
                                             }
 
 
