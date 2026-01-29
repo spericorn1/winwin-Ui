@@ -3,7 +3,9 @@
 .my-reward-sec {
     padding-top: 20px;
     padding-bottom: 80px;
-
+    @media ($sm-1679) {
+        padding-bottom: 60px;
+    }
     @media ($sm-991) {
         padding-bottom: 40px;
     }
@@ -481,25 +483,315 @@
 
         }
 
-        .earn-perks-tab {
-            .earn-perks-title {
-                .perks-title-col {}
+        .earn-perks-tab{
+            padding-top: 40px;
+            @media ($sm-1679) {
+                padding-top: 20px;
+            }
+            .earn-perks-title-wrapper{
+                margin-bottom: 40px;
+                .perks-title-col{
 
-                .perks-title-block {
-                    h2 {
+                }
+                .perks-title-block{
+                    max-width: 380px;
+                    .perks-title{
                         font-size: 24px;
                         font-weight: 500;
                         color: #122852;
-                        margin: 0;
                         display: flex;
                         align-items: center;
+                        margin-bottom: 12px;
+                        @media ($sm-1679) {
+                            font-size: 22px;
+                        }
+                        
+                        @media ($sm-1481) {
+                            font-size: 20px;
+                        }
 
-                        img {
+                        @media ($sm-579) {
+                            font-size: 18px;
+                        }
+                        img{
                             margin-right: 12px;
+                            @media ($sm-1679) {
+                                max-height: 22px;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #415362;
+                        @media ($sm-1679) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .available-title-block{
+                    padding: 16px;
+                    border: 1px solid #ECEDEF;
+                    border-radius: 12px;
+                    .top-block{
+                        align-items: center;
+                        margin-bottom: 20px;
+                        @media ($sm-1481) {
+                            margin-bottom: 15px;
+                        }
+                        .icon{
+                            flex-shrink: 0;
+                            width: 27px;
+                            height: 27px;
+                            border-radius: 50%;
+                            background-color: #EFF6FF;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 12px;
+                            img{
+                                max-width: 12px;
+                                max-height: 12px;
+                                @media ($sm-1679) {
+                                }
+                            }
+                        }
+                        h5{
+                            font-size: 16px;
+                            color: #101B25;
+                            margin: 0;
+                            font-weight: 500;
+                            @media ($sm-1679) {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    h4{
+                        margin: 0;
+                        font-size: 30px;
+                        font-weight: 600;
+                        color: #122852;
+                        @media ($sm-1679) {
+                            font-size: 24px;
+                        }
+                        @media ($sm-1481) {
+                            font-size: 20px;
+                        }
+                        @media ($sm-579) {
+                            font-size: 18px;
                         }
                     }
                 }
             }
+            .perks-col{
+                margin-bottom: 25px;
+                @media ($sm-1679) {
+                    margin-bottom: 20px;
+                }
+            }
+            .perks-card{
+                height: 100%;
+                padding: 25px;
+                border: 1px solid #ECEDEF;
+                border-radius: 12px;
+                @media ($sm-767) {
+                    padding: 20px;
+                }
+                .card-title-outer{
+                    @media ($sm-479) {
+                        flex-wrap: wrap;
+                    }
+                    .right-block{
+                        margin-left: auto;
+                        display: flex;
+                        align-items: center;
+                        @media ($sm-479) {
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                        .title-label{
+                            margin-left: 10px;
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #4F91CD;
+                            background-color: #EFF6FF;
+                            border-radius: 8px;
+                            padding: 4px 8px;
+                            &:first-child{
+                                margin-left: 0;
+                            }
+                            img{
+                                margin-right: 8px;
+                                flex-shrink: 0;
+                            }
+                            &.featured{
+                                background-color: #FEF3C6;
+                                color: #FF9B10;
+                            }
+                        }
+                    }
+                }
+                .card-title-row{
+                    margin-bottom: 15px;
+                    position: relative;
+                    width: 100%;
+                    .icon{
+                        flex-shrink: 0;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        background-color: #EFF6FF;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 12px;
+                        @media ($sm-1679) {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        img{
+                            max-width: 24px;
+                            max-height: 24px;
+                            @media ($sm-1679) {
+                                max-width: 20px;
+                                max-height: 20px;
+                            }
+                        }
+                    }
+                    .txt-data{                        
+                        h4{
+                            margin: 4px;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #122852;
+                            @media ($sm-1679) {
+                                font-size: 16px;
+                            }
+                            
+                        }
+                        .status-block{
+                            .card-status{
+                                display: inline-block;
+                                border: 1px solid #4F91CD33;
+                                font-size: 12px;
+                                color: #4F91CD;
+                                border-radius: 25px;
+                                padding: 5px 11px;
+                                font-size: 12px;
+                                background-color: #EFF6FF;
+                                @media ($sm-1679) {
+                                    padding: 3px 11px;
+                                }
+                                &.active{
+                                    border-top: 1px solid #22C26633;
+                                    color: #22C266;
+                                    background-color: #EDFFF4;
+                                }
+                            }
+                        }
+                    }
+
+                    .title-label-block{
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        @media ($sm-479) {
+                            position: static;
+                        }
+                        .title-label{
+                            margin-left: 10px;
+                            display: inline-flex;
+                            align-items: center;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #4F91CD;
+                            background-color: #EFF6FF;
+                            border-radius: 8px;
+                            padding: 4px 8px;
+                            @media ($sm-479) {
+                                margin-left: 8px;
+                            }
+                            @media (max-width: 362px) {
+                                text-align: center;
+                            }
+                            img{
+                                margin-right: 8px;
+                                flex-shrink: 0;
+                                @media (max-width: 362px) {
+                                    display: none;    
+                                }
+                            }
+                            &.featured{
+                                background-color: #FEF3C6;
+                                color: #FF9B10;
+                                img{
+                                    @media (max-width: 390px) {
+                                        display: none;    
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+                p{
+                    color: #415362;
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                    @media ($sm-1679) {
+                        font-size: 13px;
+                    }
+                }
+                .bottom-row{
+                    justify-content: space-between;
+                    padding-top: 8px;
+                    border-top: 1px solid #F4F4F4;
+                    .card-label{
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 14px;
+                        color: #4F91CD;
+                        &::before{
+                            content: '';
+                            background-color: #4F91CD;
+                            flex-shrink: 0;
+                            margin-right: 5px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+                    }
+                    .card-link{
+                        box-shadow: 0px 1px 2px -1px #0000001A;
+                        box-shadow: 0px 1px 3px 0px #0000001A;
+                        background-color: #4F91CD;
+                        color: #fff;
+                        padding: 9px 18px;
+                        border-radius: 10px;
+                        transition: .3s;
+                        display: inline-flex;
+                        align-items: center;
+                        font-size: 14px;
+                        border: none;
+                        img{
+                            margin-left: 6px;
+                        }
+                        &.coming-soon{
+                            background-color: #EFF6FF;
+                            color: #4F91CD;
+                            padding: 9px 25px;
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 }
