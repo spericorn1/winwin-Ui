@@ -19,6 +19,9 @@
 .my-reward-sec {
   padding-top: 20px;
   padding-bottom: 80px; }
+  @media (max-width: 1679px) {
+    .my-reward-sec {
+      padding-bottom: 60px; } }
   @media (max-width: 991px) {
     .my-reward-sec {
       padding-bottom: 40px; } }
@@ -313,10 +316,6 @@
     border-radius: 16px;
     padding: 32px;
     height: 100%; }
-    @media (max-width: 991px) {
-      .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card {
-        padding: 25px;
-        text-align: center; } }
     .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card .icon {
       width: 64px;
       height: 64px;
@@ -352,5 +351,257 @@
       @media (max-width: 1679px) {
         .my-reward-sec .rewards-tab-outer .my-rewards-tab .how-it-works-sec .how-works-card h4 {
           font-size: 18px; } }
+  .my-reward-sec .rewards-tab-outer .earn-perks-tab {
+    padding-top: 40px; }
+    @media (max-width: 1679px) {
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab {
+        padding-top: 20px; } }
+    .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper {
+      margin-bottom: 40px; }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block {
+        max-width: 380px; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title {
+          font-size: 24px;
+          font-weight: 500;
+          color: #122852;
+          display: flex;
+          align-items: center;
+          margin-bottom: 12px; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title {
+              font-size: 22px; } }
+          @media (max-width: 1481px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title {
+              font-size: 20px; } }
+          @media (max-width: 579px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title {
+              font-size: 18px; } }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title img {
+            margin-right: 12px; }
+            @media (max-width: 1679px) {
+              .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block .perks-title img {
+                max-height: 22px; } }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block p {
+          font-size: 16px;
+          color: #415362; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .perks-title-block p {
+              font-size: 14px; } }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block {
+        padding: 16px;
+        border: 1px solid #ECEDEF;
+        border-radius: 12px; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block {
+          align-items: center;
+          margin-bottom: 20px; }
+          @media (max-width: 1481px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block {
+              margin-bottom: 15px; } }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block .icon {
+            flex-shrink: 0;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background-color: #EFF6FF;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px; }
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block .icon img {
+              max-width: 12px;
+              max-height: 12px; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block h5 {
+            font-size: 16px;
+            color: #101B25;
+            margin: 0;
+            font-weight: 500; }
+            @media (max-width: 1679px) {
+              .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block .top-block h5 {
+                font-size: 14px; } }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block h4 {
+          margin: 0;
+          font-size: 30px;
+          font-weight: 600;
+          color: #122852; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block h4 {
+              font-size: 24px; } }
+          @media (max-width: 1481px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block h4 {
+              font-size: 20px; } }
+          @media (max-width: 579px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .earn-perks-title-wrapper .available-title-block h4 {
+              font-size: 18px; } }
+    .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-col {
+      margin-bottom: 25px; }
+      @media (max-width: 1679px) {
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-col {
+          margin-bottom: 20px; } }
+    .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card {
+      height: 100%;
+      padding: 25px;
+      border: 1px solid #ECEDEF;
+      border-radius: 12px; }
+      @media (max-width: 767px) {
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card {
+          padding: 20px; } }
+      @media (max-width: 479px) {
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer {
+          flex-wrap: wrap; } }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block {
+        margin-left: auto;
+        display: flex;
+        align-items: center; }
+        @media (max-width: 479px) {
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block {
+            width: 100%;
+            margin-bottom: 15px; } }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block .title-label {
+          margin-left: 10px;
+          display: inline-flex;
+          align-items: center;
+          font-size: 12px;
+          font-weight: 500;
+          color: #4F91CD;
+          background-color: #EFF6FF;
+          border-radius: 8px;
+          padding: 4px 8px; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block .title-label:first-child {
+            margin-left: 0; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block .title-label img {
+            margin-right: 8px;
+            flex-shrink: 0; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-outer .right-block .title-label.featured {
+            background-color: #FEF3C6;
+            color: #FF9B10; }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row {
+        margin-bottom: 15px;
+        position: relative;
+        width: 100%; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .icon {
+          flex-shrink: 0;
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background-color: #EFF6FF;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 12px; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .icon {
+              width: 40px;
+              height: 40px; } }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .icon img {
+            max-width: 24px;
+            max-height: 24px; }
+            @media (max-width: 1679px) {
+              .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .icon img {
+                max-width: 20px;
+                max-height: 20px; } }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .txt-data h4 {
+          margin: 4px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #122852; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .txt-data h4 {
+              font-size: 16px; } }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .txt-data .status-block .card-status {
+          display: inline-block;
+          border: 1px solid #4F91CD33;
+          font-size: 12px;
+          color: #4F91CD;
+          border-radius: 25px;
+          padding: 5px 11px;
+          font-size: 12px;
+          background-color: #EFF6FF; }
+          @media (max-width: 1679px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .txt-data .status-block .card-status {
+              padding: 3px 11px; } }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .txt-data .status-block .card-status.active {
+            border-top: 1px solid #22C26633;
+            color: #22C266;
+            background-color: #EDFFF4; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 0;
+          top: 0; }
+          @media (max-width: 479px) {
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block {
+              position: static; } }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label {
+            margin-left: 10px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            color: #4F91CD;
+            background-color: #EFF6FF;
+            border-radius: 8px;
+            padding: 4px 8px; }
+            @media (max-width: 479px) {
+              .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label {
+                margin-left: 8px; } }
+            @media (max-width: 362px) {
+              .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label {
+                text-align: center; } }
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label img {
+              margin-right: 8px;
+              flex-shrink: 0; }
+              @media (max-width: 362px) {
+                .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label img {
+                  display: none; } }
+            .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label.featured {
+              background-color: #FEF3C6;
+              color: #FF9B10; }
+              @media (max-width: 390px) {
+                .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .card-title-row .title-label-block .title-label.featured img {
+                  display: none; } }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card p {
+        color: #415362;
+        font-size: 14px;
+        margin-bottom: 15px; }
+        @media (max-width: 1679px) {
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card p {
+            font-size: 13px; } }
+      .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row {
+        justify-content: space-between;
+        padding-top: 8px;
+        border-top: 1px solid #F4F4F4; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row .card-label {
+          display: inline-flex;
+          align-items: center;
+          font-size: 14px;
+          color: #4F91CD; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row .card-label::before {
+            content: '';
+            background-color: #4F91CD;
+            flex-shrink: 0;
+            margin-right: 5px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            display: inline-block; }
+        .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row .card-link {
+          box-shadow: 0px 1px 2px -1px #0000001A;
+          box-shadow: 0px 1px 3px 0px #0000001A;
+          background-color: #4F91CD;
+          color: #fff;
+          padding: 9px 18px;
+          border-radius: 10px;
+          transition: .3s;
+          display: inline-flex;
+          align-items: center;
+          font-size: 14px;
+          border: none; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row .card-link img {
+            margin-left: 6px; }
+          .my-reward-sec .rewards-tab-outer .earn-perks-tab .perks-card .bottom-row .card-link.coming-soon {
+            background-color: #EFF6FF;
+            color: #4F91CD;
+            padding: 9px 25px; }
 
 /*# sourceMappingURL=rewards.css.map */
