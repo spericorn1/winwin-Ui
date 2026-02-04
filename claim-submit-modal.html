@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <title>Win Win X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/claim-sucess-modal.css">
+</head>
+
+<body>
+    <div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pswdSuccessModal">
+            claim success
+        </button>
+        
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimStatusModal">
+            Open Claim Status
+        </button>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimStatusModal1">
+            Activity Log
+        </button>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimStatusModal2">
+            Activity Log2
+        </button>
+
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coverageModal">
+            Open What's Covered
+          </button>
+
+          
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#claimFormModal">
+            File Claim
+        </button>
+      </div>
+        <!-- Passwored change modal -->
+        <div class="modal custom-modal info-modal claim-success-modal fade" id="pswdSuccessModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                    <img src="img/modal-close.svg" alt="">
+                </button>
+                <div class="modal-body text-center">
+                    <div class="modal-icon">
+                        <img src="img/claim-modal-ico.svg" alt="">
+                    </div>
+                    <h2>Claim Submitted Successfully
+                        </h2>
+                    <p>Your claim has been received.
+                        Our team will review it and update you within 10 business days. </p>
+                    <div class="btn-block">
+                        <button type="button" class="btn modal-btn-1 hover-opc" data-bs-dismiss="modal">Back to Order Status</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade claim-modal custom-modal" id="claimStatusModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg claim-modal-dialog">
+      <div class="modal-content claim-modal-content">
+  
+        <!-- Header -->
+        <div class="claim-modal-header">
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                <img src="img/modal-close.svg" alt="">
+            </button>
+          <h5 class="claim-modal-title">Claim Status</h5>
+         
+        </div>
+  
+        <!-- Body -->
+        <div class="modal-body claim-modal-body">
+  
+          <!-- Status Timeline -->
+          <div class="claim-timeline">
+  
+            <div class="claim-step active">
+              <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+              <div class="claim-wrp">
+                <div class="claim-step-content">
+                    <span class="claim-date">Oct 10, 2023 1:20 PM</span>
+                    <h6>Submitted</h6>
+                  </div>
+                  <div class="clam-btn">
+                    <div class="claim-badge">Claim received</div>
+                  </div>
+              </div>
+             
+              
+            </div>
+  
+            <div class="claim-step active">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 11, 2023 1:20 PM</span>
+                <h6>Under Review</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Our team is reviewing your claim</div>
+              </div>
+              </div>
+            </div>
+  
+            <div class="claim-step">
+                <div class="claim-step-icon warning"><img src="img/claim-orange-tick.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Action needed from you</div>
+              </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <!-- Issue Info -->
+          <div class="issue-section">
+            <h6 class="issue-title">Issue Information</h6>
+            <div class="form-wrp">
+            <label class="issue-label">Describe the issue</label>
+            
+            <textarea class="form-control issue-textarea" rows="4"
+              placeholder="Explain what went wrong and how it differs from the listing."></textarea>
+            <small class="issue-limit">Max 250 characters</small>
+        </div>
+            <!-- Upload -->
+            <div class="upload-section">
+              <label class="issue-label">Upload Evidence <span>(Maximum 3 Photos)</span></label>
+  
+              <div class="upload-box">
+                <div class="upload-icon"><img src="img/upload-icon01.png" alt="upload"></div>
+                <p class="upload-text">
+                  Click to upload or drag and drop<br>
+                  <span>PNG, JPG or MP4 (max. 10MB each)</span>
+                </p>
+                <input type="file" multiple hidden>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Footer -->
+        <div class="claim-modal-footer modal-footer">
+          <button class="btn ">Cancel</button>
+          <button class="btn btn-submit">Submit</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="modal fade claim-modal custom-modal" id="claimStatusModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg claim-modal-dialog">
+      <div class="modal-content claim-modal-content">
+  
+        <!-- Header -->
+        <div class="claim-modal-header">
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                <img src="img/modal-close.svg" alt="">
+            </button>
+            <div class="titlesec">
+                <h5 class="claim-modal-title">Activity Log</h5>
+                <div class="link-sec">
+                    <a href="" class="coverd-link">What’s Covered</a>
+                </div>
+            </div>
+         
+         
+        </div>
+  
+        <!-- Body -->
+        <div class="modal-body claim-modal-body">
+  
+          <!-- Status Timeline -->
+          <div class="claim-timeline">
+  
+            <div class="claim-step active">
+              <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+              <div class="claim-wrp">
+                <div class="claim-step-content">
+                    <span class="claim-date">Oct 10, 2023 1:20 PM</span>
+                    <h6>Submitted</h6>
+                  </div>
+                  <div class="clam-btn">
+                    <div class="claim-badge">Claim received</div>
+                  </div>
+              </div>
+             
+              
+            </div>
+  
+            <div class="claim-step active">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 11, 2023 1:20 PM</span>
+                <h6>Under Review</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Our team is reviewing your claim</div>
+              </div>
+              </div>
+            </div>
+  
+            <div class="claim-step">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Action needed from you</div>
+              </div>
+              </div>
+            </div>
+
+            <div class="claim-step">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Action needed from you</div>
+              </div>
+              </div>
+            </div>
+            <div class="claim-step">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge declined">Declined</div>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="claim-summary">
+            <h6 class="claim-summary-title">Summary</h6>
+          
+            <div class="claim-summary-row">
+              <span class="claim-summary-label">Approved Amount</span>
+              <span class="claim-summary-value">$240</span>
+            </div>
+          
+            <div class="claim-summary-row">
+              <span class="claim-summary-label">Payout method :</span>
+              <span class="claim-summary-value">Original Payment method</span>
+            </div>
+          
+            <div class="claim-summary-row">
+              <span class="claim-summary-label">Expected Completion:</span>
+              <span class="claim-summary-value highlight">Within 10 business days</span>
+            </div>
+          </div>
+          
+          <div class="reason-outer">
+              <div class="reason-title">Reason</div>
+              <div class="reason-content">Your claim was denied because the submitted information did not meet the required eligibility criteria.</div>
+          </div>
+          
+  
+        </div>
+  
+        <!-- Footer -->
+        <div class="order-modal-footer modal-footer">
+          <button class="btn ">Back to Order Details</button>
+      
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade claim-modal custom-modal" id="claimStatusModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg claim-modal-dialog">
+      <div class="modal-content claim-modal-content">
+  
+        <!-- Header -->
+        <div class="claim-modal-header">
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                <img src="img/modal-close.svg" alt="">
+            </button>
+            <div class="titlesec">
+                <h5 class="claim-modal-title">Activity Log</h5>
+                <div class="link-sec">
+                    <a href="" class="coverd-link">What’s Covered</a>
+                </div>
+            </div>
+         
+         
+        </div>
+  
+        <!-- Body -->
+        <div class="modal-body claim-modal-body">
+  
+          <!-- Status Timeline -->
+          <div class="claim-timeline">
+  
+            <div class="claim-step active">
+              <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+              <div class="claim-wrp">
+                <div class="claim-step-content">
+                    <span class="claim-date">Oct 10, 2023 1:20 PM</span>
+                    <h6>Submitted</h6>
+                  </div>
+                  <div class="clam-btn">
+                    <div class="claim-badge">Claim received</div>
+                  </div>
+              </div>
+             
+              
+            </div>
+  
+            <div class="claim-step active">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 11, 2023 1:20 PM</span>
+                <h6>Under Review</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Our team is reviewing your claim</div>
+              </div>
+              </div>
+            </div>
+  
+            <div class="claim-step">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Action needed from you</div>
+              </div>
+              </div>
+            </div>
+
+            <div class="claim-step approved-claim">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge">Action needed from you</div>
+              </div>
+              </div>
+            </div>
+
+            <div class="claim-summary">
+                <h6 class="claim-summary-title">Summary</h6>
+              
+                <div class="claim-summary-row">
+                  <span class="claim-summary-label">Approved Amount</span>
+                  <span class="claim-summary-value">$240</span>
+                </div>
+              
+                <div class="claim-summary-row">
+                  <span class="claim-summary-label">Payout method :</span>
+                  <span class="claim-summary-value">Original Payment method</span>
+                </div>
+              
+                <div class="claim-summary-row">
+                  <span class="claim-summary-label">Expected Completion:</span>
+                  <span class="claim-summary-value highlight">Within 10 business days</span>
+                </div>
+              </div>
+            <div class="claim-step">
+                <div class="claim-step-icon success"><img src="img/claim-tick-green.svg"></div>
+                <div class="claim-wrp">
+              <div class="claim-step-content">
+                <span class="claim-date">Oct 12, 2023 1:20 PM</span>
+                <h6>Info Requested</h6>
+              </div>
+              <div class="clam-btn">
+                <div class="claim-badge declined">Declined</div>
+              </div>
+              </div>
+            </div>
+            
+          </div>
+   
+          
+  
+        </div>
+  
+        <!-- Footer -->
+        <div class="order-modal-footer modal-footer">
+          <button class="btn ">Back to Order Details</button>
+      
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="modal fade coverage-modal custom-modal" id="coverageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg coverage-modal-dialog">
+      <div class="modal-content coverage-modal-content">
+  
+ 
+        <div class="coverage-modal-header">
+          <h5 class="coverage-modal-title">What’s Covered</h5>
+          <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+            <img src="img/modal-close.svg" alt="">
+        </button>
+        </div>
+  
+    
+        <div class="modal-body coverage-modal-body">
+  
+      
+          <div class="coverage-box">
+  
+            <div class="coverage-column covered">
+              <h6 class="coverage-column-title">Covered</h6>
+  
+              <ul class="coverage-list">
+                <li class="coverage-item success">
+                  <span class="coverage-icon"><img src="img/coverd.svg" alt="coverd"></span>
+                  <span> Item materially not as described</span>
+                 
+                </li>
+                <li class="coverage-item success">
+                  <span class="coverage-icon"><img src="img/coverd.svg" alt="coverd"></span>
+                  <span>
+                    Missing essential parts
+                  </span>
+                
+                </li>
+                <li class="coverage-item success">
+                  <span class="coverage-icon"><img src="img/coverd.svg" alt="coverd"></span>
+                  <span>
+                    Functional issues not disclosed
+                  </span>
+                  
+                </li>
+                <li class="coverage-item success">
+                  <span class="coverage-icon"><img src="img/coverd.svg" alt="coverd"></span>
+                  <span>
+                    Significant undisclosed damage
+                  </span>
+                  
+                </li>
+              </ul>
+            </div>
+  
+            <div class="coverage-divider"></div>
+  
+            <div class="coverage-column not-covered">
+              <h6 class="coverage-column-title">Not covered</h6>
+  
+              <ul class="coverage-list">
+                <li class="coverage-item">
+                  <span class="coverage-icon"><img src="img/not-coverd.svg" alt="coverd"></span>
+                  <span>
+                    Shipping or transit damage
+                  </span>
+                
+                </li>
+                <li class="coverage-item">
+                  <span class="coverage-icon"><img src="img/not-coverd.svg" alt="coverd"></span>
+                  <span>Normal wear and tear</span>
+                  
+                </li>
+                <li class="coverage-item">
+                  <span class="coverage-icon"><img src="img/not-coverd.svg" alt="coverd"></span>
+                  <span>
+                    Cosmetic issues
+                  </span>
+                 
+                </li>
+                <li class="coverage-item">
+                  <span class="coverage-icon"><img src="img/not-coverd.svg" alt="coverd"></span>
+                  <span> Items still eligible for seller return</span>
+                 
+                </li>
+              </ul>
+            </div>
+  
+          </div>
+  
+          <div class="coverage-help">
+            <span class="coverage-help-icon"><img src="img/blue-icon.svg" alt="blue-icon"></span>
+            <div class="text-sec">
+                <span class="txt">
+                    Need help? Contact our support team at
+                  </span>
+                  <span class="txt">  <a href="mailto:support@winwinx.com" class="support-link">support@winwinx.com</a></span>
+            </div>
+           
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="modal fade claim-form-modal custom-modal" id="claimFormModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg claim-form-dialog">
+      <div class="modal-content claim-form-content">
+  
+    
+        <div class="claim-form-header">
+            <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                <img src="img/modal-close.svg" alt="">
+            </button>
+          <div class="claim-form-inner">
+            <h5 class="claim-form-title">File a Product Protection Claim</h5>
+            <p class="claim-form-subtitle">
+                <span> We'll review your claim and respond within 10 business days.</span>
+                <span> Please provide as much detail as possible to speed things up.</span>
+             
+            </p>
+          </div>
+         
+        </div>
+  
+        <!-- Body -->
+        <div class="modal-body claim-form-body">
+  
+          <!-- Product Card -->
+          <div class="claim-product-card">
+              <div class="left-sec">
+                  <div class="img-sec">
+                      <img src="img/head-set1.png" alt="head-set">
+                  </div>
+                  <div class="claim-product-info">
+                    <div class="product-name">Bluetooth Thermal Label Printer</div>
+                    <div class="product-id">Order ID: <span>#WWX-245</span></div>
+                    <div class="product-id">Max Claim Value:<span>$299</span> </div>
+                  </div>
+              </div>
+           
+  
+           
+  
+            <div class="claim-product-meta">
+              <div class="purchase-date">Purchased on:<span>Oct 12, 2023</span> </div>
+              <div class="purchase-date">Coverage Ends On:<span> March 12, 2024</span></div>
+            </div>
+          </div>
+  
+          <!-- Claim Details -->
+          <div class="claim-details">
+  
+            <h6 class="claim-section-title">Claim Details</h6>
+  
+            <!-- Reason -->
+            <div class="form-group">
+              <label class="form-label">Reason for claim</label>
+              <select class="form-select claim-select">
+                <option>Received the wrong item</option>
+                <option>Damaged item</option>
+                <option>Missing parts</option>
+              </select>
+            </div>
+  
+            <!-- Description -->
+            <div class="form-group">
+              <label class="form-label">Describe the issue</label>
+              <textarea class="form-control claim-textarea" rows="4"
+                placeholder="Explain what went wrong and how it differs from the listing."></textarea>
+              <small class=" claim-limit">Max 250 characters</small>
+            </div>
+  
+            <!-- Upload Evidence -->
+            <div class="claim-upload">
+              <label class="form-label">Upload Evidence <span>(Maximum 3 Photos)</span></label>
+  
+              <div class="claim-upload-box">
+                <div class="claim-upload-icon"><img src="img/icon-img1.svg"></div>
+                <p class="txt">
+                  Click to upload or drag and drop<br>
+                  <span>PNG, JPG or MP4 (max. 10MB each)</span>
+                </p>
+                <input type="file" hidden multiple>
+              </div>
+            </div>
+  
+            <!-- Upload Video -->
+            <div class="claim-upload">
+              <label class="form-label">Upload Video <span>(Maximum 1 Video)</span></label>
+  
+              <div class="claim-upload-box">
+                <div class="claim-upload-icon"><img src="img/video-icon11.svg"></div>
+                <p class="txt">
+                  Click to upload or drag and drop<br>
+                  <span>MP4 format only (max. 10MB per file)</span>
+                </p>
+                <input type="file" hidden>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <!-- Footer -->
+        <div class="claim-modal-footer modal-footer">
+            <button class="btn ">Cancel</button>
+            <button class="btn btn-submit">Submit</button>
+          </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

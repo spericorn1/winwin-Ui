@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+.protection-section {
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+.protection-section .protection-card {
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px 40px 23px 17px;
+  border: 1px solid #ECEDEF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.0392156863);
+}
+@media (max-width: 991px) {
+  .protection-section .protection-card {
+    padding-right: 20px;
+  }
+}
+
+/* HEADER */
+.protection-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+}
+@media (max-width: 991px) {
+  .protection-header {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 767px) {
+  .protection-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.protection-header .header-left {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  .protection-header .header-left {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+}
+.protection-header .header-left .icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+.protection-header .header-left .icon-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.protection-header .header-left .card-title {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #101B25;
+}
+@media (max-width: 991px) {
+  .protection-header .header-left .card-title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 348px) {
+  .protection-header .header-left .card-title {
+    font-size: 16px;
+  }
+}
+.protection-header .header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 30px;
+  width: 60%;
+}
+@media (max-width: 991px) {
+  .protection-header .header-right {
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: flex-end;
+    width: 55%;
+  }
+}
+@media (max-width: 767px) {
+  .protection-header .header-right {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.protection-header .header-right .plan-status {
+  padding-right: 63px;
+}
+@media (max-width: 991px) {
+  .protection-header .header-right .plan-status {
+    padding-right: 10px;
+  }
+}
+.protection-header .header-right.under-review {
+  margin-right: 0px;
+  justify-content: space-between;
+}
+@media (max-width: 767) {
+  .protection-header .header-right.under-review {
+    width: 100%;
+  }
+}
+.protection-header .plan-status,
+.protection-header .claim-status {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .protection-header .plan-status,
+  .protection-header .claim-status {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+.protection-header .plan-status .status-text,
+.protection-header .claim-status .status-text {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #415362;
+}
+.protection-header .plan-status .active-text,
+.protection-header .claim-status .active-text {
+  color: #101B25;
+  font-weight: 500;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.protection-header .plan-status .active-text .status-dot,
+.protection-header .claim-status .active-text .status-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 7px;
+}
+.protection-header .plan-status .active-text .status-dot.active,
+.protection-header .claim-status .active-text .status-dot.active {
+  background: #22c55e;
+}
+.protection-header .plan-status .active-text .status-dot.inactive,
+.protection-header .claim-status .active-text .status-dot.inactive {
+  background: #cbd5e1;
+}
+.protection-header .plan-status .active-text .status-dot.review,
+.protection-header .claim-status .active-text .status-dot.review {
+  background-color: #FCA344;
+}
+
+.protection-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .protection-body {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+.protection-body .coverage-info {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .protection-body .coverage-info {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.protection-body .coverage-info .coverage-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+@media (max-width: 1679px) {
+  .protection-body .coverage-info .coverage-item {
+    margin-right: 60px;
+  }
+}
+@media (max-width: 1481px) {
+  .protection-body .coverage-info .coverage-item {
+    margin-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .protection-body .coverage-info .coverage-item {
+    width: 48%;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+.protection-body .coverage-info .coverage-item .label {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 7px;
+  color: #6A7282;
+}
+@media (max-width: 767px) {
+  .protection-body .coverage-info .coverage-item .label {
+    margin-bottom: 5px;
+  }
+}
+.protection-body .coverage-info .coverage-item .value {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .protection-body .coverage-info .coverage-item .value {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .protection-body .action-area {
+    width: 100%;
+    margin-top: 34px;
+  }
+}
+.protection-body .action-area .claim-button {
+  min-width: 217px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5090CC;
+  background-color: #fff;
+  border: 1px solid #5090CC;
+  border-radius: 50px;
+}
+@media (max-width: 767px) {
+  .protection-body .action-area .claim-button {
+    min-width: 100%;
+    width: 100%;
+  }
+}
+.protection-body .action-area .claim-button:disabled {
+  background-color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
+  border: none;
+}
+.protection-body .action-area .claim-button:disabled:hover {
+  background: #fff;
+  color: #5090CC;
+}
+.protection-body .action-area .claim-button:hover {
+  background: #5090CC;
+  color: #fff;
+}
+
+.protection-footer {
+  display: flex;
+  align-items: center;
+  background: #FEF5E7;
+  padding: 7px 12px;
+  border-radius: 50px;
+}
+@media (max-width: 767px) {
+  .protection-footer {
+    border-radius: 15px;
+    align-items: flex-start;
+  }
+}
+.protection-footer .info-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0px;
+  margin-right: 11px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .protection-footer .info-icon {
+    margin-top: 2px;
+  }
+}
+.protection-footer .claim-text {
+  color: #F59E0B;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+}
+
+.cover-link {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .cover-link {
+    justify-content: center;
+  }
+}
+.cover-link a {
+  color: #346796;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=product-protection-new.css.map */
