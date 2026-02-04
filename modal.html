@@ -110,7 +110,9 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscriptionConfirm">
             Subscription Confirm
         </button>
-
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#planConfirmation">
+            Plan Confirmation
+        </button>
 
 
     </div>
@@ -1596,6 +1598,84 @@
     </div></div></div></div>
     <!-- Subscription confirm modal ends -->
 
+    <!-- Plan Confirmation -->
+    <div class="modal custom-modal plan-confirmation-modal fade" id="planConfirmation" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        
+        <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+            <div class="modal-content custom-modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-btn" data-bs-dismiss="modal">
+                        <img src="img/modal-close.svg" alt="">
+                    </button>
+
+                    <div class="plan-confirmation-outer">
+                        
+                        <div class="cm-headwrap">
+                            <div class="cm-title">Plan Confirmation</div>
+                            <div class="cm-para">Please review the details of your selected plan before confirming. Once confirmed, your new plan will be activated immediately and the updated features and benefits will be available to you.</div>
+                        </div>
+
+                        <div class="plan-details-wrapper d-flex">
+                            <div class="left-block">
+                                <h4 class="sec-title">Selected Plan</h4>
+                                <div class="cm-col-content-wrap">
+                                    <div class="cm-img-wrap">
+                                        <img src="img/cm-better-img.svg" alt="">
+                                    </div>
+                                    <div class="cm-content-wrap">
+                                        <div class="name">Better</div>
+                                        <div class="num">$5</div>
+                                        <div class="month">/month</div>
+                                    </div>
+                                    <div class="save-val">Save 17%</div>
+                                </div>
+                            </div>
+                            <div class="right-block">
+                                <h4 class="sec-title">Billing Plan</h4>
+                                
+                                <div class="billing-plan-block">
+                                    <table width="100%" cellpadding="0" cellspacing="0" class="table">
+                                        
+                                        <tr>
+                                            <td class="vl-col1">Next Billing Date</td>
+                                            <td class="vl-col2">Oct  24 , 2025</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vl-col1">Next Billing Amount</td>
+                                            <td class="vl-col2">$5134.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="vl-col1">Todays Charge</td>
+                                            <td class="vl-col2"><span class="total">$5134.00</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        <div class="plan-info-wrapper d-flex">
+                            <div class="icon">
+                                <img src="img/info-lg-blue.svg" alt="">
+                            </div>
+                            <div class="info-data">
+                                Your new plan starts immediately. We’ve applied a pro-rated credit for the unused time on your current plan to today’s total. Your next full billing cycle will begin on the date shown above.
+                            </div>
+                        </div>
+
+                        <div class="btn-block btn-block-2-col d-flex p-0">
+                            <button type="button" class="btn modal-btn-1 modal-btn-border hover-opc"
+                                data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn modal-btn-1 hover-opc">Confirm</button>
+                        </div>
+    
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
